@@ -1,313 +1,873 @@
 <!DOCTYPE html>
 <html lang='en'>
-<meta charset='UTF-8'/>
+<meta charset='UTF-8' />
 
 <head>
-<title>Gina's Aprenticeship Blog</title>
-<link href="https://fonts.googleapis.com/css?family=Suez+One" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <title>Gina's Apprenticeship Blog</title>
+  <link href="https://fonts.googleapis.com/css?family=Suez+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
 
 <body>
   <header>
-    <h1 id='blogtitle'>Gina's Apprenticeship Blog</h1>
+    <h1 class='blogtitle'>Gina's Apprenticeship Blog</h1>
   </header>
 
   <nav>
-      <ul>
-        <li><a href='./index.html'>Blog</a></li>
-        <li><a href='./notes.html'>Notes</a></li>
-        <li><a href='./reads.html'>Reads</a></li>
-        <li><a href='./resources.html'>Resources</a></li>
-      </ul>
+    <ul class="nav__ul">
+      <li><a href='./index.html'>Blog</a></li>
+      <li><a href='./notes.html'>Notes</a></li>
+      <li><a href='./reads.html'>Reads</a></li>
+      <li><a href='./resources.html'>Resources</a></li>
+    </ul>
   </nav>
 
-            <main id='blogposts-container'>
-              <section class='blogposts'>
-                <time datetime="2018-11-09">SEPTEMBER 11, 2018</time>
-                <h2>Brief explanation and example of every (yes, every) HTML element.</h2><br/>
-                <h4><strong>WE&#39;VE MET BEFORE</strong></h4>
-                <ul class="most-recent">
-                    <li><strong>&#60;!-- --&#62;</strong> tag allows you to make comments that will not be visible and will you help quickly navigate throughout your HTML file and collaborate with your team.</li>
-                    <li><strong>&#60!DOCTYPE&#62;</strong> tag defines the document type.</li>
-                    <img src="./images/doctype-tag.png"></img>
-                    <li><strong>&#60;html&#62;</strong> tag defines that you are in an html document.</li>
-                    <img src="./images/html-tag.png"></img>
-                    <li><strong>&#60;meta&#62;</strong> tag defines the metadata that describes a webpage using keywords and short descriptions for Search Engine Optimization.</li>
-                    <img src="./images/meta-tag.png"></img>
-                    <li><strong>&#60;head&#62;</strong> tag defines information about the document. This is where you place the web page title that will show up on your browser tab, as well as where you link stylesheets, fonts, the meta tag, and specify if there is any HTML, CSS, or Javascript on the page.</li>
-                    <img src="./images/head-tag.png"></img>
-                    <li><strong>&#60;title&#62;</strong> tag defines the title of your webpage.</li>
-                    <img src="./images/title-tag.png"></img>
-                    <li><strong>&#60;header&#62;</strong> tag defines the header for your document or for a section within your document.</li>
-                    <img src="./images/header-tag.png"></img>
-                    <li><strong>&#60;nav&#62;</strong> tag defines the navigation within your HTML file and is a <em>Semantic Tag</em>, which clearly defines its meaning to both the browser and the developer. Other semantic tags include: <strong>&#60;header&#62;</strong>, <strong>&#60;main&#62;</strong>, <strong>&#60;section&#62;</strong>, <strong>&#60;article&#62;</strong>, <strong>&#60;aside&#62;</strong>, <strong>&#60;footer&#62;</strong>, <strong>&#60;form&#62;</strong>, and <strong>&#60;table&#62;</strong>.</li>
-                    <img src="./images/nav-tag.png"></img>
-                    <li><strong>&#60;body&#62;</strong> tag defines the document's body. The majority of your website content, such as images, text, quotes, articles, links, and videos will appear here.</li>
-                    <img src="./images/body-tag.png"></img>
-                    <li><strong>&#60;h1&#62; through &#60;h6&#62;</strong>tags help you establish text hierarchy between headlines, body copy, and captions.</li>
-                    <img src="./images/h1-through-h6-tags.png"></img>
-                    <li><strong>&#60;div&#62;</strong> tag defines a section in a document. This tag creates a division or section, but not as effective as using Semantic HTML. This tag is often used as a container for other HTML elements to style them using CSS or perform certain tasks using Javascript.</li>
-                    <img src="./images/div-tag.png"></img>
-                    <li><strong>&#60;main&#62;</strong> tag defines the main content within the <strong>&#60;body&#62;</strong> tag of your document and should be unique to that page. It should not include elements that you duplicate and reuse across multiple pages (i.e. navigation or footer).</li>
-                    <img src="./images/main-tag.png"></img>
-                    <li><strong>&#60;section&#62;</strong> tag defines a section within your document, such as chapters, headers, and footers.</li>
-                    <img src="./images/section-tag.png"></img>
-                    <li><strong>&#60;article&#62;</strong> tag inserts an external source of information that is intended to be reusable and independently distributed, such as a forum post, magazine, newspaper article, or blog entry.</li>
-                    <img src="./images/article-tag.png"></img>
-                    <li><strong>&#60;aside&#62;</strong> tag contains information related to the article in context, so, for example, sidebars (in printed typography), footnotes, highlighted quotes, glossary terminology, or call-outs. <em><strong>Note:</strong> This is different than a <strong>&#60;sidebar&#62;</strong>, as a sidebar can be used as navigation or feature ads, search boxes, and blogrolls.</em></li>
-                    <img src="./images/aside-tag.png"></img>
-                    <li><strong>&#60;footer&#62;</strong> tag defines the footer of your document, which is where you might display secondary navigation links, social media links, or copyright.</li>
-                    <img src="./images/footer-tag.png"></img>
-                    <li><strong>&#60;p&#62;</strong> tag defines a paragraph.</li>
-                    <img src="./images/paragraph-tag.png"></img>
-                    <li><strong>&#60;style&#62;</strong> tag allows you to write CSS within your HTML document. This is called <em>Inline Styles</em>, and if you are working within a team, it is not recommended. It is good, however, for making changes to very specific, minor one-time elements.</li>
-                    <img src="./images/style-tag.png"></img>
-                    <li><strong>&#60;em&#62;</strong> tag emphasizes or italicizes your text.</li>
-                    <img src="./images/em-tag.png"></img>
-                    <li><strong>&#60;strong&#62;</strong> tag bolds your text.</li>
-                    <img src="./images/strong-tag.png"></img>
-                    <li><strong>&#60;u&#62;</strong> tag underlines your text.</li>
-                    <img src="./images/underline-tag.png"></img>
-                    <li><strong>&#60;a&#62;</strong> tag creates a hyperlink.</li>
-                    <img src="./images/hyperlink-tag.png"></img>
-                    <li><strong>&#60;img&#62;</strong> tag allows you to display and link an image to your webpage. Within this tag, you can link to another source, define specific height and width properties, and add a brief written description within metadata to account for blindness. <em><strong>Note:</strong> You do not need to add an end tag or a / to the end.</em></li>
-                    <img src="./images/img-tag.png"></img>
-                    <li><strong>&#60;ul&#62;</strong> tag defines an unordered list, which means that it will display with bullet points in HTML. <em><strong>Quick tip:</strong> You can get rid of the bullet points using the CSS property "list-style" and set that property to "none."</em></li>
-                    <img src="./images/ul-tag.png"></img>
-                    <li><strong>&#60;ol&#62;</strong> tag is an ordered list, which is obviously the opposite of an unordered list. With this element, your text will display numbers next to each item.</li>
-                    <img src="./images/ol-tag.png"></img>
-                    <li><strong>&#60;li&#62;</strong>tag defines a list item.</li>
-                    <img src="./images/list-item-tag.png"></img>
-                    <li><strong>&#60;br&#62;</strong> tag creates a line break. Note that this is a <em>Self-Closing Tag</em>, as well as <strong>&#60;hr&#62;</strong> and <strong>&#60;img&#62;</strong>.</li>
-                    <img src="./images/break-tag.png"></img>
-                    <li><strong>&#60;hr&#62;</strong> tag is self-closing and defines a thematic break, otherwise known as a horizontal rule.</li>
-                    <img src="./images/hr-tag.png"></img>
-                    <li><strong>&#60;button&#62;</strong> tag creates a clickable button.</li>
-                    <img src="./images/button-tag.png"></img>
-                  </ul>
+  <main class='blogposts__container'>
+    <section class='blogposts__post'>
+      <time datetime="2018-11-21">SEPTEMBER 21, 2018</time>
+      <h2><em>UX Team of One</em> by Leah Buley</h2>
+      <p>
+        Leah Buley is a UX designer with over a decade of experience in building digital products. Her book, <em>The User Experience Team of One</em>, is intended to inform the aspiring UX designer or design student about the fundamentals of UX, as well as to help the soloist UX professional review basic knowledge and tools; implement research, approaches to giving/receiving feedback, and user testing methods; and developing business skills in time management and communication; and building relationships/communities with people and navigating client relationships.
+      </p>
+      <p>
+        <em>The User Experience Team of One</em> offers solid approaches and processes in UX and visual design to help build successful user experiences within organizational structures ranging from startup level to Fortune 500.The User Experience Team of One/ begins with defining what exactly user experience is, covering a brief history of how the term|career came to fruition, the difference between User Experience (UX) and User Interface (UI), the diverse backgrounds that UX professionals stem from, and the typical UX process (i.e. discovery, strategy, research, design, and implementation). The book emphasizes how it is equally important to build communities and relationships with the people that make up organizational structures, and in doing so, it will encourage the support and willingness from others to participate in work processes. Overall, the book begins with promoting the idea of working /with/ others as opposed to /against/ them by getting to know them on a professional and personal level, helping them understand the UX process, and giving others the opportunity to have conversations about compromises and trade-offs early on.
+      </p>
 
-          <br/>
+      <p>
+        Towards the middle, the book proposes answers to handling common objections respectfully and encourages seeing these objections more as opportunities than threats because they are invitations to direct, honest conversations. Some common objections from stakeholders or team members that the book covers are when others:
+      </p>
 
-                <h4><strong>WE&#39;RE FAMILIAR BUT NOT ACQUAINTED</strong></h4>
-                  <ul class="most-recent">
-                    <li><strong>&#60;audio&#62;</strong> tag allows you to insert an audio file.</li>
-                    <img src="./images/audio-tag.png"><img>
-                    <li><strong>&#60;small&#62;</strong> tag defines smaller text.</li>
-                    <li><strong>&#60;blockquote&#62;</strong> tag defines a section that is quoted from an external source.</li>
-                    <img src="./images/blockquote-tag.png"><img>
-                    <li><strong>&#60;caption&#62;</strong> tag defines a table caption. <strong>Note:</strong> This tag needs to be inserted immediately after the table tag and there can only be one <strong>&#60;caption&#62;</strong> tag per table.</li>
-                    <img src="./images/caption-tag.png"><img>
-                    <li><strong>&#60;col&#62;</strong> tag specifies the column properties for each column within a <strong>&#60;colgroup.&#62;</strong>. This tag is normally used when the values of each column are different.</li>
-                    <li><strong>&#60;colgroup&#62;</strong> tag specifies a group of one or more columns within a table for formatting.</li>
-                    <img src="./images/col-tag.png"><img>
-                    <li><strong>&#60;embed&#62;</strong> tag defines a container for an external application or interactive content, like a plug-in.</li>
-                    <img src="./images/embed-tag.png"><img>
-                    <li><strong>&#60;form&#62;</strong> tag defines an HTML form for user input.</li>
-                    <li><strong>&#60;input&#62;</strong> tag specifies a field where the user can input data. This tag is used within a <strong>&#60;form&#62;</strong> to declare user controls to input data. The input field can vary depending on the type attribute.</li>
-                    <img src="./images/form-tag.png"><img>
-                    <li><strong>&#60;link&#62;</strong> tag defines a link between a document and an external source.</li>
-                    <img src="./images/link-tag.png"><img>
-                    <li><strong>&#60;noscript&#62;</strong> tag defines an alternate content for users that have disabled scripts in their browser or have a browser that doesn't support script.</li>
-                    <img src="./images/noscript-tag.png"><img>
-                    <li><strong>&#60;object&#62;</strong> tag an embedded object.</li>
-                    <img src="./images/object-tag.png"><img>
-                    <li><strong>&#60;script&#62;</strong> tag defines a client-side script (JavaScript). The <strong>&#60;script&#62;</strong> element either contains scripting statements, or it points to an external script file through the src attribute.</li>
-                    <img src="./images/script-tag.png"><img>
-                    <li><strong>&#60;span&#62;</strong>	tag is similar to the <strong>&#60;script&#62;</strong> tag and is mostly used for styling. The difference is that the <strong>&#60;div&#62;</strong> tag is a <em>block elements</em>, meaning that it is on a separate line. In contrast, this tag is an <em>in-line element</em>, meaning it can be on the same line as other elements.</li>
-                    <img src="./images/span-tag.png"><img>
-                    <li><strong>&#60;svg&#62;</strong>tag defines a container for SVG graphics.</li>
-                    <img src="./images/svg-tag.png"><img>
-                    <li><strong>&#60;video&#62;</strong> tag specifies video, such as a movie clip or other video streams. Currently, there are 3 support video formats: MP4, WebM, Ogg.</li>
-                    <img src="./images/video-tag.png"><img><br/>
-                    <li><strong>TABLE ELEMENTS</strong></li>
-                    <li><strong>&#60;table&#62;</strong> tag creates an HTML table usually composed of <strong>&#60;tr&#62;</strong>, <strong>&#60;th&#62;</strong>, and <strong>&#60;td&#62;</strong> elements.</li>
-                    <li><strong>&#60;th&#62;</strong> tag defines a table header.</li>
-                    <li><strong>&#60;tr&#62;</strong>tag defines a table row.</li>
-                    <li><strong>&#60;td&#62;</strong>tag defines a table cell.</li>
-                    <img src="./images/table-tags.png"><img>
-                    <li><strong>&#60;thead&#62;</strong> tag is used to group header content in an HTML table and is used with the <strong>&#60;tbody&#62;</strong> and <strong>&#60;tbody&#62;</strong> tags.</li>
-                    <li><strong>&#60;tbody&#62;</strong> tag is used to group the body content in an HTML table. This element is used with the <strong>&#60;thead&#62;</strong> and <strong>&#60;tfoot&#62;</strong> elements to specify each part of a table (body, header, footer).</li>
-                    <li><strong>&#60;tfoot&#62;</strong> tag is used to group footer content in an HTML table. This element is used with the <strong>&#60;thead&#62;</strong> and <strong>&#60;tbody&#62;</strong> elements to specify each part of a table (footer, header, body).</li>
-                    <img src="./images/thead-tag.png"><img>
-                  </ul>
+      <ul class='blogposts__ul--indent'>
+        <li>Underestimate the importance of web design</li>
+        <li>Equate UX Research to Market Research</li>
+        <li>Consider UX as too expensive and time consuming</li>
+        <li>Value statistical significance over UX</li>
+        <li>Are “already” aware of what their problems are</li>
+        <li>Claim that it’s [<em>marketing/engineering/product management</em>]’s job</li>
+      </ul>
 
-            <br/>
+      <p>
+        From this section, the book elaborates on how the reader can become an overall better professional and individual by providing resources for professional associations, online communities, and meet ups to join. Additionally, the book offers helpful websites, books, classes and organizations, and conferences to attend, all the while encouraging the reader to find a buddy or mentor that can help in their career pursuits.  After offering resources, the book suggests that you define your goals, whether it be within an organization to help your company develop a solid UX process with strategic planning and metrics or to branch off independently, so that you can better position yourself in the market as a specialist, generalist or consultant. It briefly covers payment, negotiation, time management, and feedback.
+      </p>
 
-                <h4><strong>WE&#39;RE MEETING FOR THE FIRST TIME</strong></h4>
-                  <ul class="most-recent">
-                    <li><strong>&#60;abbr&#62;</strong> tag defines an abbreviation or acronym.</li>
-                    <img src="./images/abbr-tag.png"></img>
-                    <li><strong>&#60;area&#62;</strong> tag defines an area within an image map.</li>
-                    <img src="./images/area-tag.png"></img>
-                    <li><strong>&#60;address&#62;</strong> tag defines contact information for the author/owner of a document.</li>
-                    <img src="./images/address-tag.png"></img>
-                    <li><strong>&#60;base&#62;</strong> tag specifies the base URL/target for all relative URLs in a document</li>
-                    <img src="./images/base-tag.png"></img>
-                    <li><strong>&#60;bdi&#62;</strong> tag stands for <em>Bi-Directional Isolation</em> element, which isolates a part of text that might be formatted in a different direction from other text outside it, such an Arabic word.</li>
-                    <img src="./images/bdi-tag.png"></img>
-                    <li><strong>&#60;bdo&#62;</strong> tag stands for <em>Bi-Directional Text Override</em> element, which is used to override the current text direction.</li>
-                    <img src="./images/bdo-tag.png"></img>
-                    <li><strong>&#60;canvas&#62;</strong> tag is used to draw graphics in real-time via scripting, usually requiring JavaScript.</li>
-                    <img src="./images/canvas-tag.png"></img>
-                    <li><strong>&#60;cite&#62;</strong> tag defines a title of a work.</li>
-                    <img src="./images/cite-tag.png"></img>
-                    <li><strong>&#60;code&#62;</strong> tag defines a piece of computer code.</li>
-                    <img src="./images/code-tag.png"></img>
-                    <li><strong>&#60;data&#62;</strong> tag links the given content with a machine-readable translation.</li>
-                    <img src="./images/data-tag.png"></img>
-                    <li><strong>&#60;datalist&#62;</strong> tag specifies a list of pre-defined options for input controls.</li>
-                    <img src="./images/datalist-tag.png"></img>
-                    <li><strong>&#60;del&#62;</strong> tag defines text that has been deleted from a document.</li>
-                    <img src="./images/del-tag.png"></img>
-                    <li><strong>&#60;details&#62;</strong> tag defines additional details that the user can view or hide.</li>
-                    <img src="./images/details-tag.png"></img>
-                    <li><strong>&#60;dialog&#62;</strong> tag defines a dialogue box or window.</li>
-                    <img src="./images/dialog-tag.png"></img>
-                    <li><strong>&#60;dfn&#62;</strong> tag requires a defining instance of a term.</li>
-                    <img src="./images/dfn-tag.png"></img>
-                    <li><strong>&#60;dl&#62;</strong> tag defines a description list.</li>
-                    <img src="./images/dl-tag.png"></img>
-                    <li><strong>&#60;dt&#62;</strong> tag defines a term or name in a description list.</li>
-                    <img src="./images/dt-tag.png"></img>
-                    <li><strong>&#60;dd&#62;</strong> tag defines a description/value of a term in a description list</li>
-                    <img src="./images/dd-tag.png"></img>
-                    <li><strong>&#60;fieldset&#62;</strong> tag groups related elements in a form.</li>
-                    <li><strong>&#60;legend&#62;</strong> tag defines a caption for a <strong>&#60;fieldset&#62;</strong> input element.</li>
-                    <img src="./images/fieldset-tag.png"></img>
-                    <li><strong>&#60;figcaption&#62;</strong> tag defines a caption for a <strong>&#60;figure&#62;</strong> element.</li>
-                    <li><strong>&#60;figure&#62;</strong> tag specifies self-contained content.</li>
-                    <img src="./images/figure-tag.png"></img>
-                    <li><strong>&#60;ins&#62;</strong> tag 	defines a text that has been inserted into a document.</li>
-                    <img src="./images/figure-tag.png"></img>
-                    <li><strong>&#60;kbd&#62;</strong> tag defines keyboard input.</li>
-                    <img src="./images/kbd-tag.png"></img>
-                    <li><strong>&#60;label&#62;</strong> tag defines a label for an <strong>&#60;input&#62;</strong> element.</li>
-                    <img src="./images/label-tag.png"></img>
-                    <li><strong>&#60;map&#62;</strong> tag defines a client-side image-map.</li>
-                    <img src="./images/map-tag.png"></img>
-                    <li><strong>&#60;mark&#62;</strong> tag defines marked/highlighted text.</li>
-                    <img src="./images/mark-tag.png"></img>
-                    <li><strong>&#60;meter&#62;</strong> tag defines a scalar measurement within a known range (a gauge).</li>
-                    <img src="./images/meter-tag.png"></img>
-                    <li><strong>&#60;output&#62;</strong> tag defines the result of a calculation.</li>
-                    <img src="./images/output-tag.png"></img>
-                    <li><strong>&#60;param&#62;</strong> tag defines a parameter for an object.</li>
-                    <img src="./images/param-tag.png"></img>
-                    <li><strong>&#60;picture&#62;</strong> tag defines a container for multiple image resources. </li>
-                    <img src="./images/picture-tag.png"></img>
-                    <li><strong>&#60;pre&#62;</strong> tag defines preformatted text.</li>
-                    <img src="./images/pre-tag.png"></img>
-                    <li><strong>&#60;progress&#62;</strong> tag represents the progress of a task.</li>
-                    <img src="./images/progress-tag.png"></img>
-                    <li><strong>&#60;q&#62;</strong> tag defines a short quotation</li>
-                    <img src="./images/q-tag.png"></img>
-                    <li><strong>&#60;rp&#62;</strong> tag defines what to show in browsers that do not support ruby annotations.</li>
-                    <li><strong>&#60;rt&#62;</strong> tag defines an explanation/pronunciation of characters (for East Asian typography).</li>
-                    <li><strong>&#60;ruby&#62;</strong> tag defines a ruby annotation (for East Asian typography)</li>
-                    <img src="./images/rp-tag.png"></img>
-                    <li><strong>&#60;s&#62;</strong> tag defines text that is no longer correct.</li>
-                    <img src="./images/s-tag.png"></img>
-                    <li><strong>&#60;samp&#62;</strong> tag defines sample output from a computer program.</li>
-                    <img src="./images/samp-tag.png"></img>
-                    <li><strong>&#60;select&#62;</strong> tag defines a drop-down list.</li>
-                    <li><strong>&#60;option&#62;</strong> tag defines an option in a drop-down list.</li>
-                    <img src="./images/select-tag.png"></img>
-                    <li><strong>&#60;optgroup&#62;</strong> tag defines a group of related options in a drop-down list</li>
-                    <img src="./images/optgroup-tag.png"></img>
-                    <li><strong>&#60;source&#62;</strong> tag defines multiple media resources for media elements (<strong>&#60;video&#62;</strong> and <strong>&#60;audio&#62;</strong>).</li>
-                    <img src="./images/source-tag.png"></img>
-                    <li><strong>&#60;sub&#62;</strong> tag defines subscripted text.</li>
-                    <img src="./images/sub-tag.png"></img>
-                    <li><strong>&#60;summary&#62;</strong> tag defines a visible heading for a <strong>&#60;details&#62;</strong> element.</li>
-                    <img src="./images/summary-tag.png"></img>
-                    <li><strong>&#60;sup&#62;</strong>tag defines superscripted text.</li>
-                    <img src="./images/sup-tag.png"></img>
-                    <li><strong>&#60;template&#62;</strong> tag is a mechanism for holding client-side content that is not to be rendered when a page is loaded but may subsequently be instantiated during runtime using JavaScript.</li>
-                    <img src="./images/template-tag.png"></img>
-                    <li><strong>&#60;textarea&#62;</strong> tag defines a multiline input control (text area).</li>
-                    <img src="./images/textarea-tag.png"></img>
-                    <li><strong>&#60;time&#62;</strong> tag defines a date/time</li>
-                    <img src="./images/time-tag.png"></img>
-                    <li><strong>&#60;track&#62;</strong> tag defines text tracks for media elements (<strong>&#60;video&#62;</strong> and <strong>&#60;audio&#62;</strong>).</li>
-                    <img src="./images/track-tag.png"></img>
-                    <li><strong>&#60;var&#62;</strong> tag defines a variable.</li>
-                    <img src="./images/var-tag.png"></img>
-                    <li><strong>&#60;wbr&#62;</strong> tag defines a possible line-break.</li>
-                    <img src="./images/wbr-tag.png"></img>
-                  </ul>
-              </section>
+      <p>
+        Lastly, this book covers methods for planning, discovery, research, design, and implementation (testing and validation). The methods that were covered under each category:
+      </p>
 
-              <section class='blogposts'>
-                <time datetime="2018-11-09">SEPTEMBER 11, 2018</time>
-                <h2>How technical should designers be? What are the benefits of being a designer who codes? What are the drawbacks?</h2>
-                <p>There are numerous sources floating around the internet on an ever-growing debate: designers learning to code, designers as developers, and the rare sightings of the &#8220;Design Unicorn &#8221; (super humans who have mastered their craftsmanship in both design and development).</p>
-                <p>With the advancement of technology and digital becoming the primary medium with which people receive information, news, and updates arrived new titles, roles, expectations, and problems. Graphic Designers specializing in anything print related are becoming niche professions, while the community of those who appreciate the art of print and book design are scarcer. A designer’s technical skills are now determined by companies’ needs and professional development on an individual level (optional). It is not uncommon nowadays to seek an entry level position and see that job requirements are beyond just one specialized skill.</p>
-                <p>My thoughts are that having fluent coding skills is not necessary for a designer to have, but it is <em>absolutely</em> beneficial if a designer either already possesses that knowledge on their belt, is willing to actually invest the time and energy into learning it, or seeks professional development because design is a constant path of learning, improvement, and growth.</p>
-                <p>After researching and reading a few articles, here are some conclusions about the benefits and drawbacks of being a designer who codes:</p>
+      <ul class='blogposts__ul--indent'>
+        <li><strong>Planning and Discovery:</strong> UX Questionaire, UX Project Plan, Listening Tour, Opportunity Workshop, Project Brief, Strategy Workshop.</li>
 
-                <br/>
+        <li><strong>Research:</strong> Learning Plan, Guerrilla User Research, Proto-Personas, Heuristic Markup, Comparative Assessment, Content Patterns.</li>
 
-                  <h5><strong>BENEFITS</strong></h5>
+        <li><strong>Design:</strong> Design Brief, Design Principles, Sketching, Sketchboards, Task Flows, Wireframes. </li>
 
-                  <h4><strong>UX Research and UI Design Process</strong></h4>
-                  <ul class='old-post'>
-                    <li>Understanding the medium with which you create helps in understanding knowing the limitations of the current system, as well as user pain points and possible solutions for those problems.</li>
-                    <li>Completely avoids the risk of blurring the lines between art and design. Design serves a very specific purpose and solves problems, whereas art is intended to be consumed and make you question, contemplate, and feel.</li>
+        <li><strong>Testing and Validation:</strong> Paper and interactive prototypes, Black Hat Sessions, Quick-and-Dirty Usability Test, Five-Second Test, UX Health Check. </li>
 
-                    <h4><strong>Now you’re speaking the same language. Literally.</strong></h4>
-                      <ul>
-                      <li>Fosters a stronger community, creates a deeper understanding between designers and developers, and offers a more effective way of pairing.</li>
-                      <li>Developers&#8217;  understanding of the language and its limitations can greatly influence design decisions.</li>
-                      <li>Newfound knowledge can help you discover fresh approaches to common problems, develop new ways of thinking, and learn to consider your work more objectively.</li>
+        <li><strong>Evangelism Methods:</strong> Bathroom UX, Mini Case Studies, Peer-to-Peer Learning Community, Pyramid Evangelism.</li>
+      </ul>
 
-                    <h4><strong>Stay fresh, stay current</strong></h4>
-                      <ul>
-                        <li>Although is it not absolutely necessary that a designer learn to code, it is necessary for a designer to fully understand technologies and how they work.</li>
-                        <li>Having a knowledge of code will lead to increased empathy for your teammates&#8217; respective challenges.</li>
-                        <li>Learning and mastering new skills promotes innovation and creativity in itself.</li>
-                        <li>Possessing fluent coding skills secures a stronger position in the job market.</li>
-                      </ul>
+    </section>
 
-              <br/>
+    <section class='blogposts__post'>
+      <time datetime="2018-11-17">SEPTEMBER 17, 2018</time>
+      <h2>Explain CSS Positioning with Examples</h2>
+      <p>There are currently 5 CSS position values:
+        <ol class='blogposts__ol'>
+          <li>
+            <strong>Static</strong> - This is the default value of all elements and appear in the same order as
+            specified in the HTML file. The element is positioned according to the normal flow of the document. The
+            top, right, bottom, left, and z-index properties have no effect.
+            <script src="https://gist.github.com/gvaldez8/7b99b8230eb3780bfa9a814b4f026ab9.js"></script>
 
-                <h5><strong>DRAWBACKS</strong></h5>
-                <h4><strong>Time is of the essence</strong></h4>
-                  <ul>
-                    <li>Learning is a commitment that takes time and energy, which not many have.</li>
-                    <li>Redistributing time towards development could also mean taking away progress in another area of the project (i.e. In terms of a designer, this could be user testing, designing features, fixing usability issues, and other problems that may arise in the development of a new product).</li>
-                  </ul>
+            <script src="https://gist.github.com/gvaldez8/9da0108cd7b19539ffde6fd051b7c773.js"></script>
+          </li>
 
-                <h4><strong>Wearing another hat</h4></strong>
-                <ul>
-                  <li>Naturally, the more skills you attain and develop, the more versatile you can be. Although designers with fluent coding skills are a valuable asset to any team, this can quickly become draining to learn while working full-time and not the most cost effective while you earn the salary of a single person to accomplish a job that takes multiple.
-                  <li>Designers who can code, usually design only according to how much knowledge in coding they have accrued.</li>
-                  <li>The more knowledge in development you gain can also limit your creativity and audacity to explore new designs.</li>
-                </ul>
+          <li>
+            <strong>Relative</strong> - This element means being positioned &#8220;relative to itself&#8221;, meaning
+            it moves elements around relative to where they would <em>normally appear</em> in the static flow of the
+            page. This works similar to margins, except neither the surrounding elements or parent element are affected
+            by the top and left values. Everything else renders as if the relative item was in its original position.
+            Think of the offsets as being applied after the browser finishes laying out the page.
+            <script src="https://gist.github.com/gvaldez8/7b99b8230eb3780bfa9a814b4f026ab9.js"></script>
 
-                <h4><strong>Empathy vs. Expectations</h4></strong>
-                  <ul>
-                  <li>It’s either developers expecting designers to be more empathetic and vice versa.</li>
-                  <li>There are professionals who are able to direct others and accomplish business goals without ever having actually performed that task themselves.</li>
-                  <li>Task performance does not equate to understanding or knowing how it will affect others in business, such as the team, client project, or the company overall.</li>
-                  </ul>
+            <script src="https://gist.github.com/gvaldez8/c9dcba6a1d16582d3eeceac779bd5a8c.js"></script>
+          </li>
 
-                  <br/><br/>
+          <li>
+            <strong>Fixed</strong> - Does not change when the window is scrolled. A fixed positioned element will stay
+            right where it is, even when the page is being scrolled. Fixed elements don’t scroll with the rest of the
+            page. Similar to absolute positioning, the element is completely removed from the normal flow of the page
+            and the coordinate values (i.e. top, bottom, left, and right) are relative to the entire browser window.
+            <script src="https://gist.github.com/gvaldez8/7b99b8230eb3780bfa9a814b4f026ab9.js"></script>
 
-                <h5><strong>SOME SOURCES</strong></h5>
-                <h6><ul>
-                  <li><a href="https://blog.prototypr.io/css-the-rise-of-the-technical-designer-6474366b3c28">CSS & The Rise of the Technical Designer – Prototypr</a></li>
-                  <li><a href="https://medium.com/@MrAlanCooper/should-designers-code-cde3ef9d6621"> Should Designers Code???? – Alan Cooper – Medium</a></li>
-                  <li><a href="https://uxdesign.cc/should-designers-be-developers-too-a12e3b86fde9"> Should designers be developers too</a></li>
-                  <li><a hef="https://careerfoundry.com/en/blog/ux-design/why-should-designers-learn-to-code/">Why Should Designers Learn to Code? | CareerFoundry</a></li>
-                  <li><a href="https://thenextweb.com/contributors/2017/09/23/designers-code-no-seriously-though)">Why designers should learn to code — or at least consider it</a></li>
-                  <li><a href="https://medium.com/@MrAlanCooper/should-designers-code-f7b745b8cd03">Should designers code
-                  </a></li>
-                </ul></h6>
-                  </section>
-              </main>
+            <script src="https://gist.github.com/gvaldez8/3ec568c0190b71fcfe1a863ea2729d4d.js"></script>
+          </li>
+
+          <li>
+            <strong>Absolute</strong> - Similar to relative positioning, but the offset is relative to the <em>entire
+              browser window</em> instead of the original position of the element. It also completely removes an
+            element from the normal flow of a page.
+            <script src="https://gist.github.com/gvaldez8/7b99b8230eb3780bfa9a814b4f026ab9.js"></script>
+
+            <script src="https://gist.github.com/gvaldez8/c1cbf7283073b937098dc25647b095bf.js"></script>
+          </li>
+
+          <li>
+            <strong>Sticky</strong> - The element is positioned according to the normal flow of the document, and then
+            offset relative to its nearest scrolling ancestor and containing block (nearest block-level ancestor),
+            including table-related elements, based on the values of top, right, bottom, and left. The offset does not
+            affect the position of any other elements.
+            <script src="https://gist.github.com/gvaldez8/91fb3ed620b26207c569d839e69d4330.js"></script>
+            <script src="https://gist.github.com/gvaldez8/c3c13fe8361ecac5d92ab986400defa4.js"></script>
+          </li>
+        </ol>
+    </section>
+
+    <section class='blogposts__post'>
+      <time datetime="2018-11-09">SEPTEMBER 11, 2018</time>
+      <h2>Brief explanation and example of every (yes, every) HTML element.</h2>
+      <br />
+      <h4><strong>WE&#39;VE MET BEFORE</strong></h4>
+      <ul class="blogposts__ul--none">
+        <li>
+          <strong>&#60;!-- --&#62;</strong> tag allows you to make comments that will not be visible and will you help
+          quickly navigate throughout your HTML file and collaborate with your team.
+          <script src="https://gist.github.com/gvaldez8/a1a94e943240d197b4dacdb5579c0a53.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60!DOCTYPE&#62;</strong> tag defines the document type.
+          <script src="https://gist.github.com/gvaldez8/db601adaefef702ec9f7e5c211d782e8.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;html&#62;</strong> tag defines that you are in an html document.
+          <script src="https://gist.github.com/gvaldez8/a2f032bea8ccaa79eb4eebab6481b634.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;meta&#62;</strong> tag defines the metadata that describes a webpage using keywords and short
+          descriptions for Search Engine Optimization.
+          <script src="https://gist.github.com/gvaldez8/9501e2da532890639b0bfcc963abb11e.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;head&#62;</strong> tag defines information about the document. This is where you place the web
+          page title that will show up on your browser tab, as well as where you link stylesheets, fonts, the meta tag,
+          and specify if there is any HTML, CSS, or Javascript on the page.
+          <script src="https://gist.github.com/gvaldez8/f9018029e39765518c5943590732d5e8.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;title&#62;</strong> tag defines the title of your webpage.
+          <script src="https://gist.github.com/gvaldez8/de08196abfe1ca1e2f237b239b9a91ac.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;header&#62;</strong> tag defines the header for your document or for a section within your
+          document.
+          <script src="https://gist.github.com/gvaldez8/9ca383cc1da0f3b02935ac6f226b99a0.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;nav&#62;</strong> tag defines the navigation within your HTML file and is a <em>Semantic Tag</em>,
+          which clearly defines its meaning to both the browser and the developer. Other semantic tags include: <strong>&#60;header&#62;</strong>,
+          <strong>&#60;main&#62;</strong>, <strong>&#60;section&#62;</strong>, <strong>&#60;article&#62;</strong>,
+          <strong>&#60;aside&#62;</strong>, <strong>&#60;footer&#62;</strong>, <strong>&#60;form&#62;</strong>, and
+          <strong>&#60;table&#62;</strong>.
+          <script src="https://gist.github.com/gvaldez8/744cf1c6e071f98e4111cd482e6e2092.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;body&#62;</strong> tag defines the document's body. The majority of your website content, such
+          as images, text, quotes, articles, links, and videos will appear here.
+          <script src="https://gist.github.com/gvaldez8/31467cc6669d2e52439bbfe46a5d48de.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;h1&#62; through &#60;h6&#62;</strong>tags help you establish text hierarchy between headlines,
+          body copy, and captions.
+          <script src="https://gist.github.com/gvaldez8/0bfd9e5fbd2e344e6f45ae43d57b9176.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;div&#62;</strong> tag defines a section in a document. This tag creates a division or section,
+          but not as effective as using Semantic HTML. This tag is often used as a container for other HTML elements to
+          style them using CSS or perform certain tasks using Javascript.
+          <script src="https://gist.github.com/gvaldez8/fe0f015aac5715692daa4a929868db1f.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;main&#62;</strong> tag defines the main content within the <strong>&#60;body&#62;</strong> tag
+          of your document and should be unique to that page. It should not include elements that you duplicate and
+          reuse across multiple pages (i.e. navigation or footer).
+          <script src="https://gist.github.com/gvaldez8/c6aeaa05157bf42a57f81c8bb8390f50.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;section&#62;</strong> tag defines a section within your document, such as chapters, headers, and
+          footers.
+          <script src="https://gist.github.com/gvaldez8/74e1f382d1fb521168fcbb19d8b4b198.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;article&#62;</strong> tag inserts an external source of information that is intended to be
+          reusable and independently distributed, such as a forum post, magazine, newspaper article, or blog entry.
+          <script src="https://gist.github.com/gvaldez8/091c3992376612d96d9c87a7601ab184.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;aside&#62;</strong> tag contains information related to the article in context, so, for example,
+          sidebars (in printed typography), footnotes, highlighted quotes, glossary terminology, or call-outs. <em><strong>Note:</strong>
+            This is different than a <strong>&#60;sidebar&#62;</strong>, as a sidebar can be used as navigation or
+            feature ads, search boxes, and blogrolls.</em>
+          <script src="https://gist.github.com/gvaldez8/4abf994c10302de46d816835ea54f01a.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;footer&#62;</strong> tag defines the footer of your document, which is where you might display
+          secondary navigation links, social media links, or copyright.
+          <script src="https://gist.github.com/gvaldez8/f6f05e99ef918633905157bad5dbb55c.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;p&#62;</strong> tag defines a paragraph.
+          <script src="https://gist.github.com/gvaldez8/c3daeef36dd8b3e5d4c594e1df32884f.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;style&#62;</strong> tag allows you to write CSS within your HTML document. This is called <em>Inline
+            Styles</em>, and if you are working within a team, it is not recommended. It is good, however, for making
+          changes to very specific, minor one-time elements.
+          <script src="https://gist.github.com/gvaldez8/d3dcba31eefc9f210ee6cbcae672761e.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;em&#62;</strong> tag emphasizes or italicizes your text.
+          <script src="https://gist.github.com/gvaldez8/3a70b69ffc241f995b51f70b4723dcc8.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;strong&#62;</strong> tag bolds your text.
+          <script src="https://gist.github.com/gvaldez8/6b90cbf9ef28c3250aa6fcc9fbbb7230.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;u&#62;</strong> tag underlines your text.
+          <script src="https://gist.github.com/gvaldez8/f95a7e2174c1b90522e332d5cb9f5721.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;a&#62;</strong> tag creates a hyperlink.
+          <script src="https://gist.github.com/gvaldez8/7247ce7267ca0d055e596df3d3db423c.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;img&#62;</strong> tag allows you to display and link an image to your webpage. Within this tag,
+          you can link to another source, define specific height and width properties, and add a brief written
+          description within metadata to account for blindness. <em><strong>Note:</strong> You do not need to add an
+            end tag or a / to the end.</em>
+          <script src="https://gist.github.com/gvaldez8/94639cfe0094584e0b6b1dbcca2a25eb.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;ul&#62;</strong> tag defines an unordered list, which means that it will display with bullet
+          points in HTML. <em><strong>Quick tip:</strong> You can get rid of the bullet points using the CSS property
+            "list-style" and set that property to "none."</em>
+          <script src="https://gist.github.com/gvaldez8/f5427732ca7f98571a4f1c7c8442b74e.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;ol&#62;</strong> tag is an ordered list, which is obviously the opposite of an unordered list.
+          With this element, your text will display numbers next to each item.
+          <script src="https://gist.github.com/gvaldez8/4c439da0e9d6baa86b5261360d02247d.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;li&#62;</strong>tag defines a list item.
+          <script src="https://gist.github.com/gvaldez8/f4e623ab884f4b31af3d8fee72fe8065.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;br&#62;</strong> tag creates a line break. Note that this is a <em>Self-Closing Tag</em>, as
+          well as <strong>&#60;hr&#62;</strong> and <strong>&#60;img&#62;</strong>.
+          <script src="https://gist.github.com/gvaldez8/7f7fa827c587444d4e2c33f03f1a3429.js"></script>
+
+        <li>
+          <strong>&#60;hr&#62;</strong> tag is self-closing and defines a thematic break, otherwise known as a
+          horizontal rule.
+          <script src="https://gist.github.com/gvaldez8/50af1cdb55eefd2c5d63e4a14727c1cd.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;button&#62;</strong> tag creates a clickable button.
+          <script src="https://gist.github.com/gvaldez8/4c0784d2eb2428a6303e54d64e8d6f02.js"></script>
+        </li>
+      </ul>
+
+      <br />
+
+      <h4><strong>WE&#39;RE FAMILIAR BUT NOT ACQUAINTED</strong></h4>
+      <ul class="blogposts__ul--none">
+        <li>
+          <strong>&#60;audio&#62;</strong> tag allows you to insert an audio file.
+          <script src="https://gist.github.com/gvaldez8/bd08a12f3f3c77f6e8df2991887fd59e.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;small&#62;</strong> tag defines smaller text.
+        </li>
+
+        <li>
+          <strong>&#60;blockquote&#62;</strong> tag defines a section that is quoted from an external source.
+          <script src="https://gist.github.com/gvaldez8/ae66478f324c42aa33f5bea195163765.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;caption&#62;</strong> tag defines a table caption. <strong>Note:</strong> This tag needs to be
+          inserted immediately after the table tag and there can only be one <strong>&#60;caption&#62;</strong> tag per
+          table.
+          <script src="https://gist.github.com/gvaldez8/12ec9f6338c9bb5eeb2a557a06ee7ab5.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;col&#62;</strong> tag specifies the column properties for each column within a <strong>&#60;colgroup.&#62;</strong>.
+          This tag is normally used when the values of each column are different.
+        </li>
+
+        <li>
+          <strong>&#60;colgroup&#62;</strong> tag specifies a group of one or more columns within a table for
+          formatting.
+          <script src="https://gist.github.com/gvaldez8/06fbb0b08fd0eb6ca41ef3fb80834eb5.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;embed&#62;</strong> tag defines a container for an external application or interactive content,
+          like a plug-in.
+          <script src="https://gist.github.com/gvaldez8/c988294e0b39d103342fccad993aa322.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;form&#62;</strong> tag defines an HTML form for user input.
+        </li>
+
+        <li>
+          <strong>&#60;input&#62;</strong> tag specifies a field where the user can input data. This tag is used within
+          a <strong>&#60;form&#62;</strong> to declare user controls to input data. The input field can vary depending
+          on the type attribute.
+          <script src="https://gist.github.com/gvaldez8/20d43e3934d34aa95cbb847c52fafaa2.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;link&#62;</strong> tag defines a link between a document and an external source.
+          <script src="https://gist.github.com/gvaldez8/8c9669555e574bdbefab8da1f584641f.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;noscript&#62;</strong> tag defines an alternate content for users that have disabled scripts in
+          their browser or have a browser that doesn't support script.
+          <script src="https://gist.github.com/gvaldez8/93ab04647b7247ae0faa2ed3e10f4ca1.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;object&#62;</strong> tag an embedded object.
+          <script src="https://gist.github.com/gvaldez8/826af0f9bb1537bb20fe3adda02ff46a.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;script&#62;</strong> tag defines a client-side script (JavaScript). The <strong>&#60;script&#62;</strong>
+          element either contains scripting statements, or it points to an external script file through the src
+          attribute.
+          <script src="https://gist.github.com/gvaldez8/563637268b2d08a054a8050eb84e614c.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;span&#62;</strong> tag is similar to the <strong>&#60;script&#62;</strong> tag and is mostly
+          used for styling. The difference is that the <strong>&#60;div&#62;</strong> tag is a <em>block elements</em>,
+          meaning that it is on a separate line. In contrast, this tag is an <em>in-line element</em>, meaning it can
+          be on the same line as other elements.
+          <script src="https://gist.github.com/gvaldez8/0d0a1473d2b346ce0a488d4901e70fc6.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;svg&#62;</strong>tag defines a container for SVG graphics.
+          <script src="https://gist.github.com/gvaldez8/299f6878c721061a9950dbda8c796b0b.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;video&#62;</strong> tag specifies video, such as a movie clip or other video streams. Currently,
+          there are 3 support video formats: MP4, WebM, Ogg.
+          <script src="https://gist.github.com/gvaldez8/b39b890feac95db67fcdda0d7845ab4b.js"></script>
+        </li>
+
+        <br />
+
+        <li><strong>TABLE ELEMENTS</strong></li>
+
+        <li>
+          <strong>&#60;table&#62;</strong> tag creates an HTML table usually composed of <strong>&#60;tr&#62;</strong>,
+          <strong>&#60;th&#62;</strong>, and <strong>&#60;td&#62;</strong> elements.
+        </li>
+
+        <li>
+          <strong>&#60;th&#62;</strong> tag defines a table header.
+        </li>
+
+        <li>
+          <strong>&#60;tr&#62;</strong>tag defines a table row.
+        </li>
+
+        <li>
+          <strong>&#60;td&#62;</strong>tag defines a table cell.
+          <script src="https://gist.github.com/gvaldez8/74e19c4802d9f0423b44e873cc36c892.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;thead&#62;</strong> tag is used to group header content in an HTML table and is used with the
+          <strong>&#60;tbody&#62;</strong> and <strong>&#60;tbody&#62;</strong> tags.
+        </li>
+
+        <li>
+          <strong>&#60;tbody&#62;</strong> tag is used to group the body content in an HTML table. This element is used
+          with the <strong>&#60;thead&#62;</strong> and <strong>&#60;tfoot&#62;</strong> elements to specify each part
+          of a table (body, header, footer).
+        </li>
+
+        <li>
+          <strong>&#60;tfoot&#62;</strong> tag is used to group footer content in an HTML table. This element is used
+          with the <strong>&#60;thead&#62;</strong> and <strong>&#60;tbody&#62;</strong> elements to specify each part
+          of a table (footer, header, body).
+          <script src="https://gist.github.com/gvaldez8/69ea1a6c451d41ff981f43f71a95bfae.js"></script>
+        </li>
+      </ul>
+
+      <br />
+
+      <h4><strong>WE&#39;RE MEETING FOR THE FIRST TIME</strong></h4>
+      <ul class="blogposts__ul--none">
+        <li>
+          <strong>&#60;abbr&#62;</strong> tag defines an abbreviation or acronym.
+          <script src="https://gist.github.com/gvaldez8/8fc8800bf8d0d46410c81ff49d11cb95.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;area&#62;</strong> tag defines an area within an image map.
+          <script src="https://gist.github.com/gvaldez8/a699fcdacf01d696411dc0bed12440af.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;address&#62;</strong> tag defines contact information for the author/owner of a document.
+          <script src="https://gist.github.com/gvaldez8/e8274c4633b474ac4f1e47feb0db099b.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;base&#62;</strong> tag specifies the base URL/target for all relative URLs in a document.
+          <script src="https://gist.github.com/gvaldez8/657d2bd9033589072ade706928a8c464.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;bdi&#62;</strong> tag stands for <em>Bi-Directional Isolation</em> element, which isolates a part of text that might be formatted in a different direction from other text outside it, such an Arabic
+          word.
+          <script src="https://gist.github.com/gvaldez8/526d985e6a4ff74301aae2ac0d842ff6.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;bdo&#62;</strong> tag stands for <em>Bi-Directional Text Override</em> element, which is used to override the current text direction.
+          <script src="https://gist.github.com/gvaldez8/340b74a59f362c16691cbd79774c0039.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;canvas&#62;</strong> tag is used to draw graphics in real-time via scripting, usually requiring JavaScript.
+          <script src="https://gist.github.com/gvaldez8/6267130019d1efafdbdbd264e789888e.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;cite&#62;</strong> tag defines a title of a work.
+          <script src="https://gist.github.com/gvaldez8/77a5e67bef171db9dbfd55f6f3bc8717.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;code&#62;</strong> tag defines a piece of computer code.
+          <script src="https://gist.github.com/gvaldez8/ef6c7dc00b47c554a3f5d5a3f5840ec0.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;data&#62;</strong> tag links the given content with a machine-readable translation.
+          <script src="https://gist.github.com/gvaldez8/4214aaca6deadda3ced75405231cbc68.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;datalist&#62;</strong> tag specifies a list of pre-defined options for input controls.
+          <script src="https://gist.github.com/gvaldez8/020403d91715e0f39a146321802fb2e4.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;del&#62;</strong> tag defines text that has been deleted from a document.
+          <script src="https://gist.github.com/gvaldez8/52fe1d24d728fa05bead00325d0b5f9e.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;details&#62;</strong> tag defines additional details that the user can view or hide.
+          <script src="https://gist.github.com/gvaldez8/98d8480a5bd64e9d6d5aa8c4ccb71873.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;dialog&#62;</strong> tag defines a dialogue box or window.
+          <script src="https://gist.github.com/gvaldez8/ed647096035c7701b8a4477281705c81.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;dfn&#62;</strong> tag requires a defining instance of a term.
+          <script src="https://gist.github.com/gvaldez8/34d1db2025314adf02a0097fe04ad861.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;dl&#62;</strong> tag defines a description list.
+        </li>
+
+        <li>
+          <strong>&#60;dt&#62;</strong> tag defines a term or name in a description list.
+        </li>
+
+        <li>
+          <strong>&#60;dd&#62;</strong> tag defines a description/value of a term in a description list.
+          <script src="https://gist.github.com/gvaldez8/d3ae66119f591950582727a2e88074ec.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;fieldset&#62;</strong> tag groups related elements in a form.
+        </li>
+
+        <li>
+          <strong>&#60;legend&#62;</strong> tag defines a caption for a <strong>&#60;fieldset&#62;</strong> input
+          element.
+          <script src="https://gist.github.com/gvaldez8/329d4983a380e849e89b88c51dd2a8cf.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;figcaption&#62;</strong> tag defines a caption for a <strong>&#60;figure&#62;</strong> element.
+        </li>
+
+        <li>
+          <strong>&#60;figure&#62;</strong> tag specifies self-contained content.
+          <script src="https://gist.github.com/gvaldez8/31644a716d885b5cea76cb63e4d3c713.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;ins&#62;</strong> tag defines a text that has been inserted into a document.
+          <script src="https://gist.github.com/gvaldez8/d6d829093cfdb507f7eade6510292765.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;kbd&#62;</strong> tag defines keyboard input.
+          <script src="https://gist.github.com/gvaldez8/34a3b976d5588065d3015e239eaccd81.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;label&#62;</strong> tag defines a label for an <strong>&#60;input&#62;</strong> element.
+          <script src="https://gist.github.com/gvaldez8/875698b8b4df6ab70e163e9f80f2758f.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;map&#62;</strong> tag defines a client-side image-map.
+          <script src="https://gist.github.com/gvaldez8/7e4215cf04a2064f5728a0d03dd24b17.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;mark&#62;</strong> tag defines marked/highlighted text.
+          <script src="https://gist.github.com/gvaldez8/df815bd6f1e7ed379a02151f0c0a9b8b.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;meter&#62;</strong> tag defines a scalar measurement within a known range (a gauge).
+          <script src="https://gist.github.com/gvaldez8/8adb3b2a41e8568df5c815dce2d6ae22.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;output&#62;</strong> tag defines the result of a calculation.
+          <script src="https://gist.github.com/gvaldez8/c7f992b1cd21ec1187dbd2ba44ddc1bb.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;param&#62;</strong> tag defines a parameter for an object.
+          <script src="https://gist.github.com/gvaldez8/53121fc59043f128eb6e7bbf0b7a8471.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;picture&#62;</strong> tag defines a container for multiple image resources.
+          <script src="https://gist.github.com/gvaldez8/eaa0f1b848bc46c9652982343332b2b5.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;pre&#62;</strong> tag defines preformatted text.
+          <script src="https://gist.github.com/gvaldez8/bb1c376a1c76346427b9ecb95b847cad.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;progress&#62;</strong> tag represents the progress of a task.
+          <script src="https://gist.github.com/gvaldez8/9162f21d1fcdbe39b65632f1165df640.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;q&#62;</strong> tag defines a short quotation
+          <script src="https://gist.github.com/gvaldez8/f6f834fc163b3fd8b8368b741a143aad.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;rp&#62;</strong> tag defines what to show in browsers that do not support ruby annotations.
+        </li>
+
+        <li>
+          <strong>&#60;rt&#62;</strong> tag defines an explanation/pronunciation of characters (for East Asian
+          typography).
+        </li>
+
+        <li>
+          <strong>&#60;ruby&#62;</strong> tag defines a ruby annotation (for East Asian typography)
+          <script src="https://gist.github.com/gvaldez8/d2d5071ec84c65dff2cdc838f68d365b.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;s&#62;</strong> tag defines text that is no longer correct.
+          <script src="https://gist.github.com/gvaldez8/7ef90092aeb582809a6fbd01b93187a2.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;samp&#62;</strong> tag defines sample output from a computer program.
+          <script src="https://gist.github.com/gvaldez8/f2428de47c448adedbc724465bf17957.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;select&#62;</strong> tag defines a drop-down list.
+        </li>
+
+        <li>
+          <strong>&#60;option&#62;</strong> tag defines an option in a drop-down list.
+          <script src="https://gist.github.com/gvaldez8/f2575748db528f9aed4d4d26ef020bce.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;optgroup&#62;</strong> tag defines a group of related options in a drop-down list
+          <script src="https://gist.github.com/gvaldez8/ca1a3148eaf62ab2ec8d2814a8a14c71.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;source&#62;</strong> tag defines multiple media resources for media elements (<strong>&#60;video&#62;</strong>
+          and <strong>&#60;audio&#62;</strong>).
+          <script src="https://gist.github.com/gvaldez8/c2fa840de7bcf77d69e8cc9e7cb3e594.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;sub&#62;</strong> tag defines subscripted text.
+          <script src="https://gist.github.com/gvaldez8/dc3eb925d91b384a3ea3937ffe0c6be6.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;summary&#62;</strong> tag defines a visible heading for a <strong>&#60;details&#62;</strong>
+          element.
+          <script src="https://gist.github.com/gvaldez8/1fd48b13ecfa68c080bd8f705685faeb.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;sup&#62;</strong>tag defines superscripted text.
+          <script src="https://gist.github.com/gvaldez8/a8382894223b0da9b74d52da62cf04f9.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;template&#62;</strong> tag is a mechanism for holding client-side content that is not to be
+          rendered when a page is loaded but may subsequently be instantiated during runtime using JavaScript.
+          <script src="https://gist.github.com/gvaldez8/99de607bc876f121885ca6b7a2b31821.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;textarea&#62;</strong> tag defines a multiline input control (text area).
+          <script src="https://gist.github.com/gvaldez8/a8c384c2e9e68f1d4d0091d09665aeb5.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;time&#62;</strong> tag defines a date/time.
+          <script src="https://gist.github.com/gvaldez8/b5b89f35101186e492d24a5535de9b28.js"></script>
+        </li>
+
+
+        <li>
+          <strong>&#60;track&#62;</strong> tag defines text tracks for media elements (<strong>&#60;video&#62;</strong>and <strong>&#60;audio&#62;</strong>).
+          <script src="https://gist.github.com/gvaldez8/2449189bf2000da0625f8507a65eb21a.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;var&#62;</strong> tag defines a variable.
+          <script src="https://gist.github.com/gvaldez8/f1d8d6c07efed7308e33265b513ad84c.js"></script>
+        </li>
+
+        <li>
+          <strong>&#60;wbr&#62;</strong> tag defines a possible line-break.
+          <script src="https://gist.github.com/gvaldez8/b120e48be32adf7f044b90f71245c726.js"></script>
+        </li>
+      </ul>
+    </section>
+
+    <section class='blogposts__post'>
+      <time datetime="2018-11-09">SEPTEMBER 11, 2018</time>
+      <h2>How technical should designers be? What are the benefits of being a designer who codes? What are the
+        drawbacks?</h2>
+      <p>
+        There are numerous sources floating around the internet on an ever-growing debate: designers learning to code,
+        designers as developers, and the rare sightings of the &#8220;Design Unicorn &#8221; (super humans who have
+        mastered their craftsmanship in both design and development).
+      </p>
+
+      <p>
+        With the advancement of technology and digital becoming the primary medium with which people receive
+        information, news, and updates arrived new titles, roles, expectations, and problems. Graphic Designers
+        specializing in anything print related are becoming niche professions, while the community of those who
+        appreciate the art of print and book design are scarcer. A designer’s technical skills are now determined by
+        companies’ needs and professional development on an individual level (optional). It is not uncommon nowadays to
+        seek an entry level position and see that job requirements are beyond just one specialized skill.
+      </p>
+
+      <p>
+        My thoughts are that having fluent coding skills is not necessary for a designer to have, but it is <em>absolutely</em>
+        beneficial if a designer either already possesses that knowledge on their belt, is willing to actually invest
+        the time and energy into learning it, or seeks professional development because design is a constant path of
+        learning, improvement, and growth.
+      </p>
+
+      <p>
+        After researching and reading a few articles, here are some conclusions about the benefits and drawbacks of
+        being a designer who codes:
+      </p>
+
+      <br />
+
+      <h5><strong>BENEFITS</strong></h5>
+
+      <h4><strong>UX Research and UI Design Process</strong></h4>
+      <ul class='blogposts__ul--indent'>
+        <li>
+          Understanding the medium with which you create helps in understanding knowing the limitations of the current
+          system, as well as user pain points and possible solutions for those problems.
+        </li>
+
+        <li>
+          Completely avoids the risk of blurring the lines between art and design. Design serves a very specific
+          purpose and solves problems, whereas art is intended to be consumed and make you question, contemplate, and
+          feel.
+        </li>
+
+        <h4><strong>Now you’re speaking the same language. Literally.</strong></h4>
+        <ul class='blogposts__ul--indent'>
+          <li>
+            Fosters a stronger community, creates a deeper understanding between designers and developers, and offers a
+            more effective way of pairing.
+          </li>
+
+          <li>
+            Developers&#8217; understanding of the language and its limitations can greatly influence design decisions.
+          </li>
+
+          <li>
+            Newfound knowledge can help you discover fresh approaches to common problems, develop new ways of thinking,
+            and learn to consider your work more objectively.
+          </li>
+
+          <h4><strong>Stay fresh, stay current</strong></h4>
+          <ul class='blogposts__ul--indent'>
+            <li>
+              Although is it not absolutely necessary that a designer learn to code, it is necessary for a designer to
+              fully understand technologies and how they work.
+            </li>
+
+            <li>
+              Having a knowledge of code will lead to increased empathy for your teammates&#8217; respective
+              challenges.
+            </li>
+
+            <li>
+              Learning and mastering new skills promotes innovation and creativity in itself.
+            </li>
+
+            <li>
+              Possessing fluent coding skills secures a stronger position in the job market.
+            </li>
+          </ul>
+
+          <br />
+
+          <h5><strong>DRAWBACKS</strong></h5>
+          <h4><strong>Time is of the essence</strong></h4>
+          <ul class='blogposts__ul--indent'>
+            <li>Learning is a commitment that takes time and energy, which not many have.</li>
+            <li>
+              Redistributing time towards development could also mean taking away progress in another area of the project (i.e. In terms of a designer, this could be user testing, designing features, fixing usability issues, and other problems that may arise in the development of a new product).
+            </li>
+          </ul>
+
+          <h4><strong>Wearing another hat</h4></strong>
+          <ul class='blogposts__ul--indent'>
+            <li>
+              Naturally, the more skills you attain and develop, the more versatile you can be. Although designers with fluent coding skills are a valuable asset to any team, this can quickly become draining to learn while working full-time and not the most cost effective while you earn the   accomplish a job that takes multiple.
+            </li>
+
+            <li>
+              Designers who can code, usually design only according to how much knowledge in coding they have accrued.
+            </li>
+
+            <li>
+            The more knowledge in development you gain can also limit your creativity and audacity to explore new designs.
+            </li>
+          </ul>
+
+          <h4><strong>Empathy vs. Expectations</h4></strong>
+          <ul class='blogposts__ul--indent'>
+            <li>It’s either developers expecting designers to be more empathetic and vice versa.</li>
+            <li>There are professionals who are able to direct others and accomplish business goals without ever having
+              actually performed that task themselves.</li>
+            <li>Task performance does not equate to understanding or knowing how it will affect others in business,
+              such as the team, client project, or the company overall.</li>
+          </ul>
+
+          <br /><br />
+
+          <h5><strong>SOME SOURCES</strong></h5>
+          <h6>
+            <ul class='blogposts__ul--indent'>
+              <li>
+                <a href="https://blog.prototypr.io/css-the-rise-of-the-technical-designer-6474366b3c28">CSS & The Rise
+                  of the Technical Designer – Prototypr</a>
+              </li>
+
+              <li>
+                <a href="https://medium.com/@MrAlanCooper/should-designers-code-cde3ef9d6621"> Should Designers
+                  Code???? – Alan Cooper – Medium</a>
+              </li>
+
+              <li>
+                <a href="https://uxdesign.cc/should-designers-be-developers-too-a12e3b86fde9"> Should designers be
+                  developers too</a>
+              </li>
+
+              <li>
+                <a hef="https://careerfoundry.com/en/blog/ux-design/why-should-designers-learn-to-code/">Why Should
+                  Designers Learn to Code? | CareerFoundry</a>
+              </li>
+
+              <li>
+                <a href="https://thenextweb.com/contributors/2017/09/23/designers-code-no-seriously-though)">Why
+                  designers should learn to code — or at least consider it</a>
+              </li>
+
+              <li>
+                <a href="https://medium.com/@MrAlanCooper/should-designers-code-f7b745b8cd03">Should designers code
+                </a>
+              </li>
+            </ul>
+          </h6>
+    </section>
+  </main>
   <footer>
-      &#169; 2018 Gina Valdez, 8th Light
+    &#169; 2018 Gina Valdez, 8th Light
   </footer>
 </body>
+
 </html>
