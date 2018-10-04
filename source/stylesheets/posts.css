@@ -21,6 +21,7 @@ body {
     text-align: left;
 }
 
+/* LINKS */
 
 a {
     color: #b8860b;
@@ -42,6 +43,10 @@ a:focus {
     font-weight: 700;
 }
 
+/* END OF LINKS */
+
+
+/* NAVIGATION */
 
 nav {
     background: #f9bf8f;
@@ -69,6 +74,8 @@ nav {
     top: 5%;
 }
 
+/* END OF NAVIGATION */
+
 header {
     background: #f9bf8f;
     clear: both;
@@ -81,6 +88,7 @@ header {
 
 header>h2 {
     padding-bottom: 4%;
+    text-align: center;
 }
 
 time {
@@ -129,6 +137,8 @@ time:after {
     z-index: 1000;
 }
 
+
+/* CONTENT & CONTAINERS */
 
 .blogposts__container {
     align-content: center;
@@ -225,6 +235,8 @@ code {
     color: #b8860b;
 }
 
+/* END OF CONTENT & CONTAINERS */
+
 
 /*TYPOGRAPHY*/
 
@@ -240,7 +252,7 @@ h1 {
 h2 {
     font-family: 'Suez One', serif;
     font-size: 1.875em;
-    text-align: center;
+    text-align: left;
 
     @media (min-width: 300px) {
         font-size: 1.15em;
