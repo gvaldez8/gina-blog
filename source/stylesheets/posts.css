@@ -21,20 +21,27 @@ body {
     text-align: left;
 }
 
-a {
-  color: rgba(#000, 0.7);
-  text-decoration: none;
 
-  :focus,
-  :hover {
+a {
+    color: #b8860b;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #b8860b;
+    opacity: 50%;
+}
+
+a:hover {
     color: black;
     font-weight: 700;
-  }
-
-  :visited {
-    opacity: 50%;
-  }
 }
+
+a:focus {
+    color: black;
+    font-weight: 700;
+}
+
 
 nav {
     background: #f9bf8f;
@@ -42,29 +49,25 @@ nav {
     padding-top: 20px;
     position: fixed, 40%;
     width: 100%;
-  }
-  
+}
+
 .nav__ul {
     line-height: 1.8;
     list-style-type: none;
     padding-left: 5%;
     padding-top: 20px;
     text-align: left;
-  
+
     li {
-      list-style: none;
+        list-style: none;
     }
-  
-    a {
-      text-decoration: underline;
-    }
-  }
-  
+}
+
 .svg {
     position: fixed;
     right: 2%;
     top: 5%;
-  }
+}
 
 header {
     background: #f9bf8f;
@@ -74,11 +77,39 @@ header {
     padding-right: 5%;
     text-align: center;
     width: 100%;
-    
-    time {
-        padding-bottom: 10px;
-    }
 }
+
+header>h2 {
+    padding-bottom: 4%;
+}
+
+time {
+    font-size: .75em;
+    padding-top: 15px;
+}
+
+time:before,
+time:after {
+    background-color: #333;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+time:before {
+    right: 1em;
+    margin-left: -50%;
+}
+
+time:after {
+    left: 1em;
+    margin-right: -50%;
+}
+
+
 
 .copyright {
     bottom: 30%;
@@ -120,6 +151,14 @@ header {
         li {
             padding-top: 15px;
         }
+    }
+
+    .img {
+        display: block;
+        padding-left: 20%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
     }
 }
 
@@ -177,45 +216,57 @@ header {
     }
 }
 
+.img {
+    height: 100px;
+    width: 100px;
+}
+
 code {
     color: #b8860b;
 }
+
 
 /*TYPOGRAPHY*/
 
 h1,
 h2 {
-  font-family: 'Suez One', serif;
+    font-family: 'Suez One', serif;
 }
 
 h1 {
-  font-size: 2.5em;
+    font-size: 2.5em;
 }
 
 h2 {
-  font-family: 'Suez One', serif;
-  font-size: 1.875em;
-  text-align: center;
+    font-family: 'Suez One', serif;
+    font-size: 1.875em;
+    text-align: center;
+
+    @media (min-width: 300px) {
+        font-size: 1.15em;
+    }
 }
 
 h4 {
-  font-weight: 200;
-  line-height: 1.8;
-  padding-top: 14px;
+    font-weight: 200;
+    line-height: 1.8;
+    padding-top: 14px;
 }
 
 h6 {
-  font-weight: 400;
-  padding-top: 10px;
+    font-weight: 400;
+    padding-top: 10px;
 }
 
 p {
-  font-weight: 400;
-  line-height: 1.8;
-  padding: 10px;
-  padding-left: 0;
+    font-weight: 400;
+    line-height: 1.8;
+    padding: 10px;
+    padding-left: 0;
 }
+
 /*END OF TYPOGRAPHY*/
+
 
 footer {
     background-color: #222831;
