@@ -31,10 +31,13 @@ a {
     font-weight: 700;
   }
 
-  :visited {
+  &:visited {
     opacity: 50%
   }
 }
+
+
+/* NAVIGATION */
 
 nav {
   background: tomato;
@@ -62,6 +65,10 @@ nav {
   top: 5%;
 }
 
+/* END OF NAVIGATION */
+
+
+
 header {
   background: tomato;
   clear: both;
@@ -80,9 +87,6 @@ header {
 
     @media (min-width: 300px) {
       font-size: .85em;
-      padding-left: 5%;
-      padding-right: 5%;
-      padding-top: 20px;
       text-align: left;
     }
 
@@ -101,6 +105,7 @@ header {
     }
   }
 }
+
 
 .copyright {
   bottom: 30%;
@@ -123,7 +128,9 @@ header {
 }
 
 
-.blogposts__container {
+/* CONTENT & CONTAINERS */
+
+.updates__container {
   align-content: center;
   background: #d2e1c8;
   padding-bottom: 20%;
@@ -151,10 +158,12 @@ header {
     text-align: center;
 
     @media (min-width: 300px) {
-      column-count: 0;
-      font-size: 1.875em;
-      padding-left: 5%;
-      padding-right: 5%;
+      font-size: 1.25em;
+      padding-top: 10%;
+    }
+
+    @media (min-width: 986px) {
+      font-size: 2em;
       padding-top: 10%;
     }
   }
@@ -164,6 +173,12 @@ header {
     padding-top: 60px;
 
     @media (min-width: 300px) {
+      font-size: .85em;
+      padding-top: 10%;
+    }
+
+    @media (min-width: 600px) {
+      font-size: 1em;
       padding-top: 10%;
     }
 
@@ -218,6 +233,12 @@ header {
     padding-top: 60px;
 
     @media (min-width: 300px) {
+      font-size: .85em;
+      padding-top: 10%;
+    }
+
+    @media (min-width: 600px) {
+      font-size: 1em;
       padding-top: 10%;
     }
 
@@ -273,6 +294,12 @@ header {
     padding-top: 60px;
 
     @media (min-width: 300px) {
+      font-size: .85em;
+      padding-top: 10%;
+    }
+
+    @media (min-width: 600px) {
+      font-size: 1em;
       padding-top: 10%;
     }
 
@@ -286,7 +313,10 @@ header {
   }
 }
 
-/*TYPOGRAPHY*/
+/* END OF CONTENT & CONTAINERS */
+
+
+/* TYPOGRAPHY */
 
 h1,
 h2 {
@@ -351,9 +381,17 @@ p {
   line-height: 1.8;
   padding: 10px;
   padding-left: 0;
+
+  @media (min-width: 300px) {
+    font-size: .85em;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20px;
+    text-align: left;
+  }
 }
 
-/*END OF TYPOGRAPHY*/
+/* END OF TYPOGRAPHY */
 
 
 
