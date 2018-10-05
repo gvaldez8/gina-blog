@@ -26,20 +26,20 @@ body {
 a {
     color: #b8860b;
     text-decoration: none;
-    
+
     &:visited {
-    color: #b8860b;
-    opacity: 50%;
+        color: #b8860b;
+        opacity: 50%;
     }
 
     &:hover {
-    color: black;
-    font-weight: 700;
+        color: black;
+        font-weight: 700;
     }
 
     &:focus {
-    color: black;
-    font-weight: 700;
+        color: black;
+        font-weight: 700;
     }
 }
 
@@ -91,32 +91,32 @@ header {
     }
 }
 
+
 time {
-        font-size: .75em;
-        padding-top: 15px;
-
-    &:before,
-    &:after {
-        background-color: #333;
-        content: "";
-        display: inline-block;
-        height: 1px;
-        position: relative;
-        vertical-align: middle;
-        width: 50%;
-    }
-
-    &:before {
-        right: 1em;
-        margin-left: -50%;
-    }
-
-    &:after {
-        left: 1em;
-        margin-right: -50%;
-    }
+    font-size: .75em;
+    padding-top: 15px;
 }
 
+time:before,
+time:after {
+    background-color: #333;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+time:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+time:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
 
 
 .copyright {
@@ -154,12 +154,6 @@ time {
         text-align: center;
     }
 
-    .typography {
-        column-span: all;
-        padding-top: 3%;
-        text-align: left;
-    }
-
     ul {
         list-style-type: none;
 
@@ -190,13 +184,30 @@ time {
     column-count: 2;
     column-gap: 4em;
 
-    h3 {
-        padding-top: 5%;
+    .typography {
+        column-span: all;
+        padding-top: 3%;
+        text-align: left;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h4 {
+        padding-top: 0;
+    }
+
+    p {
+        padding-top: 10px;
     }
 
     ul {
-        padding-top: 10px;
         list-style-type: disc;
+
+        li {
+            padding-top: 8px;
+        }
     }
 }
 
@@ -268,14 +279,6 @@ h2 {
     font-family: 'Suez One', serif;
     font-size: 1.875em;
     text-align: left;
-
-    @media (min-width: 300px) {
-        font-size: 1.15em;
-    }
-
-    @media (min-width: 986px) {
-        font-size: 1.875em;
-    }
 }
 
 h4 {
