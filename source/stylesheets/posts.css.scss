@@ -26,21 +26,21 @@ body {
 a {
     color: #b8860b;
     text-decoration: none;
-}
-
-a:visited {
+    
+    &:visited {
     color: #b8860b;
     opacity: 50%;
-}
+    }
 
-a:hover {
+    &:hover {
     color: black;
     font-weight: 700;
-}
+    }
 
-a:focus {
+    &:focus {
     color: black;
     font-weight: 700;
+    }
 }
 
 /* END OF LINKS */
@@ -84,37 +84,37 @@ header {
     padding-right: 5%;
     text-align: center;
     width: 100%;
-}
 
-header>h2 {
-    padding-bottom: 4%;
-    text-align: center;
+    h2 {
+        padding-bottom: 4%;
+        text-align: left;
+    }
 }
 
 time {
-    font-size: .75em;
-    padding-top: 15px;
-}
+        font-size: .75em;
+        padding-top: 15px;
 
-time:before,
-time:after {
-    background-color: #333;
-    content: "";
-    display: inline-block;
-    height: 1px;
-    position: relative;
-    vertical-align: middle;
-    width: 50%;
-}
+    &:before,
+    &:after {
+        background-color: #333;
+        content: "";
+        display: inline-block;
+        height: 1px;
+        position: relative;
+        vertical-align: middle;
+        width: 50%;
+    }
 
-time:before {
-    right: 1em;
-    margin-left: -50%;
-}
+    &:before {
+        right: 1em;
+        margin-left: -50%;
+    }
 
-time:after {
-    left: 1em;
-    margin-right: -50%;
+    &:after {
+        left: 1em;
+        margin-right: -50%;
+    }
 }
 
 
@@ -154,9 +154,14 @@ time:after {
         text-align: center;
     }
 
+    .typography {
+        column-span: all;
+        padding-top: 3%;
+        text-align: left;
+    }
+
     ul {
         list-style-type: none;
-        padding-top: 60px;
 
         li {
             padding-top: 15px;
@@ -178,11 +183,21 @@ time:after {
 }
 
 .blogpost__text--space {
-    padding-top: 3%;
+    padding-top: 5%;
 }
 
-.typography {
-    padding-top: 3%;
+.column {
+    column-count: 2;
+    column-gap: 4em;
+
+    h3 {
+        padding-top: 5%;
+    }
+
+    ul {
+        padding-top: 10px;
+        list-style-type: disc;
+    }
 }
 
 .blogposts__ul {
@@ -257,10 +272,14 @@ h2 {
     @media (min-width: 300px) {
         font-size: 1.15em;
     }
+
+    @media (min-width: 986px) {
+        font-size: 1.875em;
+    }
 }
 
 h4 {
-    font-weight: 200;
+    font-weight: 600;
     line-height: 1.8;
     padding-top: 14px;
 }
@@ -271,6 +290,7 @@ h6 {
 }
 
 p {
+    break-after: column;
     font-weight: 400;
     line-height: 1.8;
     padding: 10px;
