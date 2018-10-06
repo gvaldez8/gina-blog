@@ -88,6 +88,26 @@ header {
     h2 {
         padding-bottom: 4%;
         text-align: left;
+
+        @media (min-width: 300px) {
+            font-size: 1.25em;
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-top: 10%;
+        }
+
+        @media (min-width: 768px) {
+            font-size: 1.5em;
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-top: 10%;
+        }
+
+        @media (min-width: 900px) {
+            font-size: 2em;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
     }
 }
 
@@ -105,7 +125,18 @@ time:after {
     height: 1px;
     position: relative;
     vertical-align: middle;
-    width: 50%;
+
+    @media (min-width: 300px) {
+        width: 30%;
+    }
+
+    @media (min-width: 768px) {
+        width: 40%;
+    }
+
+    @media (min-width: 900px) {
+        width: 50%;
+    }
 }
 
 time:before {
@@ -146,7 +177,6 @@ time:after {
     padding-bottom: 20%;
     padding-left: 15%;
     padding-right: 15%;
-    padding-top: 5%;
     width: 100%;
 
     h2 {
@@ -171,42 +201,87 @@ time:after {
     }
 }
 
-.blogpost__post--column {
-    column-count: 2;
-    column-gap: 6em;
-}
-
 .blogpost__text--space {
     padding-top: 5%;
-}
 
-.column {
-    column-count: 2;
-    column-gap: 4em;
+    .column {
+        @media (min-width: 300px) {
+            column-count: 0;
+        }
 
-    .typography {
-        column-span: all;
-        padding-top: 3%;
-        text-align: left;
-    }
+        @media (min-width: 768px) {
+            column-count: 0;
+        }
 
-    h2 {
-        font-size: 1.5em;
-    }
+        @media (min-width: 900px) {
+            column-count: 2;
+            column-gap: 4em;
+        }
 
-    h4 {
-        padding-top: 0;
-    }
+        .typography {
+            column-span: all;
+            padding-top: 3%;
+            text-align: left;
 
-    p {
-        padding-top: 10px;
-    }
+            @media (min-width: 300px) {
+                font-size: 1.15em;
+                text-align: center;
+            }
 
-    ul {
-        list-style-type: disc;
+            @media (min-width: 768px) {
+                font-size: 1.5em;
+                text-align: left;
+            }
 
-        li {
-            padding-top: 8px;
+            @media (min-width: 900px) {
+                font-size: 1.75em;
+                text-align: left;
+            }
+        }
+
+        h2 {
+            font-size: 1.5em;
+        }
+
+        h3 {
+            @media (min-width: 300px) {
+                font-size: 1em;
+                padding-left: 5%;
+                text-align: left;
+            }
+
+            @media (min-width: 768px) {
+                font-size: 1.25em;
+                padding-left: 0;
+                text-align: left;
+            }
+
+            @media (min-width: 900px) {
+                font-size: 1.25em;
+                text-align: left;
+            }
+        }
+
+
+        h4 {
+            padding-top: 0;
+        }
+
+        p {
+            padding-top: 10px;
+
+            @media (min-width: 768px) {
+                font-size: 1em;
+                text-align: left;
+            }
+        }
+
+        ul {
+            list-style-type: disc;
+
+            li {
+                padding-top: 8px;
+            }
         }
     }
 }
@@ -234,11 +309,37 @@ time:after {
 .blogposts__ul--indent {
     padding-left: 1.25em;
 
+    @media (min-width: 300px) {
+        font-size: .85em;
+        padding-left: 5%;
+        padding-top: 20px;
+        text-align: left;
+    }
+
+    @media (min-width: 768px) {
+        font-size: 1em;
+        padding-left: 0;
+        padding-top: 20px;
+        text-align: left;
+    }
+
+    @media (min-width: 900px) {
+        font-size: 1em;
+        padding-left: 0;
+        padding-top: 0;
+        text-align: left;
+    }
+
     li {
         list-style: disc;
         font-size: 14px;
         line-height: 200%;
         margin-left: 1.5em;
+
+        @media (min-width: 300px) {
+            font-size: 1em;
+            line-height: 150%;
+        }
     }
 }
 
@@ -273,6 +374,10 @@ h2 {
 
 h1 {
     font-size: 2.5em;
+
+    @media (min-width: 300px) {
+        font-size: 1.5em;
+    }
 }
 
 h2 {
@@ -298,6 +403,20 @@ p {
     line-height: 1.8;
     padding: 10px;
     padding-left: 0;
+
+    @media (min-width: 300px) {
+        font-size: .85em;
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: left;
+    }
+
+    @media (min-width: 768px) {
+        font-size: 1em;
+        padding-left: 0%;
+        padding-right: 0%;
+        text-align: center;
+    }
 }
 
 /*END OF TYPOGRAPHY*/
