@@ -27,14 +27,17 @@ a {
 
   &:focus,
   &:hover {
-    font-weight: 700;
     color: black;
+    font-weight: 700;
   }
 
-  :visited {
-    opacity: 50%;
+  &:visited {
+    opacity: 50%
   }
 }
+
+
+/* NAVIGATION */
 
 nav {
   background: tomato;
@@ -54,10 +57,6 @@ nav {
   li {
     list-style: none;
   }
-
-  a {
-    text-decoration: underline;
-  }
 }
 
 .svg {
@@ -66,13 +65,17 @@ nav {
   top: 5%;
 }
 
+/* END OF NAVIGATION */
+
+
+
 header {
   background: tomato;
   clear: both;
   padding-bottom: 15%;
   padding-left: 15%;
   padding-right: 15%;
-  padding-top: 8%;
+  padding-top: 4%;
   width: 100%;
 
   h2 {
@@ -80,14 +83,33 @@ header {
   }
 
   p {
-    font-size: 1.25em;
-    padding-top: 40px;
     text-align: center;
+
+    @media (min-width: 300px) {
+      font-size: .85em;
+      text-align: left;
+    }
+
+    @media (min-width: 500px) {
+      font-size: 1em;
+      line-height: 2;
+      text-align: center;
+    }
+
+    @media (min-width: 800px) {
+      font-size: 1.15em;
+      line-height: 2.5;
+      padding-left: 2%;
+      padding-right: 2%;
+      text-align: center;
+    }
   }
 }
 
+
 .copyright {
   bottom: 30%;
+  font-size: .75em;
   position: fixed;
   right: 1%;
   top: 50%;
@@ -97,6 +119,7 @@ header {
 
 .trademark {
   bottom: 30%;
+  font-size: .75em;
   left: 1%;
   position: fixed;
   top: 50%;
@@ -105,25 +128,59 @@ header {
 }
 
 
-.blogposts__container {
+/* CONTENT & CONTAINERS */
+
+.updates__container {
   align-content: center;
   background: #d2e1c8;
-  column-count: 2;
-  column-gap: 3em;
   padding-bottom: 20%;
   padding-left: 15%;
   padding-right: 15%;
   padding-top: 10%;
   width: 100%;
 
+  @media (min-width: 300px) {
+    column-count: 0;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 5%;
+  }
+
+  @media (min-width: 986px) {
+    column-count: 2;
+    column-gap: 4em;
+    padding-bottom: 15%;
+    padding-top: 2%;
+  }
+
   h2 {
     column-span: all;
     text-align: center;
+
+    @media (min-width: 300px) {
+      font-size: 1.25em;
+      padding-top: 10%;
+    }
+
+    @media (min-width: 986px) {
+      font-size: 2em;
+      padding-top: 10%;
+    }
   }
 
   ul {
     list-style-type: none;
     padding-top: 60px;
+
+    @media (min-width: 300px) {
+      font-size: .85em;
+      padding-top: 10%;
+    }
+
+    @media (min-width: 600px) {
+      font-size: 1em;
+      padding-top: 10%;
+    }
 
     li {
       padding-top: 15px;
@@ -138,22 +195,52 @@ header {
 .books__container {
   align-content: center;
   background: lightsalmon;
-  column-count: 2;
-  column-gap: 3em;
   padding-bottom: 20%;
   padding-left: 15%;
   padding-right: 15%;
   padding-top: 10%;
   width: 100%;
 
+  @media (min-width: 300px) {
+    column-count: 0;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 5%;
+  }
+
+  @media (min-width: 986px) {
+    column-count: 2;
+    column-gap: 4em;
+    padding-bottom: 15%;
+    padding-top: 2%;
+  }
+
+
   h2 {
     column-span: all;
     text-align: center;
+
+    @media (min-width: 300px) {
+      column-count: 0;
+      padding-left: 5%;
+      padding-right: 5%;
+      padding-top: 10%;
+    }
   }
 
   ul {
     list-style-type: none;
     padding-top: 60px;
+
+    @media (min-width: 300px) {
+      font-size: .85em;
+      padding-top: 10%;
+    }
+
+    @media (min-width: 600px) {
+      font-size: 1em;
+      padding-top: 10%;
+    }
 
     li {
       padding-top: 15px;
@@ -169,87 +256,67 @@ header {
 .resources__container {
   align-content: center;
   background: #c3f1ff;
-  column-count: 2;
-  column-gap: 3em;
   padding-bottom: 20%;
   padding-left: 15%;
   padding-right: 15%;
   padding-top: 10%;
   width: 100%;
 
+  @media (min-width: 300px) {
+    column-count: 0;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 10%;
+  }
+
+  @media (min-width: 986px) {
+    column-count: 2;
+    column-gap: 4em;
+    padding-bottom: 15%;
+    padding-top: 2%;
+  }
+
+
   h2 {
     column-span: all;
     text-align: center;
+
+    @media (min-width: 300px) {
+      column-count: 0;
+      padding-left: 5%;
+      padding-right: 5%;
+      padding-top: 10%;
+    }
   }
 
   ul {
     list-style-type: none;
     padding-top: 60px;
 
+    @media (min-width: 300px) {
+      font-size: .85em;
+      padding-top: 10%;
+    }
+
+    @media (min-width: 600px) {
+      font-size: 1em;
+      padding-top: 10%;
+    }
+
     li {
       padding-top: 15px;
+    }
 
-      li:last-child {
-        break-after: column;
-      }
+    li:last-child {
+      break-after: column;
     }
   }
 }
 
-.blogposts__post {
-  padding-bottom: 40px;
-  padding-left: 20%;
-  padding-right: 20%;
-  padding-top: 40px;
-
-  time {
-    font-size: 12px;
-  }
-}
-
-.blogposts__ul {
-  padding-left: 0;
-
-  li {
-    list-style: disc;
-    font-size: 14px;
-    line-height: 200%;
-    padding-left: 1em;
-  }
-}
-
-.blogposts__ul--none {
-  list-style: none;
-
-  li {
-    list-style: none;
-    padding-left: 1em;
-  }
-}
-
-.blogposts__ul--indent {
-  padding-left: 0;
-
-  li {
-    list-style: disc;
-    font-size: 14px;
-    line-height: 200%;
-    margin-left: 1.5em;
-  }
-}
-
-.blogposts__ol {
-  padding-left: 1em;
-
-  li {
-    font-size: 14px;
-    line-height: 200%;
-    padding-left: 1.5%;
-  }
-}
+/* END OF CONTENT & CONTAINERS */
 
 
-/*TYPOGRAPHY*/
+/* TYPOGRAPHY */
 
 h1,
 h2 {
@@ -264,6 +331,38 @@ h2 {
   font-family: 'Suez One', serif;
   font-size: 1.875em;
   text-align: center;
+
+  @media (min-width: 300px) {
+    font-size: 1.25em;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10%;
+  }
+
+  @media (min-width: 500px) {
+    font-size: 1.5em;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+  }
+
+  @media (min-width: 650px) {
+    font-size: 1.75em;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+  }
+
+  @media (min-width: 800px) {
+    font-size: 2em;
+    padding-top: 2%;
+  }
+
+  @media (min-width: 975px) {
+    font-size: 2em;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
 }
 
 h4 {
@@ -282,8 +381,17 @@ p {
   line-height: 1.8;
   padding: 10px;
   padding-left: 0;
+
+  @media (min-width: 300px) {
+    font-size: .85em;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20px;
+    text-align: left;
+  }
 }
-/*END OF TYPOGRAPHY*/
+
+/* END OF TYPOGRAPHY */
 
 
 

@@ -21,13 +21,13 @@
       <img class='svg' src='../images/ginalogo-gold2.svg' height='40px' width='40px' alt="Gina's logo" />
   </nav>
 
-    <h5 class='copyright'>&#169; 2018, 8TH LIGHT, GINA VALDEZ</h5>
+    <h5 class='copyright'>&#169; 2018 8TH LIGHT, GINA VALDEZ</h5>
     <h5 class='trademark'>GINA DESIGN APPRENTICE 2018</h5>
 
   <main class='blogposts__container'>
       <header>
-      <time datetime="2018-10-3">OCTOBER 3, 2018</time>
       <h2>An Explanation of<br> CSS Media Queries and How to Use Them</h2>
+      <time datetime="2018-10-3">OCTOBER 3, 2018</time>
     </header>
     <p>To incorporate media queries into your webpage, you first need to insert a self-closing <code>&#60;meta&#62;</code> within the <code>&#60;head&#62;</code> of your HTML file, like in the example below:</p>
     
@@ -35,15 +35,17 @@
     <code>&#60;html lang='en'&#62;</code><br>
     <code>&#60;meta charset='UTF-8'&#62;</code><br>
       <code>&#60;head&#62;</code><br>
-      <code>&#60;tite&#62;</code>...<code>&#60;title&#62;</code><br>
+      <code>&#60;tite&#62;</code>...<code>&#60;/title&#62;</code><br>
       <code>&#60;meta name="viewport" content="initial-scale:1.0" width="device-width"/&#62;</code><br>
       <code>&#60;/head&#62;</code>
 
     <p>Once you have completed inserting that into your <code>&#60;head&#62;</code>, you need to open up your CSS Stylesheet. The important thing at this point is to understand the difference between <code>@media (min-width: )</code> and  <code>@media (max-width: )</code> in relation to varying screen sizes between mobile, tablet, and desktop.</p>
 
-    <p>It should be noted that when using <code>@media (min-width: )</code>, you are referring to any pixel size <em>above</em> that threshold set in pixels, where as <code>@media (max-width: )</code> refers to anything <em>below</em> that threshold set in pixels. It is also recommended that you insert your media queries into your CSS sheet as opposed to doing it in your HTML, as this leads to cleaner, more readable code that it easy to understand.</p>
+    <p>It should be noted that when using <code>@media (min-width: )</code>, you are referring to any pixel size <em>above</em> that threshold set in pixels, where as <code>@media (max-width: )</code> refers to anything <em>below</em> that threshold. It is also recommended that you insert your media queries into your CSS sheet as opposed to doing it in your HTML, as this leads to cleaner, more readable code that it easy to understand.</p>
 
-    <p>To determine the threshold, a good place to start might be referencing some common device screen sizes, such as 1200px (desktop), 768 px (tablet), and 360 px (mobile). However, it’s always best to resize your browser to see what happens because the rearrangement of any type of content on the page (i.e. images, text, colors, boxes) between those sizes can potentially look incorrect or rearrange themselves in an unexpected manner that you didn’t intend upon. It should also be noted that <code>em/rem</code> is usually reserved for typography sizes, whereas percentages are best applied when thinking in terms of resizing your website’s grid and layout.</p>
+    <p>To determine what your threshold should be, a good place to start might be referencing some common device screen sizes, such as 360 px (mobile), 768 px (tablet), and 1200px (desktop). However, it’s always best to resize your browser to see what happens because the rearrangement of any type of content on the page (i.e. images, text, colors, boxes) between those sizes can potentially look incorrect or rearrange themselves in an unexpected manner that you didn’t intend upon. It should also be noted that <code>em/rem</code> is usually reserved for typography sizes, whereas percentages are best applied to your website’s grid and layout.</p>
+
+    <img src="../images/rwd.png" class='image'></img>
   </main>
 
   <footer>
