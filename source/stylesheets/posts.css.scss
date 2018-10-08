@@ -353,6 +353,10 @@ time:after {
     }
 }
 
+.blogposts__ol--indent {
+    padding-left: 1em;
+}
+
 .img {
     height: 100px;
     width: 100px;
@@ -415,7 +419,7 @@ p {
         font-size: 1em;
         padding-left: 0%;
         padding-right: 0%;
-        text-align: center;
+        text-align: left;
     }
 }
 
