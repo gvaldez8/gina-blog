@@ -286,6 +286,10 @@ time:after {
     }
 }
 
+.blogposts__space--above {
+    padding-top: 5%;
+}
+
 .blogposts__ul {
     padding-left: 0;
 
@@ -351,6 +355,10 @@ time:after {
         line-height: 200%;
         padding-left: 1.5%;
     }
+}
+
+.blogposts__ol--indent {
+    padding-left: 0.5em;
 }
 
 .img {
