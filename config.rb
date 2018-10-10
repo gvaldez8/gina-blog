@@ -13,6 +13,14 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
+# config[:partials_dir] = './source/partials'
+set :partials_dir, './source/partials'
+# helpers do
+#   def render_partial( partial_name )
+#     partial "./source/partials/#{partial_name}"
+#   end
+# end
+
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
 
@@ -44,3 +52,6 @@ page '/*.txt', layout: false
 #   activate :minify_css
 #   activate :minify_javascript
 # end
+configure :build do
+  set :build_dir, 'docs'
+end

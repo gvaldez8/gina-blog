@@ -223,6 +223,9 @@ time:after {
     .blogpost__text--space .column ul li {
       padding-top: 8px; }
 
+.blogposts__space--above {
+  padding-top: 5%; }
+
 .blogposts__ul {
   padding-left: 0; }
   .blogposts__ul li {
@@ -273,6 +276,9 @@ time:after {
     font-size: 14px;
     line-height: 200%;
     padding-left: 1.5%; }
+
+.blogposts__ol--indent {
+  padding-left: 0.5em; }
 
 .img {
   height: 100px;
@@ -325,7 +331,7 @@ p {
       font-size: 1em;
       padding-left: 0%;
       padding-right: 0%;
-      text-align: center; } }
+      text-align: left; } }
 
 /*END OF TYPOGRAPHY*/
 footer {
