@@ -430,6 +430,108 @@ p {
 /*END OF TYPOGRAPHY*/
 
 
+/*FORMS AND INPUTS*/
+
+.personal-information {
+    letter-spacing: 0.25px;
+    padding-top: 20px;
+    text-align: left;
+
+    hr {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    #name,
+    #address,
+    #time-select,
+    #phone-number {
+      -webkit-appearance: none;
+      appearance: none;
+      background: none;
+      border: none;
+      border-bottom: dashed 1.5px #0881a3;
+      border-radius: none;
+      font-family: 'Niramit', sans-serif;
+      font-size: 1em;
+      font-weight: 700;
+      height: 50px;
+      margin: 0;
+      padding-left: 10px;
+      padding-right: 10px;
+      text-align: left;
+      width: 250px;
+
+      option {
+        font-weight: 300;
+      }
+    }
+
+
+  #time-select {
+      padding-left: 15px;
+      padding-right: 15px;
+      width: 120px;
+  }
+
+    h3 {
+      color: #255965;
+      font-family: 'Niramit', sans-serif;
+      font-weight: 700;
+      text-align: left;
+
+      @media (min-width: 768px) {
+        font-size: 1.25em;
+        line-height: 4;
+        padding-left: 0%;
+        padding-right: 0%;
+        text-align: left;
+      }
+    }
+  }
+
+  .form__container {
+    border: none;
+    font-family: 'Niramit', sans-serif;
+    font-weight: 500;
+    text-align: left;
+
+
+    fieldset {
+      border: none;
+
+      legend {
+        padding-top: 50px;
+      }
+
+      h3 {
+        color: #255965;
+        font-family: 'Niramit', sans-serif;
+        font-size: 1.25em;
+        font-weight: 700;
+        text-align: left;
+
+      }
+
+      hr {
+        padding-top: 5px;
+      }
+
+      p {
+          text-align: left;
+        }
+    }
+  }
+
+  input[type='checkbox'] {
+    border: solid 2px;
+    margin-left: 20px;
+  }
+
+
+  /*END OF FORMS AND INPUTS*/
+
+
 footer {
     background-color: #222831;
     color: white;
