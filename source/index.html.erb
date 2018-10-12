@@ -1,26 +1,9 @@
-<!DOCTYPE html>
-<html lang='en'>
-<meta charset='UTF-8' />
+---
+pageable: true
+per_page: 10
+---
 
-<head>
-  <title>Gina's Apprenticeship Blog</title>
-  <link rel="stylesheet" href="./stylesheets/site.css" />
-  <link href="https://fonts.googleapis.com/css?family=Suez+One" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700" rel="stylesheet">
-  <meta name="viewport" content="initial-scale: 1.0" width="device-width" />
-</head>
-
-<body>
-
-  <%= partial "partials/nav" %>
-
-    <img class='svg' src='gina-blog/source/images/ginalogo-gold2.svg' height='40px' width='40px' alt="Gina's logo" />
-  </nav>
-
-  <h5 class='copyright'>&#169; 2018 GINA VALDEZ, 8TH LIGHT</h5>
-  <h5 class='trademark'>GINA DESIGN APPRENTICE 2018</h5>
-
-  <header>
+<header>
     <h2>Greetings, friends and fellow design nomads!</h2>
     <p>Thank you so much for visiting my blog and joining me on my newfound design journey at 8th Light. My name is
       Gina, I'm an east coast raised Filipina American and a midwest livin' designer with a passion for creative
@@ -31,20 +14,14 @@
   </header>
 
   <main>
-    <section class='updates__container'>
+    <section class='updates__container' id="blog-posts">
       <h2>Stay Updated</h2>
       <ul>
         <h3>Recent Posts</h3>
         <hr />
-        <li><a href='./blogposts/post9.html'>An Introduction to Form Design</a></li>
-        <li><a href='./blogposts/post8.html'>Explain CSS Architecture/Naming Conventions (BEM, OOCSS, SMACSS)</a></li>
-        <li><a href='./blogposts/post7.html'>An Explanation of CSS Media Queries and How to Use Them</a></li>
-        <li><a href='./blogposts/post6.html'>Mobile First Design vs. Mobile First Development</a></li>
-        <li><a href='./blogposts/post5.html'>An Overview of Typographic History, Classifications, and Characteristics</a></li>
-        <li><a href='./blogposts/post4.html'>The User Experience Team of One by Leah Buley</a></li>
-        <li><a href='./blogposts/post3.html'>Explain CSS Positioning with Examples</a></li>
-        <li><a href='./blogposts/post2.html'>Explanations and examples of Every HTML Element</a></li>
-        <li><a href='./blogposts/post1.html'>How Technical Should Designers Be?</a></li>
+        <% page_articles.each_with_index do |article, i| %>
+          <li><%= link_to article.title, article %></li>
+        <% end %>
       </ul>
 
       <ul>
@@ -113,10 +90,3 @@
     </section>
   </main>
 
-  <!--GINA, remember to change this footer. Possible suggestions might be secondary navigation, social links with icons, or even adding a contact form (even if it doesn't lead to anywhere)-->
-  <footer>
-    &#169; 2018 Gina Valdez, 8th Light
-  </footer>
-</body>
-
-</html>
