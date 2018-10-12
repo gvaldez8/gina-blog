@@ -14,71 +14,145 @@
     <link rel="alternate" href="http://blog.url.com/2018/10/09/post9.html"/>
     <id>http://blog.url.com/2018/10/09/post9.html</id>
     <published>2018-10-08T19:00:00-05:00</published>
-    <updated>2018-10-12T15:01:14-05:00</updated>
+    <updated>2018-10-12T15:10:52-05:00</updated>
     <author>
       <name>Article Author</name>
     </author>
     <content type="html">&lt;main class="blogposts__container"&gt;
-        &lt;header&gt;
-            &lt;h2&gt;An Introduction to Form Design&lt;/h2&gt;
-            &lt;time datetime="2018-10-09"&gt;OCTOBER 9, 2018&lt;/time&gt;
-        &lt;/header&gt;
+	&lt;header&gt;
+		&lt;h2&gt;An Introduction to Form Design&lt;/h2&gt;
+		&lt;time datetime="2018-10-09"&gt;OCTOBER 9, 2018&lt;/time&gt;
+	&lt;/header&gt;
 
-&lt;p&gt;The user is planning a month long trip to explore three different states or countries. He or she has the option of traveling alone or within a group of people.&lt;/p&gt;
+		&lt;p&gt;The user is planning to order a pizza for delivery.&lt;/p&gt;
 
-&lt;p&gt;I am traveling
-&lt;input type="checkbox" name="alone" value="one" unchecked="" /&gt; alone &amp;lt;/input&amp;gt;
+&lt;form class="personal-information"&gt;
+	&lt;h3&gt;Hi there, I am &lt;input type="text" id="name" name="name" placeholder="name" /&gt;.&lt;br /&gt;
 
-&lt;input type="checkbox" name="family" value="one" unchecked="" /&gt; with family &amp;lt;/input&amp;gt;
+		I would like to order a pizza for delivery at &lt;br /&gt;&lt;input type="text" id="address" name="address" placeholder="address" /&gt;by
 
-&lt;input type="checkbox" name="friends" value="one" unchecked="" /&gt; with friends&amp;lt;/input&amp;gt;
+		&lt;select id="time-select"&gt;
+			&lt;option value=""&gt;7:00pm&lt;/option&gt;
+				&lt;option value="500"&gt;5:00pm&lt;/option&gt;
+				&lt;option value="530"&gt;5:30pm&lt;/option&gt;
+				&lt;option value="600"&gt;6:00pm&lt;/option&gt;
+				&lt;option value="630"&gt;6:30pm&lt;/option&gt;
+				&lt;option value="700"&gt;7:00pm&lt;/option&gt;
+				&lt;option value="730"&gt;7:30pm&lt;/option&gt;
+				&lt;option value="800"&gt;8:00pm&lt;/option&gt;
+				&lt;option value="830"&gt;8:30pm&lt;/option&gt;
+		&lt;/select&gt;.
 
-&lt;input type="checkbox" name="signifcant other" value="one" unchecked="" /&gt; with a significant other&amp;lt;/input&amp;gt;&lt;/p&gt;
-
-
-&lt;p&gt;I prefer to travel
-&lt;input type="radio" name="within the states" value="one" checked="" /&gt;abroad&amp;lt;/input&amp;gt;
-
-&lt;input type="radio" name="within the states" value="one" checked="" /&gt;within the states&amp;lt;/input&amp;gt;&lt;/p&gt;
-
-&lt;form id="nl-form" class="nl-form"&gt;
-Let's go see
-	&lt;select&gt;
-		&lt;option value="1" selected=""&gt;any place&lt;/option&gt;
-		&lt;option value="2"&gt;Indian&lt;/option&gt;
-		&lt;option value="3"&gt;French&lt;/option&gt;
-		&lt;option value="4"&gt;Japanese&lt;/option&gt;
-		&lt;option value="2"&gt;Italian&lt;/option&gt;
-	&lt;/select&gt;
-    , wake up in
-	&lt;select&gt;
-		&lt;option value="1" selected=""&gt;any place&lt;/option&gt;
-		&lt;option value="2"&gt;fancy&lt;/option&gt;
-		&lt;option value="3"&gt;hip&lt;/option&gt;
-		&lt;option value="4"&gt;traditional&lt;/option&gt;
-		&lt;option value="2"&gt;fine&lt;/option&gt;
-	&lt;/select&gt;
-	, have a dream in
-	&lt;select&gt;
-		&lt;option value="1" selected=""&gt;any place&lt;/option&gt;
-	 	&lt;option value="1"&gt;at 7 p.m.&lt;/option&gt;
-	 	&lt;option value="2"&gt;at 8 p.m.&lt;/option&gt;
-	 	&lt;option value="3"&gt;at 9 p.m.&lt;/option&gt;
-	&lt;/select&gt;
-	, fall in love in
-    &lt;select&gt;
-		&lt;option value="1" selected=""&gt;hometown&lt;/option&gt;
-	 	&lt;option value="1"&gt;at 7 p.m.&lt;/option&gt;
-	 	&lt;option value="2"&gt;at 8 p.m.&lt;/option&gt;
-	 	&lt;option value="3"&gt;at 9 p.m.&lt;/option&gt;
-	&lt;/select&gt;
-    at &lt;input type="text" value="" placeholder="8:00pm" /&gt;
-
-		&lt;button type="submit"&gt;Book my trip&lt;/button&gt;
-	&lt;div class="nl-overlay"&gt;&lt;/div&gt;
+	&lt;br /&gt;Feel free to give me a ring or shoot me a text at &lt;br /&gt;&lt;input type="text" id="phone-number" name="address" placeholder="(000) 000 0000" /&gt; when you're here.&amp;lt;/p&amp;gt;
+	&lt;/h3&gt;
 &lt;/form&gt;
 
+&lt;br /&gt;
+
+&lt;form class="form__container"&gt;
+	&lt;fieldset class="form__pizza--size"&gt;
+		&lt;legend&gt;&lt;h3&gt;What size pizza would you like to order?&lt;/h3&gt;&lt;/legend&gt;
+		&lt;hr /&gt;
+			&lt;input type="radio" name="size" id="radio-one" value="small" /&gt;
+			&lt;label for="radio-one"&gt;Small&lt;/label&gt;
+
+			&lt;input type="radio" name="size" id="radio-two" value="medium" /&gt;
+			&lt;label for="radio-two"&gt;Medium&lt;/label&gt;
+
+			&lt;input type="radio" name="size" id="radio-three" value="large" /&gt;
+			&lt;label for="radio-three"&gt;Large&lt;/label&gt;
+
+			&lt;input type="radio" name="size" id="radio-four" value="extra-large" /&gt;
+			&lt;label for="radio-four"&gt;Extra Large&lt;/label&gt;
+
+	&lt;/fieldset&gt;
+
+
+	&lt;fieldset class="form__pizza--diet"&gt;
+		&lt;legend&gt;&lt;h3&gt;Any dietary restrictions?&lt;/h3&gt;&lt;/legend&gt;
+
+		&lt;hr /&gt;
+
+			&lt;input type="checkbox" name="diet" id="check-one" value="vegetarian" /&gt;
+			&lt;label for="check-one"&gt;Vegetarian&lt;/label&gt;
+
+			&lt;input type="checkbox" name="diet" id="check-two" value="gluten-free" /&gt;
+			&lt;label for="check-two"&gt;Gluten Free&lt;/label&gt;
+
+			&lt;input type="checkbox" name="diet" id="check-three" value="vegan" /&gt;
+			&lt;label for="check-three"&gt;Vegan&lt;/label&gt;
+
+			&lt;input type="checkbox" name="diet" id="check-four" value="none" /&gt;
+			&lt;label for="check-four"&gt;None&lt;/label&gt;
+	&lt;/fieldset&gt;
+
+
+	&lt;fieldset class="form__pizza--toppings"&gt;
+		&lt;legend&gt;&lt;h3&gt;Choose your toppings&lt;/h3&gt;&lt;/legend&gt;
+
+		&lt;hr /&gt;
+
+&lt;p&gt;
+			&lt;input type="checkbox" name="toppings" id="check-one" value="extra-cheese" /&gt;
+			&lt;label for="check-one"&gt;Extra Cheese&lt;/label&gt;
+		&lt;/p&gt;
+
+&lt;p&gt;
+			&lt;input type="checkbox" name="toppings" id="check-two" value="black-olives" /&gt;
+			&lt;label for="check-two"&gt;Black Olives&lt;/label&gt;
+		&lt;/p&gt;
+
+&lt;p&gt;
+				&lt;input type="checkbox" name="toppings" id="check-three" value="sausage" /&gt;
+				&lt;label for="check-three"&gt;Sausage&lt;/label&gt;
+			&lt;/p&gt;
+
+&lt;p&gt;
+				&lt;input type="checkbox" name="toppings" id="check-four" value="bacon" /&gt;
+				&lt;label for="check-four"&gt;Bacon&lt;/label&gt;
+			&lt;/p&gt;
+
+&lt;p&gt;
+				&lt;input type="checkbox" name="toppings" id="check-five" value="pepperoni" /&gt;
+				&lt;label for="check-five"&gt;Pepperoni&lt;/label&gt;
+			&lt;/p&gt;
+
+&lt;p&gt;
+				&lt;input type="checkbox" name="toppings" id="check-six" value="tomatoes" /&gt;
+				&lt;label for="check-six"&gt;Tomatoes&lt;/label&gt;
+			&lt;/p&gt;
+
+&lt;p&gt;
+				&lt;input type="checkbox" name="toppings" id="check-seven" value="onions" /&gt;
+				&lt;label for="check-seven"&gt;Onions&lt;/label&gt;
+			&lt;/p&gt;
+
+&lt;p&gt;
+				&lt;input type="checkbox" name="toppings" id="check-eight" value="bell-peppers" /&gt;
+				&lt;label for="check-eight"&gt;Bell Peppers&lt;/label&gt;
+			&lt;/p&gt;
+
+&lt;p&gt;
+				&lt;input type="checkbox" name="toppings" id="check-nine" value="mushrooms" /&gt;
+				&lt;label for="check-nine"&gt;Mushrooms&lt;/label&gt;
+			&lt;/p&gt;
+
+&lt;p&gt;
+				&lt;input type="checkbox" name="toppings" id="check-ten" value="pineapple" /&gt;
+				&lt;label for="check-ten"&gt;Pineapple&lt;/label&gt;
+			&lt;/p&gt;
+
+&lt;p&gt;
+				&lt;input type="checkbox" name="toppings" id="check-eleven" value="spinach" /&gt;
+				&lt;label for="check-eleven"&gt;Spinach&lt;/label&gt;
+			&lt;/p&gt;
+		&lt;/fieldset&gt;
+	&lt;/form&gt;
+
+	&lt;button&gt;Submit&lt;/button&gt;
+
 &lt;/main&gt;
+
 </content>
   </entry>
   <entry>
@@ -86,7 +160,7 @@ Let's go see
     <link rel="alternate" href="http://blog.url.com/2018/10/08/post8.html"/>
     <id>http://blog.url.com/2018/10/08/post8.html</id>
     <published>2018-10-07T19:00:00-05:00</published>
-    <updated>2018-10-12T15:00:21-05:00</updated>
+    <updated>2018-10-12T15:10:14-05:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -198,7 +272,7 @@ Let's go see
     <link rel="alternate" href="http://blog.url.com/2018/10/03/post7.html"/>
     <id>http://blog.url.com/2018/10/03/post7.html</id>
     <published>2018-10-02T19:00:00-05:00</published>
-    <updated>2018-10-12T14:59:42-05:00</updated>
+    <updated>2018-10-12T15:10:14-05:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -232,7 +306,7 @@ Let's go see
     <link rel="alternate" href="http://blog.url.com/2018/10/01/post6.html"/>
     <id>http://blog.url.com/2018/10/01/post6.html</id>
     <published>2018-09-30T19:00:00-05:00</published>
-    <updated>2018-10-12T14:57:46-05:00</updated>
+    <updated>2018-10-12T15:10:14-05:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -260,7 +334,7 @@ Let's go see
     <link rel="alternate" href="http://blog.url.com/2018/09/26/post5.html"/>
     <id>http://blog.url.com/2018/09/26/post5.html</id>
     <published>2018-09-25T19:00:00-05:00</published>
-    <updated>2018-10-12T14:56:20-05:00</updated>
+    <updated>2018-10-12T15:10:14-05:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -433,7 +507,7 @@ Let's go see
     <link rel="alternate" href="http://blog.url.com/2018/09/21/post4.html"/>
     <id>http://blog.url.com/2018/09/21/post4.html</id>
     <published>2018-09-20T19:00:00-05:00</published>
-    <updated>2018-10-12T14:54:57-05:00</updated>
+    <updated>2018-10-12T15:10:14-05:00</updated>
     <author>
       <name>Article Author</name>
     </author>

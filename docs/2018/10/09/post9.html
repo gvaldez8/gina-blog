@@ -24,66 +24,140 @@
     <h5 class='copyright'>&#169; 2018 GINA VALDEZ, 8TH LIGHT</h5>
     <h5 class='trademark'>GINA DESIGN APPRENTICE 2018</h5>
     <main class="blogposts__container">
-        <header>
-            <h2>An Introduction to Form Design</h2>
-            <time datetime="2018-10-09">OCTOBER 9, 2018</time>
-        </header>
+	<header>
+		<h2>An Introduction to Form Design</h2>
+		<time datetime="2018-10-09">OCTOBER 9, 2018</time>
+	</header>
 
-<p>The user is planning a month long trip to explore three different states or countries. He or she has the option of traveling alone or within a group of people.</p>
+		<p>The user is planning to order a pizza for delivery.</p>
 
-<p>I am traveling
-<input type="checkbox" name="alone" value="one" unchecked="" /> alone &lt;/input&gt;
+<form class="personal-information">
+	<h3>Hi there, I am <input type="text" id="name" name="name" placeholder="name" />.<br />
 
-<input type="checkbox" name="family" value="one" unchecked="" /> with family &lt;/input&gt;
+		I would like to order a pizza for delivery at <br /><input type="text" id="address" name="address" placeholder="address" />by
 
-<input type="checkbox" name="friends" value="one" unchecked="" /> with friends&lt;/input&gt;
+		<select id="time-select">
+			<option value="">7:00pm</option>
+				<option value="500">5:00pm</option>
+				<option value="530">5:30pm</option>
+				<option value="600">6:00pm</option>
+				<option value="630">6:30pm</option>
+				<option value="700">7:00pm</option>
+				<option value="730">7:30pm</option>
+				<option value="800">8:00pm</option>
+				<option value="830">8:30pm</option>
+		</select>.
 
-<input type="checkbox" name="signifcant other" value="one" unchecked="" /> with a significant other&lt;/input&gt;</p>
-
-
-<p>I prefer to travel
-<input type="radio" name="within the states" value="one" checked="" />abroad&lt;/input&gt;
-
-<input type="radio" name="within the states" value="one" checked="" />within the states&lt;/input&gt;</p>
-
-<form id="nl-form" class="nl-form">
-Let's go see
-	<select>
-		<option value="1" selected="">any place</option>
-		<option value="2">Indian</option>
-		<option value="3">French</option>
-		<option value="4">Japanese</option>
-		<option value="2">Italian</option>
-	</select>
-    , wake up in
-	<select>
-		<option value="1" selected="">any place</option>
-		<option value="2">fancy</option>
-		<option value="3">hip</option>
-		<option value="4">traditional</option>
-		<option value="2">fine</option>
-	</select>
-	, have a dream in
-	<select>
-		<option value="1" selected="">any place</option>
-	 	<option value="1">at 7 p.m.</option>
-	 	<option value="2">at 8 p.m.</option>
-	 	<option value="3">at 9 p.m.</option>
-	</select>
-	, fall in love in
-    <select>
-		<option value="1" selected="">hometown</option>
-	 	<option value="1">at 7 p.m.</option>
-	 	<option value="2">at 8 p.m.</option>
-	 	<option value="3">at 9 p.m.</option>
-	</select>
-    at <input type="text" value="" placeholder="8:00pm" />
-
-		<button type="submit">Book my trip</button>
-	<div class="nl-overlay"></div>
+	<br />Feel free to give me a ring or shoot me a text at <br /><input type="text" id="phone-number" name="address" placeholder="(000) 000 0000" /> when you're here.&lt;/p&gt;
+	</h3>
 </form>
 
+<br />
+
+<form class="form__container">
+	<fieldset class="form__pizza--size">
+		<legend><h3>What size pizza would you like to order?</h3></legend>
+		<hr />
+			<input type="radio" name="size" id="radio-one" value="small" />
+			<label for="radio-one">Small</label>
+
+			<input type="radio" name="size" id="radio-two" value="medium" />
+			<label for="radio-two">Medium</label>
+
+			<input type="radio" name="size" id="radio-three" value="large" />
+			<label for="radio-three">Large</label>
+
+			<input type="radio" name="size" id="radio-four" value="extra-large" />
+			<label for="radio-four">Extra Large</label>
+
+	</fieldset>
+
+
+	<fieldset class="form__pizza--diet">
+		<legend><h3>Any dietary restrictions?</h3></legend>
+
+		<hr />
+
+			<input type="checkbox" name="diet" id="check-one" value="vegetarian" />
+			<label for="check-one">Vegetarian</label>
+
+			<input type="checkbox" name="diet" id="check-two" value="gluten-free" />
+			<label for="check-two">Gluten Free</label>
+
+			<input type="checkbox" name="diet" id="check-three" value="vegan" />
+			<label for="check-three">Vegan</label>
+
+			<input type="checkbox" name="diet" id="check-four" value="none" />
+			<label for="check-four">None</label>
+	</fieldset>
+
+
+	<fieldset class="form__pizza--toppings">
+		<legend><h3>Choose your toppings</h3></legend>
+
+		<hr />
+
+<p>
+			<input type="checkbox" name="toppings" id="check-one" value="extra-cheese" />
+			<label for="check-one">Extra Cheese</label>
+		</p>
+
+<p>
+			<input type="checkbox" name="toppings" id="check-two" value="black-olives" />
+			<label for="check-two">Black Olives</label>
+		</p>
+
+<p>
+				<input type="checkbox" name="toppings" id="check-three" value="sausage" />
+				<label for="check-three">Sausage</label>
+			</p>
+
+<p>
+				<input type="checkbox" name="toppings" id="check-four" value="bacon" />
+				<label for="check-four">Bacon</label>
+			</p>
+
+<p>
+				<input type="checkbox" name="toppings" id="check-five" value="pepperoni" />
+				<label for="check-five">Pepperoni</label>
+			</p>
+
+<p>
+				<input type="checkbox" name="toppings" id="check-six" value="tomatoes" />
+				<label for="check-six">Tomatoes</label>
+			</p>
+
+<p>
+				<input type="checkbox" name="toppings" id="check-seven" value="onions" />
+				<label for="check-seven">Onions</label>
+			</p>
+
+<p>
+				<input type="checkbox" name="toppings" id="check-eight" value="bell-peppers" />
+				<label for="check-eight">Bell Peppers</label>
+			</p>
+
+<p>
+				<input type="checkbox" name="toppings" id="check-nine" value="mushrooms" />
+				<label for="check-nine">Mushrooms</label>
+			</p>
+
+<p>
+				<input type="checkbox" name="toppings" id="check-ten" value="pineapple" />
+				<label for="check-ten">Pineapple</label>
+			</p>
+
+<p>
+				<input type="checkbox" name="toppings" id="check-eleven" value="spinach" />
+				<label for="check-eleven">Spinach</label>
+			</p>
+		</fieldset>
+	</form>
+
+	<button>Submit</button>
+
 </main>
+
 
       <!--GINA, remember to change this footer. Possible suggestions might be secondary navigation, social links with icons, or even adding a contact form (even if it doesn't lead to anywhere)-->
   <footer>
