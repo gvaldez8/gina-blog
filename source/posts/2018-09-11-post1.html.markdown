@@ -1,0 +1,120 @@
+---
+  title: How technical should designers be?
+---
+<main class='blogposts__container'>
+    <header>
+        <h2>How technical should designers be?<br> What are the benefits of being a designer who codes? What are the drawbacks?</h2>
+        <time datetime="2018-11-09">SEPTEMBER 11, 2018</time>
+    </header>
+        <p>There are numerous sources floating around the internet on an ever-growing debate: designers learning to code, designers as developers, and the rare sightings of the &#8220;Design Unicorn &#8221; (super humans who have mastered their craftsmanship in both design and development).</p>
+
+        <p>With the advancement of technology and digital becoming the primary medium with which people receive information, news, and updates arrived new titles, roles, expectations, and problems. Graphic Designers specializing in anything print related are becoming niche professions, while the community of those who appreciate the art of print and book design are scarcer. A designer’s technical skills are now determined by companies’ needs and professional development on an individual level (optional). It is not uncommon nowadays to seek an entry level position and see that job requirements are beyond just one specialized skill.</p>
+
+        <p>My thoughts are that having fluent coding skills is not necessary for a designer to have, but it is <em>absolutely</em>beneficial if a designer either already possesses that knowledge on their belt, is willing to actually invest the time and energy into learning it, or seeks professional development because design is a constant path of learning, improvement, and growth. After researching and reading a few articles, here are some conclusions about the benefits and drawbacks of
+          being a designer who codes:</p>
+
+      <br />
+
+<section class="blogpost__post--column">
+      <h5><strong>BENEFITS</strong></h5>
+        <hr />
+      <h4><strong>UX Research and UI Design Process</strong></h4>
+        <ul class='blogposts__ul--indent'>
+          <li>Understanding the medium with which you create helps in understanding knowing the limitations of the current system, as well as user pain points and possible solutions for those problems.</li>
+
+          <li>Completely avoids the risk of blurring the lines between art and design. Design serves a very specific purpose and solves problems, whereas art is intended to be consumed and make you question, contemplate, and feel.</li>
+        </ul>
+
+      <h4><strong>Now you’re speaking the same language. Literally.</strong></h4>
+        <ul class='blogposts__ul--indent'>
+          <li>Fosters a stronger community, creates a deeper understanding between designers and developers, and offers a more effective way of pairing.</li>
+
+          <li>Developers&#8217; understanding of the language and its limitations can greatly influence design decisions.</li>
+
+          <li>Newfound knowledge can help you discover fresh approaches to common problems, develop new ways of thinking, and learn to consider your work more objectively.</li>
+        </ul>
+
+      <h4><strong>Stay fresh, stay current</strong></h4>
+        <ul class='blogposts__ul--indent'>
+            <li>Although is it not absolutely necessary that a designer learn to code, it is necessary for a designer tofully understand technologies and how they work.</li>
+
+            <li>Having a knowledge of code will lead to increased empathy for your teammates&#8217; respective challenges.</li>
+
+            <li>Learning and mastering new skills promotes innovation and creativity in itself.</li>
+
+            <li>Possessing fluent coding skills secures a stronger position in the job market.</li>
+        </ul>
+
+          <br />
+
+          <h5><strong>DRAWBACKS</strong></h5>
+            <hr />
+          <h4><strong>Time is of the essence</strong></h4>
+          <ul class='blogposts__ul--indent'>
+            <li>Learning is a commitment that takes time and energy, which not many have.</li>
+            <li>
+              Redistributing time towards development could also mean taking away progress in another area of the project (i.e. In terms of a designer, this could be user testing, designing features, fixing usability issues, and other problems that may arise in the development of a new product).
+            </li>
+          </ul>
+
+          <h4><strong>Wearing another hat</h4></strong>
+          <ul class='blogposts__ul--indent'>
+            <li>
+              Naturally, the more skills you attain and develop, the more versatile you can be. Although designers with fluent coding skills are a valuable asset to any team, this can quickly become draining to learn while working full-time and not the most cost effective while you earn the   accomplish a job that takes multiple.
+            </li>
+
+            <li>
+              Designers who can code, usually design only according to how much knowledge in coding they have accrued.
+            </li>
+
+            <li>
+            The more knowledge in development you gain can also limit your creativity and audacity to explore new designs.
+            </li>
+          </ul>
+
+          <h4><strong>Empathy vs. Expectations</h4></strong>
+          <ul class='blogposts__ul--indent'>
+            <li>It’s either developers expecting designers to be more empathetic and vice versa.</li>
+            <li>There are professionals who are able to direct others and accomplish business goals without ever having
+              actually performed that task themselves.</li>
+            <li>Task performance does not equate to understanding or knowing how it will affect others in business,
+              such as the team, client project, or the company overall.</li>
+          </ul>
+</section>
+          <br /><br />
+
+          <h5><strong>SOME SOURCES</strong></h5>
+          <h6>
+            <ul class='blogposts__ul--indent'>
+              <li>
+                <a href="https://blog.prototypr.io/css-the-rise-of-the-technical-designer-6474366b3c28">CSS & The Rise
+                  of the Technical Designer – Prototypr</a>
+              </li>
+
+              <li>
+                <a href="https://medium.com/@MrAlanCooper/should-designers-code-cde3ef9d6621"> Should Designers
+                  Code???? – Alan Cooper – Medium</a>
+              </li>
+
+              <li>
+                <a href="https://uxdesign.cc/should-designers-be-developers-too-a12e3b86fde9"> Should designers be
+                  developers too</a>
+              </li>
+
+              <li>
+                <a hef="https://careerfoundry.com/en/blog/ux-design/why-should-designers-learn-to-code/">Why Should
+                  Designers Learn to Code? | CareerFoundry</a>
+              </li>
+
+              <li>
+                <a href="https://thenextweb.com/contributors/2017/09/23/designers-code-no-seriously-though)">Why
+                  designers should learn to code — or at least consider it</a>
+              </li>
+
+              <li>
+                <a href="https://medium.com/@MrAlanCooper/should-designers-code-f7b745b8cd03">Should designers code
+                </a>
+              </li>
+            </ul>
+          </h6>
+  </main>

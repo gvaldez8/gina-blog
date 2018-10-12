@@ -14,7 +14,7 @@ per_page: 10
   </header>
 
   <main>
-    <section class='updates__container'>
+    <section class='updates__container' id="blog-posts">
       <h2>Stay Updated</h2>
       <ul>
         <h3>Recent Posts</h3>
@@ -22,15 +22,6 @@ per_page: 10
         <% page_articles.each_with_index do |article, i| %>
           <li><%= link_to article.title, article %></li>
         <% end %>
-        <!-- <li><a href='./blogposts/post9.html'>An Introduction to Form Design</a></li>
-        <li><a href='./blogposts/post8.html'>Explain CSS Architecture/Naming Conventions (BEM, OOCSS, SMACSS)</a></li>
-        <li><a href='./blogposts/post7.html'>An Explanation of CSS Media Queries and How to Use Them</a></li>
-        <li><a href='./blogposts/post6.html'>Mobile First Design vs. Mobile First Development</a></li>
-        <li><a href='./blogposts/post5.html'>An Overview of Typographic History, Classifications, and Characteristics</a></li>
-        <li><a href='./blogposts/post4.html'>The User Experience Team of One by Leah Buley</a></li>
-        <li><a href='./blogposts/post3.html'>Explain CSS Positioning with Examples</a></li>
-        <li><a href='./blogposts/post2.html'>Explanations and examples of Every HTML Element</a></li>
-        <li><a href='./blogposts/post1.html'>How Technical Should Designers Be?</a></li> -->
       </ul>
 
       <ul>
@@ -98,3 +89,4 @@ per_page: 10
       </ul>
     </section>
   </main>
+

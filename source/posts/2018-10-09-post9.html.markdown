@@ -1,0 +1,65 @@
+---
+title: An Introduction to Form Design
+---
+
+<main class='blogposts__container'>
+        <header>
+            <h2>An Introduction to Form Design</h2>
+            <time datetime="2018-10-09">OCTOBER 9, 2018</time>
+        </header>
+
+<p>The user is planning a month long trip to explore three different states or countries. He or she has the option of traveling alone or within a group of people.</p>
+
+<p>I am traveling
+<input type="checkbox" name="alone" value="one" unchecked> alone </input>
+
+<input type="checkbox" name="family" value="one" unchecked> with family </input>
+
+<input type="checkbox" name="friends" value="one" unchecked> with friends</input>
+
+<input type="checkbox" name="signifcant other" value="one" unchecked> with a significant other</input></p>
+
+
+<p>I prefer to travel
+<input type="radio" name="within the states" value="one" checked>abroad</input>
+
+<input type="radio" name="within the states" value="one" checked>within the states</input></p>
+
+<form id="nl-form" class="nl-form">
+Let's go see
+	<select>
+		<option value="1" selected>any place</option>
+		<option value="2">Indian</option>
+		<option value="3">French</option>
+		<option value="4">Japanese</option>
+		<option value="2">Italian</option>
+	</select>
+    , wake up in
+	<select>
+		<option value="1" selected>any place</option>
+		<option value="2">fancy</option>
+		<option value="3">hip</option>
+		<option value="4">traditional</option>
+		<option value="2">fine</option>
+	</select>
+	, have a dream in
+	<select>
+		<option value="1" selected>any place</option>
+	 	<option value="1">at 7 p.m.</option>
+	 	<option value="2">at 8 p.m.</option>
+	 	<option value="3">at 9 p.m.</option>
+	</select>
+	, fall in love in
+    <select>
+		<option value="1" selected>hometown</option>
+	 	<option value="1">at 7 p.m.</option>
+	 	<option value="2">at 8 p.m.</option>
+	 	<option value="3">at 9 p.m.</option>
+	</select>
+    at <input type="text" value="" placeholder="8:00pm"/>
+
+		<button type="submit">Book my trip</button>
+	<div class="nl-overlay"></div>
+</form>
+
+</main>
