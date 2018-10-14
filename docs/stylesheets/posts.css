@@ -388,15 +388,57 @@ p {
       font-weight: 700;
       text-align: left; }
     .form__container fieldset hr {
-      padding-top: 5px; }
+      padding-top: 5px;
+      padding-bottom: 10px;
+      width: 30em; }
     .form__container fieldset p {
       text-align: left; }
 
-input[type='checkbox'] {
-  border: solid 2px;
-  margin-left: 20px; }
+.form__pizza--size > label {
+  display: inline-block;
+  padding-right: 3.75em; }
+
+.form__pizza--diet > label {
+  display: inline-block;
+  padding-right: 2em; }
+
+.form__pizza--toppings > label {
+  display: block;
+  padding-bottom: 15px; }
+
+button {
+  background: white;
+  border: solid #0881a3;
+  border-width: 2px;
+  border-spacing: 20, 20;
+  padding: 10px 40px; }
 
 /*END OF FORMS AND INPUTS*/
+/* CHECKBOX & STATES*/
+.checkbox {
+  position: relative;
+  display: block;
+  margin-bottom: 15px;
+  padding-left: 30px;
+  cursor: pointer; }
+
+.checkbox input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0; }
+
+.control__indicator {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: #e6e6e6; }
+
+.control input:checked ~ .control__indicator {
+  background: #2aa1c0; }
+
+/* END OF CHECKBOX & STATES*/
 footer {
   background-color: #222831;
   color: white;

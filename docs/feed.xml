@@ -14,14 +14,14 @@
     <link rel="alternate" href="http://blog.url.com/gina-blog/2018/10/09/post9.html"/>
     <id>http://blog.url.com/gina-blog/2018/10/09/post9.html</id>
     <published>2018-10-08T19:00:00-05:00</published>
-    <updated>2018-10-12T15:10:52-05:00</updated>
+    <updated>2018-10-13T19:51:59-05:00</updated>
     <author>
       <name>Article Author</name>
     </author>
     <content type="html">&lt;main class="blogposts__container"&gt;
 	&lt;header&gt;
 		&lt;h2&gt;An Introduction to Form Design&lt;/h2&gt;
-		&lt;time datetime="2018-10-09"&gt;OCTOBER 9, 2018&lt;/time&gt;
+		&lt;time datetime="2018-10-12"&gt;OCTOBER 12, 2018&lt;/time&gt;
 	&lt;/header&gt;
 
 		&lt;p&gt;The user is planning to order a pizza for delivery.&lt;/p&gt;
@@ -29,7 +29,8 @@
 &lt;form class="personal-information"&gt;
 	&lt;h3&gt;Hi there, I am &lt;input type="text" id="name" name="name" placeholder="name" /&gt;.&lt;br /&gt;
 
-		I would like to order a pizza for delivery at &lt;br /&gt;&lt;input type="text" id="address" name="address" placeholder="address" /&gt;by
+	I would like to order a pizza for delivery at &lt;br /&gt;
+	&lt;input type="text" id="address" name="address" placeholder="address" /&gt;by
 
 		&lt;select id="time-select"&gt;
 			&lt;option value=""&gt;7:00pm&lt;/option&gt;
@@ -43,7 +44,7 @@
 				&lt;option value="830"&gt;8:30pm&lt;/option&gt;
 		&lt;/select&gt;.
 
-	&lt;br /&gt;Feel free to give me a ring or shoot me a text at &lt;br /&gt;&lt;input type="text" id="phone-number" name="address" placeholder="(000) 000 0000" /&gt; when you're here.&amp;lt;/p&amp;gt;
+	&lt;br /&gt;Feel free to give me a ring or shoot me a text at &lt;br /&gt;&lt;input type="text" id="phone-number" name="address" placeholder="(000) 000 0000" /&gt; when you're here.
 	&lt;/h3&gt;
 &lt;/form&gt;
 
@@ -53,18 +54,25 @@
 	&lt;fieldset class="form__pizza--size"&gt;
 		&lt;legend&gt;&lt;h3&gt;What size pizza would you like to order?&lt;/h3&gt;&lt;/legend&gt;
 		&lt;hr /&gt;
-			&lt;input type="radio" name="size" id="radio-one" value="small" /&gt;
-			&lt;label for="radio-one"&gt;Small&lt;/label&gt;
+			&lt;label class="radio" for="radio-one"&gt;
+				&lt;input type="radio" name="size" id="radio-one" value="small" /&gt;
+					Small
+			&lt;/label&gt;
 
-			&lt;input type="radio" name="size" id="radio-two" value="medium" /&gt;
-			&lt;label for="radio-two"&gt;Medium&lt;/label&gt;
+			&lt;label class="radio" for="radio-two"&gt;
+				&lt;input type="radio" name="size" id="radio-two" value="medium" /&gt;
+					Medium
+			&lt;/label&gt;
 
-			&lt;input type="radio" name="size" id="radio-three" value="large" /&gt;
-			&lt;label for="radio-three"&gt;Large&lt;/label&gt;
+			&lt;label class="radio" for="radio-three"&gt;
+				&lt;input type="radio" name="size" id="radio-three" value="large" /&gt;
+					Large
+			&lt;/label&gt;
 
-			&lt;input type="radio" name="size" id="radio-four" value="extra-large" /&gt;
-			&lt;label for="radio-four"&gt;Extra Large&lt;/label&gt;
-
+			&lt;label class="radio" for="radio-four"&gt;
+				&lt;input type="radio" name="size" id="radio-four" value="extra-large" /&gt;
+					Extra Large
+			&lt;/label&gt;
 	&lt;/fieldset&gt;
 
 
@@ -72,18 +80,29 @@
 		&lt;legend&gt;&lt;h3&gt;Any dietary restrictions?&lt;/h3&gt;&lt;/legend&gt;
 
 		&lt;hr /&gt;
+			&lt;label class="checkbox" for="check-one"&gt;
+				&lt;input type="checkbox" name="diet" id="check-one" value="vegetarian" check="checked" /&gt;
+				&lt;div class="control__indicator"&gt;&lt;/div&gt;
+					Vegetarian
+			&lt;/label&gt;
 
-			&lt;input type="checkbox" name="diet" id="check-one" value="vegetarian" /&gt;
-			&lt;label for="check-one"&gt;Vegetarian&lt;/label&gt;
+			&lt;label class="checkbox" for="check-two"&gt;
+				&lt;input type="checkbox" name="diet" id="check-two" value="gluten-free" /&gt;
+				&lt;div class="control__indicator"&gt;&lt;/div&gt;
+					Gluten Free
+			&lt;/label&gt;
 
-			&lt;input type="checkbox" name="diet" id="check-two" value="gluten-free" /&gt;
-			&lt;label for="check-two"&gt;Gluten Free&lt;/label&gt;
+			&lt;label class="checkbox" for="check-three"&gt;
+				&lt;input type="checkbox" name="diet" id="check-three" value="vegan" /&gt;
+				&lt;div class="control__indicator"&gt;&lt;/div&gt;
+					Vegan
+			&lt;/label&gt;
 
-			&lt;input type="checkbox" name="diet" id="check-three" value="vegan" /&gt;
-			&lt;label for="check-three"&gt;Vegan&lt;/label&gt;
-
-			&lt;input type="checkbox" name="diet" id="check-four" value="none" /&gt;
-			&lt;label for="check-four"&gt;None&lt;/label&gt;
+			&lt;label class="checkbox" for="check-four"&gt;
+				&lt;input type="checkbox" name="diet" id="check-four" value="none" /&gt;
+				&lt;div class="control__indicator"&gt;&lt;/div&gt;
+					None
+			&lt;/label&gt;
 	&lt;/fieldset&gt;
 
 
@@ -91,61 +110,71 @@
 		&lt;legend&gt;&lt;h3&gt;Choose your toppings&lt;/h3&gt;&lt;/legend&gt;
 
 		&lt;hr /&gt;
+			&lt;label class="checkbox" for="check-one"&gt;
+				&lt;input type="checkbox" name="toppings" id="check-one" value="extra-cheese" checked="checked" /&gt;
+				&lt;div class="control__indicator"&gt;&lt;/div&gt;
+					Extra Cheese
+			&lt;/label&gt;
 
-&lt;p&gt;
-			&lt;input type="checkbox" name="toppings" id="check-one" value="extra-cheese" /&gt;
-			&lt;label for="check-one"&gt;Extra Cheese&lt;/label&gt;
-		&lt;/p&gt;
+			&lt;label class="checkbox" for="check-two"&gt;
+				&lt;input type="checkbox" name="toppings" id="check-two" value="black-olives" checked="checked" /&gt;
+				&lt;div class="control__indicator"&gt;&lt;/div&gt;
+					Black Olives
+			&lt;/label&gt;
 
-&lt;p&gt;
-			&lt;input type="checkbox" name="toppings" id="check-two" value="black-olives" /&gt;
-			&lt;label for="check-two"&gt;Black Olives&lt;/label&gt;
-		&lt;/p&gt;
-
-&lt;p&gt;
+			&lt;label class="checkbox" for="check-three"&gt;
 				&lt;input type="checkbox" name="toppings" id="check-three" value="sausage" /&gt;
-				&lt;label for="check-three"&gt;Sausage&lt;/label&gt;
-			&lt;/p&gt;
+				&lt;div class="control__indicator"&gt;&lt;/div&gt;
+					Sausage
+			&lt;/label&gt;
 
-&lt;p&gt;
-				&lt;input type="checkbox" name="toppings" id="check-four" value="bacon" /&gt;
-				&lt;label for="check-four"&gt;Bacon&lt;/label&gt;
-			&lt;/p&gt;
+			&lt;label class="checkbox" for="check-four"&gt;
+				&lt;input type="checkbox" name="toppings" id="check-four" value="bacon" checked="checked" /&gt;
+				&lt;div class="control__indicator"&gt;&lt;/div&gt;
+					Bacon
+			&lt;/label&gt;
 
-&lt;p&gt;
-				&lt;input type="checkbox" name="toppings" id="check-five" value="pepperoni" /&gt;
-				&lt;label for="check-five"&gt;Pepperoni&lt;/label&gt;
-			&lt;/p&gt;
+			&lt;label class="checkbox" for="check-five"&gt;
+				&lt;input type="checkbox" name="toppings" id="check-five" value="pepperoni" checked="checked" /&gt;
+				&lt;div class="control__indicator"&gt;&lt;/div&gt;
+					Pepperoni
+			&lt;/label&gt;
 
-&lt;p&gt;
-				&lt;input type="checkbox" name="toppings" id="check-six" value="tomatoes" /&gt;
-				&lt;label for="check-six"&gt;Tomatoes&lt;/label&gt;
-			&lt;/p&gt;
+			&lt;label class="checkbox" for="check-six"&gt;
+				&lt;input type="checkbox" name="toppings" id="check-six" value="tomatoes" checked="checked" /&gt;
+				&lt;div class="control__indicator"&gt;&lt;/div&gt;
+					Tomatoes
+			&lt;/label&gt;
 
-&lt;p&gt;
-				&lt;input type="checkbox" name="toppings" id="check-seven" value="onions" /&gt;
-				&lt;label for="check-seven"&gt;Onions&lt;/label&gt;
-			&lt;/p&gt;
+			&lt;label class="checkbox" for="check-seven"&gt;
+				&lt;input type="checkbox" name="toppings" id="check-seven" value="onions" checked="checked" /&gt;
+				&lt;div class="control__indicator"&gt;&lt;/div&gt;
+					Onions
+			&lt;/label&gt;
 
-&lt;p&gt;
-				&lt;input type="checkbox" name="toppings" id="check-eight" value="bell-peppers" /&gt;
-				&lt;label for="check-eight"&gt;Bell Peppers&lt;/label&gt;
-			&lt;/p&gt;
+			&lt;label class="checkbox" for="check-eight"&gt;
+				&lt;input type="checkbox" name="toppings" id="check-eight" value="bell-peppers" checked="checked" /&gt;
+				&lt;div class="control__indicator"&gt;&lt;/div&gt;
+					Bell Peppers
+			&lt;/label&gt;
 
-&lt;p&gt;
-				&lt;input type="checkbox" name="toppings" id="check-nine" value="mushrooms" /&gt;
-				&lt;label for="check-nine"&gt;Mushrooms&lt;/label&gt;
-			&lt;/p&gt;
+			&lt;label class="checkbox" for="check-nine"&gt;
+				&lt;input type="checkbox" name="toppings" id="check-nine" value="mushrooms" checked="checked" /&gt;
+				&lt;div class="control__indicator"&gt;&lt;/div&gt;
+					Mushrooms
+			&lt;/label&gt;
 
-&lt;p&gt;
-				&lt;input type="checkbox" name="toppings" id="check-ten" value="pineapple" /&gt;
-				&lt;label for="check-ten"&gt;Pineapple&lt;/label&gt;
-			&lt;/p&gt;
+			&lt;label class="checkbox" for="check-ten"&gt;
+				&lt;input type="checkbox" name="toppings" id="check-ten" value="pineapple" checked="checked" /&gt;
+				&lt;div class="control__indicator"&gt;&lt;/div&gt;
+					Pineapple
+			&lt;/label&gt;
 
-&lt;p&gt;
+			&lt;label class="checkbox" for="check-eleven"&gt;
 				&lt;input type="checkbox" name="toppings" id="check-eleven" value="spinach" /&gt;
-				&lt;label for="check-eleven"&gt;Spinach&lt;/label&gt;
-			&lt;/p&gt;
+				&lt;div class="control__indicator"&gt;&lt;/div&gt;
+					Spinach
+			&lt;/label&gt;
 		&lt;/fieldset&gt;
 	&lt;/form&gt;
 
