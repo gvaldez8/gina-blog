@@ -67,4 +67,5 @@ configure :build do
   # activate :minify_javascript
   set :build_dir, 'docs'
   set :http_prefix, '/gina-blog'
+  set :relative_links, true
 end
