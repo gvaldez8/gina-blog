@@ -67,15 +67,15 @@ title: An Introduction to Form Design
         <label class="checkbox" for="check-one">Vegetarian</label>
       </div>
       <div class='checkboxes'>
-        <input type="checkbox" id="check-two" value="gluten-free" checked="checked" />
+        <input type="checkbox" id="check-two" value="gluten-free" check="checked" />
         <label class="checkbox" for="check-two">Gluten Free</label>
       </div>
       <div class='checkboxes'>
-        <input type="checkbox" id="check-three" value="vegan" checked="checked" />
+        <input type="checkbox" id="check-three" value="vegan" check="checked" />
         <label class="checkbox" for="check-three">Vegan</label>
       </div>
       <div class='checkboxes'>
-        <input type="checkbox" id="check-four" value="none" checked="checked" />
+        <input type="checkbox" id="check-four" value="none" check="checked" />
         <label class="checkbox" for="check-four">None</label>
       </div>
     </fieldset>
@@ -88,48 +88,48 @@ title: An Introduction to Form Design
       </legend>
       <hr />
       <div class='checkboxes'>
-        <input type="checkbox" value="extra-cheese" checked="checked" />
-        <label class="checkbox" for="check-one">Extra Cheese</label>
+        <input type="checkbox" id="check-five" value="extra-cheese" check="checked" />
+        <label class="checkbox" for="check-five">Extra Cheese</label>
       </div>
       <div class='checkboxes'>
-        <input type="checkbox" value="black-olives" checked="checked" />
-        <label class="checkbox" for="check-two">Black Olives</label>
+        <input type="checkbox" id="check-six" value="black-olives" check="checked" />
+        <label class="checkbox" for="check-six">Black Olives</label>
       </div>
       <div class='checkboxes'>
-        <input type="checkbox" value="sausage" checked="checked" />
-        <label class="checkbox" for="check-three">Sausage</label>
+        <input type="checkbox" id="check-seven" value="sausage" check="checked" />
+        <label class="checkbox" for="check-seven">Sausage</label>
       </div>
       <div class='checkboxes'>
-        <input type="checkbox" value="bacon" checked="checked" />
-        <label class="checkbox" for="check-four">Bacon</label>
+        <input type="checkbox" id="check-eight" value="bacon" check="checked" />
+        <label class="checkbox" for="check-eight">Bacon</label>
       </div>
       <div class='checkboxes'>
-        <input type="checkbox" value="pepperoni" checked="checked" />
-        <label class="checkbox" for="check-five">Pepperoni</label>
+        <input type="checkbox" id="check-nine" value="pepperoni" check="checked" />
+        <label class="checkbox" for="check-nine">Pepperoni</label>
       </div>
       <div class='checkboxes'>
-        <input type="checkbox" value="tomatoes" checked="checked" />
-        <label class="checkbox" for="check-six">Tomatoes</label>
+        <input type="checkbox" id="check-ten" value="tomatoes" check="checked" />
+        <label class="checkbox" for="check-ten">Tomatoes</label>
       </div>
       <div class='checkboxes'>
-        <input type="checkbox" value="onions" checked="checked" />
-        <label class="checkbox" for="check-seven">Onions</label>
+        <input type="checkbox" id="check-eleven" value="onions" check="checked" />
+        <label class="checkbox" for="check-eleven">Onions</label>
       </div>
       <div class='checkboxes'>
-        <input type="checkbox" value="bell-peppers" checked="checked" />
-        <label class="checkbox" for="check-eight">Bell Peppers</label>
+        <input type="checkbox" id="check-twelve" value="bell-peppers" check="checked" />
+        <label class="checkbox" for="check-twelve">Bell Peppers</label>
       </div>
       <div class='checkboxes'>
-        <input type="checkbox" value="mushrooms" checked="checked" />
-        <label class="checkbox" for="check-nine">Mushrooms</label>
+        <input type="checkbox" id="check-thirteen" value="mushrooms" check="checked" />
+        <label class="checkbox" for="check-thirteen">Mushrooms</label>
       </div>
       <div class='checkboxes'>
-        <input type="checkbox" value="pineapple" checked="checked" />
-        <label class="checkbox" for="check-ten">Pineapple</label>
+        <input type="checkbox" id="check-fourteen" value="pineapple" check="checked" />
+        <label class="checkbox" for="check-fourteen">Pineapple</label>
       </div>
       <div class='checkboxes'>
-        <input type="checkbox" value="spinach" checked="checked" />
-        <label class="checkbox" for="check-eleven">Spinach</label>
+        <input type="checkbox" id="check-fifteen" value="spinach" check="checked" />
+        <label class="checkbox" for="check-fifteen">Spinach</label>
       </div>
     </fieldset>
 
