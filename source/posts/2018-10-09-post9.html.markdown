@@ -17,8 +17,6 @@ title: An Introduction to Form Design
 
       <input type="text" id="address" name="address" placeholder="address" />by
       <select id="time-select">
-
-        <option value="">7:00pm</option>
         <option value="500">5:00pm</option>
         <option value="530">5:30pm</option>
         <option value="600">6:00pm</option>
@@ -135,6 +133,6 @@ title: An Introduction to Form Design
 
   </form>
 
-<button>Submit</button>
+  <button>Submit</button>
 
 </main>

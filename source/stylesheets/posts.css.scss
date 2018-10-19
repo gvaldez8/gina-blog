@@ -1,97 +1,31 @@
-@import "base";
-
+@import "sass/base";
+@import "sass/form";
+@import "sass/lists";
 
 nav {
-  background: $c-mandys-pink;
-}
+  @include nav($c-mandys-pink);
 
-a,
-a:hover {
-  color: $c-dark-golden-rod;
+  a {
+    @include links($c-dark-golden-rod);
+    line-height: 0.5em;
+  }
 }
 
 hr {
-  display: block;
-  height: 0.05em;
-  border: 0;
-  border-top: 1px solid darkslategray;
-  margin: 1em 0;
-  padding: 0;
+  @include hr;
 }
 
 body {
-  background-color: $c-primary-white;
   color: $c-night-rider;
-  font-family: $body;
+  font-family: $font-stack-secondary;
   line-height: 1.6;
   text-align: left;
 }
 
-header {
-  background: $c-mandys-pink;
-  clear: both;
-  padding-bottom: 5%;
-  padding-left: 5%;
-  padding-right: 5%;
-  text-align: center;
-  width: 100%;
-
-  h2 {
-    padding-bottom: 4%;
-    text-align: left;
-
-    @media (min-width: 300px) {
-      font-size: $subhead-med;
-      padding-left: 5%;
-      padding-right: 5%;
-      padding-top: 10%;
-    }
-
-    @media (min-width: 768px) {
-      font-size: $subhead-med;
-      padding-left: 5%;
-      padding-right: 5%;
-      padding-top: 10%;
-    }
-
-    @media (min-width: 900px) {
-      font-size: $display-lg;
-      padding-left: 5%;
-      padding-right: 5%;
-    }
-  }
-}
-
-time {
-  font-size: $caption-xsm;
-  padding-top: 15px;
-}
-
-time:before,
-time:after {
-  background-color: $c-night-rider;
-  content: "";
-  display: inline-block;
-  height: 1px;
-  position: relative;
-  vertical-align: middle;
-
-  @media (min-width: 300px) {
-    width: 30%;
-  }
-
-  @media (min-width: 768px) {
-    width: 40%;
-  }
-
-  @media (min-width: 900px) {
-    width: 50%;
-  }
-}
 
 /* CONTENT & CONTAINERS */
 
-.blogposts__container {
+main {
   align-content: center;
   background: $c-mandys-pink;
   padding-bottom: 20%;
@@ -101,15 +35,7 @@ time:after {
 
   h2 {
     column-span: all;
-    text-align: center;
-  }
-
-  ul {
-    list-style-type: none;
-
-    li {
-      padding-top: 15px;
-    }
+    text-align: left;
   }
 
   .img {
@@ -121,495 +47,85 @@ time:after {
   }
 }
 
-.blogpost__text--space {
-  padding-top: 5%;
-
-  .column {
-    @media (min-width: 300px) {
-      column-count: 0;
-    }
-
-    @media (min-width: 768px) {
-      column-count: 0;
-    }
-
-    @media (min-width: 900px) {
-      column-count: 2;
-      column-gap: 4em;
-    }
-
-    .typography {
-      column-span: all;
-      padding-top: 3%;
-      text-align: left;
-
-      @media (min-width: 300px) {
-        font-size: 1.15em;
-        text-align: center;
-      }
-
-      @media (min-width: 768px) {
-        font-size: 1.5em;
-        text-align: left;
-      }
-
-      @media (min-width: 900px) {
-        font-size: 1.75em;
-        text-align: left;
-      }
-    }
-
-    h2 {
-      font-size: 1.5em;
-    }
-
-    h3 {
-      @media (min-width: 300px) {
-        font-size: 1em;
-        padding-left: 5%;
-        text-align: left;
-      }
-
-      @media (min-width: 768px) {
-        font-size: 1.25em;
-        padding-left: 0;
-        text-align: left;
-      }
-
-      @media (min-width: 900px) {
-        font-size: 1.25em;
-        text-align: left;
-      }
-    }
-
-    h4 {
-      padding-top: 0;
-    }
-
-    p {
-      padding-top: 10px;
-
-      @media (min-width: 768px) {
-        font-size: 1em;
-        text-align: left;
-      }
-    }
-
-    ul {
-      list-style-type: disc;
-
-      li {
-        padding-top: 8px;
-      }
-    }
-  }
-}
-
-.blogposts__space--above {
-  padding-top: 5%;
-}
-
-.blogposts__ul {
-  padding-left: 0;
-
-  li {
-    list-style: disc;
-    font-size: 14px;
-    line-height: 200%;
-    padding-left: 1em;
-  }
-}
-
-.blogposts__ul--none {
-  list-style: none;
-
-  li {
-    list-style: none;
-    padding-left: 1em;
-  }
-}
-
-.blogposts__ul--indent {
-  padding-left: 1.25em;
+.typography {
+  column-span: all;
+  padding-top: 3%;
+  text-align: left;
 
   @media (min-width: 300px) {
-    font-size: 0.85em;
-    padding-left: 5%;
-    padding-top: 20px;
-    text-align: left;
+    font-size: $fs-body;
+    text-align: center;
   }
 
   @media (min-width: 768px) {
-    font-size: 1em;
-    padding-left: 0;
-    padding-top: 20px;
+    font-size: 1.5em;
     text-align: left;
   }
 
   @media (min-width: 900px) {
-    font-size: 1em;
-    padding-left: 0;
-    padding-top: 0;
+    font-size: 1.75em;
     text-align: left;
   }
-
-  li {
-    list-style: disc;
-    font-size: 14px;
-    line-height: 200%;
-    margin-left: 1.5em;
-
-    @media (min-width: 300px) {
-      font-size: 1em;
-      line-height: 150%;
-    }
-  }
 }
 
-.blogposts__ol {
-  padding-left: 1em;
-
-  li {
-    font-size: 14px;
-    line-height: 200%;
-    padding-left: 1.5%;
-  }
-}
-
-.blogposts__ol--indent {
-  padding-left: 0.5em;
-}
-
-.img {
-  height: 100px;
-  width: 100px;
-}
-
-code {
-  color: $c-dark-golden-rod;
-}
-
-/* END OF CONTENT & CONTAINERS */
-
-/*TYPOGRAPHY*/
-
-h1,
-h2 {
-  font-family: "Suez One", serif;
-}
-
-h1 {
-  font-size: 2.5em;
+.column {
 
   @media (min-width: 300px) {
-    font-size: 1.5em;
+    column-count: 0;
+  }
+
+  @media (min-width: 768px) {
+    column-count: 0;
+  }
+
+  @media (min-width: 900px) {
+    column-count: 2;
+    column-gap: 4em;
   }
 }
 
-h2 {
-  font-family: "Suez One", serif;
-  font-size: 1.875em;
-  text-align: left;
+.p-css-architecture {
+  @include p($padding-top: 20px);
 }
 
-h4 {
-  font-weight: 600;
-  line-height: 1.8;
-  padding-top: 14px;
-}
-
-h6 {
-  font-weight: 400;
-  padding-top: 10px;
-}
-
-p {
-  break-after: column;
-  font-weight: 400;
-  line-height: 1.8;
-  padding: 10px;
-  padding-left: 0;
-
+.blogpost__text--space h3 {
   @media (min-width: 300px) {
-    font-size: 0.85em;
+    font-size: $fs-subhead;
     padding-left: 5%;
-    padding-right: 5%;
     text-align: left;
   }
 
   @media (min-width: 768px) {
-    font-size: 1em;
-    padding-left: 0%;
-    padding-right: 0%;
-    text-align: center;
-  }
-}
-
-/*END OF TYPOGRAPHY*/
-
-/*FORMS AND INPUTS*/
-
-form {
-  fieldset {
-    border: none;
-  }
-
-  hr {
-    padding-bottom: 10px;
-    padding-top: 20px;
-  }
-}
-
-.form__container--personal {
-  letter-spacing: 0.25px;
-  padding-top: 20px;
-  text-align: left;
-
-  #name,
-  #address,
-  #time-select,
-  #phone-number {
-    -webkit-appearance: none;
-    appearance: none;
-    background: none;
-    border: none;
-    border-bottom: dashed 1.5px #0881a3;
-    border-radius: none;
-    font-family: "Niramit", sans-serif;
-    font-size: 1em;
-    font-weight: 700;
-    height: 50px;
-    margin: 0;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: left;
-    width: 250px;
-  }
-
-  #time-select {
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 120px;
-
-    option {
-      font-weight: 300;
-    }
-  }
-
-  h3 {
-    color: #255965;
-    font-family: "Niramit", sans-serif;
-    font-weight: 700;
-    text-align: left;
-
-    @media (min-width: 768px) {
-      font-size: 1.25em;
-      line-height: 4;
-      padding-left: 0%;
-      padding-right: 0%;
-      text-align: left;
-    }
-  }
-}
-
-.form__container--order {
-  border: none;
-  font-family: "Niramit", sans-serif;
-  font-weight: 500;
-  text-align: left;
-
-  legend {
-    padding-top: 50px;
-  }
-
-  h3 {
-    color: #255965;
-    font-family: "Niramit", sans-serif;
-    font-size: 1.25em;
-    font-weight: 700;
+    font-size: $fs-subhead;
+    padding-left: 0;
     text-align: left;
   }
 
-  hr {
-    padding-top: 5px;
-    padding-bottom: 10px;
-    width: 35em;
-  }
-
-  p {
+  @media (min-width: 900px) {
+    font-size: $fs-subhead-large;
     text-align: left;
   }
 }
 
-.form__pizza--size {
-  .radio-buttons {
-    display: inline-block;
+.blogpost__text--space h4 {
+  padding-top: 0;
+}
 
-    input[type="radio"] {
-      margin-left: 4em;
-    }
+.blogpost__text--space p {
+  padding-top: 10px;
 
-    #radio-one {
-      margin-left: 0;
-    }
+  @media (min-width: 768px) {
+    font-size: $fs-subhead;
+    text-align: left;
   }
 }
 
-.form__pizza--diet {
-  .checkboxes {
-    display: inline-block;
+.blogpost__text--space ul {
+  list-style-type: disc;
 
-    label {
-      position: relative;
-      padding-left: 10px;
-    }
-
-    /*Checkmark Box*/
-
-    label::before {
-      content: "";
-      display: inline-block;
-
-      height: 16px;
-      width: 16px;
-
-      background: white;
-      border: 0;
-    }
-
-    /*Checkmark*/
-    label::after {
-      content: "";
-      display: inline-block;
-      height: 6px;
-      width: 9px;
-      border-left: 2px solid;
-      border-bottom: 2px solid;
-
-      transform: rotate(-45deg);
-      position: relative;
-      left: -95px;
-    }
-
-    label::before,
-    label::after {
-      content: "";
-      position: absolute;
-    }
-
-    label::before {
-      top: 0.5px;
-      left: -15px;
-    }
-
-    label::after {
-      left: -12px;
-      position: absolute;
-      top: 2px;
-    }
-
-    input[type="checkbox"] {
-      display: inline-block;
-      opacity: 0;
-      margin-left: 4em;
-    }
-
-    #check-one {
-      margin-left: 0;
-    }
+  li {
+    padding-top: 8px;
   }
 }
 
-.form__pizza--toppings {
-  .checkboxes {
-    display: block;
-    padding-bottom: 20px;
-
-    label {
-      position: relative;
-    }
-
-    /*Checkmark Box*/
-    label::before {
-      content: "";
-      background: white;
-      border: 0;
-      display: inline-block;
-      height: 16px;
-      width: 16px;
-    }
-
-    /*Checkmark*/
-    label::after {
-      content: "";
-      border-left: 2px solid;
-      border-bottom: 2px solid;
-      display: inline-block;
-      height: 6px;
-      width: 9px;
-      transform: rotate(-45deg);
-    }
-
-    label::before,
-    label::after {
-      content: "";
-      position: absolute;
-    }
-
-    label::before {
-      top: 0.5px;
-      left: 2px;
-    }
-
-    label::after {
-      left: 4px;
-      top: 2px;
-    }
-
-    input[type="checkbox"] {
-      display: block;
-      opacity: 0;
-      padding-bottom: 40px;
-    }
-
-    label[class="checkbox"] {
-      padding-left: 3%;
-    }
-  }
-}
-
-/*Hide Checkmark by Default*/
-.checkboxes input[type="checkbox"]+label::after {
-  content: none;
-}
-
-/*Unhide checkmark when checked*/
-.checkboxes input[type="checkbox"]:checked+label::after {
-  content: "";
-}
-
-/*Checkbox Focus Style*/
-.checkboxes input[type="checkbox"]:focus+label::before {
-  outline: rgb(59, 153, 252) auto 5px;
-}
-
-button {
-  background: white;
-  border: solid #0881a3;
-  border-width: 2px;
-  border-spacing: 20, 20;
-  padding: 10px 40px;
-}
-
-/*END OF FORMS AND INPUTS*/
-
-footer {
-  background-color: #222831;
-  color: white;
-  font-size: 12px;
-  height: 60px;
-  padding-top: 20px;
-  position: absolute;
-  text-align: center;
-  width: 100%;
-}
+/* END OF CONTENT & CONTAINERS */

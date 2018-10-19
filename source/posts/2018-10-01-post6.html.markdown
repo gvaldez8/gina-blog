@@ -4,7 +4,7 @@ title: Explain mobile first design
 
 <main class='blogposts__container'>
     <header>
-        <h2>Explain mobile first design AND mobile first development. Why does it matter? How do you do it?</h2>
+        <h1>Explain mobile first design AND mobile first development. Why does it matter? How do you do it?</h1>
         <time datetime="2018-11-21">OCTOBER 1, 2018</time>
     </header>
         <p>Both mobile first design and mobile first development focus on one aspect of responsive web design, which is the act of designing for mobile first before considering the other screen sizes like tablet and desktop. Both mobile first design and mobile first development seek to reduce any extraneous content that is not essential to users under the circumstances that they might be accessing a website or app through their phone (i.e. while driving, commuting, traveling abroad).</p>

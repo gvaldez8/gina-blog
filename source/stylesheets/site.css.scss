@@ -1,88 +1,43 @@
-@import "base";
+@import "sass/base";
 
 hr {
-  display: block;
-  height: .05em;
-  border: 0;
-  border-top: 1px solid darkslategray;
-  margin: 1em 0;
-  padding: 0;
+  @include hr;
 }
 
 header {
-  background: $c-tomato;
-  clear: both;
-  padding-bottom: 20%;
+  @include header($c-tomato);
+  padding-bottom: 16%;
   padding-left: 10%;
-  padding-right: 15%;
-  padding-top: 4%;
-  width: 100%;
+  padding-right: 10%;
+  padding-top: 3%;
 
-  h2,
-  p {
+  h1 {
+    font-size: $fs-display-large;
     text-align: center;
   }
 
   p {
     @media (min-width: 300px) {
-      font-size: $caption-sm;
+      font-size: $fs-caption;
       text-align: left;
     }
 
     @media (min-width: 500px) {
-      font-size: $subhead-med;
+      font-size: $fs-subhead;
       line-height: 2;
       text-align: center;
     }
 
     @media (min-width: 800px) {
-      font-size: $subhead-lg;
+      font-size: $fs-body-medium;
       line-height: 2.5;
-      padding-left: 2%;
-      padding-right: 2%;
+      padding-left: 5%;
+      padding-right: 5%;
       text-align: center;
     }
   }
 }
 
-time {
-  font-size: $caption-xsm;
-  padding-top: 15px;
-}
-
-time:before,
-time:after {
-  background-color: $c-night-rider;
-  content: "";
-  display: inline-block;
-  height: 1px;
-  position: relative;
-  vertical-align: middle;
-
-  @media (min-width: 300px) {
-    width: 30%;
-  }
-
-  @media (min-width: 768px) {
-    width: 40%;
-  }
-
-  @media (min-width: 900px) {
-    width: 50%;
-  }
-}
-
-time:before {
-  right: 0.5em;
-  margin-left: -50%;
-}
-
-time:after {
-  left: 0.5em;
-  margin-right: -50%;
-}
-
-/* CONTENT & CONTAINERS */
 .updates__container,
 .books__container,
 .resources__container {
@@ -121,25 +76,33 @@ time:after {
 
   ul {
     list-style-type: none;
+    font-size: $fs-body-medium;
     padding-top: 60px;
 
     @media (min-width: 300px) {
-      font-size: $caption-sm;
+      font-size: $fs-caption;
       padding-top: 10%;
+      text-align: left;
     }
 
     @media (min-width: 600px) {
-      font-size: $subhead-lg;
-      padding-top: 10%;
+      font-size: $fs-subhead-large;
+      text-align: left;
     }
 
-    li {
-      padding-top: 15px;
+    @media (min-width: 800px) {
+      font-size: $fs-body;
+      text-align: left;
     }
+  }
 
-    li:last-child {
-      break-after: column;
-    }
+  li {
+    font-size: $fs-body;
+    padding-top: 15px;
+  }
+
+  li:last-child {
+    break-after: column;
   }
 }
 
