@@ -15,7 +15,7 @@ title: How technical should designers be?
 
   <p>My thoughts are that having fluent coding skills is not necessary for a designer to have, but it is <em>absolutely</em>beneficial if a designer either already possesses that knowledge on their belt, is willing to actually invest the time and energy into learning it, or seeks professional development because design is a constant path of learning, improvement, and growth. After researching and reading a few articles, here are some conclusions about the benefits and drawbacks of being a designer who codes:</p>
 
-  <section class="helper-space">
+  <section class="helper-space-top">
     <h5><strong>BENEFITS</strong></h5>
       <hr />
     <h4><strong>UX Research and UI Design Process</strong></h4>
@@ -39,7 +39,7 @@ title: How technical should designers be?
       <li>Possessing fluent coding skills secures a stronger position in the job market.</li>
     </ul>
     </section>
-    <section class="helper-space">
+    <section class="helper-space-top">
     <h5><strong>DRAWBACKS</strong></h5>
       <hr />
     <h4><strong>Time is of the essence</strong></h4>
@@ -74,7 +74,7 @@ title: How technical should designers be?
         such as the team, client project, or the company overall.</li>
     </ul>
   </section>
-  <section class="helper-space">
+  <section class="helper-space-top">
   <h5><strong>SOME SOURCES</strong></h5>
    <hr />
   <h6>

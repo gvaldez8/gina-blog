@@ -6,7 +6,7 @@ hr {
 
 header {
   @include header($c-tomato);
-  padding: 3% 10% 16%; // clockwise
+  padding: 3% 10% 20%; // clockwise
 
   h1 {
     font-size: $fs-display-large;
@@ -49,7 +49,7 @@ header {
   @media (min-width: 986px) {
     column-count: 2;
     column-gap: 4em;
-    padding: 2% 0 15%; // clockwise
+    padding: 2% 15% 15%; // clockwise
   }
 
   h2 {
@@ -69,7 +69,7 @@ header {
 
     @media (min-width: 300px) {
       font-size: $fs-caption;
-      padding-top: 10%;
+      padding-top: 3%;
       text-align: left;
     }
 
