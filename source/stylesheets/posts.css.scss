@@ -1,6 +1,4 @@
 @import "sass/base";
-@import "sass/form";
-@import "sass/lists";
 
 nav {
   @include nav($c-mandys-pink);
@@ -28,9 +26,7 @@ body {
 main {
   align-content: center;
   background: $c-mandys-pink;
-  padding-bottom: 20%;
-  padding-left: 15%;
-  padding-right: 15%;
+  padding: 0 15% 20%; // clockwise
   width: 100%;
 
   h2 {
@@ -41,46 +37,8 @@ main {
   .img {
     display: block;
     padding-left: 20%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     width: 100%;
-  }
-}
-
-.typography {
-  column-span: all;
-  padding-top: 3%;
-  text-align: left;
-
-  @media (min-width: 300px) {
-    font-size: $fs-body;
-    text-align: center;
-  }
-
-  @media (min-width: 768px) {
-    font-size: 1.5em;
-    text-align: left;
-  }
-
-  @media (min-width: 900px) {
-    font-size: 1.75em;
-    text-align: left;
-  }
-}
-
-.column {
-
-  @media (min-width: 300px) {
-    column-count: 0;
-  }
-
-  @media (min-width: 768px) {
-    column-count: 0;
-  }
-
-  @media (min-width: 900px) {
-    column-count: 2;
-    column-gap: 4em;
   }
 }
 

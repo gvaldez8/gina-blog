@@ -6,10 +6,7 @@ hr {
 
 header {
   @include header($c-tomato);
-  padding-bottom: 16%;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 3%;
+  padding: 3% 10% 16%; // clockwise
 
   h1 {
     font-size: $fs-display-large;
@@ -31,8 +28,7 @@ header {
     @media (min-width: 800px) {
       font-size: $fs-body-medium;
       line-height: 2.5;
-      padding-left: 5%;
-      padding-right: 5%;
+      padding: 0 5%; // clockwise
       text-align: center;
     }
   }
@@ -42,24 +38,18 @@ header {
 .books__container,
 .resources__container {
   align-content: center;
-  padding-bottom: 20%;
-  padding-left: 15%;
-  padding-right: 15%;
-  padding-top: 10%;
+  padding: 10% 15% 20%; // clockwise
   width: 100%;
 
   @media (min-width: 300px) {
     column-count: 0;
-    padding-left: 15%;
-    padding-right: 15%;
-    padding-top: 10%;
+    padding: 10% 15%; // clockwise
   }
 
   @media (min-width: 986px) {
     column-count: 2;
     column-gap: 4em;
-    padding-bottom: 15%;
-    padding-top: 2%;
+    padding: 2% 0 15%; // clockwise
   }
 
   h2 {
@@ -68,9 +58,7 @@ header {
 
     @media (min-width: 300px) {
       column-count: 0;
-      padding-left: 5%;
-      padding-right: 5%;
-      padding-top: 10%;
+      padding: 10% 0 5%; // clockwise
     }
   }
 
