@@ -1,0 +1,80 @@
+// Lists
+
+
+//Default Lists with mixin overrides for bullet type
+.blogpost--ul {
+  @include lists($list-style-type: disc);
+}
+
+.blogpost--ol {
+  @include lists(decimal, $padding-left: 1em);
+  padding-left: 0;
+}
+
+// Lists without bullet points or numbers
+.blogpost--ul-none,
+.blogpost--ol-none {
+  @include lists($list-style-type: none);
+}
+
+// Default lists with left indents
+.blogpost--ol-indent {
+  @include lists(decimal, $padding-left: 0.5em);
+}
+
+.blogpost--ul-indent {
+  @include lists($padding-left: 1.25em);
+
+  @media (min-width: 300px) {
+    font-size: $fs-subhead;
+    padding-left: 0;
+    padding-top: 20px;
+    text-align: left;
+  }
+
+  @media (min-width: 768px) {
+    font-size: $fs-subhead;
+    padding-left: 0;
+    padding-top: 20px;
+    text-align: left;
+  }
+
+  @media (min-width: 900px) {
+    font-size: $fs-subhead;
+    padding-left: 0;
+    padding-top: 0;
+    text-align: left;
+  }
+}
+
+.blogpost--ul-indent li {
+  font-size: $fs-caption;
+  line-height: 200%;
+  list-style-type: (disc);
+  margin-left: 1.75em;
+
+  @media (min-width: 300px) {
+    font-size: $fs-caption;
+    line-height: 150%;
+  }
+}
+
+// Blogposts that have columns in their layout
+.blogpost--ul-columns,
+.blogpost--ol-columns {
+  @include lists(disc);
+
+  li:last-child {
+    break-after: column;
+  }
+}
+
+.blogpost--ul-columns {
+  @include lists(disc);
+  padding-left: -1em;
+}
+
+.blogpost--ol-columns {
+  @include lists(decimal);
+  padding-left: 1em;
+}

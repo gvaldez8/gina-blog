@@ -1,0 +1,99 @@
+// Mixins
+@import "_color.scss";
+@import "_typography.scss";
+
+
+@mixin nav($background) {
+  background: $background;
+  height: 100%;
+  padding-top: 20px;
+  position: fixed, 40%;
+  width: 100%;
+}
+
+@mixin links($color) {
+  color: $color;
+  font-family: $font-stack-secondary;
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    color: $color;
+    font-family: $font-stack-secondary;
+    font-weight: $fw-bold;
+  }
+
+  &:visited {
+    opacity: 50%
+  }
+}
+
+@mixin hr {
+  display: block;
+  height: 0.05em;
+  border: 0;
+  border-top: 1px solid darkslategray;
+  margin: 1em 0;
+  padding: 0;
+}
+
+@mixin header($background: $c-mandys-pink) {
+  background: $background;
+  clear: both;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 10%;
+  text-align: center;
+  width: 100%;
+}
+
+@mixin p ($padding-top, $padding-left: 1em) {
+  padding-left: $padding-left;
+  padding-top: $padding-top;
+}
+
+// Blogposts the MM/DD/YY tag with rules on side
+
+time {
+  font-size: $fs-caption;
+  text-align: center;
+}
+
+time:before,
+time:after {
+  background-color: $c-night-rider;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+
+  @media (min-width: 300px) {
+    width: 30%;
+  }
+
+  @media (min-width: 768px) {
+    width: 40%;
+  }
+
+  @media (min-width: 900px) {
+    width: 40%;
+  }
+
+  @media (min-width: 1200px) {
+    width: 44%;
+  }
+}
+
+// Override List Bullet Style
+@mixin lists($list-style-type: disc, $padding-left: 0.5em) {
+  padding-left: 1.25em;
+
+  li {
+    list-style-type: $list-style-type;
+    font-size: $fs-body;
+    line-height: 200%;
+    padding-left: $padding-left;
+  }
+}

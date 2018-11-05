@@ -1,0 +1,60 @@
+// Navigation
+@import '_color.scss';
+@import '_typography.scss';
+@import '_mixins.scss';
+
+nav {
+  @include nav($c-tomato);
+
+  ul {
+    color: $c-primary-black;
+    list-style-type: none;
+    padding-left: 5%;
+    padding-top: 20px;
+    text-align: left;
+  }
+}
+
+.svg {
+  position: fixed;
+  right: 2%;
+  top: 5%;
+}
+
+.copyright,
+.trademark {
+  bottom: 30%;
+  font-family: $font-stack-secondary;
+  font-size: $fs-caption;
+  font-weight: $fw-bold;
+  position: fixed;
+  top: 50%;
+  z-index: 1000;
+}
+
+.copyright {
+  right: 1%;
+  transform: rotate(90deg);
+}
+
+.trademark {
+  left: 1%;
+  transform: rotate(-90deg);
+}
+
+a {
+  color: $c-primary-black;
+  font-family: $font-stack-secondary;
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    font-family: $font-stack-secondary;
+    color: $c-primary-black;
+    font-weight: $fw-bold;
+  }
+
+  &:visited {
+    opacity: 50%
+  }
+}

@@ -1,0 +1,472 @@
+---
+title: Explanations and Examples of every HTML element
+---
+
+<main>
+  <header>
+    <h1>Explanations and examples of every<br> (yes, every) HTML element.</h1>
+    <time datetime="2018-11-09">SEPTEMBER 11, 2018</time>
+  </header>
+  <section class='blogposts__post'>
+    <h1>WE&#39;VE MET BEFORE</h1>
+    <ul class="ul--none">
+      <li>
+        <strong>&#60;!-- --&#62;</strong> tag allows you to make comments that will not be visible and will you help
+        quickly navigate throughout your HTML file and collaborate with your team.
+        <script src="https://gist.github.com/gvaldez8/a1a94e943240d197b4dacdb5579c0a53.js"></script>
+      </li>
+      <li>
+        <strong>&#60!DOCTYPE&#62;</strong> tag defines the document type.
+        <script src="https://gist.github.com/gvaldez8/db601adaefef702ec9f7e5c211d782e8.js"></script>
+      </li>
+      <li> <strong>&#60;html&#62;</strong> tag defines that you are in an html document.
+        <script src="https://gist.github.com/gvaldez8/a2f032bea8ccaa79eb4eebab6481b634.js"></script>
+      </li>
+      <li>
+        <strong>&#60;meta&#62;</strong> tag defines the metadata that describes a webpage using keywords and short
+        descriptions for Search Engine Optimization.
+        <script src="https://gist.github.com/gvaldez8/9501e2da532890639b0bfcc963abb11e.js"></script>
+      </li>
+      <li>
+        <strong>&#60;head&#62;</strong> tag defines information about the document. This is where you place the web
+        page title that will show up on your browser tab, as well as where you link stylesheets, fonts, the meta tag,
+        and specify if there is any HTML, CSS, or Javascript on the page.
+        <script src="https://gist.github.com/gvaldez8/f9018029e39765518c5943590732d5e8.js"></script>
+      </li>
+      <li>
+        <strong>&#60;title&#62;</strong> tag defines the title of your webpage.
+        <script src="https://gist.github.com/gvaldez8/de08196abfe1ca1e2f237b239b9a91ac.js"></script>
+      </li>
+      <li>
+        <strong>&#60;header&#62;</strong> tag defines the header for your document or for a section within your
+        document.
+        <script src="https://gist.github.com/gvaldez8/9ca383cc1da0f3b02935ac6f226b99a0.js"></script>
+      </li>
+      <li>
+        <strong>&#60;nav&#62;</strong> tag defines the navigation within your HTML file and is a <em>Semantic Tag</em>,
+        which clearly defines its meaning to both the browser and the developer. Other semantic tags include: <strong>&#60;header&#62;</strong>,
+        <strong>&#60;main&#62;</strong>, <strong>&#60;section&#62;</strong>, <strong>&#60;article&#62;</strong>,
+        <strong>&#60;aside&#62;</strong>, <strong>&#60;footer&#62;</strong>, <strong>&#60;form&#62;</strong>, and
+        <strong>&#60;table&#62;</strong>.
+        <script src="https://gist.github.com/gvaldez8/744cf1c6e071f98e4111cd482e6e2092.js"></script>
+      </li>
+      <li>
+        <strong>&#60;body&#62;</strong> tag defines the document's body. The majority of your website content, such
+        as images, text, quotes, articles, links, and videos will appear here.
+        <script src="https://gist.github.com/gvaldez8/31467cc6669d2e52439bbfe46a5d48de.js"></script>
+      </li>
+      <li>
+        <strong>&#60;h1&#62; through &#60;h6&#62;</strong>tags help you establish text hierarchy between headlines,
+        body copy, and captions.
+        <script src="https://gist.github.com/gvaldez8/0bfd9e5fbd2e344e6f45ae43d57b9176.js"></script>
+      </li>
+      <li>
+        <strong>&#60;div&#62;</strong> tag defines a section in a document. This tag creates a division or section,
+        but not as effective as using Semantic HTML. This tag is often used as a container for other HTML elements to
+        style them using CSS or perform certain tasks using Javascript.
+        <script src="https://gist.github.com/gvaldez8/fe0f015aac5715692daa4a929868db1f.js"></script>
+      </li>
+      <li>
+        <strong>&#60;main&#62;</strong> tag defines the main content within the <strong>&#60;body&#62;</strong> tag
+        of your document and should be unique to that page. It should not include elements that you duplicate and
+        reuse across multiple pages (i.e. navigation or footer).
+        <script src="https://gist.github.com/gvaldez8/c6aeaa05157bf42a57f81c8bb8390f50.js"></script>
+      </li>
+      <li>
+        <strong>&#60;section&#62;</strong> tag defines a section within your document, such as chapters, headers, and
+        footers.
+        <script src="https://gist.github.com/gvaldez8/74e1f382d1fb521168fcbb19d8b4b198.js"></script>
+      </li>
+      <li>
+        <strong>&#60;article&#62;</strong> tag inserts an external source of information that is intended to be
+        reusable and independently distributed, such as a forum post, magazine, newspaper article, or blog entry.
+        <script src="https://gist.github.com/gvaldez8/091c3992376612d96d9c87a7601ab184.js"></script>
+      </li>
+      <li>
+        <strong>&#60;aside&#62;</strong> tag contains information related to the article in context, so, for example,
+        sidebars (in printed typography), footnotes, highlighted quotes, glossary terminology, or call-outs. <em><strong>Note:</strong>
+          This is different than a <strong>&#60;sidebar&#62;</strong>, as a sidebar can be used as navigation or
+          feature ads, search boxes, and blogrolls.</em>
+        <script src="https://gist.github.com/gvaldez8/4abf994c10302de46d816835ea54f01a.js"></script>
+      </li>
+      <li>
+        <strong>&#60;footer&#62;</strong> tag defines the footer of your document, which is where you might display
+        secondary navigation links, social media links, or copyright.
+        <script src="https://gist.github.com/gvaldez8/f6f05e99ef918633905157bad5dbb55c.js"></script>
+      </li>
+      <li>
+        <strong>&#60;p&#62;</strong> tag defines a paragraph.
+        <script src="https://gist.github.com/gvaldez8/c3daeef36dd8b3e5d4c594e1df32884f.js"></script>
+      </li>
+      <li>
+        <strong>&#60;style&#62;</strong> tag allows you to write CSS within your HTML document. This is called <em>Inline
+          Styles</em>, and if you are working within a team, it is not recommended. It is good, however, for making
+        changes to very specific, minor one-time elements.
+        <script src="https://gist.github.com/gvaldez8/d3dcba31eefc9f210ee6cbcae672761e.js"></script>
+      </li>
+      <li>
+        <strong>&#60;em&#62;</strong> tag emphasizes or italicizes your text.
+        <script src="https://gist.github.com/gvaldez8/3a70b69ffc241f995b51f70b4723dcc8.js"></script>
+      </li>
+      <li>
+        <strong>&#60;strong&#62;</strong> tag bolds your text.
+        <script src="https://gist.github.com/gvaldez8/6b90cbf9ef28c3250aa6fcc9fbbb7230.js"></script>
+      </li>
+      <li>
+        <strong>&#60;u&#62;</strong> tag underlines your text.
+        <script src="https://gist.github.com/gvaldez8/f95a7e2174c1b90522e332d5cb9f5721.js"></script>
+      </li>
+      <li>
+        <strong>&#60;a&#62;</strong> tag creates a hyperlink.
+        <script src="https://gist.github.com/gvaldez8/7247ce7267ca0d055e596df3d3db423c.js"></script>
+      </li>
+      <li>
+        <strong>&#60;img&#62;</strong> tag allows you to display and link an image to your webpage. Within this tag,
+        you can link to another source, define specific height and width properties, and add a brief written
+        description within metadata to account for blindness. <em><strong>Note:</strong> You do not need to add an
+          end tag or a / to the end.</em>
+        <script src="https://gist.github.com/gvaldez8/94639cfe0094584e0b6b1dbcca2a25eb.js"></script>
+      </li>
+      <li>
+        <strong>&#60;ul&#62;</strong> tag defines an unordered list, which means that it will display with bullet
+        points in HTML. <em><strong>Quick tip:</strong> You can get rid of the bullet points using the CSS property
+          "list-style" and set that property to "none."</em>
+        <script src="https://gist.github.com/gvaldez8/f5427732ca7f98571a4f1c7c8442b74e.js"></script>
+      </li>
+      <li>
+        <strong>&#60;ol&#62;</strong> tag is an ordered list, which is obviously the opposite of an unordered list.
+        With this element, your text will display numbers next to each item.
+        <script src="https://gist.github.com/gvaldez8/4c439da0e9d6baa86b5261360d02247d.js"></script>
+      </li>
+      <li>
+        <strong>&#60;li&#62;</strong>tag defines a list item.
+        <script src="https://gist.github.com/gvaldez8/f4e623ab884f4b31af3d8fee72fe8065.js"></script>
+      </li>
+      <li>
+        <strong>&#60;br&#62;</strong> tag creates a line break. Note that this is a <em>Self-Closing Tag</em>, as
+        well as <strong>&#60;hr&#62;</strong> and <strong>&#60;img&#62;</strong>.
+        <script src="https://gist.github.com/gvaldez8/7f7fa827c587444d4e2c33f03f1a3429.js"></script>
+      <li>
+        <strong>&#60;hr&#62;</strong> tag is self-closing and defines a thematic break, otherwise known as a
+        horizontal rule.
+        <script src="https://gist.github.com/gvaldez8/50af1cdb55eefd2c5d63e4a14727c1cd.js"></script>
+      </li>
+      <li>
+        <strong>&#60;button&#62;</strong> tag creates a clickable button.
+        <script src="https://gist.github.com/gvaldez8/4c0784d2eb2428a6303e54d64e8d6f02.js"></script>
+      </li>
+    </ul>
+    <br />
+    <h4><strong>WE&#39;RE FAMILIAR BUT NOT ACQUAINTED</strong></h4>
+    <ul class="ul--none">
+      <li>
+        <strong>&#60;audio&#62;</strong> tag allows you to insert an audio file.
+        <script src="https://gist.github.com/gvaldez8/bd08a12f3f3c77f6e8df2991887fd59e.js"></script>
+      </li>
+      <li>
+        <strong>&#60;small&#62;</strong> tag defines smaller text.
+      </li>
+      <li>
+        <strong>&#60;blockquote&#62;</strong> tag defines a section that is quoted from an external source.
+        <script src="https://gist.github.com/gvaldez8/ae66478f324c42aa33f5bea195163765.js"></script>
+      </li>
+      <li>
+        <strong>&#60;caption&#62;</strong> tag defines a table caption. <strong>Note:</strong> This tag needs to be inserted immediately after the table tag and there can only be one <strong>&#60;caption&#62;</strong> tag per
+        table.
+        <script src="https://gist.github.com/gvaldez8/12ec9f6338c9bb5eeb2a557a06ee7ab5.js"></script>
+      </li>
+      <li>
+        <strong>&#60;col&#62;</strong> tag specifies the column properties for each column within a <strong>&#60;colgroup.&#62;</strong>.This tag is normally used when the values of each column are different.
+      </li>
+      <li>
+        <strong>&#60;colgroup&#62;</strong> tag specifies a group of one or more columns within a table for formatting.
+        <script src="https://gist.github.com/gvaldez8/06fbb0b08fd0eb6ca41ef3fb80834eb5.js"></script>
+      </li>
+      <li>
+        <strong>&#60;embed&#62;</strong> tag defines a container for an external application or interactive content, like a plug-in.
+        <script src="https://gist.github.com/gvaldez8/c988294e0b39d103342fccad993aa322.js"></script>
+      </li>
+      <li>
+        <strong>&#60;form&#62;</strong> tag defines an HTML form for user input.
+      </li>
+      <li>
+        <strong>&#60;input&#62;</strong> tag specifies a field where the user can input data. This tag is used within a <strong>&#60;form&#62;</strong> to declare user controls to input data. The input field can vary depending
+        on the type attribute.
+        <script src="https://gist.github.com/gvaldez8/20d43e3934d34aa95cbb847c52fafaa2.js"></script>
+      </li>
+      <li>
+        <strong>&#60;link&#62;</strong> tag defines a link between a document and an external source.
+        <script src="https://gist.github.com/gvaldez8/8c9669555e574bdbefab8da1f584641f.js"></script>
+      </li>
+      <li>
+        <strong>&#60;noscript&#62;</strong> tag defines an alternate content for users that have disabled scripts in
+        their browser or have a browser that doesn't support script.
+        <script src="https://gist.github.com/gvaldez8/93ab04647b7247ae0faa2ed3e10f4ca1.js"></script>
+      </li>
+      <li>
+        <strong>&#60;object&#62;</strong> tag an embedded object.
+        <script src="https://gist.github.com/gvaldez8/826af0f9bb1537bb20fe3adda02ff46a.js"></script>
+      </li>
+      <li>
+        <strong>&#60;script&#62;</strong> tag defines a client-side script (JavaScript). The <strong>&#60;script&#62;</strong>
+        element either contains scripting statements, or it points to an external script file through the src
+        attribute.
+        <script src="https://gist.github.com/gvaldez8/563637268b2d08a054a8050eb84e614c.js"></script>
+      </li>
+      <li>
+        <strong>&#60;span&#62;</strong> tag is similar to the <strong>&#60;script&#62;</strong> tag and is mostly used for styling. The difference is that the <strong>&#60;div&#62;</strong> tag is a <em>block elements</em>, meaning that it is on a separate line. In contrast, this tag is an <em>in-line element</em>, meaning it can
+        be on the same line as other elements.
+        <script src="https://gist.github.com/gvaldez8/0d0a1473d2b346ce0a488d4901e70fc6.js"></script>
+      </li>
+      <li>
+        <strong>&#60;svg&#62;</strong>tag defines a container for SVG graphics.
+        <script src="https://gist.github.com/gvaldez8/299f6878c721061a9950dbda8c796b0b.js"></script>
+      </li>
+      <li>
+        <strong>&#60;video&#62;</strong> tag specifies video, such as a movie clip or other video streams. Currently,
+        there are 3 support video formats: MP4, WebM, Ogg.
+        <script src="https://gist.github.com/gvaldez8/b39b890feac95db67fcdda0d7845ab4b.js"></script>
+      </li>
+      <br />
+      <li><strong>TABLE ELEMENTS</strong></li>
+      <li>
+        <strong>&#60;table&#62;</strong> tag creates an HTML table usually composed of <strong>&#60;tr&#62;</strong>,
+        <strong>&#60;th&#62;</strong>, and <strong>&#60;td&#62;</strong> elements.
+      </li>
+      <li>
+        <strong>&#60;th&#62;</strong> tag defines a table header.
+      </li>
+      <li>
+        <strong>&#60;tr&#62;</strong>tag defines a table row.
+      </li>
+      <li>
+        <strong>&#60;td&#62;</strong>tag defines a table cell.
+        <script src="https://gist.github.com/gvaldez8/74e19c4802d9f0423b44e873cc36c892.js"></script>
+      </li>
+      <li>
+        <strong>&#60;thead&#62;</strong> tag is used to group header content in an HTML table and is used with the
+        <strong>&#60;tbody&#62;</strong> and <strong>&#60;tbody&#62;</strong> tags.
+      </li>
+      <li>
+        <strong>&#60;tbody&#62;</strong> tag is used to group the body content in an HTML table. This element is used with the <strong>&#60;thead&#62;</strong> and <strong>&#60;tfoot&#62;</strong> elements to specify each part of a table (body, header, footer).
+      </li>
+      <li>
+        <strong>&#60;tfoot&#62;</strong> tag is used to group footer content in an HTML table. This element is used with the <strong>&#60;thead&#62;</strong> and <strong>&#60;tbody&#62;</strong> elements to specify each part of a table (footer, header, body).
+        <script src="https://gist.github.com/gvaldez8/69ea1a6c451d41ff981f43f71a95bfae.js"></script>
+      </li>
+    </ul>
+    <br />
+    <h4><strong>WE&#39;RE MEETING FOR THE FIRST TIME</strong></h4>
+    <ul class="ul--none">
+      <li>
+        <strong>&#60;abbr&#62;</strong> tag defines an abbreviation or acronym.
+        <script src="https://gist.github.com/gvaldez8/8fc8800bf8d0d46410c81ff49d11cb95.js"></script>
+      </li>
+      <li>
+        <strong>&#60;area&#62;</strong> tag defines an area within an image map.
+        <script src="https://gist.github.com/gvaldez8/a699fcdacf01d696411dc0bed12440af.js"></script>
+      </li>
+      <li>
+        <strong>&#60;address&#62;</strong> tag defines contact information for the author/owner of a document.
+        <script src="https://gist.github.com/gvaldez8/e8274c4633b474ac4f1e47feb0db099b.js"></script>
+      </li>
+      <li>
+        <strong>&#60;base&#62;</strong> tag specifies the base URL/target for all relative URLs in a document.
+        <script src="https://gist.github.com/gvaldez8/657d2bd9033589072ade706928a8c464.js"></script>
+      </li>
+      <li>
+        <strong>&#60;bdi&#62;</strong> tag stands for <em>Bi-Directional Isolation</em> element, which isolates a part of text that might be formatted in a different direction from other text outside it, such an Arabic
+        word.
+        <script src="https://gist.github.com/gvaldez8/526d985e6a4ff74301aae2ac0d842ff6.js"></script>
+      </li>
+      <li>
+        <strong>&#60;bdo&#62;</strong> tag stands for <em>Bi-Directional Text Override</em> element, which is used to
+        override the current text direction.
+        <script src="https://gist.github.com/gvaldez8/340b74a59f362c16691cbd79774c0039.js"></script>
+      </li>
+      <li>
+        <strong>&#60;canvas&#62;</strong> tag is used to draw graphics in real-time via scripting, usually requiring JavaScript.
+        <script src="https://gist.github.com/gvaldez8/6267130019d1efafdbdbd264e789888e.js"></script>
+      </li>
+      <li>
+        <strong>&#60;cite&#62;</strong> tag defines a title of a work.
+        <script src="https://gist.github.com/gvaldez8/77a5e67bef171db9dbfd55f6f3bc8717.js"></script>
+      </li>
+      <li>
+        <strong>&#60;code&#62;</strong> tag defines a piece of computer code.
+        <script src="https://gist.github.com/gvaldez8/ef6c7dc00b47c554a3f5d5a3f5840ec0.js"></script>
+      </li>
+      <li>
+        <strong>&#60;data&#62;</strong> tag links the given content with a machine-readable translation.
+        <script src="https://gist.github.com/gvaldez8/4214aaca6deadda3ced75405231cbc68.js"></script>
+      </li>
+      <li>
+        <strong>&#60;datalist&#62;</strong> tag specifies a list of pre-defined options for input controls.
+        <script src="https://gist.github.com/gvaldez8/020403d91715e0f39a146321802fb2e4.js"></script>
+      </li>
+      <li>
+        <strong>&#60;del&#62;</strong> tag defines text that has been deleted from a document.
+        <script src="https://gist.github.com/gvaldez8/52fe1d24d728fa05bead00325d0b5f9e.js"></script>
+      </li>
+      <li>
+        <strong>&#60;details&#62;</strong> tag defines additional details that the user can view or hide.
+        <script src="https://gist.github.com/gvaldez8/98d8480a5bd64e9d6d5aa8c4ccb71873.js"></script>
+      </li>
+      <li>
+        <strong>&#60;dialog&#62;</strong> tag defines a dialogue box or window.
+        <script src="https://gist.github.com/gvaldez8/ed647096035c7701b8a4477281705c81.js"></script>
+      </li>
+      <li>
+        <strong>&#60;dfn&#62;</strong> tag requires a defining instance of a term.
+        <script src="https://gist.github.com/gvaldez8/34d1db2025314adf02a0097fe04ad861.js"></script>
+      </li>
+      <li>
+        <strong>&#60;dl&#62;</strong> tag defines a description list.
+      </li>
+      <li>
+        <strong>&#60;dt&#62;</strong> tag defines a term or name in a description list.
+      </li>
+      <li>
+        <strong>&#60;dd&#62;</strong> tag defines a description/value of a term in a description list.
+        <script src="https://gist.github.com/gvaldez8/d3ae66119f591950582727a2e88074ec.js"></script>
+      </li>
+      <li>
+        <strong>&#60;fieldset&#62;</strong> tag groups related elements in a form.
+      </li>
+      <li>
+        <strong>&#60;legend&#62;</strong> tag defines a caption for a <strong>&#60;fieldset&#62;</strong> input
+        element.
+        <script src="https://gist.github.com/gvaldez8/329d4983a380e849e89b88c51dd2a8cf.js"></script>
+      </li>
+      <li>
+        <strong>&#60;figcaption&#62;</strong> tag defines a caption for a <strong>&#60;figure&#62;</strong> element.
+      </li>
+      <li>
+        <strong>&#60;figure&#62;</strong> tag specifies self-contained content.
+        <script src="https://gist.github.com/gvaldez8/31644a716d885b5cea76cb63e4d3c713.js"></script>
+      </li>
+      <li>
+        <strong>&#60;ins&#62;</strong> tag defines a text that has been inserted into a document.
+        <script src="https://gist.github.com/gvaldez8/d6d829093cfdb507f7eade6510292765.js"></script>
+      </li>
+      <li>
+        <strong>&#60;kbd&#62;</strong> tag defines keyboard input.
+        <script src="https://gist.github.com/gvaldez8/34a3b976d5588065d3015e239eaccd81.js"></script>
+      </li>
+      <li>
+        <strong>&#60;label&#62;</strong> tag defines a label for an <strong>&#60;input&#62;</strong> element.
+        <script src="https://gist.github.com/gvaldez8/875698b8b4df6ab70e163e9f80f2758f.js"></script>
+      </li>
+      <li>
+        <strong>&#60;map&#62;</strong> tag defines a client-side image-map.
+        <script src="https://gist.github.com/gvaldez8/7e4215cf04a2064f5728a0d03dd24b17.js"></script>
+      </li>
+      <li>
+        <strong>&#60;mark&#62;</strong> tag defines marked/highlighted text.
+        <script src="https://gist.github.com/gvaldez8/df815bd6f1e7ed379a02151f0c0a9b8b.js"></script>
+      </li>
+      <li>
+        <strong>&#60;meter&#62;</strong> tag defines a scalar measurement within a known range (a gauge).
+        <script src="https://gist.github.com/gvaldez8/8adb3b2a41e8568df5c815dce2d6ae22.js"></script>
+      </li>
+      <li>
+        <strong>&#60;output&#62;</strong> tag defines the result of a calculation.
+        <script src="https://gist.github.com/gvaldez8/c7f992b1cd21ec1187dbd2ba44ddc1bb.js"></script>
+      </li>
+      <li>
+        <strong>&#60;param&#62;</strong> tag defines a parameter for an object.
+        <script src="https://gist.github.com/gvaldez8/53121fc59043f128eb6e7bbf0b7a8471.js"></script>
+      </li>
+      <li>
+        <strong>&#60;picture&#62;</strong> tag defines a container for multiple image resources.
+        <script src="https://gist.github.com/gvaldez8/eaa0f1b848bc46c9652982343332b2b5.js"></script>
+      </li>
+      <li>
+        <strong>&#60;pre&#62;</strong> tag defines preformatted text.
+        <script src="https://gist.github.com/gvaldez8/bb1c376a1c76346427b9ecb95b847cad.js"></script>
+      </li>
+      <li>
+        <strong>&#60;progress&#62;</strong> tag represents the progress of a task.
+        <script src="https://gist.github.com/gvaldez8/9162f21d1fcdbe39b65632f1165df640.js"></script>
+      </li>
+      <li>
+        <strong>&#60;q&#62;</strong> tag defines a short quotation
+        <script src="https://gist.github.com/gvaldez8/f6f834fc163b3fd8b8368b741a143aad.js"></script>
+      </li>
+      <li>
+        <strong>&#60;rp&#62;</strong> tag defines what to show in browsers that do not support ruby annotations.
+      </li>
+      <li>
+        <strong>&#60;rt&#62;</strong> tag defines an explanation/pronunciation of characters (for East Asian
+        typography).
+      </li>
+      <li>
+        <strong>&#60;ruby&#62;</strong> tag defines a ruby annotation (for East Asian typography)
+        <script src="https://gist.github.com/gvaldez8/d2d5071ec84c65dff2cdc838f68d365b.js"></script>
+      </li>
+      <li>
+        <strong>&#60;s&#62;</strong> tag defines text that is no longer correct.
+        <script src="https://gist.github.com/gvaldez8/7ef90092aeb582809a6fbd01b93187a2.js"></script>
+      </li>
+      <li>
+        <strong>&#60;samp&#62;</strong> tag defines sample output from a computer program.
+        <script src="https://gist.github.com/gvaldez8/f2428de47c448adedbc724465bf17957.js"></script>
+      </li>
+      <li>
+        <strong>&#60;select&#62;</strong> tag defines a drop-down list.
+      </li>
+      <li>
+        <strong>&#60;option&#62;</strong> tag defines an option in a drop-down list.
+        <script src="https://gist.github.com/gvaldez8/f2575748db528f9aed4d4d26ef020bce.js"></script>
+      </li>
+      <li>
+        <strong>&#60;optgroup&#62;</strong> tag defines a group of related options in a drop-down list
+        <script src="https://gist.github.com/gvaldez8/ca1a3148eaf62ab2ec8d2814a8a14c71.js"></script>
+      </li>
+      <li>
+        <strong>&#60;source&#62;</strong> tag defines multiple media resources for media elements (<strong>&#60;video&#62;</strong>
+        and <strong>&#60;audio&#62;</strong>).
+        <script src="https://gist.github.com/gvaldez8/c2fa840de7bcf77d69e8cc9e7cb3e594.js"></script>
+      </li>
+      <li>
+        <strong>&#60;sub&#62;</strong> tag defines subscripted text.
+        <script src="https://gist.github.com/gvaldez8/dc3eb925d91b384a3ea3937ffe0c6be6.js"></script>
+      </li>
+      <li>
+        <strong>&#60;summary&#62;</strong> tag defines a visible heading for a <strong>&#60;details&#62;</strong>
+        element.
+        <script src="https://gist.github.com/gvaldez8/1fd48b13ecfa68c080bd8f705685faeb.js"></script>
+      </li>
+      <li>
+        <strong>&#60;sup&#62;</strong>tag defines superscripted text.
+        <script src="https://gist.github.com/gvaldez8/a8382894223b0da9b74d52da62cf04f9.js"></script>
+      </li>
+      <li>
+        <strong>&#60;template&#62;</strong> tag is a mechanism for holding client-side content that is not to be
+        rendered when a page is loaded but may subsequently be instantiated during runtime using JavaScript.
+        <script src="https://gist.github.com/gvaldez8/99de607bc876f121885ca6b7a2b31821.js"></script>
+      </li>
+      <li>
+        <strong>&#60;textarea&#62;</strong> tag defines a multiline input control (text area).
+        <script src="https://gist.github.com/gvaldez8/a8c384c2e9e68f1d4d0091d09665aeb5.js"></script>
+      </li>
+      <li>
+        <strong>&#60;time&#62;</strong> tag defines a date/time.
+        <script src="https://gist.github.com/gvaldez8/b5b89f35101186e492d24a5535de9b28.js"></script>
+      </li>
+      <li>
+        <strong>&#60;track&#62;</strong> tag defines text tracks for media elements (<strong>&#60;video&#62;</strong>and
+        <strong>&#60;audio&#62;</strong>).
+        <script src="https://gist.github.com/gvaldez8/2449189bf2000da0625f8507a65eb21a.js"></script>
+      </li>
+      <li>
+        <strong>&#60;var&#62;</strong> tag defines a variable.
+        <script src="https://gist.github.com/gvaldez8/f1d8d6c07efed7308e33265b513ad84c.js"></script>
+      </li>
+      <li>
+        <strong>&#60;wbr&#62;</strong> tag defines a possible line-break.
+        <script src="https://gist.github.com/gvaldez8/b120e48be32adf7f044b90f71245c726.js"></script>
+      </li>
+    </ul>
+  </section>
+</main>

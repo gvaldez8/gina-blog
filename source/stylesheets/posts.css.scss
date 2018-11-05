@@ -1,0 +1,89 @@
+@import "sass/base";
+
+nav {
+  @include nav($c-mandys-pink);
+
+  a {
+    @include links($c-dark-golden-rod);
+    line-height: 0.5em;
+  }
+}
+
+hr {
+  @include hr;
+}
+
+body {
+  color: $c-night-rider;
+  font-family: $font-stack-secondary;
+  line-height: 1.6;
+  text-align: left;
+}
+
+
+/* CONTENT & CONTAINERS */
+
+main {
+  align-content: center;
+  background: $c-mandys-pink;
+  padding: 0 15% 20%; // clockwise
+  width: 100%;
+
+  h2 {
+    column-span: all;
+    text-align: left;
+  }
+
+  .img {
+    display: block;
+    padding-left: 20%;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+.p-css-architecture {
+  @include p($padding-top: 20px);
+}
+
+.blogpost__text--space h3 {
+  @media (min-width: 300px) {
+    font-size: $fs-subhead;
+    padding-left: 5%;
+    text-align: left;
+  }
+
+  @media (min-width: 768px) {
+    font-size: $fs-subhead;
+    padding-left: 0;
+    text-align: left;
+  }
+
+  @media (min-width: 900px) {
+    font-size: $fs-subhead-large;
+    text-align: left;
+  }
+}
+
+.blogpost__text--space h4 {
+  padding-top: 0;
+}
+
+.blogpost__text--space p {
+  padding-top: 10px;
+
+  @media (min-width: 768px) {
+    font-size: $fs-subhead;
+    text-align: left;
+  }
+}
+
+.blogpost__text--space ul {
+  list-style-type: disc;
+
+  li {
+    padding-top: 8px;
+  }
+}
+
+/* END OF CONTENT & CONTAINERS */
