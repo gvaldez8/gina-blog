@@ -1,9 +1,9 @@
 <nav>
   <ul>
-    <li><a href='/#blog-posts'>Blog</a></li>
-    <li><a href='#'>Books</a></li>
-    <li><a href='#'>Resources</a></li>
+    <li><%= link_to 'Blog', '/index.html#blog-posts' %></li>
+    <li><%= link_to 'Books', '/index.html#books' %></li>
+    <li><%= link_to 'Resources', '/index.html#resources' %></li>
   </ul>
 
-  <img class='svg' src='/images/ginalogo-gold2.svg' height='40px' width='40px' alt="Gina's logo" />
+  <%= image_tag "ginalogo-gold2.svg", :height => "40px", :width => "40px", :class => "svg", :alt => "Gina's logo" %>
 </nav>
