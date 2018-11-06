@@ -1,14 +1,14 @@
 ---
-title: Getting Responsive with Media Queries and Mobile First Design/Development
+title: Getting Responsive with Media Queries
 time: October 3, 2018
 ---
 
 <main class='blogposts__container'>
  <header>
-      <h1>Responsive Web Design, Media Queries, <br> and Mobile First Design/Development</h1>
+      <h1>Getting Responsive with Media Queries</h1>
       <time datetime="2018-10-3">OCTOBER 3, 2018</time>
 </header>
-   <p>Before you can understand the purpose of mobile first design/development, media queries, and how to apply them, you need to understand what responsive web design is first.</p>
+   <p>Before we deep dive into the purpose of mobile first design/development, media queries, and how to apply them, we need to understand what responsive web design is and its purpose.</p>
 
 <h3>Responsive Web Design</h3>
 <hr />
