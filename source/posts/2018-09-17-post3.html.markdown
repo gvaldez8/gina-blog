@@ -1,5 +1,6 @@
 ---
 title: Explain CSS Positioning with Examples
+time: November 17, 2018
 ---
 
 
@@ -8,8 +9,8 @@ title: Explain CSS Positioning with Examples
     <h1>Explain CSS Positioning with Examples</h1>
     <time datetime="2018-11-17">SEPTEMBER 17, 2018</time>
   </header>
-  <p>There are currently 5 CSS position values:
-    <ol>
+  <p>There are currently 5 CSS position values:</p>
+    <ol class='blogpost--ol-indent'>
       <li>
         <strong>Static</strong> - This is the default value of all elements and appear in the same order as
         specified in the HTML file. The element is positioned according to the normal flow of the document. The

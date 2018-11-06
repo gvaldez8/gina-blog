@@ -6,11 +6,11 @@ time: October 3, 2018
 <main class='blogposts__container'>
  <header>
       <h1>Getting Responsive with Media Queries</h1>
-      <time datetime="2018-10-3">OCTOBER 3, 2018</time>
+      <time datetime="2018-10-03">OCTOBER 3, 2018</time>
 </header>
    <p>Before we deep dive into the purpose of mobile first design/development, media queries, and how to apply them, we need to understand what responsive web design is and its purpose.</p>
 
-<h3>Responsive Web Design</h3>
+<h3 class='helper-space-top'>Responsive Web Design</h3>
 <hr />
 
 <p>Responsive web design (RWD) is designing online experiences that adapt to various screen sizes, platforms, and orientations according to user environments. For example, you might use your phone on the train as opposed to your desktop that you use when you're working in the office. You may use a tablet or a kindle to stream movies, play video games, and read e-books.Responsive web design requires the use of CSS media queries—powerful snippets of code that define "breakpoints"—to create flexible grids, layouts, and images that resize and rearrange content (media, images, text, forms) to account for various screen sizes. <strong>Breakpoints</strong> are the point (in pixels) in which content will resize and rearrange itself to a layout that provides the best experience according to a user's environment. Here's an example below of both responsive web design and breakpoints:</p>
@@ -18,7 +18,7 @@ time: October 3, 2018
 <%= image_tag "responsive-desktop.png" %>
 
 
-<h3>Mobile First Design and Development</h3>
+<h3 class='helper-space-top'>Mobile First Design and Development</h3>
 <hr />
 
 <p>Mobile first design is when you prioritize designing for mobile before considering the designs of the other screen sizes, like tablet and desktop. One reason for doing so is because mobile usage as opposed to desktop usage has increased dramatically. Another reason that it's important is because it helps in selecting and providing only the most essential information. The reason behind this methodology is to account for the user's environment—they could be traveling or commuting, casually walking down the street, lounging around in bed, or even just on the couch in the comfort of their own living room—when interacting with an online experience through mobile. Regardless of where your user might be, their level of focus will ultimately adjust according to the environment. There is also less real estate on a smaller screen. Hence, the reason that the design needs to facilitate that online experience by providing a quick, easily accessible way to locate the information that they need and process it within a limited amount of time. </p>
@@ -27,7 +27,7 @@ time: October 3, 2018
 
 
 
-<h3>Media Queries</h3>
+<h3 class='helper-space-top'>Media Queries</h3>
 <hr />
 
 <p>Media queries are a feature of CSS that enables web content (media, images, text, forms) to adapt according to different devices, screen sizes, and resolutions. Basically, media queries are what make responsive web design possible. Media queries are called upon in your stylesheets using the <code>@media</code> rule, followed by a breakpoint, and are nested within a specific CSS property that you want to resize or rearrange.</p>
@@ -42,7 +42,7 @@ time: October 3, 2018
 
 
 
-<h3>Defining Breakpoints</h3>
+<h3 class='helper-space-top'>Defining Breakpoints</h3>
 <hr />
 
 <p>Now, let's quickly review what breakpoints are:</p>
@@ -50,7 +50,7 @@ time: October 3, 2018
 <blockquote>Breakpoints are the point (in pixels) in which content will resize and rearrange itself to a layout that provides the best experience according to a user's environment.</blockquote>
 
 <p>Breakpoints used to be strictly defined according to standard screen sizes: </p>
-<ul>
+<ul class="blogpost--ul-indent">
     <li>Mobile (usually the iPhone at 320px and 480px)</li>
     <li>Tablet (usually the iPad at 768px and 1024px)</li>
     <li>Desktop (above 1024px)</li>
@@ -60,7 +60,7 @@ time: October 3, 2018
 
 
 
-<h3>Bringing It Together: Using Media Queries and Breakpoints</h3>
+<h3 class='helper-space-top'>Bringing It Together: Using Media Queries and Breakpoints</h3>
 <hr />
 
 <p>As we covered earlier, media queries are called upon using the <code>@media</code> rule, followed by the breakpoint (defined in pixels), and nested under the CSS property in your stylesheet that you would like to be resized and/or rearranged.</p>

@@ -10,20 +10,20 @@
     <name>Blog Author</name>
   </author>
   <entry>
-    <title>The Differences between SCSS and Sass</title>
-    <link rel="alternate" href="http://blog.url.com/gina-blog/2018/10/16/post10.html"/>
-    <id>http://blog.url.com/gina-blog/2018/10/16/post10.html</id>
+    <title>An Explanation of Sass and How to use it</title>
+    <link rel="alternate" href="http://blog.url.com/gina-blog/2018/10/16/post9.html"/>
+    <id>http://blog.url.com/gina-blog/2018/10/16/post9.html</id>
     <published>2018-10-15T19:00:00-05:00</published>
-    <updated>2018-11-05T14:33:43-06:00</updated>
+    <updated>2018-11-06T14:06:46-06:00</updated>
     <author>
       <name>Article Author</name>
     </author>
     <content type="html">&lt;main class="blogposts__container"&gt;
   &lt;header class="header-main"&gt;
-    &lt;h1&gt;What is the difference between SCSS and Sass? How do you use it and how does it work?&lt;/h1&gt;
+    &lt;h1&gt;An explanation of Sass and How to use it&lt;/h1&gt;
     &lt;time datetime="2018-10-16"&gt;OCTOBER 16, 2018&lt;/time&gt;
   &lt;/header&gt;
-
+&lt;p&gt;&lt;/p&gt;
   &lt;h2&gt;SASS vs. SCSS&lt;/h2&gt;
   &lt;hr /&gt;
   &lt;p&gt;SCSS stands for &lt;em&gt;Syntactically Awesome Stylesheets&lt;/em&gt;, otherwise Sassy CSS for short. Although SASS and SCSS
@@ -135,20 +135,107 @@
   </entry>
   <entry>
     <title>An Introduction to Form Design</title>
-    <link rel="alternate" href="http://blog.url.com/gina-blog/2018/10/09/post9.html"/>
-    <id>http://blog.url.com/gina-blog/2018/10/09/post9.html</id>
+    <link rel="alternate" href="http://blog.url.com/gina-blog/2018/10/09/post8.html"/>
+    <id>http://blog.url.com/gina-blog/2018/10/09/post8.html</id>
     <published>2018-10-08T19:00:00-05:00</published>
-    <updated>2018-11-05T14:34:04-06:00</updated>
+    <updated>2018-11-06T15:37:19-06:00</updated>
     <author>
       <name>Article Author</name>
     </author>
     <content type="html">&lt;main class="blogposts__container"&gt;
   &lt;header&gt;
-    &lt;h2&gt;An Introduction to Form Design&lt;/h2&gt;
+    &lt;h1&gt;An Introduction to Form Design&lt;/h1&gt;
     &lt;time datetime="2018-10-12"&gt;OCTOBER 12, 2018&lt;/time&gt;
   &lt;/header&gt;
 
-  &lt;p&gt;The user is planning to order a pizza for delivery.&lt;/p&gt;
+  &lt;p&gt;Let's start from the beginning. Although form design looks like it could be really simple and fun—it certainly is
+    and it definitely can be—it is a lot more complex than it appears at face value. Form designs contain quite a few
+    smaller elements that make up a larger component. With forms, you have elements like input fields, the placeholder
+    text within those input fields, labels, dropdowns, radio buttons, and checkboxes. Additionally, you have to
+    consider the
+    different states for each of those elements to ensure that it's accessible:&lt;/p&gt;
+  &lt;ol&gt;
+    &lt;li&gt;Default&lt;/li&gt;
+    &lt;li&gt;Focus&lt;/li&gt;
+    &lt;li&gt;Expanded/toggled/selected&lt;/li&gt;
+    &lt;li&gt;Disabled&lt;/li&gt;
+  &lt;/ol&gt;
+
+  &lt;p&gt;Now, don't even get me started about what you would have to do to create custom styles for checkboxes or radio
+    buttons! For custom checkboxes, you have to ensure that the checkbox aligns with its container and that the user is
+    able to select more than one option. For custom radio buttons, on the other hand, you have to worry about the
+    opposite and ensure that user can &lt;strong&gt;only&lt;/strong&gt; be able to select one option. Basically, forms are no joke
+    and are definitely not something that you should underestimate!&lt;/p&gt;
+
+  &lt;h2&gt;The Basics of Setting Up Forms&lt;/h2&gt;
+
+  &lt;h4&gt;&lt;strong&gt;INPUT FIELDS&lt;/strong&gt;&lt;/h4&gt;
+  &lt;hr /&gt;
+  &lt;p&gt;There are three things that go into creating a basic, non-CSS styled input field. There should be a &lt;code&gt;form&lt;/code&gt;
+    as the container that holds all the information and enforces semantic HTML, the field label, and the input. The
+    input
+    usually contains the type, an id, the name (think of this as the purpose of that input), and the placeholder text
+    that will be inside of that input field. These labels are all important, as they play into accessibility and the
+    way
+    that a screen-reader will translate information to those with impairments or disabilities. Take a look at the code
+    below:
+    &lt;script src="https://gist.github.com/gvaldez8/1615af8befcae87290f0be129f62ebbb.js"&gt;&lt;/script&gt;
+  &lt;/p&gt;
+
+  &lt;h4&gt;&lt;strong&gt;DROPDOWNS&lt;/strong&gt;&lt;/h4&gt;
+  &lt;hr /&gt;
+  &lt;p&gt;Did you know that there are a certain number of options before a set of options &lt;strong&gt;should&lt;/strong&gt; be placed
+    into a dropdown? Reference the &lt;a href="https://www.nngroup.com/articles/drop-down-menus/"&gt;Nielsen Norman Group
+      Dropdown Guidelines&lt;/a&gt;. Basically, your options should be placed in a dropdown if you have 6–15 options. It
+    becomes an issue when the options exceed 15 maximum, as it creates a readability and legibility issue with scanning
+    between different options. In the example below, note that the reason that this code is not nested within a &lt;code&gt;form&lt;/code&gt;
+    and &lt;code&gt;fieldset&lt;/code&gt; element is because it's assumed that if you have a dropdown, it will more than likely
+    already be within a form.
+
+    &lt;script src="https://gist.github.com/gvaldez8/925939b2fac79f8c3c306483b927261f.js"&gt;&lt;/script&gt;
+  &lt;/p&gt;
+
+  &lt;h4&gt;&lt;strong&gt;RADIO BUTTONS&lt;/strong&gt;&lt;/h4&gt;
+  &lt;hr /&gt;
+  &lt;p&gt;There is a diffefrent purpose for when you would use radio buttons as opposed to checkboxes, as they are mutually
+    exclusive and &lt;strong&gt;only&lt;/strong&gt; allow the user to select one option. This means that if a user selects one of
+    the options, it will automatically deselect the other option. Reference this article from
+    &lt;a href="https://www.nngroup.com/articles/checkboxes-vs-radio-buttons/"&gt; Nielsen Norman Group on Checkboxes vs.
+      Radio Buttons&lt;/a&gt;. In terms of radio buttons and checkboxes, you will find that the HTML structures are very
+    similar to each other. They both start within the &lt;code&gt;form&lt;/code&gt; element to enforce semantic HTML. They both
+    are contained in
+    a
+    &lt;code&gt;fieldset&lt;/code&gt; element, which is used to group several controls and labels within a form. They both
+    incorporate the use of the &lt;code&gt;legend&lt;/code&gt; tag, which represents a caption for the content of its parent.
+    They both require an input type, a label, an id, a value, and a "for" attribute that helps identify what number
+    radio button or checkbox you are on. Note that the value and the label are the same because it describes what
+    that
+    option is. Here's an example below:
+    &lt;script src="https://gist.github.com/gvaldez8/62fdc63e39ac26787e72ce52874323da.js"&gt;&lt;/script&gt;
+  &lt;/p&gt;
+
+  &lt;h4&gt;&lt;strong&gt;CHECKBOXES&lt;/strong&gt;&lt;/h4&gt;
+  &lt;hr /&gt;
+  &lt;p&gt;Aside from the fact that you can any number of options for checkboxes, you can also specify an additional
+    attribute in the input type, which is checked or unchecked. By default, however, you should always have your
+    checkboxes unchecked, as this has been proven through user testing.Reference this article from
+    &lt;a href="https://www.nngroup.com/articles/checkboxes-vs-radio-buttons/"&gt; Nielsen Norman Group on Checkboxes vs.
+      Radio Buttons&lt;/a&gt;. Take a look at the example below:
+    &lt;script src="https://gist.github.com/gvaldez8/c3ef891b0c64af616dda3408c5fcc9f5.js"&gt;&lt;/script&gt;
+  &lt;/p&gt;
+
+
+  &lt;h4&gt;&lt;strong&gt;GREAT RESOURCES AND INSPIRATION&lt;/strong&gt;&lt;/h4&gt;
+  &lt;hr /&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="https://codepen.io/patterns/"&gt;CodePen.io's Patterns&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="https://www.nngroup.com/"&gt;Nielsen Norman Group: World Leaders in Research-Based User Experience&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;h2&gt;An Example of Form Design&lt;/h2&gt;
+  &lt;p&gt;Here's my example of form design for this week's blog post prompt. I decided that the purpose of this form was for
+    the user to order a pizza because, honestly, who doesn't like pizza?&lt;/p&gt;
 
   &lt;form class="form__container--personal"&gt;
     &lt;h3&gt;Hi there, I am &lt;input type="text" id="name" name="name" placeholder="name" /&gt;.&lt;br /&gt;
@@ -279,24 +366,28 @@
 </content>
   </entry>
   <entry>
-    <title>An Explanation of CSS Architecture/Naming Conventions</title>
-    <link rel="alternate" href="http://blog.url.com/gina-blog/2018/10/08/post8.html"/>
-    <id>http://blog.url.com/gina-blog/2018/10/08/post8.html</id>
+    <title>Naming Conventions related to CSS Architecture</title>
+    <link rel="alternate" href="http://blog.url.com/gina-blog/2018/10/08/post7.html"/>
+    <id>http://blog.url.com/gina-blog/2018/10/08/post7.html</id>
     <published>2018-10-07T19:00:00-05:00</published>
-    <updated>2018-11-05T14:05:45-06:00</updated>
+    <updated>2018-11-06T14:06:39-06:00</updated>
     <author>
       <name>Article Author</name>
     </author>
     <content type="html">&lt;main&gt;
     &lt;header class="header-main"&gt;
-        &lt;h1&gt;An Explanation of CSS Architecture/Naming Conventions (BEM, OOCSS, SMACSS)&lt;/h1&gt;
+        &lt;h1&gt;Naming Conventions&lt;br /&gt; related to CSS Architecture&lt;/h1&gt;
         &lt;time datetime="2018-11-21"&gt;OCTOBER 8, 2018&lt;/time&gt;
     &lt;/header&gt;
+
+    &lt;p&gt;There are three types of Naming Conventions related to CSS Architecture that we'll cover in this post: BEM,
+        OOCSS, and SMACSS.&lt;/p&gt;
     &lt;h2&gt;What is BEM?&lt;/h2&gt;
+    &lt;hr /&gt;
     &lt;p&gt;The BEM naming convention stands for &lt;em&gt;Block Element Modifier&lt;/em&gt; and is currently the naming convention that
         8th Light sticks to. Reasons that people like this naming convention are because its name declares its purpose,
         thereby making it easier to skim markup and immediately understand how elements are styled or related to one
-        another. The post is to keep the names simple, clear, and precise.&lt;/p&gt;
+        another. The point is to keep the names simple, clear, and precise.&lt;/p&gt;
     &lt;div class="column"&gt;
         &lt;h5 class="helper-space"&gt;&lt;strong&gt;THE GUIDELINES&lt;/strong&gt;&lt;/h5&gt;
         &lt;hr /&gt;
@@ -323,7 +414,7 @@
     &lt;/div&gt;
 
     &lt;section&gt;
-        &lt;h5 class="helper-space"&gt;&lt;strong&gt;HOW IT WORKS&lt;/strong&gt;&lt;/h5&gt;
+        &lt;h5&gt;&lt;strong&gt;HOW IT WORKS&lt;/strong&gt;&lt;/h5&gt;
         &lt;hr /&gt;
         &lt;p&gt;The block is the whole and the elements are the pieces.&lt;/p&gt;
         &lt;code&gt;.block&lt;/code&gt;
@@ -337,6 +428,7 @@
 
     &lt;section&gt;
         &lt;h2 class="helper-space"&gt;What is OOCSS?&lt;/h2&gt;
+        &lt;hr /&gt;
         &lt;p&gt;OSCSS stands for &lt;em&gt;Object oriented CSS&lt;/em&gt;. The object refers to any repeating visual pattern than can be
             specified in snippets of code. The goal of OOCSS is to produce components that are flexible, modular, and
             interchangeable.&lt;/p&gt;
@@ -380,6 +472,7 @@
 
     &lt;section&gt;
         &lt;h2 class="helper-space"&gt;What is SMACSS?&lt;/h2&gt;
+        &lt;hr /&gt;
         &lt;p&gt;SMACSS stands for &lt;em&gt;Scalable and Modular Architecture for CSS&lt;/em&gt; and is more of a
             style guide than it is a rigid framework. The purpose of this category is to codify patterns, things that
             repeat themselves within our design, and avoid mixing code of several categories into a single file.&lt;/p&gt;
@@ -421,64 +514,106 @@
 </content>
   </entry>
   <entry>
-    <title>Identifying what CSS Media Queries are and how to use them</title>
-    <link rel="alternate" href="http://blog.url.com/gina-blog/2018/10/03/post7.html"/>
-    <id>http://blog.url.com/gina-blog/2018/10/03/post7.html</id>
-    <published>2018-10-02T19:00:00-05:00</published>
-    <updated>2018-11-05T14:05:45-06:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;main class="blogposts__container"&gt;
-      &lt;header&gt;
-      &lt;h1&gt;An Explanation of&lt;br /&gt; CSS Media Queries and How to Use Them&lt;/h1&gt;
-      &lt;time datetime="2018-10-3"&gt;OCTOBER 3, 2018&lt;/time&gt;
-    &lt;/header&gt;
-    &lt;p&gt;To incorporate media queries into your webpage, you first need to insert a self-closing &lt;code&gt;&amp;#60;meta&amp;#62;&lt;/code&gt; within the &lt;code&gt;&amp;#60;head&amp;#62;&lt;/code&gt; of your HTML file, like in the example below:&lt;/p&gt;
-
-    &lt;code&gt;&amp;#60;!DOCTYPE html&amp;#62;&lt;/code&gt;&lt;br /&gt;
-    &lt;code&gt;&amp;#60;html lang='en'&amp;#62;&lt;/code&gt;&lt;br /&gt;
-    &lt;code&gt;&amp;#60;meta charset='UTF-8'&amp;#62;&lt;/code&gt;&lt;br /&gt;
-      &lt;code&gt;&amp;#60;head&amp;#62;&lt;/code&gt;&lt;br /&gt;
-      &lt;code&gt;&amp;#60;tite&amp;#62;&lt;/code&gt;...&lt;code&gt;&amp;#60;/title&amp;#62;&lt;/code&gt;&lt;br /&gt;
-      &lt;code&gt;&amp;#60;meta name="viewport" content="initial-scale:1.0" width="device-width"/&amp;#62;&lt;/code&gt;&lt;br /&gt;
-      &lt;code&gt;&amp;#60;/head&amp;#62;&lt;/code&gt;
-
-    &lt;p&gt;Once you have completed inserting that into your &lt;code&gt;&amp;#60;head&amp;#62;&lt;/code&gt;, you need to open up your CSS Stylesheet. The important thing at this point is to understand the difference between &lt;code&gt;@media (min-width: )&lt;/code&gt; and  &lt;code&gt;@media (max-width: )&lt;/code&gt; in relation to varying screen sizes between mobile, tablet, and desktop.&lt;/p&gt;
-
-    &lt;p&gt;It should be noted that when using &lt;code&gt;@media (min-width: )&lt;/code&gt;, you are referring to any pixel size &lt;em&gt;above&lt;/em&gt; that threshold set in pixels, where as &lt;code&gt;@media (max-width: )&lt;/code&gt; refers to anything &lt;em&gt;below&lt;/em&gt; that threshold. It is also recommended that you insert your media queries into your CSS sheet as opposed to doing it in your HTML, as this leads to cleaner, more readable code that it easy to understand.&lt;/p&gt;
-
-    &lt;p&gt;To determine what your threshold should be, a good place to start might be referencing some common device screen sizes, such as 360 px (mobile), 768 px (tablet), and 1200px (desktop). However, it’s always best to resize your browser to see what happens because the rearrangement of any type of content on the page (i.e. images, text, colors, boxes) between those sizes can potentially look incorrect or rearrange themselves in an unexpected manner that you didn’t intend upon. It should also be noted that &lt;code&gt;em/rem&lt;/code&gt; is usually reserved for typography sizes, whereas percentages are best applied to your website’s grid and layout.&lt;/p&gt;
-
-    &lt;img src="/images/rwd.png" class="image" /&gt;
-  &lt;/main&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Explain mobile first design</title>
+    <title>Getting Responsive with Media Queries</title>
     <link rel="alternate" href="http://blog.url.com/gina-blog/2018/10/01/post6.html"/>
     <id>http://blog.url.com/gina-blog/2018/10/01/post6.html</id>
     <published>2018-09-30T19:00:00-05:00</published>
-    <updated>2018-11-05T14:05:45-06:00</updated>
+    <updated>2018-11-06T14:06:42-06:00</updated>
     <author>
       <name>Article Author</name>
     </author>
     <content type="html">&lt;main class="blogposts__container"&gt;
-    &lt;header&gt;
-        &lt;h1&gt;Explain mobile first design AND mobile first development. Why does it matter? How do you do it?&lt;/h1&gt;
-        &lt;time datetime="2018-11-21"&gt;OCTOBER 1, 2018&lt;/time&gt;
-    &lt;/header&gt;
-        &lt;p&gt;Both mobile first design and mobile first development focus on one aspect of responsive web design, which is the act of designing for mobile first before considering the other screen sizes like tablet and desktop. Both mobile first design and mobile first development seek to reduce any extraneous content that is not essential to users under the circumstances that they might be accessing a website or app through their phone (i.e. while driving, commuting, traveling abroad).&lt;/p&gt;
+ &lt;header&gt;
+      &lt;h1&gt;Getting Responsive with Media Queries&lt;/h1&gt;
+      &lt;time datetime="2018-10-3"&gt;OCTOBER 3, 2018&lt;/time&gt;
+&lt;/header&gt;
+   &lt;p&gt;Before we deep dive into the purpose of mobile first design/development, media queries, and how to apply them, we need to understand what responsive web design is and its purpose.&lt;/p&gt;
 
-        &lt;p&gt;However, mobile first design differs in that it focuses more on the visual aspects of layout design and arrangement of only the most essential content while only /considering in mind/ the limitations of code.&lt;/p&gt;
+&lt;h3&gt;Responsive Web Design&lt;/h3&gt;
+&lt;hr /&gt;
 
-        &lt;p&gt;Mobile first development, on the other hand, actually translates that visual layout design into code, reflects the limitations of code that can be experienced in real-time, and incorporates the use of CSS media queries that reflect how the viewport resizes and rearranges itself starting from mobile to desktop.&lt;/p&gt;
+&lt;p&gt;Responsive web design (RWD) is designing online experiences that adapt to various screen sizes, platforms, and orientations according to user environments. For example, you might use your phone on the train as opposed to your desktop that you use when you're working in the office. You may use a tablet or a kindle to stream movies, play video games, and read e-books.Responsive web design requires the use of CSS media queries—powerful snippets of code that define "breakpoints"—to create flexible grids, layouts, and images that resize and rearrange content (media, images, text, forms) to account for various screen sizes. &lt;strong&gt;Breakpoints&lt;/strong&gt; are the point (in pixels) in which content will resize and rearrange itself to a layout that provides the best experience according to a user's environment. Here's an example below of both responsive web design and breakpoints:&lt;/p&gt;
 
-        &lt;p&gt;Ultimately, one does not take more importance over the other, as both share the same goal through different but overlapping means of achieving it. Although pursuing mobile first ultimately leads to responsive web design, the choice and focus largely depends on the product’s traffic. If users are accessing your product through desktop more than they are through mobile, then responsive web design is the way to go. However, if they are accessing the product through mobile more than desktop, then mobile first development would be a wiser choice.&lt;/p&gt;
+&amp;lt;%= image_tag "responsive-desktop.png" %&amp;gt;
 
-        &lt;p&gt;Both mobile first design and development play an important role for users because in today’s world, mobile usage is continuously increasing. As reflected through Statista:&lt;/p&gt;
 
-        &lt;p&gt;According to January 2018 data, the global mobile population amounted to 3.7 billion unique users. As of February 2017, mobile devices accounted for 49.7 percent of web page views worldwide, with mobile-first markets such as Asia and Africa leading the pack.&lt;/p&gt;
+&lt;h3&gt;Mobile First Design and Development&lt;/h3&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Mobile first design is when you prioritize designing for mobile before considering the designs of the other screen sizes, like tablet and desktop. One reason for doing so is because mobile usage as opposed to desktop usage has increased dramatically. Another reason that it's important is because it helps in selecting and providing only the most essential information. The reason behind this methodology is to account for the user's environment—they could be traveling or commuting, casually walking down the street, lounging around in bed, or even just on the couch in the comfort of their own living room—when interacting with an online experience through mobile. Regardless of where your user might be, their level of focus will ultimately adjust according to the environment. There is also less real estate on a smaller screen. Hence, the reason that the design needs to facilitate that online experience by providing a quick, easily accessible way to locate the information that they need and process it within a limited amount of time. &lt;/p&gt;
+
+&lt;p&gt;Amongst the benefits of focusing on mobile first design is that it is more time efficient and can help to facilitate discussions between stakeholders, product managers, designers, and developers on what information needs to be emphasized and prioritized. It also helps your team understand what is possible according to the limitations of code. Mobile first development, on the other hand, is the actual execution of the visual design for mobile translated into code using CSS media queries and breakpoints.&lt;/p&gt;
+
+
+
+&lt;h3&gt;Media Queries&lt;/h3&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Media queries are a feature of CSS that enables web content (media, images, text, forms) to adapt according to different devices, screen sizes, and resolutions. Basically, media queries are what make responsive web design possible. Media queries are called upon in your stylesheets using the &lt;code&gt;@media&lt;/code&gt; rule, followed by a breakpoint, and are nested within a specific CSS property that you want to resize or rearrange.&lt;/p&gt;
+
+&lt;p&gt;The @media rule is followed by a (max-width) or (min-width). It looks like this:&lt;/p&gt;
+
+&lt;code&gt;@media (max-width: breakpoint in pixels)&lt;/code&gt;&lt;br /&gt;
+
+&lt;code&gt;@media (min-width: breakpoint in pixels)&lt;/code&gt;
+
+&lt;p&gt;So, what's the difference? &lt;strong&gt;Max-width&lt;/strong&gt; defines anything below that breakpoint, whereas &lt;strong&gt;min-width&lt;/strong&gt; defines anything above the breakpoint. Note that it is best practice to use min-width.&lt;/p&gt;
+
+
+
+&lt;h3&gt;Defining Breakpoints&lt;/h3&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Now, let's quickly review what breakpoints are:&lt;/p&gt;
+
+&lt;blockquote&gt;Breakpoints are the point (in pixels) in which content will resize and rearrange itself to a layout that provides the best experience according to a user's environment.&lt;/blockquote&gt;
+
+&lt;p&gt;Breakpoints used to be strictly defined according to standard screen sizes: &lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;Mobile (usually the iPhone at 320px and 480px)&lt;/li&gt;
+    &lt;li&gt;Tablet (usually the iPad at 768px and 1024px)&lt;/li&gt;
+    &lt;li&gt;Desktop (above 1024px)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;However, today technology advances far too quickly with new devices and screen sizes being released into the market every year, so there are far too many to account for between iOS and Android.When determining suitable breakpoints, you should instead, think more about designing for humans and selecting those breakpoints intuitively according to how the content (media, images, text, forms) resizes and rearranges itself according to how the browser width is resized. Also, a good place to start is the aforementioned: designing and developing for mobile first. It is always best to start with the smallest viewport first. "Viewport" is just a fancy term referring to your screen size. &lt;/p&gt;
+
+
+
+&lt;h3&gt;Bringing It Together: Using Media Queries and Breakpoints&lt;/h3&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;As we covered earlier, media queries are called upon using the &lt;code&gt;@media&lt;/code&gt; rule, followed by the breakpoint (defined in pixels), and nested under the CSS property in your stylesheet that you would like to be resized and/or rearranged.&lt;/p&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Step 1&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;However, the very first thing that you should do is open up your HTML file and insert a self-closing &lt;code&gt;meta&lt;/code&gt; within the &lt;code&gt;head&lt;/code&gt;. Here's an example below of what that might look like:&lt;/p&gt;
+
+&lt;code&gt;
+
+    !DOCTYPE html
+
+    html lang='en'
+
+    meta charset='UTF-8'
+
+    head&amp;gt;
+
+    title&amp;gt;Hello World!/title
+
+    meta name="viewport" content="initial-scale:1.0" width="device-width"/
+
+    /head
+
+&lt;/code&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 2&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Open up your stylesheet, select a CSS property that you would like to resize and/or rearrange, and add the @media rule followed by (min-width: breakpoint in pixels). For the mobile breakpoint, a great place to start would be with 320px.&lt;/p&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Step 3&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;To determine your other breakpoints, start resizing your browser width. Observe any awkward instances for type sizes, images, and layouts.&lt;/p&gt;
 &lt;/main&gt;
 </content>
   </entry>
@@ -696,6 +831,50 @@
       &lt;/ul&gt;
     &lt;/div&gt;
   &lt;/section&gt;
+&lt;/main&gt;
+</content>
+  </entry>
+  <entry>
+    <title>The User Experience Team of One</title>
+    <link rel="alternate" href="http://blog.url.com/gina-blog/2018/09/21/post4.html"/>
+    <id>http://blog.url.com/gina-blog/2018/09/21/post4.html</id>
+    <published>2018-09-20T19:00:00-05:00</published>
+    <updated>2018-11-05T14:05:45-06:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;main class="blogposts__container"&gt;
+  &lt;header&gt;
+    &lt;h1&gt;&lt;em&gt;The User Experience Team of One&lt;/em&gt; by Leah Buley&lt;/h1&gt;
+    &lt;time datetime="2018-11-21"&gt;SEPTEMBER 21, 2018&lt;/time&gt;
+  &lt;/header&gt;
+  
+  &lt;p&gt;Leah Buley is a UX designer with over a decade of experience in building digital products. Her book, &lt;em&gt;The User Experience Team of One&lt;/em&gt;, is intended to inform the aspiring UX designer or design student about the fundamentals of UX, as well as to help the soloist UX professional review basic knowledge and tools; implement research, approaches to giving/receiving feedback, and user testing methods; and developing business skills in time management and communication; and building relationships/communities with people and navigating client relationships.&lt;/p&gt;
+  
+  &lt;p&gt;&lt;em&gt;The User Experience Team of One&lt;/em&gt; offers solid approaches and processes in UX and visual design to help build successful user experiences within organizational structures ranging from startup level to Fortune 500.The User Experience Team of One/ begins with defining what exactly user experience is, covering a brief history of how the term|career came to fruition, the difference between User Experience (UX) and User Interface (UI), the diverse backgrounds that UX professionals stem from, and the typical UX process (i.e. discovery, strategy, research, design, and implementation). The book emphasizes how it is equally important to build communities and relationships with the people that make up organizational structures, and in doing so, it will encourage the support and willingness from others to participate in work processes. Overall, the book begins with promoting the idea of working /with/ others as opposed to /against/ them by getting to know them on a professional and personal level, helping them understand the UX process, and giving others the opportunity to have conversations about compromises and trade-offs early on.&lt;/p&gt;
+  
+  &lt;p&gt;Towards the middle, the book proposes answers to handling common objections respectfully and encourages seeing these objections more as opportunities than threats because they are invitations to direct, honest conversations. Some common objections from stakeholders or team members that the book covers are when others:&lt;/p&gt;
+  
+  &lt;ul class="ul--indent"&gt;
+    &lt;li&gt;Underestimate the importance of web design&lt;/li&gt;
+    &lt;li&gt;Equate UX Research to Market Research&lt;/li&gt;
+    &lt;li&gt;Consider UX as too expensive and time consuming&lt;/li&gt;
+    &lt;li&gt;Value statistical significance over UX&lt;/li&gt;
+    &lt;li&gt;Are “already” aware of what their problems are&lt;/li&gt;
+    &lt;li&gt;Claim that it’s [&lt;em&gt;marketing/engineering/product management&lt;/em&gt;]’s job&lt;/li&gt;
+  &lt;/ul&gt;
+  
+  &lt;p&gt;From this section, the book elaborates on how the reader can become an overall better professional and individual by providing resources for professional associations, online communities, and meet ups to join. Additionally, the book offers helpful websites, books, classes and organizations, and conferences to attend, all the while encouraging the reader to find a buddy or mentor that can help in their career pursuits.  After offering resources, the book suggests that you define your goals, whether it be within an organization to help your company develop a solid UX process with strategic planning and metrics or to branch off independently, so that you can better position yourself in the market as a specialist, generalist or consultant. It briefly covers payment, negotiation, time management, and feedback.&lt;/p&gt;
+  
+  &lt;p&gt;Lastly, this book covers methods for planning, discovery, research, design, and implementation (testing and validation). The methods that were covered under each category:&lt;/p&gt;
+  
+  &lt;ul class="ul--indent"&gt;
+    &lt;li&gt;&lt;strong&gt;Planning and Discovery:&lt;/strong&gt; UX Questionaire, UX Project Plan, Listening Tour, Opportunity Workshop, Project Brief, Strategy Workshop.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Research:&lt;/strong&gt; Learning Plan, Guerrilla User Research, Proto-Personas, Heuristic Markup, Comparative Assessment, Content Patterns.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Design:&lt;/strong&gt; Design Brief, Design Principles, Sketching, Sketchboards, Task Flows, Wireframes. &lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Testing and Validation:&lt;/strong&gt; Paper and interactive prototypes, Black Hat Sessions, Quick-and-Dirty Usability Test, Five-Second Test, UX Health Check. &lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Evangelism Methods:&lt;/strong&gt; Bathroom UX, Mini Case Studies, Peer-to-Peer Learning Community, Pyramid Evangelism.&lt;/li&gt;
+  &lt;/ul&gt;
 &lt;/main&gt;
 </content>
   </entry>

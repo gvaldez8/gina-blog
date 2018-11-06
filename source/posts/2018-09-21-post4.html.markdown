@@ -1,10 +1,11 @@
 ---
-  title: The User Experience Team of One
+  title: How to be a User Experience Team of One
+  time: November 21, 2018
 ---
 
 <main class='blogposts__container'>
   <header>
-    <h1><em>The User Experience Team of One</em> by Leah Buley</h1>
+    <h1>How to be a User Experience Team of One</h1>
     <time datetime="2018-11-21">SEPTEMBER 21, 2018</time>
   </header>
   
@@ -14,7 +15,7 @@
   
   <p>Towards the middle, the book proposes answers to handling common objections respectfully and encourages seeing these objections more as opportunities than threats because they are invitations to direct, honest conversations. Some common objections from stakeholders or team members that the book covers are when others:</p>
   
-  <ul class='ul--indent'>
+  <ul class="blogpost--ul-indent">
     <li>Underestimate the importance of web design</li>
     <li>Equate UX Research to Market Research</li>
     <li>Consider UX as too expensive and time consuming</li>
@@ -27,7 +28,7 @@
   
   <p>Lastly, this book covers methods for planning, discovery, research, design, and implementation (testing and validation). The methods that were covered under each category:</p>
   
-  <ul class='ul--indent'>
+  <ul class="blogpost--ul-indent">
     <li><strong>Planning and Discovery:</strong> UX Questionaire, UX Project Plan, Listening Tour, Opportunity Workshop, Project Brief, Strategy Workshop.</li>
     <li><strong>Research:</strong> Learning Plan, Guerrilla User Research, Proto-Personas, Heuristic Markup, Comparative Assessment, Content Patterns.</li>
     <li><strong>Design:</strong> Design Brief, Design Principles, Sketching, Sketchboards, Task Flows, Wireframes. </li>

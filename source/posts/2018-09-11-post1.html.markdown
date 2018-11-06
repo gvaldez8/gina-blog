@@ -1,17 +1,15 @@
 ---
 title: How technical should designers be?
+time: September 11, 2018
 ---
 
 <main>
   <header>
-    <h1>How technical should designers be?<br> What are the benefits of being a designer who codes? What are the
-      drawbacks?</h1>
-    <time datetime="2018-11-09">SEPTEMBER 11, 2018</time>
+    <h1>How technical should designers be?</h1>
+    <time datetime="2018-09-11">SEPTEMBER 11, 2018</time>
   </header>
   
-  <p>There are numerous sources floating around the internet on an ever-growing debate: designers learning to code, designers as developers, and the rare sightings of the "Design Unicorn" (super humans who have mastered their craftsmanship in both design and development).</p>
-  
-  <p>With the advancement of technology and digital becoming the primary medium with which people receive information, news, and updates arrived new titles, roles, expectations, and problems. Graphic Designers specializing in anything print related are becoming niche professions, while the community of those who appreciate the art of print and book design are scarcer. A designer’s technical skills are now determined by companies’ needs and professional development on an individual level (optional). It is not uncommon nowadays to seek an entry level position and see that job requirements are beyond just one specialized skill.</p>
+  <p>There are numerous sources floating around the internet on an ever-growing debate: designers learning to code, designers as developers, and the rare sightings of the "Design Unicorn" (super humans who have mastered their craftsmanship in both design and development). With the advancement of technology and digital becoming the primary medium with which people receive information, news, and updates arrived new titles, roles, expectations, and problems. Graphic Designers specializing in anything print related are becoming niche professions, while the community of those who appreciate the art of print and book design are scarcer. A designer’s technical skills are now determined by companies’ needs and professional development on an individual level (optional). It is not uncommon nowadays to seek an entry level position and see that job requirements are beyond just one specialized skill.</p>
 
   <p>My thoughts are that having fluent coding skills is not necessary for a designer to have, but it is <em>absolutely</em>beneficial if a designer either already possesses that knowledge on their belt, is willing to actually invest the time and energy into learning it, or seeks professional development because design is a constant path of learning, improvement, and growth. After researching and reading a few articles, here are some conclusions about the benefits and drawbacks of being a designer who codes:</p>
 
@@ -78,7 +76,7 @@ title: How technical should designers be?
   <h5><strong>SOME SOURCES</strong></h5>
    <hr />
   <h6>
-    <ul class='blogposts--ul-none'>
+    <ul class='blogpost--ul'>
       <li>
         <a href="https://blog.prototypr.io/css-the-rise-of-the-technical-designer-6474366b3c28">CSS & The Rise of the Technical Designer – Prototypr</a>
       </li>
