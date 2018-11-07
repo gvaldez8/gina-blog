@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <meta charset='UTF-8' />
+
+  <head>
+    <title>Gina's Apprenticeship Blog</title>
+    <link href="/gina-blog/stylesheets/posts.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Suez+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700" rel="stylesheet">
+    <meta name="viewport" content="initial-scale: 1.0" width="device-width" />
+  </head>
+
+  <body>
+    <nav>
+  <ul>
+    <li><a href="/gina-blog/#blog-posts">Blog</a></li>
+    <li><a href="/gina-blog/#books">Books</a></li>
+    <li><a href="/gina-blog/#resources">Resources</a></li>
+  </ul>
+
+  <img src="/gina-blog/images/ginalogo-gold2.svg" height="40px" width="40px" class="svg" alt="Gina's logo" />
+</nav>
+    <h5 class='copyright'>&#169; 2018 GINA VALDEZ, 8TH LIGHT</h5>
+    <h5 class='trademark'>GINA DESIGN APPRENTICE 2018</h5>
+    <main class="blogposts__container">
+  <header class="header-main">
+    <h1>An Explanation of Sass and How it Works</h1>
+    <time datetime="2018-10-16">OCTOBER 16, 2018</time>
+  </header>
+
+  <p>Let's get one thing straight. Although they are often confused because of their similarities, SCSS and Sass are
+    <strong>not the same.</strong> SCSS stands for <em>Syntactically Awesome Stylesheets</em>, otherwise known as Sassy
+    CSS for short. Although SASS and SCSS are similar in that they briefly give an overview of CSS Preprocessing, they
+    have different technical syntaxes.</p>
+
+  <p>SCSS followed the development of SASS, and since it’s an extension of CSS, every valid stylesheet is a valid SCSS
+    file with the same meaning. It even understands most CSS vendor-specific syntaxes. It is in support of the idea of
+    <strong>DRY</strong> (don’t repeat yourself) code as opposed to <strong>WET</strong> code (write every time). Here
+    are the key differences between the two more in-depth:</p>
+
+  <h2>SASS</h2>
+  <hr />
+  <ul class="blogpost--ul-indent">
+    <li>SASS is a program written in Ruby—the technology or programming language that SASS is built on— that
+      assembles
+      CSS style sheets.</li>
+    <li>Uses indentation instead of brackets to indicate nesting of selectors</li>
+    <li>New lines rather than semicolons to separate properties</li>
+    <li>Employs language extensions (i.e. variables, nested rules, and mixins)</li>
+  </ul>
+
+  <h2>SCSS</h2>
+  <hr />
+  <p>Incorporates some commonly used features:</p>
+  <ol class="blogpost--ol-indent">
+    <li>Import</li>
+    <li>Variables</li>
+    <li>Nesting</li>
+    <li>Mixins</li>
+    <li>Operators</li>
+  </ol>
+
+  <h2>SCSS Features: In-Depth Explanations on How to Use Them</h2>
+  <hr />
+  <p>One of the major benefits of SCSS is that you can separate your code into more
+    manageable, logical chunks. SCSS
+    allows you the ability to separate your CSS according to different elements or components —buttons, lists,
+    forms, colors, typography, etc.— to make them easier to work with and keep
+    your stylesheets nice and <strong>DRY</strong>. There are different file and folder structures that you can follow,
+    such as <a href="http://thesassway.com/beginner/how-to-structure-a-sass-project">The Sass Way</a> or according to
+    <a href="http://bradfrost.com/blog/post/atomic-web-design/">Brad
+      Frost's Atomic
+      Design</a>.
+  </p>
+
+  <p>
+    <a href="http://thesassway.com/beginner/how-to-structure-a-sass-project">The Sass Way</a> of organizing a project
+    would
+    be by modules, partials, and anything related to vendors (third party
+    CSS). <strong>Modules</strong> would be anything like mixins, functions, and variables.
+    <strong>Partials</strong> would be things like the navigation, footer, buttons, typography, input fields, etc.
+    Lastly, the <strong>vendor</strong> directory would be dedicated to any third-party CSS like any prepackaged
+    components, such as color pickers or JQuery UI.</p>
+
+  <p class="helper-space-bottom">In terms of <a href="http://bradfrost.com/blog/post/atomic-web-design/">Brad
+      Frost's Atomic
+      Design</a>, although it's a great way to
+    organize your
+    elements or components, it should be noted that it creates additional complexity when it comes to using that
+    methodology for developing your code. The reason behind that is because identifying and classifying atoms are
+    straightforward, but determining
+    which
+    elements or components classify as molecules and
+    organisms are where it could lead to one whole big confusing, frustrating mess between you and your teammates. As
+    far as achieving business goals with this method especially within large teams, the idea of having constant
+    dicsusions to agree upon which is considered which is also quite draining and time
+    consuming.</p>
+  <hr />
+  <div class="column">
+    <h4><strong>@import</strong></h4>
+    <p class="typography-p">Allows you to literally import styles from another stylesheet file into your current
+      file, so you can separate your styles into logical files</p>
+
+    <h4 class="helper-space-bottom"><strong>Example</strong></h4>
+    <code class="helper-space-bottom">// inside main.scss<br />
+      @import 'typography.css';<br />
+      @import 'header.css';<br />
+      @import 'footer.css';<br />
+    </code>
+  </div>
+
+  <hr />
+  <div class="column">
+    <h4 class="helper-space-bottom"><strong>$variables</strong></h4>
+    <p class="typography-p">Defined with a <code>$</code> symbol, are assigned a value, and allow for global
+      changes to all of your files. For example, let’s say that a client or a project calls for a different color,
+      it’s
+      as simple as updating the variable value and it will be applied everywhere else that you’ve used it. The
+      hardest
+      part is naming your variable, as you can be as general or generic as you’d like.</p>
+
+    <h4 class="helper-space-bottom"><strong>Example</strong></h4>
+    <code>// Colors<br />
+      $c-yellow: #fff03b;<br />
+      $c-yellow-dark: #ffe21d;</code><br />
+
+    <code>// Fonts<br />
+      $f-serif: 'Playfair Display', Georgia, Times, 'Times New Roman', serif;</code>
+  </div>
+
+  <hr />
+  <h4><strong>Nesting</strong></h4>
+  <p>Allows for better organization of your styles and limits repetition. Although this is a great feature, the rule
+    is
+    to only nest 3 child selectors, as it will aid in preventing confusion from nesting too many elements</p>
+
+  <hr />
+  <div class="column">
+    <h4><strong>@mixins</strong></h4>
+    <p> Allows you to define a reusable and configurable block of CSS. Mixins are made up of:</p>
+    <ol class="blogpost--ol-indent">
+      <li>The <code>@mixin</code> directive, where you can also give them variables</li>
+      <li class="typography-p">CSS Selectors</li>
+    </ol>
+
+    <h4><strong>Example</strong></h4><br />
+    <code class="helper-space-top">@mixin background-opts ($pos: center, $size: cover, $rep: no-repeat, $color:
+      $c-beige) {<br />
+      background-position: $pos;<br />
+      background-size: $size;<br />
+      background-repeat: $rep;<br />
+      background-color: $color;<br />
+      }</code>
+  </div>
+
+  <hr />
+  <h4><strong>Operators:</strong></h4>
+  <p>Allows you to do math.</p>
+  <code>nav {
+    height: $mobile-nav-height;
+    @media (min-width:768px) {
+    height: $mobile-nav-height \* 2;
+    }
+    }</code>
+
+  <h2>So, how do we Sass?</h2>
+  <hr />
+  <ol class="blogpost--ol-indent">
+    <li>Using Terminal in a new tab, ensure that you are in the right directory that <strong>contains</strong>
+      your stylesheets.</li>
+    <li>Run the command <code>sass --watch nameofyourfile.scss:nameofyourfile.css</code>
+      <p><strong><em>Note: The purpose of this command is to tell Sass to watch your SCSS files and make it compile
+            with CSS. What that means is that we are telling Terminal to "watch" for any changes that we make to our
+            Sass file that we want
+            reflected in CSS when it gets compiled.</em></strong></p>
+    </li>
+    <li>Using the @import feature, ensure that your Sass files are connected to <strong>one and only one</strong>
+      stylesheet.</li>
+    <li>Connect that one stylesheet that links all of your Sass files together to your main stylesheet for
+      your landing page.</li>
+  </ol>
+</main>
+
+    <!--GINA, remember to change this footer. Possible suggestions might be secondary navigation, social links with icons, or even adding a contact form (even if it doesn't lead to anywhere)-->
+    <footer>
+      &#169; 2018 Gina Valdez, 8th Light
+    </footer>
+
+  </body>
