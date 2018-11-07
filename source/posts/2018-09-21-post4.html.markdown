@@ -1,6 +1,6 @@
 ---
   title: How to be a User Experience Team of One
-  time: November 21, 2018
+  time: September 21, 2018
 ---
 
 <main class='blogposts__container'>
