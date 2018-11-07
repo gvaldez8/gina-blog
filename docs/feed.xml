@@ -564,102 +564,126 @@
     <link rel="alternate" href="http://blog.url.com/gina-blog/2018/10/03/post6.html"/>
     <id>http://blog.url.com/gina-blog/2018/10/03/post6.html</id>
     <published>2018-10-02T19:00:00-05:00</published>
-    <updated>2018-11-06T16:24:11-06:00</updated>
+    <updated>2018-11-06T21:53:14-06:00</updated>
     <author>
       <name>Article Author</name>
     </author>
     <content type="html">&lt;main class="blogposts__container"&gt;
- &lt;header&gt;
-      &lt;h1&gt;Getting Responsive with Media Queries&lt;/h1&gt;
-      &lt;time datetime="2018-10-03"&gt;OCTOBER 3, 2018&lt;/time&gt;
-&lt;/header&gt;
-   &lt;p&gt;Before we deep dive into the purpose of mobile first design/development, media queries, and how to apply them, we need to understand what responsive web design is and its purpose.&lt;/p&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Getting Responsive with Media Queries&lt;/h1&gt;
+        &lt;time datetime="2018-10-03"&gt;OCTOBER 3, 2018&lt;/time&gt;
+    &lt;/header&gt;
+    &lt;p&gt;Before we deep dive into the purpose of mobile first design/development, media queries, and how to apply them,
+        we need to understand what responsive web design is and its purpose.&lt;/p&gt;
 
-&lt;h3 class="helper-space-top"&gt;Responsive Web Design&lt;/h3&gt;
-&lt;hr /&gt;
+    &lt;h3 class="helper-space-top"&gt;Responsive Web Design&lt;/h3&gt;
+    &lt;hr /&gt;
 
-&lt;p&gt;Responsive web design (RWD) is designing online experiences that adapt to various screen sizes, platforms, and orientations according to user environments. For example, you might use your phone on the train as opposed to your desktop that you use when you're working in the office. You may use a tablet or a kindle to stream movies, play video games, and read e-books.Responsive web design requires the use of CSS media queries—powerful snippets of code that define "breakpoints"—to create flexible grids, layouts, and images that resize and rearrange content (media, images, text, forms) to account for various screen sizes. &lt;strong&gt;Breakpoints&lt;/strong&gt; are the point (in pixels) in which content will resize and rearrange itself to a layout that provides the best experience according to a user's environment. Here's an example below of both responsive web design and breakpoints:&lt;/p&gt;
+    &lt;p&gt;Responsive web design (RWD) is designing online experiences that adapt to various screen sizes, platforms, and
+        orientations according to user environments. For example, you might use your phone on the train as opposed to
+        your desktop that you use when you're working in the office. You may use a tablet or a kindle to stream movies,
+        play video games, and read e-books.Responsive web design requires the use of CSS media queries—powerful
+        snippets of code that define "breakpoints"—to create flexible grids, layouts, and images that resize and
+        rearrange content (media, images, text, forms) to account for various screen sizes. &lt;strong&gt;Breakpoints&lt;/strong&gt;
+        are the point (in pixels) in which content will resize and rearrange itself to a layout that provides the best
+        experience according to a user's environment. Here's an example below of both responsive web design and
+        breakpoints:&lt;/p&gt;
 
-&amp;lt;%= image_tag "responsive-desktop.png" %&amp;gt;
+    &amp;lt;%= image_tag 'responsive-desktop.png' :alt =&amp;gt; 'Responsive design of The Other Studio website'%&amp;gt;
 
-
-&lt;h3 class="helper-space-top"&gt;Mobile First Design and Development&lt;/h3&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Mobile first design is when you prioritize designing for mobile before considering the designs of the other screen sizes, like tablet and desktop. One reason for doing so is because mobile usage as opposed to desktop usage has increased dramatically. Another reason that it's important is because it helps in selecting and providing only the most essential information. The reason behind this methodology is to account for the user's environment—they could be traveling or commuting, casually walking down the street, lounging around in bed, or even just on the couch in the comfort of their own living room—when interacting with an online experience through mobile. Regardless of where your user might be, their level of focus will ultimately adjust according to the environment. There is also less real estate on a smaller screen. Hence, the reason that the design needs to facilitate that online experience by providing a quick, easily accessible way to locate the information that they need and process it within a limited amount of time. &lt;/p&gt;
-
-&lt;p&gt;Amongst the benefits of focusing on mobile first design is that it is more time efficient and can help to facilitate discussions between stakeholders, product managers, designers, and developers on what information needs to be emphasized and prioritized. It also helps your team understand what is possible according to the limitations of code. Mobile first development, on the other hand, is the actual execution of the visual design for mobile translated into code using CSS media queries and breakpoints.&lt;/p&gt;
-
-
-
-&lt;h3 class="helper-space-top"&gt;Media Queries&lt;/h3&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Media queries are a feature of CSS that enables web content (media, images, text, forms) to adapt according to different devices, screen sizes, and resolutions. Basically, media queries are what make responsive web design possible. Media queries are called upon in your stylesheets using the &lt;code&gt;@media&lt;/code&gt; rule, followed by a breakpoint, and are nested within a specific CSS property that you want to resize or rearrange.&lt;/p&gt;
-
-&lt;p&gt;The @media rule is followed by a (max-width) or (min-width). It looks like this:&lt;/p&gt;
-
-&lt;code&gt;@media (max-width: breakpoint in pixels)&lt;/code&gt;&lt;br /&gt;
-
-&lt;code&gt;@media (min-width: breakpoint in pixels)&lt;/code&gt;
-
-&lt;p&gt;So, what's the difference? &lt;strong&gt;Max-width&lt;/strong&gt; defines anything below that breakpoint, whereas &lt;strong&gt;min-width&lt;/strong&gt; defines anything above the breakpoint. Note that it is best practice to use min-width.&lt;/p&gt;
+    &lt;img src="../images/responsive-desktop.png" alt="Responsive desktop of The Other Studio" /&gt;
 
 
+    &lt;h3 class="helper-space-top"&gt;Mobile First Design and Development&lt;/h3&gt;
+    &lt;hr /&gt;
 
-&lt;h3 class="helper-space-top"&gt;Defining Breakpoints&lt;/h3&gt;
-&lt;hr /&gt;
+    &lt;p&gt;Mobile first design is when you prioritize designing for mobile before considering the designs of the other
+        screen sizes, like tablet and desktop. One reason for doing so is because mobile usage as opposed to desktop
+        usage has increased dramatically. Another reason that it's important is because it helps in selecting and
+        providing only the most essential information. The reason behind this methodology is to account for the user's
+        environment—they could be traveling or commuting, casually walking down the street, lounging around in bed, or
+        even just on the couch in the comfort of their own living room—when interacting with an online experience
+        through mobile. Regardless of where your user might be, their level of focus will ultimately adjust according
+        to the environment. There is also less real estate on a smaller screen. Hence, the reason that the design needs
+        to facilitate that online experience by providing a quick, easily accessible way to locate the information that
+        they need and process it within a limited amount of time. &lt;/p&gt;
 
-&lt;p&gt;Now, let's quickly review what breakpoints are:&lt;/p&gt;
-
-&lt;blockquote&gt;Breakpoints are the point (in pixels) in which content will resize and rearrange itself to a layout that provides the best experience according to a user's environment.&lt;/blockquote&gt;
-
-&lt;p&gt;Breakpoints used to be strictly defined according to standard screen sizes: &lt;/p&gt;
-&lt;ul class="blogpost--ul-indent"&gt;
-    &lt;li&gt;Mobile (usually the iPhone at 320px and 480px)&lt;/li&gt;
-    &lt;li&gt;Tablet (usually the iPad at 768px and 1024px)&lt;/li&gt;
-    &lt;li&gt;Desktop (above 1024px)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;However, today technology advances far too quickly with new devices and screen sizes being released into the market every year, so there are far too many to account for between iOS and Android.When determining suitable breakpoints, you should instead, think more about designing for humans and selecting those breakpoints intuitively according to how the content (media, images, text, forms) resizes and rearranges itself according to how the browser width is resized. Also, a good place to start is the aforementioned: designing and developing for mobile first. It is always best to start with the smallest viewport first. "Viewport" is just a fancy term referring to your screen size. &lt;/p&gt;
+    &lt;p&gt;Amongst the benefits of focusing on mobile first design is that it is more time efficient and can help to
+        facilitate discussions between stakeholders, product managers, designers, and developers on what information
+        needs to be emphasized and prioritized. It also helps your team understand what is possible according to the
+        limitations of code. Mobile first development, on the other hand, is the actual execution of the visual design
+        for mobile translated into code using CSS media queries and breakpoints.&lt;/p&gt;
 
 
 
-&lt;h3 class="helper-space-top"&gt;Bringing It Together: Using Media Queries and Breakpoints&lt;/h3&gt;
-&lt;hr /&gt;
+    &lt;h3 class="helper-space-top"&gt;Media Queries&lt;/h3&gt;
+    &lt;hr /&gt;
 
-&lt;p&gt;As we covered earlier, media queries are called upon using the &lt;code&gt;@media&lt;/code&gt; rule, followed by the breakpoint (defined in pixels), and nested under the CSS property in your stylesheet that you would like to be resized and/or rearranged.&lt;/p&gt;
+    &lt;p&gt;Media queries are a feature of CSS that enables web content (media, images, text, forms) to adapt according to
+        different devices, screen sizes, and resolutions. Basically, media queries are what make responsive web design
+        possible. Media queries are called upon in your stylesheets using the &lt;code&gt;@media&lt;/code&gt; rule, followed by a
+        breakpoint, and are nested within a specific CSS property that you want to resize or rearrange.&lt;/p&gt;
 
+    &lt;p&gt;The @media rule is followed by a (max-width) or (min-width). It looks like this:&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Step 1&lt;/strong&gt;&lt;/p&gt;
+    &lt;code&gt;@media (max-width: breakpoint in pixels)&lt;/code&gt;&lt;br /&gt;
 
-&lt;p&gt;However, the very first thing that you should do is open up your HTML file and insert a self-closing &lt;code&gt;meta&lt;/code&gt; within the &lt;code&gt;head&lt;/code&gt;. Here's an example below of what that might look like:&lt;/p&gt;
+    &lt;code&gt;@media (min-width: breakpoint in pixels)&lt;/code&gt;
 
-&lt;code&gt;
-
-    !DOCTYPE html
-
-    html lang='en'
-
-    meta charset='UTF-8'
-
-    head&amp;gt;
-
-    title&amp;gt;Hello World!/title
-
-    meta name="viewport" content="initial-scale:1.0" width="device-width"/
-
-    /head
-
-&lt;/code&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 2&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Open up your stylesheet, select a CSS property that you would like to resize and/or rearrange, and add the @media rule followed by (min-width: breakpoint in pixels). For the mobile breakpoint, a great place to start would be with 320px.&lt;/p&gt;
+    &lt;p&gt;So, what's the difference? &lt;strong&gt;Max-width&lt;/strong&gt; defines anything below that breakpoint, whereas &lt;strong&gt;min-width&lt;/strong&gt;
+        defines anything above the breakpoint. Note that it is best practice to use min-width.&lt;/p&gt;
 
 
-&lt;p&gt;&lt;strong&gt;Step 3&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;To determine your other breakpoints, start resizing your browser width. Observe any awkward instances for type sizes, images, and layouts.&lt;/p&gt;
+
+    &lt;h3 class="helper-space-top"&gt;Defining Breakpoints&lt;/h3&gt;
+    &lt;hr /&gt;
+
+    &lt;p&gt;Now, let's quickly review what breakpoints are:&lt;/p&gt;
+
+    &lt;blockquote&gt;Breakpoints are the point (in pixels) in which content will resize and rearrange itself to a layout
+        that provides the best experience according to a user's environment.&lt;/blockquote&gt;
+
+    &lt;p&gt;Breakpoints used to be strictly defined according to standard screen sizes: &lt;/p&gt;
+    &lt;ul class="blogpost--ul-indent"&gt;
+        &lt;li&gt;Mobile (usually the iPhone at 320px and 480px)&lt;/li&gt;
+        &lt;li&gt;Tablet (usually the iPad at 768px and 1024px)&lt;/li&gt;
+        &lt;li&gt;Desktop (above 1024px)&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;However, today technology advances far too quickly with new devices and screen sizes being released into the
+        market every year, so there are far too many to account for between iOS and Android.When determining suitable
+        breakpoints, you should instead, think more about designing for humans and selecting those breakpoints
+        intuitively according to how the content (media, images, text, forms) resizes and rearranges itself according
+        to how the browser width is resized. Also, a good place to start is the aforementioned: designing and
+        developing for mobile first. It is always best to start with the smallest viewport first. "Viewport" is just a
+        fancy term referring to your screen size. &lt;/p&gt;
+
+
+
+    &lt;h3 class="helper-space-top"&gt;Bringing It Together: Using Media Queries and Breakpoints&lt;/h3&gt;
+    &lt;hr /&gt;
+
+    &lt;p&gt;As we covered earlier, media queries are called upon using the &lt;code&gt;@media&lt;/code&gt; rule, followed by the
+        breakpoint (defined in pixels), and nested under the CSS property in your stylesheet that you would like to be
+        resized and/or rearranged.&lt;/p&gt;
+
+
+    &lt;ol class="blogpost--ol-indent"&gt;
+        &lt;li&gt;However, the very first thing that you should do is open up your HTML file and insert a self-closing &lt;code&gt;meta&lt;/code&gt;
+            within the &lt;code&gt;head&lt;/code&gt;. Here's an example below of what that might look like:
+            &lt;script src="https://gist.github.com/gvaldez8/bfddef3b26ee2c56b74cc3fb47946204.js"&gt;&lt;/script&gt;
+        &lt;/li&gt;
+
+        &lt;li&gt;Open up your stylesheet, select a CSS property that you would like to resize and/or rearrange, and add the
+            @media rule followed by (min-width: breakpoint in pixels). For the mobile breakpoint, a great place to
+            start
+            would be with 320px.&lt;/li&gt;
+
+
+        &lt;li&gt;To determine your other breakpoints, start resizing your browser width. Observe any awkward instances for
+            type
+            sizes, images, and layouts.&lt;/li&gt;
+    &lt;/ol&gt;
 &lt;/main&gt;
 </content>
   </entry>
@@ -885,7 +909,7 @@
     <link rel="alternate" href="http://blog.url.com/gina-blog/2018/09/21/post4.html"/>
     <id>http://blog.url.com/gina-blog/2018/09/21/post4.html</id>
     <published>2018-09-20T19:00:00-05:00</published>
-    <updated>2018-11-06T20:16:48-06:00</updated>
+    <updated>2018-11-06T20:46:47-06:00</updated>
     <author>
       <name>Article Author</name>
     </author>
