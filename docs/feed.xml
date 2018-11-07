@@ -10,28 +10,29 @@
     <name>Blog Author</name>
   </author>
   <entry>
-    <title>An Explanation of Sass and How to use it</title>
+    <title>An Explanation of Sass and How it Works</title>
     <link rel="alternate" href="http://blog.url.com/gina-blog/2018/10/16/post9.html"/>
     <id>http://blog.url.com/gina-blog/2018/10/16/post9.html</id>
     <published>2018-10-15T19:00:00-05:00</published>
-    <updated>2018-11-06T14:06:46-06:00</updated>
+    <updated>2018-11-06T17:14:26-06:00</updated>
     <author>
       <name>Article Author</name>
     </author>
     <content type="html">&lt;main class="blogposts__container"&gt;
   &lt;header class="header-main"&gt;
-    &lt;h1&gt;An explanation of Sass and How to use it&lt;/h1&gt;
+    &lt;h1&gt;An Explanation of Sass and How it Works&lt;/h1&gt;
     &lt;time datetime="2018-10-16"&gt;OCTOBER 16, 2018&lt;/time&gt;
   &lt;/header&gt;
-&lt;p&gt;&lt;/p&gt;
-  &lt;h2&gt;SASS vs. SCSS&lt;/h2&gt;
-  &lt;hr /&gt;
-  &lt;p&gt;SCSS stands for &lt;em&gt;Syntactically Awesome Stylesheets&lt;/em&gt;, otherwise Sassy CSS for short. Although SASS and SCSS
-    are similar in that they briefly give an overview of CSS Preprocessing, they have different technical syntaxes.SCSS
-    followed the development of SASS, and since it’s an extension of CSS, every valid stylesheet is a valid SCSS file
-    with the same meaning. It even understands most CSS vendor-specific syntaxes. It is in support of the idea of
-    &lt;strong&gt;DRY&lt;/strong&gt; (don’t repeat yourself) code as opposed to &lt;strong&gt;WET&lt;/strong&gt; code (write every time).Here
-    are the key differences between the two:&lt;/p&gt;
+
+  &lt;p&gt;Let's get one thing straight. Although they are often confused because of their similarities, SCSS and Sass are
+    &lt;strong&gt;not the same.&lt;/strong&gt; SCSS stands for &lt;em&gt;Syntactically Awesome Stylesheets&lt;/em&gt;, otherwise known as Sassy
+    CSS for short. Although SASS and SCSS are similar in that they briefly give an overview of CSS Preprocessing, they
+    have different technical syntaxes.&lt;/p&gt;
+
+  &lt;p&gt;SCSS followed the development of SASS, and since it’s an extension of CSS, every valid stylesheet is a valid SCSS
+    file with the same meaning. It even understands most CSS vendor-specific syntaxes. It is in support of the idea of
+    &lt;strong&gt;DRY&lt;/strong&gt; (don’t repeat yourself) code as opposed to &lt;strong&gt;WET&lt;/strong&gt; code (write every time). Here
+    are the key differences between the two more in-depth:&lt;/p&gt;
 
   &lt;h2&gt;SASS&lt;/h2&gt;
   &lt;hr /&gt;
@@ -52,9 +53,44 @@
     &lt;li&gt;Variables&lt;/li&gt;
     &lt;li&gt;Nesting&lt;/li&gt;
     &lt;li&gt;Mixins&lt;/li&gt;
-    &lt;li class="helper-space-bottom"&gt;Operators&lt;/li&gt;
+    &lt;li&gt;Operators&lt;/li&gt;
   &lt;/ol&gt;
 
+  &lt;h2&gt;SCSS Features: In-Depth Explanations on How to Use Them&lt;/h2&gt;
+  &lt;hr /&gt;
+  &lt;p&gt;One of the major benefits of SCSS is that you can separate your code into more
+    manageable, logical chunks. SCSS
+    allows you the ability to separate your CSS according to different elements or components —buttons, lists,
+    forms, colors, typography, etc.— to make them easier to work with and keep
+    your stylesheets nice and &lt;strong&gt;DRY&lt;/strong&gt;. There are different file and folder structures that you can follow,
+    such as &lt;a href="http://thesassway.com/beginner/how-to-structure-a-sass-project"&gt;The Sass Way&lt;/a&gt; or according to
+    &lt;a href="http://bradfrost.com/blog/post/atomic-web-design/"&gt;Brad
+      Frost's Atomic
+      Design&lt;/a&gt;.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;a href="http://thesassway.com/beginner/how-to-structure-a-sass-project"&gt;The Sass Way&lt;/a&gt; of organizing a project
+    would
+    be by modules, partials, and anything related to vendors (third party
+    CSS). &lt;strong&gt;Modules&lt;/strong&gt; would be anything like mixins, functions, and variables.
+    &lt;strong&gt;Partials&lt;/strong&gt; would be things like the navigation, footer, buttons, typography, input fields, etc.
+    Lastly, the &lt;strong&gt;vendor&lt;/strong&gt; directory would be dedicated to any third-party CSS like any prepackaged
+    components, such as color pickers or JQuery UI.&lt;/p&gt;
+
+  &lt;p class="helper-space-bottom"&gt;In terms of &lt;a href="http://bradfrost.com/blog/post/atomic-web-design/"&gt;Brad
+      Frost's Atomic
+      Design&lt;/a&gt;, although it's a great way to
+    organize your
+    elements or components, it should be noted that it creates additional complexity when it comes to using that
+    methodology for developing your code. The reason behind that is because identifying and classifying atoms are
+    straightforward, but determining
+    which
+    elements or components classify as molecules and
+    organisms are where it could lead to one whole big confusing, frustrating mess between you and your teammates. As
+    far as achieving business goals with this method especially within large teams, the idea of having constant
+    dicsusions to agree upon which is considered which is also quite draining and time
+    consuming.&lt;/p&gt;
   &lt;hr /&gt;
   &lt;div class="column"&gt;
     &lt;h4&gt;&lt;strong&gt;@import&lt;/strong&gt;&lt;/h4&gt;
@@ -63,9 +99,9 @@
 
     &lt;h4 class="helper-space-bottom"&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/h4&gt;
     &lt;code class="helper-space-bottom"&gt;// inside main.scss&lt;br /&gt;
-      @import “typography”&lt;br /&gt;
-      @import “header”&lt;br /&gt;
-      @import “footer”&lt;br /&gt;
+      @import 'typography.css';&lt;br /&gt;
+      @import 'header.css';&lt;br /&gt;
+      @import 'footer.css';&lt;br /&gt;
     &lt;/code&gt;
   &lt;/div&gt;
 
@@ -73,22 +109,25 @@
   &lt;div class="column"&gt;
     &lt;h4 class="helper-space-bottom"&gt;&lt;strong&gt;$variables&lt;/strong&gt;&lt;/h4&gt;
     &lt;p class="typography-p"&gt;Defined with a &lt;code&gt;$&lt;/code&gt; symbol, are assigned a value, and allow for global
-      changes to all of your files. For example, let’s say that a client or a project calls for a different color, it’s
-      as simple as updating the variable value and it will be applied everywhere else that you’ve used it. The hardest
+      changes to all of your files. For example, let’s say that a client or a project calls for a different color,
+      it’s
+      as simple as updating the variable value and it will be applied everywhere else that you’ve used it. The
+      hardest
       part is naming your variable, as you can be as general or generic as you’d like.&lt;/p&gt;
 
-    &lt;h4 class="helper-space-top"&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/h4&gt;
+    &lt;h4 class="helper-space-bottom"&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/h4&gt;
     &lt;code&gt;// Colors&lt;br /&gt;
       $c-yellow: #fff03b;&lt;br /&gt;
-      $c-yellow-dark: #ffe21d;&lt;/code&gt;
+      $c-yellow-dark: #ffe21d;&lt;/code&gt;&lt;br /&gt;
 
-    &lt;code&gt;// Fonts
+    &lt;code&gt;// Fonts&lt;br /&gt;
       $f-serif: 'Playfair Display', Georgia, Times, 'Times New Roman', serif;&lt;/code&gt;
   &lt;/div&gt;
 
   &lt;hr /&gt;
   &lt;h4&gt;&lt;strong&gt;Nesting&lt;/strong&gt;&lt;/h4&gt;
-  &lt;p&gt;Allows for better organization of your styles and limits repetition. Although this is a great feature, the rule is
+  &lt;p&gt;Allows for better organization of your styles and limits repetition. Although this is a great feature, the rule
+    is
     to only nest 3 child selectors, as it will aid in preventing confusion from nesting too many elements&lt;/p&gt;
 
   &lt;hr /&gt;
@@ -122,23 +161,29 @@
 
   &lt;h2&gt;So, how do we Sass?&lt;/h2&gt;
   &lt;hr /&gt;
-  &lt;strong&gt;Note:&lt;/strong&gt; &lt;em&gt;You need to tell Sass to watch your SCSS files and make it compile with CSS. On the
-    command line in terminal, type the following command:&lt;/em&gt;&lt;br /&gt;
-  &lt;code&gt;sass --watch scss:css&lt;/code&gt;
-
-  &lt;p&gt;But what does it mean to “watch”? The &lt;code&gt;watch&lt;/code&gt; command is not a command, but rather, a flag. This flag
-    tells
-    Sass to “pay attention” to the folders, so when you apply changes to SCSS, Sass will detect the change and
-    compile the SCSS file into the final CSS file.&lt;/p&gt;
+  &lt;ol class="blogpost--ol-indent"&gt;
+    &lt;li&gt;Using Terminal in a new tab, ensure that you are in the right directory that &lt;strong&gt;contains&lt;/strong&gt;
+      your stylesheets.&lt;/li&gt;
+    &lt;li&gt;Run the command &lt;code&gt;sass --watch nameofyourfile.scss:nameofyourfile.css&lt;/code&gt;
+      &lt;p&gt;&lt;strong&gt;&lt;em&gt;Note: The purpose of this command is to tell Sass to watch your SCSS files and make it compile
+            with CSS. What that means is that we are telling Terminal to "watch" for any changes that we make to our
+            Sass file that we want
+            reflected in CSS when it gets compiled.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;Using the @import feature, ensure that your Sass files are connected to &lt;strong&gt;one and only one&lt;/strong&gt;
+      stylesheet.&lt;/li&gt;
+    &lt;li&gt;Connect that one stylesheet that links all of your Sass files together to your main stylesheet for
+      your landing page.&lt;/li&gt;
+  &lt;/ol&gt;
 &lt;/main&gt;
 </content>
   </entry>
   <entry>
     <title>An Introduction to Form Design</title>
-    <link rel="alternate" href="http://blog.url.com/gina-blog/2018/10/09/post8.html"/>
-    <id>http://blog.url.com/gina-blog/2018/10/09/post8.html</id>
-    <published>2018-10-08T19:00:00-05:00</published>
-    <updated>2018-11-06T15:37:19-06:00</updated>
+    <link rel="alternate" href="http://blog.url.com/gina-blog/2018/10/12/post8.html"/>
+    <id>http://blog.url.com/gina-blog/2018/10/12/post8.html</id>
+    <published>2018-10-11T19:00:00-05:00</published>
+    <updated>2018-11-06T16:20:30-06:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -154,7 +199,8 @@
     text within those input fields, labels, dropdowns, radio buttons, and checkboxes. Additionally, you have to
     consider the
     different states for each of those elements to ensure that it's accessible:&lt;/p&gt;
-  &lt;ol&gt;
+
+  &lt;ol class="blogpost--ol-indent"&gt;
     &lt;li&gt;Default&lt;/li&gt;
     &lt;li&gt;Focus&lt;/li&gt;
     &lt;li&gt;Expanded/toggled/selected&lt;/li&gt;
@@ -203,14 +249,12 @@
     &lt;a href="https://www.nngroup.com/articles/checkboxes-vs-radio-buttons/"&gt; Nielsen Norman Group on Checkboxes vs.
       Radio Buttons&lt;/a&gt;. In terms of radio buttons and checkboxes, you will find that the HTML structures are very
     similar to each other. They both start within the &lt;code&gt;form&lt;/code&gt; element to enforce semantic HTML. They both
-    are contained in
-    a
-    &lt;code&gt;fieldset&lt;/code&gt; element, which is used to group several controls and labels within a form. They both
+    are contained in a &lt;code&gt;fieldset&lt;/code&gt; element, which is used to group several controls and labels within a form.
+    They both
     incorporate the use of the &lt;code&gt;legend&lt;/code&gt; tag, which represents a caption for the content of its parent.
     They both require an input type, a label, an id, a value, and a "for" attribute that helps identify what number
     radio button or checkbox you are on. Note that the value and the label are the same because it describes what
-    that
-    option is. Here's an example below:
+    that option is. Here's an example below:
     &lt;script src="https://gist.github.com/gvaldez8/62fdc63e39ac26787e72ce52874323da.js"&gt;&lt;/script&gt;
   &lt;/p&gt;
 
@@ -228,36 +272,38 @@
   &lt;h4&gt;&lt;strong&gt;GREAT RESOURCES AND INSPIRATION&lt;/strong&gt;&lt;/h4&gt;
   &lt;hr /&gt;
 
-  &lt;ul&gt;
+  &lt;ul class="blogpost--ul-indent"&gt;
     &lt;li&gt;&lt;a href="https://codepen.io/patterns/"&gt;CodePen.io's Patterns&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="https://www.nngroup.com/"&gt;Nielsen Norman Group: World Leaders in Research-Based User Experience&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
 
-  &lt;h2&gt;An Example of Form Design&lt;/h2&gt;
-  &lt;p&gt;Here's my example of form design for this week's blog post prompt. I decided that the purpose of this form was for
-    the user to order a pizza because, honestly, who doesn't like pizza?&lt;/p&gt;
+  &lt;h2 class="helper-space-top"&gt;An Example of Form Design&lt;/h2&gt;
+  &lt;hr /&gt;
+  &lt;p&gt;For this week's blog post prompt, I decided that the purpose of this form was for the user to order a pizza.
+    Honestly though, who doesn't like pizza?&lt;/p&gt;
 
   &lt;form class="form__container--personal"&gt;
-    &lt;h3&gt;Hi there, I am &lt;input type="text" id="name" name="name" placeholder="name" /&gt;.&lt;br /&gt;
+    &lt;fieldset class="form__pizza--size"&gt;
+      &lt;h3&gt;Hi there, I am &lt;input type="text" id="name" name="name" placeholder="name" /&gt;.&lt;br /&gt;
 
-      I would like to order a pizza for delivery at &lt;br /&gt;
+        I would like to order a pizza for delivery at &lt;br /&gt;
 
-      &lt;input type="text" id="address" name="address" placeholder="address" /&gt;by
-      &lt;select id="time-select"&gt;
-        &lt;option value="500"&gt;5:00pm&lt;/option&gt;
-        &lt;option value="530"&gt;5:30pm&lt;/option&gt;
-        &lt;option value="600"&gt;6:00pm&lt;/option&gt;
-        &lt;option value="630"&gt;6:30pm&lt;/option&gt;
-        &lt;option value="700"&gt;7:00pm&lt;/option&gt;
-        &lt;option value="730"&gt;7:30pm&lt;/option&gt;
-        &lt;option value="800"&gt;8:00pm&lt;/option&gt;
-        &lt;option value="830"&gt;8:30pm&lt;/option&gt;
-      &lt;/select&gt;.
+        &lt;input type="text" id="address" name="address" placeholder="address" /&gt;by
+        &lt;select id="time-select"&gt;
+          &lt;option value="500"&gt;5:00pm&lt;/option&gt;
+          &lt;option value="530"&gt;5:30pm&lt;/option&gt;
+          &lt;option value="600"&gt;6:00pm&lt;/option&gt;
+          &lt;option value="630"&gt;6:30pm&lt;/option&gt;
+          &lt;option value="700"&gt;7:00pm&lt;/option&gt;
+          &lt;option value="730"&gt;7:30pm&lt;/option&gt;
+          &lt;option value="800"&gt;8:00pm&lt;/option&gt;
+          &lt;option value="830"&gt;8:30pm&lt;/option&gt;
+        &lt;/select&gt;.
 
-      &lt;br /&gt;Feel free to give me a ring or shoot me a text at&lt;br /&gt;
+        &lt;br /&gt;Feel free to give me a ring or shoot me a text at&lt;br /&gt;
 
-      &lt;input type="text" id="phone-number" name="address" placeholder="(000) 000 0000" /&gt; when you're here.&lt;/h3&gt;
-
+        &lt;input type="text" id="phone-number" name="address" placeholder="(000) 000 0000" /&gt; when you're here.&lt;/h3&gt;
+    &lt;/fieldset&gt;
   &lt;/form&gt;
 
   &lt;br /&gt;
@@ -370,14 +416,14 @@
     <link rel="alternate" href="http://blog.url.com/gina-blog/2018/10/08/post7.html"/>
     <id>http://blog.url.com/gina-blog/2018/10/08/post7.html</id>
     <published>2018-10-07T19:00:00-05:00</published>
-    <updated>2018-11-06T14:06:39-06:00</updated>
+    <updated>2018-11-06T16:22:31-06:00</updated>
     <author>
       <name>Article Author</name>
     </author>
     <content type="html">&lt;main&gt;
     &lt;header class="header-main"&gt;
         &lt;h1&gt;Naming Conventions&lt;br /&gt; related to CSS Architecture&lt;/h1&gt;
-        &lt;time datetime="2018-11-21"&gt;OCTOBER 8, 2018&lt;/time&gt;
+        &lt;time datetime="2018-10-08"&gt;OCTOBER 8, 2018&lt;/time&gt;
     &lt;/header&gt;
 
     &lt;p&gt;There are three types of Naming Conventions related to CSS Architecture that we'll cover in this post: BEM,
@@ -389,7 +435,7 @@
         thereby making it easier to skim markup and immediately understand how elements are styled or related to one
         another. The point is to keep the names simple, clear, and precise.&lt;/p&gt;
     &lt;div class="column"&gt;
-        &lt;h5 class="helper-space"&gt;&lt;strong&gt;THE GUIDELINES&lt;/strong&gt;&lt;/h5&gt;
+        &lt;h5 class="helper-space-top"&gt;&lt;strong&gt;THE GUIDELINES&lt;/strong&gt;&lt;/h5&gt;
         &lt;hr /&gt;
         &lt;ol class="blogpost--ol-columns"&gt;
             &lt;li&gt;Names are written in lowercase&lt;/li&gt;
@@ -400,7 +446,7 @@
             &lt;li&gt;The modifier value is separated from the modifier name by a single underscore, double hyphen, or period&lt;/li&gt;
             &lt;li&gt;For boolean modifiers, the value is not included in the name&lt;/li&gt;
         &lt;/ol&gt;
-        &lt;h5 class="helper-space"&gt;&lt;strong&gt;BENEFITS&lt;/strong&gt;&lt;/h5&gt;
+        &lt;h5 class="helper-space-top"&gt;&lt;strong&gt;BENEFITS&lt;/strong&gt;&lt;/h5&gt;
         &lt;hr /&gt;
         &lt;ul class="blogpost--ul-columns"&gt;
             &lt;li&gt;Works nicely with React&lt;/li&gt;
@@ -414,7 +460,7 @@
     &lt;/div&gt;
 
     &lt;section&gt;
-        &lt;h5&gt;&lt;strong&gt;HOW IT WORKS&lt;/strong&gt;&lt;/h5&gt;
+        &lt;h5 class="helper-space-top"&gt;&lt;strong&gt;HOW IT WORKS&lt;/strong&gt;&lt;/h5&gt;
         &lt;hr /&gt;
         &lt;p&gt;The block is the whole and the elements are the pieces.&lt;/p&gt;
         &lt;code&gt;.block&lt;/code&gt;
@@ -427,20 +473,20 @@
     &lt;/section&gt;
 
     &lt;section&gt;
-        &lt;h2 class="helper-space"&gt;What is OOCSS?&lt;/h2&gt;
+        &lt;h2 class="helper-space-top"&gt;What is OOCSS?&lt;/h2&gt;
         &lt;hr /&gt;
         &lt;p&gt;OSCSS stands for &lt;em&gt;Object oriented CSS&lt;/em&gt;. The object refers to any repeating visual pattern than can be
             specified in snippets of code. The goal of OOCSS is to produce components that are flexible, modular, and
             interchangeable.&lt;/p&gt;
 
-        &lt;h5 class="helper-space"&gt;&lt;strong&gt;THE GUIDELINES&lt;/strong&gt;&lt;/h5&gt;
+        &lt;h5 class="helper-space-top"&gt;&lt;strong&gt;THE GUIDELINES&lt;/strong&gt;&lt;/h5&gt;
         &lt;hr /&gt;
         &lt;ol class="blogpost--ol-indent"&gt;
             &lt;li&gt;Separation of Structure and Skin&lt;/li&gt;
             &lt;li&gt;Separation of Container and Content&lt;/li&gt;
         &lt;/ol&gt;
 
-        &lt;h5 class="helper-space"&gt;&lt;strong&gt;STRUCTURE VS. SKIN&lt;/strong&gt;&lt;/h5&gt;
+        &lt;h5 class="helper-space-top"&gt;&lt;strong&gt;STRUCTURE VS. SKIN&lt;/strong&gt;&lt;/h5&gt;
         &lt;hr /&gt;
         &lt;p&gt;The &lt;strong&gt;structure&lt;/strong&gt; of an application refers to anything that is “invisible” to the user,
             such as
@@ -461,7 +507,7 @@
             &lt;li&gt;gradients&lt;/li&gt;
         &lt;/ol&gt;
 
-        &lt;h5 class="helper-space"&gt;&lt;strong&gt;CONTAINER VS. CONTENT&lt;/strong&gt;&lt;/h5&gt;
+        &lt;h5 class="helper-space-top"&gt;&lt;strong&gt;CONTAINER VS. CONTENT&lt;/strong&gt;&lt;/h5&gt;
         &lt;hr /&gt;
         &lt;p&gt;&lt;strong&gt;Content&lt;/strong&gt; refers to elements such as images, paragraphs, and div tags that are nested
             within
@@ -477,7 +523,7 @@
             style guide than it is a rigid framework. The purpose of this category is to codify patterns, things that
             repeat themselves within our design, and avoid mixing code of several categories into a single file.&lt;/p&gt;
         &lt;div class="column"&gt;
-            &lt;h5 class="helper-space"&gt;&lt;strong&gt;THE GUIDELINES IN FIVE CATEGORIES&lt;/strong&gt;&lt;/h5&gt;
+            &lt;h5 class="helper-space-top"&gt;&lt;strong&gt;THE GUIDELINES IN FIVE CATEGORIES&lt;/strong&gt;&lt;/h5&gt;
             &lt;hr /&gt;
             &lt;ol class="blogpost--ol-columns"&gt;
                 &lt;li&gt;&lt;strong&gt;Base:&lt;/strong&gt; These are default values, so things like padding, margin border, font and
@@ -501,7 +547,7 @@
                     such as color scheme or type treatment.&lt;/li&gt;
             &lt;/ol&gt;
 
-            &lt;h5 class="helper-space"&gt;&lt;strong&gt;THE GOALS&lt;/strong&gt;&lt;/h5&gt;
+            &lt;h5 class="helper-space-top"&gt;&lt;strong&gt;THE GOALS&lt;/strong&gt;&lt;/h5&gt;
             &lt;hr /&gt;
             &lt;ol class="blogpost--ol-columns"&gt;
                 &lt;li&gt;Repetition results in less code&lt;/li&gt;
@@ -515,21 +561,21 @@
   </entry>
   <entry>
     <title>Getting Responsive with Media Queries</title>
-    <link rel="alternate" href="http://blog.url.com/gina-blog/2018/10/01/post6.html"/>
-    <id>http://blog.url.com/gina-blog/2018/10/01/post6.html</id>
-    <published>2018-09-30T19:00:00-05:00</published>
-    <updated>2018-11-06T14:06:42-06:00</updated>
+    <link rel="alternate" href="http://blog.url.com/gina-blog/2018/10/03/post6.html"/>
+    <id>http://blog.url.com/gina-blog/2018/10/03/post6.html</id>
+    <published>2018-10-02T19:00:00-05:00</published>
+    <updated>2018-11-06T16:24:11-06:00</updated>
     <author>
       <name>Article Author</name>
     </author>
     <content type="html">&lt;main class="blogposts__container"&gt;
  &lt;header&gt;
       &lt;h1&gt;Getting Responsive with Media Queries&lt;/h1&gt;
-      &lt;time datetime="2018-10-3"&gt;OCTOBER 3, 2018&lt;/time&gt;
+      &lt;time datetime="2018-10-03"&gt;OCTOBER 3, 2018&lt;/time&gt;
 &lt;/header&gt;
    &lt;p&gt;Before we deep dive into the purpose of mobile first design/development, media queries, and how to apply them, we need to understand what responsive web design is and its purpose.&lt;/p&gt;
 
-&lt;h3&gt;Responsive Web Design&lt;/h3&gt;
+&lt;h3 class="helper-space-top"&gt;Responsive Web Design&lt;/h3&gt;
 &lt;hr /&gt;
 
 &lt;p&gt;Responsive web design (RWD) is designing online experiences that adapt to various screen sizes, platforms, and orientations according to user environments. For example, you might use your phone on the train as opposed to your desktop that you use when you're working in the office. You may use a tablet or a kindle to stream movies, play video games, and read e-books.Responsive web design requires the use of CSS media queries—powerful snippets of code that define "breakpoints"—to create flexible grids, layouts, and images that resize and rearrange content (media, images, text, forms) to account for various screen sizes. &lt;strong&gt;Breakpoints&lt;/strong&gt; are the point (in pixels) in which content will resize and rearrange itself to a layout that provides the best experience according to a user's environment. Here's an example below of both responsive web design and breakpoints:&lt;/p&gt;
@@ -537,7 +583,7 @@
 &amp;lt;%= image_tag "responsive-desktop.png" %&amp;gt;
 
 
-&lt;h3&gt;Mobile First Design and Development&lt;/h3&gt;
+&lt;h3 class="helper-space-top"&gt;Mobile First Design and Development&lt;/h3&gt;
 &lt;hr /&gt;
 
 &lt;p&gt;Mobile first design is when you prioritize designing for mobile before considering the designs of the other screen sizes, like tablet and desktop. One reason for doing so is because mobile usage as opposed to desktop usage has increased dramatically. Another reason that it's important is because it helps in selecting and providing only the most essential information. The reason behind this methodology is to account for the user's environment—they could be traveling or commuting, casually walking down the street, lounging around in bed, or even just on the couch in the comfort of their own living room—when interacting with an online experience through mobile. Regardless of where your user might be, their level of focus will ultimately adjust according to the environment. There is also less real estate on a smaller screen. Hence, the reason that the design needs to facilitate that online experience by providing a quick, easily accessible way to locate the information that they need and process it within a limited amount of time. &lt;/p&gt;
@@ -546,7 +592,7 @@
 
 
 
-&lt;h3&gt;Media Queries&lt;/h3&gt;
+&lt;h3 class="helper-space-top"&gt;Media Queries&lt;/h3&gt;
 &lt;hr /&gt;
 
 &lt;p&gt;Media queries are a feature of CSS that enables web content (media, images, text, forms) to adapt according to different devices, screen sizes, and resolutions. Basically, media queries are what make responsive web design possible. Media queries are called upon in your stylesheets using the &lt;code&gt;@media&lt;/code&gt; rule, followed by a breakpoint, and are nested within a specific CSS property that you want to resize or rearrange.&lt;/p&gt;
@@ -561,7 +607,7 @@
 
 
 
-&lt;h3&gt;Defining Breakpoints&lt;/h3&gt;
+&lt;h3 class="helper-space-top"&gt;Defining Breakpoints&lt;/h3&gt;
 &lt;hr /&gt;
 
 &lt;p&gt;Now, let's quickly review what breakpoints are:&lt;/p&gt;
@@ -569,7 +615,7 @@
 &lt;blockquote&gt;Breakpoints are the point (in pixels) in which content will resize and rearrange itself to a layout that provides the best experience according to a user's environment.&lt;/blockquote&gt;
 
 &lt;p&gt;Breakpoints used to be strictly defined according to standard screen sizes: &lt;/p&gt;
-&lt;ul&gt;
+&lt;ul class="blogpost--ul-indent"&gt;
     &lt;li&gt;Mobile (usually the iPhone at 320px and 480px)&lt;/li&gt;
     &lt;li&gt;Tablet (usually the iPad at 768px and 1024px)&lt;/li&gt;
     &lt;li&gt;Desktop (above 1024px)&lt;/li&gt;
@@ -579,7 +625,7 @@
 
 
 
-&lt;h3&gt;Bringing It Together: Using Media Queries and Breakpoints&lt;/h3&gt;
+&lt;h3 class="helper-space-top"&gt;Bringing It Together: Using Media Queries and Breakpoints&lt;/h3&gt;
 &lt;hr /&gt;
 
 &lt;p&gt;As we covered earlier, media queries are called upon using the &lt;code&gt;@media&lt;/code&gt; rule, followed by the breakpoint (defined in pixels), and nested under the CSS property in your stylesheet that you would like to be resized and/or rearranged.&lt;/p&gt;
@@ -622,14 +668,14 @@
     <link rel="alternate" href="http://blog.url.com/gina-blog/2018/09/26/post5.html"/>
     <id>http://blog.url.com/gina-blog/2018/09/26/post5.html</id>
     <published>2018-09-25T19:00:00-05:00</published>
-    <updated>2018-11-05T14:05:45-06:00</updated>
+    <updated>2018-11-06T15:56:29-06:00</updated>
     <author>
       <name>Article Author</name>
     </author>
     <content type="html">&lt;main class="blogposts__container"&gt;
   &lt;header&gt;
     &lt;h1&gt;An Overview of Typographic History,&lt;br /&gt; Classifications, and Characteristics&lt;/h1&gt;
-    &lt;time datetime="2018-11-21"&gt;SEPTEMBER 26, 2018&lt;/time&gt;
+    &lt;time datetime="2018-09-26"&gt;SEPTEMBER 26, 2018&lt;/time&gt;
   &lt;/header&gt;
   &lt;p class="typography-p"&gt;Typography is one of the most overlooked but essential forms for communication, readability,
     legibility, and
@@ -835,17 +881,17 @@
 </content>
   </entry>
   <entry>
-    <title>The User Experience Team of One</title>
+    <title>How to be a User Experience Team of One</title>
     <link rel="alternate" href="http://blog.url.com/gina-blog/2018/09/21/post4.html"/>
     <id>http://blog.url.com/gina-blog/2018/09/21/post4.html</id>
     <published>2018-09-20T19:00:00-05:00</published>
-    <updated>2018-11-05T14:05:45-06:00</updated>
+    <updated>2018-11-06T20:16:48-06:00</updated>
     <author>
       <name>Article Author</name>
     </author>
     <content type="html">&lt;main class="blogposts__container"&gt;
   &lt;header&gt;
-    &lt;h1&gt;&lt;em&gt;The User Experience Team of One&lt;/em&gt; by Leah Buley&lt;/h1&gt;
+    &lt;h1&gt;How to be a User Experience Team of One&lt;/h1&gt;
     &lt;time datetime="2018-11-21"&gt;SEPTEMBER 21, 2018&lt;/time&gt;
   &lt;/header&gt;
   
@@ -855,7 +901,7 @@
   
   &lt;p&gt;Towards the middle, the book proposes answers to handling common objections respectfully and encourages seeing these objections more as opportunities than threats because they are invitations to direct, honest conversations. Some common objections from stakeholders or team members that the book covers are when others:&lt;/p&gt;
   
-  &lt;ul class="ul--indent"&gt;
+  &lt;ul class="blogpost--ul-indent"&gt;
     &lt;li&gt;Underestimate the importance of web design&lt;/li&gt;
     &lt;li&gt;Equate UX Research to Market Research&lt;/li&gt;
     &lt;li&gt;Consider UX as too expensive and time consuming&lt;/li&gt;
@@ -868,7 +914,7 @@
   
   &lt;p&gt;Lastly, this book covers methods for planning, discovery, research, design, and implementation (testing and validation). The methods that were covered under each category:&lt;/p&gt;
   
-  &lt;ul class="ul--indent"&gt;
+  &lt;ul class="blogpost--ul-indent"&gt;
     &lt;li&gt;&lt;strong&gt;Planning and Discovery:&lt;/strong&gt; UX Questionaire, UX Project Plan, Listening Tour, Opportunity Workshop, Project Brief, Strategy Workshop.&lt;/li&gt;
     &lt;li&gt;&lt;strong&gt;Research:&lt;/strong&gt; Learning Plan, Guerrilla User Research, Proto-Personas, Heuristic Markup, Comparative Assessment, Content Patterns.&lt;/li&gt;
     &lt;li&gt;&lt;strong&gt;Design:&lt;/strong&gt; Design Brief, Design Principles, Sketching, Sketchboards, Task Flows, Wireframes. &lt;/li&gt;
