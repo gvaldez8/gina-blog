@@ -678,10 +678,13 @@ form hr {
     text-align: left;
     width: 250px; }
   .form__container--personal #time-select {
+    border-bottom: dashed 2px #255965;
+    border-radius: 0;
+    color: #222831;
     padding-left: 15px;
     padding-right: 15px;
     width: 120px; }
-    .form__container--personal #time-select option {
+    .form__container--personal #time-select option[value=""] {
       font-weight: 300; }
   .form__container--personal h3 {
     color: #255965;
@@ -989,6 +992,18 @@ nav {
     nav a:visited {
       opacity: 50%; }
 
+a {
+  color: #b8860b;
+  font-family: "Source Sans Pro", sans-serif;
+  text-decoration: none;
+  line-height: 0.5em; }
+  a:focus, a:hover {
+    color: #b8860b;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700; }
+  a:visited {
+    opacity: 50%; }
+
 hr {
   display: block;
   height: 0.05em;
@@ -1052,4 +1067,8 @@ main {
   .blogpost__text--space ul li {
     padding-top: 8px; }
 
-/* END OF CONTENT & CONTAINERS */
+/* IMAGES */
+.blogposts__images {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-evenly; }

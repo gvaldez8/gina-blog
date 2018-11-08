@@ -678,10 +678,13 @@ form hr {
     text-align: left;
     width: 250px; }
   .form__container--personal #time-select {
+    border-bottom: dashed 2px #255965;
+    border-radius: 0;
+    color: #222831;
     padding-left: 15px;
     padding-right: 15px;
     width: 120px; }
-    .form__container--personal #time-select option {
+    .form__container--personal #time-select option[value=""] {
       font-weight: 300; }
   .form__container--personal h3 {
     color: #255965;

@@ -9,13 +9,55 @@ time: October 8, 2018
         <time datetime="2018-10-08">OCTOBER 8, 2018</time>
     </header>
 
-    <p>There are three types of Naming Conventions related to CSS Architecture that we'll cover in this post: BEM,
+    <p>Think of CSS Architecture like the equivalent of brand style guides but with code. It functions as a set of
+        guidelines and best practices that developers can use to write code. Here are some important principles to
+        follow
+        when using CSS Architecture to create a solid design system:</p>
+    <ol class="blogpost--ol-columns">
+        <li><strong>Modularity — </strong>This is a core principle, which basically means that your code is written in
+            a way that anyone
+            can
+            open that file, edit that code, and understand the structure without encountering a huge learning curve. It
+            means
+            that it can be easily managed and edited by an individual or by a large engineering team.</li>
+
+        <li><strong>MMaintainable — </strong>This principle is exactly as it sounds. It means that if you add, update,
+            or
+            rearrange new
+            components and features, integration shouldn't completely break your page or require extensive refactoring.</li>
+
+        <li><strong>Predictable/Flexible — </strong>This means that your code behaves as you'd expect. It means that
+            when you
+            add or
+            update a
+            rule, it shouldn't affect other parts of your site. Although this might not be as detrimental to a smaller
+            site, it
+            could definitely be problematic on a larger site with anywhere from tens to hundreds of pages.</li>
+
+        <li><strong>Reusable — </strong>This principle dictates that you should not have to recode patterns or
+            problems that
+            you've
+            already
+            solved by enforcing the DRY (Don't Repeat Yourself) principle. It means that while you're coding, you
+            should
+            consider the other possible situations that you might use that code and be mindful of not assigning names
+            to
+            selectors, classes, or id's that are too specific (i.e. "blue box").</li>
+    </ol>
+
+
+    <p>Now that we understand the principles that compose good CSS Architecture, there are three types of naming
+        conventions that will help us build a solid foundation for our CSS architecture that
+        we'll cover in this post: BEM,
         OOCSS, and SMACSS.</p>
     <h2>What is BEM?</h2>
     <hr />
-    <p>The BEM naming convention stands for <em>Block Element Modifier</em> and is currently the naming convention that
-        8th Light sticks to. Reasons that people like this naming convention are because its name declares its purpose,
-        thereby making it easier to skim markup and immediately understand how elements are styled or related to one
+    <p>The BEM naming convention stands for <em>Block Element Modifier</em> and is currently the naming convention
+        that
+        8th Light sticks to. Reasons that people like this naming convention are because its name declares its
+        purpose,
+        thereby making it easier to skim markup and immediately understand how elements are styled or related to
+        one
         another. The point is to keep the names simple, clear, and precise.</p>
     <div class="column">
         <h5 class="helper-space-top"><strong>THE GUIDELINES</strong></h5>
@@ -26,7 +68,8 @@ time: October 8, 2018
             <li>Block name defines the namespace for its elements and modifiers</li>
             <li>The element is separated from the block name by a double underscore</li>
             <li>The modifier name is separated from the block or element name by a single underscore</li>
-            <li>The modifier value is separated from the modifier name by a single underscore, double hyphen, or period</li>
+            <li>The modifier value is separated from the modifier name by a single underscore, double hyphen, or
+                period</li>
             <li>For boolean modifiers, the value is not included in the name</li>
         </ol>
         <h5 class="helper-space-top"><strong>BENEFITS</strong></h5>
@@ -58,8 +101,10 @@ time: October 8, 2018
     <section>
         <h2 class="helper-space-top">What is OOCSS?</h2>
         <hr />
-        <p>OSCSS stands for <em>Object oriented CSS</em>. The object refers to any repeating visual pattern than can be
-            specified in snippets of code. The goal of OOCSS is to produce components that are flexible, modular, and
+        <p>OSCSS stands for <em>Object oriented CSS</em>. The object refers to any repeating visual pattern than
+            can be
+            specified in snippets of code. The goal of OOCSS is to produce components that are flexible, modular,
+            and
             interchangeable.</p>
 
         <h5 class="helper-space-top"><strong>THE GUIDELINES</strong></h5>
@@ -103,27 +148,33 @@ time: October 8, 2018
         <h2 class="helper-space">What is SMACSS?</h2>
         <hr />
         <p>SMACSS stands for <em>Scalable and Modular Architecture for CSS</em> and is more of a
-            style guide than it is a rigid framework. The purpose of this category is to codify patterns, things that
+            style guide than it is a rigid framework. The purpose of this category is to codify patterns, things
+            that
             repeat themselves within our design, and avoid mixing code of several categories into a single file.</p>
         <div class="column">
             <h5 class="helper-space-top"><strong>THE GUIDELINES IN FIVE CATEGORIES</strong></h5>
             <hr />
             <ol class="blogpost--ol-columns">
-                <li><strong>Base:</strong> These are default values, so things like padding, margin border, font and
+                <li><strong>Base:</strong> These are default values, so things like padding, margin border, font
+                    and
                     other
                     properties that are used on the entire website and all elements.</li>
                 <li><strong>Layout:</strong> Divides a page into sections with elements like header, footer, and
                     article.
-                    Often developers show layout elements by prefixing the class with l, i.e.`l-header` or `l-footer`</li>
-                <li><strong>Modules:</strong> The reusable, modular elements in the design like the navbar, sidebar,
+                    Often developers show layout elements by prefixing the class with l, i.e.`l-header` or
+                    `l-footer`</li>
+                <li><strong>Modules:</strong> The reusable, modular elements in the design like the navbar,
+                    sidebar,
                     and
                     elements that are repeated on the site.</li>
                 <li><strong>State:</strong> Describes how our modules or layouts will look when they are in a
                     particular
-                    state (i.e. active, inactive, expanded, hidden). These are usually prefixed with `is-`. Examples
+                    state (i.e. active, inactive, expanded, hidden). These are usually prefixed with `is-`.
+                    Examples
                     would
                     be: `is-active`, `is-inactive`, `is-expanded`, and `is-hidden`</li>
-                <li><strong>Theme:</strong> Similar to state rules in that they describe how modules or layouts might
+                <li><strong>Theme:</strong> Similar to state rules in that they describe how modules or layouts
+                    might
                     look.
                     However, it is more applicable for larger sites with shared elements that look different
                     throughout,

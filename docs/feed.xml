@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://blog.url.com/gina-blog/2018/10/16/post9.html"/>
     <id>http://blog.url.com/gina-blog/2018/10/16/post9.html</id>
     <published>2018-10-15T19:00:00-05:00</published>
-    <updated>2018-11-06T17:14:26-06:00</updated>
+    <updated>2018-11-08T10:08:48-06:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -26,17 +26,18 @@
 
   &lt;p&gt;Let's get one thing straight. Although they are often confused because of their similarities, SCSS and Sass are
     &lt;strong&gt;not the same.&lt;/strong&gt; SCSS stands for &lt;em&gt;Syntactically Awesome Stylesheets&lt;/em&gt;, otherwise known as Sassy
-    CSS for short. Although SASS and SCSS are similar in that they briefly give an overview of CSS Preprocessing, they
+    CSS for short. Although Sass and SCSS are similar in that they briefly give an overview of CSS Preprocessing, they
     have different technical syntaxes.&lt;/p&gt;
 
-  &lt;p&gt;SCSS followed the development of SASS, and since it’s an extension of CSS, every valid stylesheet is a valid SCSS
+  &lt;p&gt;SCSS followed the development of Sass, and since it’s an extension of CSS, every valid stylesheet is a valid SCSS
     file with the same meaning. It even understands most CSS vendor-specific syntaxes. It is in support of the idea of
     &lt;strong&gt;DRY&lt;/strong&gt; (don’t repeat yourself) code as opposed to &lt;strong&gt;WET&lt;/strong&gt; code (write every time). Here
     are the key differences between the two more in-depth:&lt;/p&gt;
 
+
   &lt;h2&gt;SASS&lt;/h2&gt;
   &lt;hr /&gt;
-  &lt;ul class="blogpost--ul-indent"&gt;
+  &lt;ul class="blogpost--ul-columns"&gt;
     &lt;li&gt;SASS is a program written in Ruby—the technology or programming language that SASS is built on— that
       assembles
       CSS style sheets.&lt;/li&gt;
@@ -48,7 +49,7 @@
   &lt;h2&gt;SCSS&lt;/h2&gt;
   &lt;hr /&gt;
   &lt;p&gt;Incorporates some commonly used features:&lt;/p&gt;
-  &lt;ol class="blogpost--ol-indent"&gt;
+  &lt;ol class="blogpost--ol-columns"&gt;
     &lt;li&gt;Import&lt;/li&gt;
     &lt;li&gt;Variables&lt;/li&gt;
     &lt;li&gt;Nesting&lt;/li&gt;
@@ -63,31 +64,34 @@
     allows you the ability to separate your CSS according to different elements or components —buttons, lists,
     forms, colors, typography, etc.— to make them easier to work with and keep
     your stylesheets nice and &lt;strong&gt;DRY&lt;/strong&gt;. There are different file and folder structures that you can follow,
-    such as &lt;a href="http://thesassway.com/beginner/how-to-structure-a-sass-project"&gt;The Sass Way&lt;/a&gt; or according to
-    &lt;a href="http://bradfrost.com/blog/post/atomic-web-design/"&gt;Brad
+    such as &lt;a href="
+      http://thesassway.com/beginner/how-to-structure-a-sass-project"&gt;The Sass Way&lt;/a&gt; or
+    following &lt;a href="http://bradfrost.com/blog/post/atomic-web-design/"&gt;Brad
       Frost's Atomic
       Design&lt;/a&gt;.
   &lt;/p&gt;
 
   &lt;p&gt;
-    &lt;a href="http://thesassway.com/beginner/how-to-structure-a-sass-project"&gt;The Sass Way&lt;/a&gt; of organizing a project
-    would
-    be by modules, partials, and anything related to vendors (third party
-    CSS). &lt;strong&gt;Modules&lt;/strong&gt; would be anything like mixins, functions, and variables.
-    &lt;strong&gt;Partials&lt;/strong&gt; would be things like the navigation, footer, buttons, typography, input fields, etc.
+    &lt;a href="http://thesassway.com/beginner/how-to-structure-a-sass-project"&gt;The Sass Way&lt;/a&gt; of organizing a
+    project would be by modules, partials, and anything related to vendors (third party CSS). &lt;strong&gt;Modules&lt;/strong&gt;
+    would be
+    anything like mixins, functions, and variables. &lt;strong&gt;Partials&lt;/strong&gt; would be things like the navigation,
+    footer, buttons, typography, input fields, etc.
     Lastly, the &lt;strong&gt;vendor&lt;/strong&gt; directory would be dedicated to any third-party CSS like any prepackaged
-    components, such as color pickers or JQuery UI.&lt;/p&gt;
+    components, such as color pickers or JQuery UI.
+  &lt;/p&gt;
 
   &lt;p class="helper-space-bottom"&gt;In terms of &lt;a href="http://bradfrost.com/blog/post/atomic-web-design/"&gt;Brad
       Frost's Atomic
       Design&lt;/a&gt;, although it's a great way to
     organize your
     elements or components, it should be noted that it creates additional complexity when it comes to using that
-    methodology for developing your code. The reason behind that is because identifying and classifying atoms are
+    methodology for organizing and developing your code. The reason behind that is because identifying and classifying atoms are
     straightforward, but determining
     which
     elements or components classify as molecules and
-    organisms are where it could lead to one whole big confusing, frustrating mess between you and your teammates. As
+    organisms are where it could lead to one big, confusing, frustrating mess between you and your teammates.
+    As
     far as achieving business goals with this method especially within large teams, the idea of having constant
     dicsusions to agree upon which is considered which is also quite draining and time
     consuming.&lt;/p&gt;
@@ -126,7 +130,8 @@
 
   &lt;hr /&gt;
   &lt;h4&gt;&lt;strong&gt;Nesting&lt;/strong&gt;&lt;/h4&gt;
-  &lt;p&gt;Allows for better organization of your styles and limits repetition. Although this is a great feature, the rule
+  &lt;p&gt;Allows for better organization of your styles and limits repetition. Although this is a great feature, the
+    rule
     is
     to only nest 3 child selectors, as it will aid in preventing confusion from nesting too many elements&lt;/p&gt;
 
@@ -164,16 +169,16 @@
   &lt;ol class="blogpost--ol-indent"&gt;
     &lt;li&gt;Using Terminal in a new tab, ensure that you are in the right directory that &lt;strong&gt;contains&lt;/strong&gt;
       your stylesheets.&lt;/li&gt;
-    &lt;li&gt;Run the command &lt;code&gt;sass --watch nameofyourfile.scss:nameofyourfile.css&lt;/code&gt;
-      &lt;p&gt;&lt;strong&gt;&lt;em&gt;Note: The purpose of this command is to tell Sass to watch your SCSS files and make it compile
-            with CSS. What that means is that we are telling Terminal to "watch" for any changes that we make to our
+    &lt;li&gt;Type this in Terminal on the command line and hit "enter": &lt;code&gt;sass --watch nameofyourfile.scss:nameofyourfile.css&lt;/code&gt;
+      &lt;p&gt;&lt;strong&gt;&lt;em&gt;Note: This command means that we are telling Terminal to "watch" for any changes that we make to
+            our
             Sass file that we want
-            reflected in CSS when it gets compiled.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+            reflected in CSS when it gets compiled. By "compiled" we mean rendered in a language our browsers understand.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
     &lt;/li&gt;
-    &lt;li&gt;Using the @import feature, ensure that your Sass files are connected to &lt;strong&gt;one and only one&lt;/strong&gt;
-      stylesheet.&lt;/li&gt;
-    &lt;li&gt;Connect that one stylesheet that links all of your Sass files together to your main stylesheet for
-      your landing page.&lt;/li&gt;
+    &lt;li&gt;Using the &lt;code&gt;@import&lt;/code&gt; feature, ensure that your Sass files are connected to &lt;strong&gt;one and only one&lt;/strong&gt;
+      stylesheet. It should like something like this below:
+      &lt;script src="https://gist.github.com/gvaldez8/0fa5b0e035ce4635e94195da13ded580.js"&gt;&lt;/script&gt;&lt;/li&gt;
+    &lt;li&gt;Once you have completed importing all of your Sass files to one base file, use the &lt;code&gt;@import&lt;/code&gt; feature again to attach that file to your main stylesheet that your site uses.&lt;/li&gt;
   &lt;/ol&gt;
 &lt;/main&gt;
 </content>
@@ -183,7 +188,7 @@
     <link rel="alternate" href="http://blog.url.com/gina-blog/2018/10/12/post8.html"/>
     <id>http://blog.url.com/gina-blog/2018/10/12/post8.html</id>
     <published>2018-10-11T19:00:00-05:00</published>
-    <updated>2018-11-06T16:20:30-06:00</updated>
+    <updated>2018-11-08T10:48:59-06:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -217,7 +222,8 @@
 
   &lt;h4&gt;&lt;strong&gt;INPUT FIELDS&lt;/strong&gt;&lt;/h4&gt;
   &lt;hr /&gt;
-  &lt;p&gt;There are three things that go into creating a basic, non-CSS styled input field. There should be a &lt;code&gt;form&lt;/code&gt;
+  &lt;p&gt;There are three things that go into creating a basic, non-CSS styled input field. There should be a &lt;code&gt;&amp;#x3c;form&amp;#x3e;&lt;/code&gt;
+    tag
     as the container that holds all the information and enforces semantic HTML, the field label, and the input. The
     input
     usually contains the type, an id, the name (think of this as the purpose of that input), and the placeholder text
@@ -230,39 +236,48 @@
 
   &lt;h4&gt;&lt;strong&gt;DROPDOWNS&lt;/strong&gt;&lt;/h4&gt;
   &lt;hr /&gt;
-  &lt;p&gt;Did you know that there are a certain number of options before a set of options &lt;strong&gt;should&lt;/strong&gt; be placed
+  &lt;p&gt;Did you know that there are a certain number of options before it &lt;strong&gt;should&lt;/strong&gt; be placed
     into a dropdown? Reference the &lt;a href="https://www.nngroup.com/articles/drop-down-menus/"&gt;Nielsen Norman Group
       Dropdown Guidelines&lt;/a&gt;. Basically, your options should be placed in a dropdown if you have 6–15 options. It
     becomes an issue when the options exceed 15 maximum, as it creates a readability and legibility issue with scanning
-    between different options. In the example below, note that the reason that this code is not nested within a &lt;code&gt;form&lt;/code&gt;
-    and &lt;code&gt;fieldset&lt;/code&gt; element is because it's assumed that if you have a dropdown, it will more than likely
-    already be within a form.
+    between different options. In the example below, note that the reason that this code is not nested within the &lt;code&gt;&amp;#x3c;form&amp;#x3e;&lt;/code&gt;
+    and &lt;code&gt;&amp;#x3c;fieldset&amp;#x3e;&lt;/code&gt; elements is because it's assumed that if you have a dropdown, it will more
+    than
+    likely
+    already be within a form when you're coding.
 
     &lt;script src="https://gist.github.com/gvaldez8/925939b2fac79f8c3c306483b927261f.js"&gt;&lt;/script&gt;
   &lt;/p&gt;
 
   &lt;h4&gt;&lt;strong&gt;RADIO BUTTONS&lt;/strong&gt;&lt;/h4&gt;
   &lt;hr /&gt;
-  &lt;p&gt;There is a diffefrent purpose for when you would use radio buttons as opposed to checkboxes, as they are mutually
+  &lt;p&gt;There is a different purpose for when you would use radio buttons as opposed to checkboxes, as they are mutually
     exclusive and &lt;strong&gt;only&lt;/strong&gt; allow the user to select one option. This means that if a user selects one of
     the options, it will automatically deselect the other option. Reference this article from
     &lt;a href="https://www.nngroup.com/articles/checkboxes-vs-radio-buttons/"&gt; Nielsen Norman Group on Checkboxes vs.
       Radio Buttons&lt;/a&gt;. In terms of radio buttons and checkboxes, you will find that the HTML structures are very
-    similar to each other. They both start within the &lt;code&gt;form&lt;/code&gt; element to enforce semantic HTML. They both
-    are contained in a &lt;code&gt;fieldset&lt;/code&gt; element, which is used to group several controls and labels within a form.
+    similar to each other. They both start within the &lt;code&gt;&amp;#x3c;form&amp;#x3e;&lt;/code&gt; tag to enforce semantic HTML.
+    They
+    both
+    are contained in a &lt;code&gt;&amp;#x3c;fieldset&amp;#x3e;&lt;/code&gt; element, which is used to group several controls and labels
+    within
+    a
+    form.
     They both
-    incorporate the use of the &lt;code&gt;legend&lt;/code&gt; tag, which represents a caption for the content of its parent.
+    incorporate the use of the &lt;code&gt;&amp;#x3c;legend&amp;#x3e;&lt;/code&gt; tag, which represents a caption for the content of its
+    parent.
     They both require an input type, a label, an id, a value, and a "for" attribute that helps identify what number
-    radio button or checkbox you are on. Note that the value and the label are the same because it describes what
+    radio button or checkbox you are on. Note that the descriptoins for the value and the label are the same because it
+    describes what
     that option is. Here's an example below:
     &lt;script src="https://gist.github.com/gvaldez8/62fdc63e39ac26787e72ce52874323da.js"&gt;&lt;/script&gt;
   &lt;/p&gt;
 
   &lt;h4&gt;&lt;strong&gt;CHECKBOXES&lt;/strong&gt;&lt;/h4&gt;
   &lt;hr /&gt;
-  &lt;p&gt;Aside from the fact that you can any number of options for checkboxes, you can also specify an additional
-    attribute in the input type, which is checked or unchecked. By default, however, you should always have your
-    checkboxes unchecked, as this has been proven through user testing.Reference this article from
+  &lt;p&gt;Aside from the fact that you can select any number of options for checkboxes, you can also specify an additional
+    attribute within the input type, which is checked or unchecked. By default, however, you should always have your
+    checkboxes unchecked, as this has been proven through user testing. Reference this article from
     &lt;a href="https://www.nngroup.com/articles/checkboxes-vs-radio-buttons/"&gt; Nielsen Norman Group on Checkboxes vs.
       Radio Buttons&lt;/a&gt;. Take a look at the example below:
     &lt;script src="https://gist.github.com/gvaldez8/c3ef891b0c64af616dda3408c5fcc9f5.js"&gt;&lt;/script&gt;
@@ -416,7 +431,7 @@
     <link rel="alternate" href="http://blog.url.com/gina-blog/2018/10/08/post7.html"/>
     <id>http://blog.url.com/gina-blog/2018/10/08/post7.html</id>
     <published>2018-10-07T19:00:00-05:00</published>
-    <updated>2018-11-06T16:22:31-06:00</updated>
+    <updated>2018-11-08T10:49:02-06:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -426,13 +441,55 @@
         &lt;time datetime="2018-10-08"&gt;OCTOBER 8, 2018&lt;/time&gt;
     &lt;/header&gt;
 
-    &lt;p&gt;There are three types of Naming Conventions related to CSS Architecture that we'll cover in this post: BEM,
+    &lt;p&gt;Think of CSS Architecture like the equivalent of brand style guides but with code. It functions as a set of
+        guidelines and best practices that developers can use to write code. Here are some important principles to
+        follow
+        when using CSS Architecture to create a solid design system:&lt;/p&gt;
+    &lt;ol class="blogpost--ol-columns"&gt;
+        &lt;li&gt;&lt;strong&gt;Modularity — &lt;/strong&gt;This is a core principle, which basically means that your code is written in
+            a way that anyone
+            can
+            open that file, edit that code, and understand the structure without encountering a huge learning curve. It
+            means
+            that it can be easily managed and edited by an individual or by a large engineering team.&lt;/li&gt;
+
+        &lt;li&gt;&lt;strong&gt;MMaintainable — &lt;/strong&gt;This principle is exactly as it sounds. It means that if you add, update,
+            or
+            rearrange new
+            components and features, integration shouldn't completely break your page or require extensive refactoring.&lt;/li&gt;
+
+        &lt;li&gt;&lt;strong&gt;Predictable/Flexible — &lt;/strong&gt;This means that your code behaves as you'd expect. It means that
+            when you
+            add or
+            update a
+            rule, it shouldn't affect other parts of your site. Although this might not be as detrimental to a smaller
+            site, it
+            could definitely be problematic on a larger site with anywhere from tens to hundreds of pages.&lt;/li&gt;
+
+        &lt;li&gt;&lt;strong&gt;Reusable — &lt;/strong&gt;This principle dictates that you should not have to recode patterns or
+            problems that
+            you've
+            already
+            solved by enforcing the DRY (Don't Repeat Yourself) principle. It means that while you're coding, you
+            should
+            consider the other possible situations that you might use that code and be mindful of not assigning names
+            to
+            selectors, classes, or id's that are too specific (i.e. "blue box").&lt;/li&gt;
+    &lt;/ol&gt;
+
+
+    &lt;p&gt;Now that we understand the principles that compose good CSS Architecture, there are three types of naming
+        conventions that will help us build a solid foundation for our CSS architecture that
+        we'll cover in this post: BEM,
         OOCSS, and SMACSS.&lt;/p&gt;
     &lt;h2&gt;What is BEM?&lt;/h2&gt;
     &lt;hr /&gt;
-    &lt;p&gt;The BEM naming convention stands for &lt;em&gt;Block Element Modifier&lt;/em&gt; and is currently the naming convention that
-        8th Light sticks to. Reasons that people like this naming convention are because its name declares its purpose,
-        thereby making it easier to skim markup and immediately understand how elements are styled or related to one
+    &lt;p&gt;The BEM naming convention stands for &lt;em&gt;Block Element Modifier&lt;/em&gt; and is currently the naming convention
+        that
+        8th Light sticks to. Reasons that people like this naming convention are because its name declares its
+        purpose,
+        thereby making it easier to skim markup and immediately understand how elements are styled or related to
+        one
         another. The point is to keep the names simple, clear, and precise.&lt;/p&gt;
     &lt;div class="column"&gt;
         &lt;h5 class="helper-space-top"&gt;&lt;strong&gt;THE GUIDELINES&lt;/strong&gt;&lt;/h5&gt;
@@ -443,7 +500,8 @@
             &lt;li&gt;Block name defines the namespace for its elements and modifiers&lt;/li&gt;
             &lt;li&gt;The element is separated from the block name by a double underscore&lt;/li&gt;
             &lt;li&gt;The modifier name is separated from the block or element name by a single underscore&lt;/li&gt;
-            &lt;li&gt;The modifier value is separated from the modifier name by a single underscore, double hyphen, or period&lt;/li&gt;
+            &lt;li&gt;The modifier value is separated from the modifier name by a single underscore, double hyphen, or
+                period&lt;/li&gt;
             &lt;li&gt;For boolean modifiers, the value is not included in the name&lt;/li&gt;
         &lt;/ol&gt;
         &lt;h5 class="helper-space-top"&gt;&lt;strong&gt;BENEFITS&lt;/strong&gt;&lt;/h5&gt;
@@ -475,8 +533,10 @@
     &lt;section&gt;
         &lt;h2 class="helper-space-top"&gt;What is OOCSS?&lt;/h2&gt;
         &lt;hr /&gt;
-        &lt;p&gt;OSCSS stands for &lt;em&gt;Object oriented CSS&lt;/em&gt;. The object refers to any repeating visual pattern than can be
-            specified in snippets of code. The goal of OOCSS is to produce components that are flexible, modular, and
+        &lt;p&gt;OSCSS stands for &lt;em&gt;Object oriented CSS&lt;/em&gt;. The object refers to any repeating visual pattern than
+            can be
+            specified in snippets of code. The goal of OOCSS is to produce components that are flexible, modular,
+            and
             interchangeable.&lt;/p&gt;
 
         &lt;h5 class="helper-space-top"&gt;&lt;strong&gt;THE GUIDELINES&lt;/strong&gt;&lt;/h5&gt;
@@ -520,27 +580,33 @@
         &lt;h2 class="helper-space"&gt;What is SMACSS?&lt;/h2&gt;
         &lt;hr /&gt;
         &lt;p&gt;SMACSS stands for &lt;em&gt;Scalable and Modular Architecture for CSS&lt;/em&gt; and is more of a
-            style guide than it is a rigid framework. The purpose of this category is to codify patterns, things that
+            style guide than it is a rigid framework. The purpose of this category is to codify patterns, things
+            that
             repeat themselves within our design, and avoid mixing code of several categories into a single file.&lt;/p&gt;
         &lt;div class="column"&gt;
             &lt;h5 class="helper-space-top"&gt;&lt;strong&gt;THE GUIDELINES IN FIVE CATEGORIES&lt;/strong&gt;&lt;/h5&gt;
             &lt;hr /&gt;
             &lt;ol class="blogpost--ol-columns"&gt;
-                &lt;li&gt;&lt;strong&gt;Base:&lt;/strong&gt; These are default values, so things like padding, margin border, font and
+                &lt;li&gt;&lt;strong&gt;Base:&lt;/strong&gt; These are default values, so things like padding, margin border, font
+                    and
                     other
                     properties that are used on the entire website and all elements.&lt;/li&gt;
                 &lt;li&gt;&lt;strong&gt;Layout:&lt;/strong&gt; Divides a page into sections with elements like header, footer, and
                     article.
-                    Often developers show layout elements by prefixing the class with l, i.e.`l-header` or `l-footer`&lt;/li&gt;
-                &lt;li&gt;&lt;strong&gt;Modules:&lt;/strong&gt; The reusable, modular elements in the design like the navbar, sidebar,
+                    Often developers show layout elements by prefixing the class with l, i.e.`l-header` or
+                    `l-footer`&lt;/li&gt;
+                &lt;li&gt;&lt;strong&gt;Modules:&lt;/strong&gt; The reusable, modular elements in the design like the navbar,
+                    sidebar,
                     and
                     elements that are repeated on the site.&lt;/li&gt;
                 &lt;li&gt;&lt;strong&gt;State:&lt;/strong&gt; Describes how our modules or layouts will look when they are in a
                     particular
-                    state (i.e. active, inactive, expanded, hidden). These are usually prefixed with `is-`. Examples
+                    state (i.e. active, inactive, expanded, hidden). These are usually prefixed with `is-`.
+                    Examples
                     would
                     be: `is-active`, `is-inactive`, `is-expanded`, and `is-hidden`&lt;/li&gt;
-                &lt;li&gt;&lt;strong&gt;Theme:&lt;/strong&gt; Similar to state rules in that they describe how modules or layouts might
+                &lt;li&gt;&lt;strong&gt;Theme:&lt;/strong&gt; Similar to state rules in that they describe how modules or layouts
+                    might
                     look.
                     However, it is more applicable for larger sites with shared elements that look different
                     throughout,
@@ -564,7 +630,7 @@
     <link rel="alternate" href="http://blog.url.com/gina-blog/2018/10/03/post6.html"/>
     <id>http://blog.url.com/gina-blog/2018/10/03/post6.html</id>
     <published>2018-10-02T19:00:00-05:00</published>
-    <updated>2018-11-06T21:53:14-06:00</updated>
+    <updated>2018-11-08T10:51:52-06:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -586,16 +652,19 @@
         snippets of code that define "breakpoints"—to create flexible grids, layouts, and images that resize and
         rearrange content (media, images, text, forms) to account for various screen sizes. &lt;strong&gt;Breakpoints&lt;/strong&gt;
         are the point (in pixels) in which content will resize and rearrange itself to a layout that provides the best
-        experience according to a user's environment. Here's an example below of both responsive web design and
-        breakpoints:&lt;/p&gt;
+        experience according to a user's environment. Here's an example below of both responsive web design,
+        breakpoints, and how the layouts change accordingly (from left to right: desktop, tablet, mobile):&lt;/p&gt;
 
-    &amp;lt;%= image_tag 'responsive-desktop.png' :alt =&amp;gt; 'Responsive design of The Other Studio website'%&amp;gt;
 
-    &lt;img src="../images/responsive-desktop.png" alt="Responsive desktop of The Other Studio" /&gt;
-
+    &lt;div class="blogposts__images"&gt;
+        &lt;img src="/images/responsive_desktop.png" height="30%" width="32%" /&gt;
+        &lt;img src="/images/responsive_tablet.png" height="2%" width="32%%" /&gt;
+        &lt;img src="/images/responsive_mobile.png" height="2%" width="32%" /&gt;
+    &lt;/div&gt;
 
     &lt;h3 class="helper-space-top"&gt;Mobile First Design and Development&lt;/h3&gt;
     &lt;hr /&gt;
+
 
     &lt;p&gt;Mobile first design is when you prioritize designing for mobile before considering the designs of the other
         screen sizes, like tablet and desktop. One reason for doing so is because mobile usage as opposed to desktop
@@ -675,7 +744,8 @@
         &lt;/li&gt;
 
         &lt;li&gt;Open up your stylesheet, select a CSS property that you would like to resize and/or rearrange, and add the
-            @media rule followed by (min-width: breakpoint in pixels). For the mobile breakpoint, a great place to
+            &lt;code&gt;@media&lt;/code&gt; rule followed by (min-width: breakpoint in pixels). For the mobile breakpoint, a great
+            place to
             start
             would be with 320px.&lt;/li&gt;
 
@@ -683,6 +753,14 @@
         &lt;li&gt;To determine your other breakpoints, start resizing your browser width. Observe any awkward instances for
             type
             sizes, images, and layouts.&lt;/li&gt;
+        &lt;li&gt;Once you identify your breakpoints, plug those numbers (in pixels) into the &lt;code&gt;@media&lt;/code&gt; rule like
+            so:
+            &lt;script src="https://gist.github.com/gvaldez8/2390105fa00ffc79b62553dd8bdd9bf4.js"&gt;&lt;/script&gt;
+        &lt;/li&gt;
+        &lt;li&gt;Congratulations! You just made a media query and made one element of your page responsive! Keep in mind
+            that you will have to follow this process for every element or div that you would like to change as the
+            browser resizes.
+        &lt;/li&gt;
     &lt;/ol&gt;
 &lt;/main&gt;
 </content>

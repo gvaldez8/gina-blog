@@ -40,16 +40,19 @@
         snippets of code that define "breakpoints"—to create flexible grids, layouts, and images that resize and
         rearrange content (media, images, text, forms) to account for various screen sizes. <strong>Breakpoints</strong>
         are the point (in pixels) in which content will resize and rearrange itself to a layout that provides the best
-        experience according to a user's environment. Here's an example below of both responsive web design and
-        breakpoints:</p>
+        experience according to a user's environment. Here's an example below of both responsive web design,
+        breakpoints, and how the layouts change accordingly (from left to right: desktop, tablet, mobile):</p>
 
-    &lt;%= image_tag 'responsive-desktop.png' :alt =&gt; 'Responsive design of The Other Studio website'%&gt;
 
-    <img src="../images/responsive-desktop.png" alt="Responsive desktop of The Other Studio" />
-
+    <div class="blogposts__images">
+        <img src="/images/responsive_desktop.png" height="30%" width="32%" />
+        <img src="/images/responsive_tablet.png" height="2%" width="32%%" />
+        <img src="/images/responsive_mobile.png" height="2%" width="32%" />
+    </div>
 
     <h3 class="helper-space-top">Mobile First Design and Development</h3>
     <hr />
+
 
     <p>Mobile first design is when you prioritize designing for mobile before considering the designs of the other
         screen sizes, like tablet and desktop. One reason for doing so is because mobile usage as opposed to desktop
@@ -129,7 +132,8 @@
         </li>
 
         <li>Open up your stylesheet, select a CSS property that you would like to resize and/or rearrange, and add the
-            @media rule followed by (min-width: breakpoint in pixels). For the mobile breakpoint, a great place to
+            <code>@media</code> rule followed by (min-width: breakpoint in pixels). For the mobile breakpoint, a great
+            place to
             start
             would be with 320px.</li>
 
@@ -137,6 +141,14 @@
         <li>To determine your other breakpoints, start resizing your browser width. Observe any awkward instances for
             type
             sizes, images, and layouts.</li>
+        <li>Once you identify your breakpoints, plug those numbers (in pixels) into the <code>@media</code> rule like
+            so:
+            <script src="https://gist.github.com/gvaldez8/2390105fa00ffc79b62553dd8bdd9bf4.js"></script>
+        </li>
+        <li>Congratulations! You just made a media query and made one element of your page responsive! Keep in mind
+            that you will have to follow this process for every element or div that you would like to change as the
+            browser resizes.
+        </li>
     </ol>
 </main>
 

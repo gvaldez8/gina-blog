@@ -9,6 +9,11 @@ nav {
   }
 }
 
+a {
+  @include links($c-dark-golden-rod);
+  line-height: 0.5em;
+}
+
 hr {
   @include hr;
 }
@@ -86,4 +91,10 @@ main {
   }
 }
 
-/* END OF CONTENT & CONTAINERS */
+/* IMAGES */
+
+.blogposts__images {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-evenly;
+}

@@ -52,7 +52,8 @@
 
   <h4><strong>INPUT FIELDS</strong></h4>
   <hr />
-  <p>There are three things that go into creating a basic, non-CSS styled input field. There should be a <code>form</code>
+  <p>There are three things that go into creating a basic, non-CSS styled input field. There should be a <code>&#x3c;form&#x3e;</code>
+    tag
     as the container that holds all the information and enforces semantic HTML, the field label, and the input. The
     input
     usually contains the type, an id, the name (think of this as the purpose of that input), and the placeholder text
@@ -65,39 +66,48 @@
 
   <h4><strong>DROPDOWNS</strong></h4>
   <hr />
-  <p>Did you know that there are a certain number of options before a set of options <strong>should</strong> be placed
+  <p>Did you know that there are a certain number of options before it <strong>should</strong> be placed
     into a dropdown? Reference the <a href="https://www.nngroup.com/articles/drop-down-menus/">Nielsen Norman Group
       Dropdown Guidelines</a>. Basically, your options should be placed in a dropdown if you have 6–15 options. It
     becomes an issue when the options exceed 15 maximum, as it creates a readability and legibility issue with scanning
-    between different options. In the example below, note that the reason that this code is not nested within a <code>form</code>
-    and <code>fieldset</code> element is because it's assumed that if you have a dropdown, it will more than likely
-    already be within a form.
+    between different options. In the example below, note that the reason that this code is not nested within the <code>&#x3c;form&#x3e;</code>
+    and <code>&#x3c;fieldset&#x3e;</code> elements is because it's assumed that if you have a dropdown, it will more
+    than
+    likely
+    already be within a form when you're coding.
 
     <script src="https://gist.github.com/gvaldez8/925939b2fac79f8c3c306483b927261f.js"></script>
   </p>
 
   <h4><strong>RADIO BUTTONS</strong></h4>
   <hr />
-  <p>There is a diffefrent purpose for when you would use radio buttons as opposed to checkboxes, as they are mutually
+  <p>There is a different purpose for when you would use radio buttons as opposed to checkboxes, as they are mutually
     exclusive and <strong>only</strong> allow the user to select one option. This means that if a user selects one of
     the options, it will automatically deselect the other option. Reference this article from
     <a href="https://www.nngroup.com/articles/checkboxes-vs-radio-buttons/"> Nielsen Norman Group on Checkboxes vs.
       Radio Buttons</a>. In terms of radio buttons and checkboxes, you will find that the HTML structures are very
-    similar to each other. They both start within the <code>form</code> element to enforce semantic HTML. They both
-    are contained in a <code>fieldset</code> element, which is used to group several controls and labels within a form.
+    similar to each other. They both start within the <code>&#x3c;form&#x3e;</code> tag to enforce semantic HTML.
+    They
+    both
+    are contained in a <code>&#x3c;fieldset&#x3e;</code> element, which is used to group several controls and labels
+    within
+    a
+    form.
     They both
-    incorporate the use of the <code>legend</code> tag, which represents a caption for the content of its parent.
+    incorporate the use of the <code>&#x3c;legend&#x3e;</code> tag, which represents a caption for the content of its
+    parent.
     They both require an input type, a label, an id, a value, and a "for" attribute that helps identify what number
-    radio button or checkbox you are on. Note that the value and the label are the same because it describes what
+    radio button or checkbox you are on. Note that the descriptoins for the value and the label are the same because it
+    describes what
     that option is. Here's an example below:
     <script src="https://gist.github.com/gvaldez8/62fdc63e39ac26787e72ce52874323da.js"></script>
   </p>
 
   <h4><strong>CHECKBOXES</strong></h4>
   <hr />
-  <p>Aside from the fact that you can any number of options for checkboxes, you can also specify an additional
-    attribute in the input type, which is checked or unchecked. By default, however, you should always have your
-    checkboxes unchecked, as this has been proven through user testing.Reference this article from
+  <p>Aside from the fact that you can select any number of options for checkboxes, you can also specify an additional
+    attribute within the input type, which is checked or unchecked. By default, however, you should always have your
+    checkboxes unchecked, as this has been proven through user testing. Reference this article from
     <a href="https://www.nngroup.com/articles/checkboxes-vs-radio-buttons/"> Nielsen Norman Group on Checkboxes vs.
       Radio Buttons</a>. Take a look at the example below:
     <script src="https://gist.github.com/gvaldez8/c3ef891b0c64af616dda3408c5fcc9f5.js"></script>
