@@ -5,10 +5,100 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2018-10-15T19:00:00-05:00</updated>
+  <updated>2018-11-07T18:00:00-06:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>UX Case Study&amp;#58; The Path to Mastery</title>
+    <link rel="alternate" href="http://blog.url.com/gina-blog/2018/11/08/post10.html"/>
+    <id>http://blog.url.com/gina-blog/2018/11/08/post10.html</id>
+    <published>2018-11-07T18:00:00-06:00</published>
+    <updated>2018-11-08T18:07:47-06:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;main class="blogposts__container"&gt;
+  &lt;header class="header-main"&gt;
+    &lt;h1&gt;User Experience (UX) Case Study:&lt;br /&gt; The Path to Mastery&lt;/h1&gt;
+    &lt;time datetime="2018-11-08"&gt;November 8, 2018&lt;/time&gt;
+  &lt;/header&gt;
+  &lt;p&gt;8th Light is a consulting firm specializing in custom software development. The company is most well-known for
+    delivering quality software development professionals and its Apprenticeship Program, where they teach and train
+    aspiring software development professionals from various technical backgrounds. Established back in 2006, the
+    apprenticeship curriculum has undergone numerous trial and errors, as well as constant revisions with little
+    documentation on how the overall quality of the learning experience and the program have improved.&lt;/p&gt;
+
+  &lt;p&gt;Given its long history of evolution, my colleague and I were approached by a determined stakeholder who shared his
+    own understanding of the problem: the apprenticeship curriculum currently exists as tribal knowledge, which
+    resulting in inconsistent standards and anxiety amongst apprentices. Undergoing the user experience design process,
+    my colleague and I dedicated two weeks to assess our stakeholder's theory, define the problem, and come up with an
+    appropriate solution. Here's what the process:&lt;/p&gt;
+
+  &lt;section&gt;
+    &lt;h4&gt;&lt;strong&gt;MY ROLE&lt;/strong&gt;&lt;/h4&gt;
+    &lt;hr /&gt;
+    &lt;p&gt;On this team of two, I served a mixture of primary and supplementary roles:&lt;/p&gt;
+    &lt;ul class="blogpost--ul"&gt;
+      &lt;li&gt;Note-taker during user interviews and documented user interview answers in a spreadsheet&lt;/li&gt;
+
+      &lt;li&gt;Contributed to strategy, affinity mapping, and synthesizing research.&lt;/li&gt;
+
+      &lt;li&gt;Helped to develop problem statements and How Might We... Statements&lt;/li&gt;
+
+      &lt;li&gt;Designed and pitched the final presentation to our stakeholder.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/section&gt;
+
+  &lt;section class="helper-space-top-small"&gt;
+    &lt;div class="blogpost__number-circle"&gt;
+      &lt;span class="blogpost__number-dot"&gt;1&lt;/span&gt;
+      &lt;h4 class="helper-space-left"&gt;&lt;strong&gt;THE RESEARCH PLAN&lt;/strong&gt;&lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;hr /&gt;
+
+    &lt;h4&gt;User Interviews&lt;/h4&gt;
+
+    &lt;h4&gt;Problem Statements&lt;/h4&gt;
+    &lt;h4&gt;Hypothesis&lt;/h4&gt;
+
+
+    &lt;h4&gt;Method&lt;/h4&gt;
+  &lt;/section&gt;
+
+  &lt;section class="helper-space-top-small"&gt;
+    &lt;div class="blogpost__number-circle"&gt;
+      &lt;span class="blogpost__number-dot"&gt;2&lt;/span&gt;
+      &lt;h4 class="helper-space-left"&gt;&lt;strong&gt;THE PROBLEM&lt;/strong&gt;&lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;hr /&gt;
+
+    &lt;p&gt;&lt;strong&gt;[Apprentices]&lt;/strong&gt; feel [frustration] about unclear expectations. They want to define those
+      expectations but face
+      [reluctance to speak up or reach out].&lt;/p&gt;
+
+    &lt;p&gt;&lt;strong&gt;[Mentors]&lt;/strong&gt; feel [uncertainty] about understanding success metrics. They need [to document and
+      share how they use
+      the
+      curriculum] but lack the structure to do so.&lt;/p&gt;
+  &lt;/section&gt;
+
+  &lt;section class="helper-space-top-small"&gt;
+    &lt;div class="blogpost__number-circle"&gt;
+      &lt;span class="blogpost__number-dot"&gt;3&lt;/span&gt;
+      &lt;h4 class="helper-space-left"&gt;&lt;strong&gt;THE SOLUTION&lt;/strong&gt;&lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;hr /&gt;
+    Our solution is an unlinked extension of the 8th Light website, similar to our style guide.
+  &lt;/section&gt;
+
+
+
+
+
+&lt;/main&gt;
+</content>
+  </entry>
   <entry>
     <title>An Explanation of Sass and How it Works</title>
     <link rel="alternate" href="http://blog.url.com/gina-blog/2018/10/16/post9.html"/>
@@ -979,50 +1069,6 @@
       &lt;/ul&gt;
     &lt;/div&gt;
   &lt;/section&gt;
-&lt;/main&gt;
-</content>
-  </entry>
-  <entry>
-    <title>How to be a User Experience Team of One</title>
-    <link rel="alternate" href="http://blog.url.com/gina-blog/2018/09/21/post4.html"/>
-    <id>http://blog.url.com/gina-blog/2018/09/21/post4.html</id>
-    <published>2018-09-20T19:00:00-05:00</published>
-    <updated>2018-11-06T20:46:47-06:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;main class="blogposts__container"&gt;
-  &lt;header&gt;
-    &lt;h1&gt;How to be a User Experience Team of One&lt;/h1&gt;
-    &lt;time datetime="2018-11-21"&gt;SEPTEMBER 21, 2018&lt;/time&gt;
-  &lt;/header&gt;
-  
-  &lt;p&gt;Leah Buley is a UX designer with over a decade of experience in building digital products. Her book, &lt;em&gt;The User Experience Team of One&lt;/em&gt;, is intended to inform the aspiring UX designer or design student about the fundamentals of UX, as well as to help the soloist UX professional review basic knowledge and tools; implement research, approaches to giving/receiving feedback, and user testing methods; and developing business skills in time management and communication; and building relationships/communities with people and navigating client relationships.&lt;/p&gt;
-  
-  &lt;p&gt;&lt;em&gt;The User Experience Team of One&lt;/em&gt; offers solid approaches and processes in UX and visual design to help build successful user experiences within organizational structures ranging from startup level to Fortune 500.The User Experience Team of One/ begins with defining what exactly user experience is, covering a brief history of how the term|career came to fruition, the difference between User Experience (UX) and User Interface (UI), the diverse backgrounds that UX professionals stem from, and the typical UX process (i.e. discovery, strategy, research, design, and implementation). The book emphasizes how it is equally important to build communities and relationships with the people that make up organizational structures, and in doing so, it will encourage the support and willingness from others to participate in work processes. Overall, the book begins with promoting the idea of working /with/ others as opposed to /against/ them by getting to know them on a professional and personal level, helping them understand the UX process, and giving others the opportunity to have conversations about compromises and trade-offs early on.&lt;/p&gt;
-  
-  &lt;p&gt;Towards the middle, the book proposes answers to handling common objections respectfully and encourages seeing these objections more as opportunities than threats because they are invitations to direct, honest conversations. Some common objections from stakeholders or team members that the book covers are when others:&lt;/p&gt;
-  
-  &lt;ul class="blogpost--ul-indent"&gt;
-    &lt;li&gt;Underestimate the importance of web design&lt;/li&gt;
-    &lt;li&gt;Equate UX Research to Market Research&lt;/li&gt;
-    &lt;li&gt;Consider UX as too expensive and time consuming&lt;/li&gt;
-    &lt;li&gt;Value statistical significance over UX&lt;/li&gt;
-    &lt;li&gt;Are “already” aware of what their problems are&lt;/li&gt;
-    &lt;li&gt;Claim that it’s [&lt;em&gt;marketing/engineering/product management&lt;/em&gt;]’s job&lt;/li&gt;
-  &lt;/ul&gt;
-  
-  &lt;p&gt;From this section, the book elaborates on how the reader can become an overall better professional and individual by providing resources for professional associations, online communities, and meet ups to join. Additionally, the book offers helpful websites, books, classes and organizations, and conferences to attend, all the while encouraging the reader to find a buddy or mentor that can help in their career pursuits.  After offering resources, the book suggests that you define your goals, whether it be within an organization to help your company develop a solid UX process with strategic planning and metrics or to branch off independently, so that you can better position yourself in the market as a specialist, generalist or consultant. It briefly covers payment, negotiation, time management, and feedback.&lt;/p&gt;
-  
-  &lt;p&gt;Lastly, this book covers methods for planning, discovery, research, design, and implementation (testing and validation). The methods that were covered under each category:&lt;/p&gt;
-  
-  &lt;ul class="blogpost--ul-indent"&gt;
-    &lt;li&gt;&lt;strong&gt;Planning and Discovery:&lt;/strong&gt; UX Questionaire, UX Project Plan, Listening Tour, Opportunity Workshop, Project Brief, Strategy Workshop.&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;Research:&lt;/strong&gt; Learning Plan, Guerrilla User Research, Proto-Personas, Heuristic Markup, Comparative Assessment, Content Patterns.&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;Design:&lt;/strong&gt; Design Brief, Design Principles, Sketching, Sketchboards, Task Flows, Wireframes. &lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;Testing and Validation:&lt;/strong&gt; Paper and interactive prototypes, Black Hat Sessions, Quick-and-Dirty Usability Test, Five-Second Test, UX Health Check. &lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;Evangelism Methods:&lt;/strong&gt; Bathroom UX, Mini Case Studies, Peer-to-Peer Learning Community, Pyramid Evangelism.&lt;/li&gt;
-  &lt;/ul&gt;
 &lt;/main&gt;
 </content>
   </entry>

@@ -437,8 +437,14 @@ main h2 {
 .helper-space-top {
   padding-top: 5%; }
 
+.helper-space-top-small {
+  padding-top: 4%; }
+
 .helper-space-bottom {
   padding-bottom: 3%; }
+
+.helper-space-left {
+  padding-left: 10px; }
 
 .img {
   height: 100px;
@@ -1066,6 +1072,21 @@ main {
   list-style-type: disc; }
   .blogpost__text--space ul li {
     padding-top: 8px; }
+
+.blogpost__number-circle {
+  align-items: baseline;
+  display: flex;
+  flex-direction: row; }
+
+.blogpost__number-dot {
+  border-radius: 100% 100%;
+  border: 1px solid #b8860b;
+  color: #b8860b;
+  display: inline-block;
+  height: 25px;
+  line-height: 22px;
+  text-align: center;
+  width: 25px; }
 
 /* IMAGES */
 .blogposts__images {
