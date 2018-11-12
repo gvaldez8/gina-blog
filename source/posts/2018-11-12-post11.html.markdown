@@ -1,12 +1,12 @@
 ---
 title: UX Design Process&#58; The Early Stages of Discovery
-time: November 8, 2018
+time: November 12, 2018
 ---
 
 <main class='blogposts__container'>
   <header class='header-main'>
     <h1>UX Design Process: <br> The Early Stages of Discovery</h1>
-    <time datetime="2018-11-08">November 8, 2018</time>
+    <time datetime="2018-11-12">November 12, 2018</time>
   </header>
   <p>The most common way that people refer to the UX Design Process is through using the <em>Double Diamond Design
       Process</em>. It looks like this:</p>
