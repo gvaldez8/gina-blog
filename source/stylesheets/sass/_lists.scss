@@ -57,6 +57,12 @@
     font-size: $fs-caption;
     line-height: 150%;
   }
+
+  @media (min-width: 900px) {
+    font-size: $fs-caption;
+    padding-left: 4px;
+    line-height: 200%;
+  }
 }
 
 // Blogposts that have columns in their layout
