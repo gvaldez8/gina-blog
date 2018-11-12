@@ -5,16 +5,260 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2018-11-07T18:00:00-06:00</updated>
+  <updated>2018-11-11T18:00:00-06:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>UX Design Process&amp;#58; Focusing on the Early Stages of Discovery</title>
+    <link rel="alternate" href="http://blog.url.com/gina-blog/2018/11/12/post11.html"/>
+    <id>http://blog.url.com/gina-blog/2018/11/12/post11.html</id>
+    <published>2018-11-11T18:00:00-06:00</published>
+    <updated>2018-11-12T17:24:20-06:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;main class="blogposts__container"&gt;
+  &lt;header class="header-main"&gt;
+    &lt;h1&gt;UX Design Process: &lt;br /&gt; Focusing on the Early Stages of Discovery&lt;/h1&gt;
+    &lt;time datetime="2018-11-08"&gt;November 8, 2018&lt;/time&gt;
+  &lt;/header&gt;
+  &lt;p&gt;The most common way that people refer to the UX Design Process is through using the &lt;em&gt;Double Diamond Design
+      Process&lt;/em&gt;. It looks like this:&lt;/p&gt;
+
+  &lt;img src="/images/Double_Diamond_Design_Process.png" height="95%" width="95%" /&gt;
+
+  &lt;p&gt;Here’s some further explanation on how this works, some of which are from &lt;em&gt;The User Experience Team of One&lt;/em&gt;
+    by Leah Buley&lt;/p&gt;
+
+
+  &lt;h2&gt;Discover&lt;/h2&gt;
+  &lt;hr /&gt;
+  &lt;p&gt;This is the most important phase, as it’s the kick-off to any project that you start and will determine the tone
+    for the entire process from start to finish. This phase requires extensive planning and research. The Research
+    Process is determined into the following segments: The Research Plan,
+    Research Methods, Conducting the User Research, and Discovery.&lt;/p&gt;
+
+
+  &lt;h5 class="helper-space-top"&gt;&lt;strong&gt;RESEARCH PLAN&lt;/strong&gt;&lt;/h5&gt;
+  &lt;hr /&gt;
+  &lt;p&gt;Note that this is different than a &lt;strong&gt;Project Plan&lt;/strong&gt;, which lays out a general overview of the project
+    timeline from start to finish usually done in weekly increments.
+
+    The Research Plan just determines the methods that you will take to conduct any research, define how that research
+    ties with business goals, and be aware of what resources are available to you (i.e. any research conducted by the
+    company or business). Before you can conduct research, you need to define what you seek to learn or what you are
+    interested in learning, as well as any assumptions you might have prior. It’s important to consider aligning with
+    business goals. Here are the steps that you would take and consider:&lt;/p&gt;
+
+  &lt;ol class="blogpost--ol-indent"&gt;
+    &lt;li&gt;&lt;strong&gt;Define Research Goals —&lt;/strong&gt; This is similar to a Project Brief. Summarize your learning objectives
+      into short statements. These goals need to speak to the business or behavioral change that you hope to create.&lt;/li&gt;
+
+    &lt;li&gt;&lt;strong&gt;Brainstorm Research Methods&lt;/strong&gt;&lt;/li&gt;
+    &lt;ul class="blogpost--ul-indent"&gt;
+      &lt;li&gt;What kind of research will you conduct? (See next section)&lt;/li&gt;
+      &lt;li&gt;What tools will you use to conduct your research?&lt;/li&gt;
+      &lt;li&gt;Contextual Inquiry&lt;/li&gt;
+      &lt;li&gt;Competitive Analysis&lt;/li&gt;
+      &lt;li&gt;Market Research&lt;/li&gt;
+      &lt;li&gt;Usability Testing&lt;/li&gt;
+      &lt;li&gt;User Flows&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;li&gt;&lt;strong&gt;Determine who you will interview —&lt;/strong&gt; What kind of users will you select to interview? How many?
+      Which individuals? Think in terms of roles if you don't have names. Aim to speak with a cross-functional team so
+      that you can see the overall project or
+      product from different angles.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Start backwards — &lt;/strong&gt;For example, if the goal is to produce more sales on a landing page, you
+      need
+      to understand users’ perception
+      of the landing page, why they’re going there, and in what ways the site does and doesn’t currently meet their
+      needs.&lt;/li&gt;
+
+
+    &lt;li&gt;&lt;strong&gt;Define the Duration —&lt;/strong&gt; Estimate a timeframe of how long you think that each activity will
+      take. So, for example, user interviews should take at least 1–2hrs on average.&lt;/li&gt;
+
+    &lt;li&gt;&lt;strong&gt;Define the Overall Timeline (The Project Plan) — &lt;/strong&gt;
+      This is just taking note of any key milestones related to the project or firm deadlines that you need to be
+      conscious of. Determining this step helps you manage your time, reduce, and change accordingly. You can also
+      visualize this with existing tools and platforms, such as Gantt Chart or Monday.com&lt;/li&gt;
+
+  &lt;/ol&gt;
+
+  &lt;h5 class="helper-space-top"&gt;&lt;strong&gt;RESEARCH METHODS&lt;/strong&gt;&lt;/h5&gt;
+  &lt;hr /&gt;
+  &lt;p&gt;These are the methods that you will consider when putting together your Research Plan. There are three
+    different types of research that you could conduct:&lt;/p&gt;
+  &lt;ol class="blogpost--ol-indent"&gt;
+    &lt;li&gt;&lt;strong&gt;Primary Research — &lt;/strong&gt;These are learnings from users firsthand, such as:&lt;/li&gt;
+    * Field research
+    * Diary studies
+    * Surveys— This isn’t always the most helpful just because some users take these as opportunities to rant.
+    * Guerrilla research
+    * User research, user interviews, and user flows
+
+    &lt;li&gt;&lt;strong&gt;Secondary Research — &lt;/strong&gt; These are collected third-party research conducted into the
+      user
+      population, such as:&lt;/li&gt;
+    * Publicly available research
+    * Research conducted from other parts of the organization (i.e. marketing segmentation). Note that this will be
+    amongst the most useful to UX Professionals
+
+    &lt;li&gt;&lt;strong&gt;Personas, Mental Models, and User Stories — &lt;/strong&gt; These are documents that synthesize what you’ve
+      learned about users through the aforementioned methods all distilled into key points, such as:&lt;/li&gt;
+
+    &lt;ul class="blogpost--ul-indent"&gt;
+      &lt;li&gt;Supporting diagrams (i.e. contextual inquiry, competitor analysis, product assessment)&lt;/li&gt;
+      &lt;li&gt;Stories for how a product fits into users’ lives (i.e. proto-personas)&lt;/li&gt;
+      &lt;li&gt;Usability testing&lt;/li&gt;
+      &lt;li&gt;User flows&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/ol&gt;
+
+  &lt;h5 class="helper-space-top"&gt;&lt;strong&gt;THE ART OF CONDUCTING USER INTERVIEWS&lt;/strong&gt;&lt;/h5&gt;
+  &lt;hr /&gt;
+  &lt;p&gt;Refer to your &lt;strong&gt;Research Plan&lt;/strong&gt; for the users that you will interview and tailor your questions
+    accordingly. Each
+    interview should take on average anywhere from 1–2hrs and no shorter than 30mins minimum. You can think of the type
+    of users you interview and how that will influence your questions in two groups:&lt;/p&gt;
+  &lt;ol class="blogpost--ol-indent"&gt;
+    &lt;li&gt;Interviewing &lt;strong&gt;existing customers&lt;/strong&gt; to understand what’s good and bad about the product.&lt;/li&gt;
+
+    &lt;li&gt;Interviewing &lt;strong&gt;target customers&lt;/strong&gt; about how they balance work/life today, pain points, tools they
+      use today, etc.&lt;/li&gt;
+  &lt;/ol&gt;
+
+  &lt;p&gt;Before you actually conduct the interviews, you want to do some prep work to ensure that your interview runs
+    smoothly. The first thing that you should do, is write things down.&lt;/p&gt;
+
+  &lt;h5 class="helper-space-top"&gt;&lt;strong&gt;PREP WORK&lt;/strong&gt;&lt;/h5&gt;
+  &lt;hr /&gt;
+  &lt;p&gt;Start with an introduction that defines who you are, what this project is for, assure the user’s honest, open
+    feedback is valuable and make the user feel comfortable by making small talk before starting. You should also note
+    how everything that is said is confidential and is strictly being used for research purposes before recording your
+    interview.Then start writing down questions that you have. Of course, these questions will be tailored according to
+    your
+    product and your users, but here are some great ones to start:&lt;/p&gt;
+  &lt;ul class="blogpost--ul-indent"&gt;
+    &lt;li&gt;What’s your role in the organization and how does it relate to the product?&lt;/li&gt;
+    &lt;li&gt;What are your goals and objectives in your role? What are your top priorities? How do you know if you’re
+      successful? How do you measure success?&lt;/li&gt;
+    &lt;li&gt;How does your work impact customers? Who do you consider to be your primary customers? Can you describe them?
+      What
+      are their priorities and goals? Why do they use your products? What prevents them from using your products, if
+      anything? What questions do you have about your users that you don’t currently have answers to?&lt;/li&gt;
+    &lt;li&gt;Who are your competitors, and how well are you doing compared to them? What do you do well? What could be
+      improved?
+      What differentiates your company and your products in the market?&lt;/li&gt;
+    &lt;li&gt;[If there’s a specific project underway that you’re involved in…] What are your goals for this project? What is
+      your vision for how this project will improve our product? Do you see any risks or red flags?&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;h2&gt;Define&lt;/h2&gt;
+  &lt;hr /&gt;
+  &lt;p&gt;Once you have conducted all of your interviews, review your recordings, take notes of all the answers, and start
+    searching for big themes. You can start synthesizing your research by doing some affinity mapping. Here are some
+    general things that you should to pay attention to while you’re undergoing that process:&lt;/p&gt;
+  &lt;ul class="blogpost--ul-indent"&gt;
+    &lt;li&gt;Expectations that users have regarding the user experience&lt;/li&gt;
+    &lt;li&gt;Separate assumptions from working knowledge. What is absolutely true, what are hunches, and what gaps are there
+      in
+      your knowledge?&lt;/li&gt;
+    &lt;li&gt;Problems or concerns with existing product&lt;/li&gt;
+    &lt;li&gt;Past things that have already been done but didn’t work well and why.&lt;/li&gt;
+    &lt;li&gt;Any follow-up questions that users might have that you could inform them about at a later date&lt;/li&gt;
+    &lt;li&gt;Who wants to actively be involved with the UX and in what ways?&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;h5 class="helper-space-top"&gt;&lt;strong&gt;SYTHESIZE&lt;/strong&gt;&lt;/h5&gt;
+  &lt;hr /&gt;
+  &lt;p&gt;At this stage, you will be taking the insights you found from your user interviews and converting them into
+    keyfindings that are easier to digest. Consider this a list of takeaways from your user interviews. For example,
+    who you interviewed, which groups said what, and how many people feel the same way (i.e. 4/5 users felt this).&lt;/p&gt;
+
+  &lt;h5 class="helper-space-top"&gt;&lt;strong&gt;DEVELOP A PROBLEM STATEMENT&lt;/strong&gt;&lt;/h5&gt;
+  &lt;hr /&gt;
+  &lt;p&gt;First of all, what is a problem statement? A &lt;strong&gt;problem statement&lt;/strong&gt; is basically a very concise,
+    description of the issue that you're going to address, improve upon, or solve for. Below is the structure
+    that it
+    usually follows:&lt;/p&gt;
+
+  &lt;p&gt;&lt;strong&gt;[USERS]&lt;/strong&gt; needs a way to &lt;strong&gt;[GOAL/ACTION]&lt;/strong&gt; because &lt;strong&gt;[SURPRISING INSIGHT].&lt;/strong&gt;&lt;/p&gt;
+
+  &lt;p&gt;OR&lt;/p&gt;
+
+  &lt;p&gt;A &lt;strong&gt;[USER ROLE]&lt;/strong&gt; feels &lt;strong&gt;[NEGATIVE FEELING]&lt;/strong&gt; about &lt;strong&gt;[REASON]&lt;/strong&gt; needs to
+    &lt;strong&gt;[STEP]&lt;/strong&gt; but faces &lt;strong&gt;[OBSTACLE].&lt;/strong&gt;&lt;/p&gt;
+
+
+  &lt;h5 class="helper-space-top"&gt;&lt;strong&gt;DEFINE THE SOLUTION&lt;/strong&gt;&lt;/h5&gt;
+  &lt;hr /&gt;
+  &lt;p&gt;Similar to a problem statement, a solution statement is a concise description of how you intend to solve your
+    users' problems according to the research you collected. Solution statements can also be referred to as &lt;strong&gt;How
+      Might We… (HMW)&lt;/strong&gt; statements. HMW statements summarize how we could help solve our
+    users’
+    problems or improve their feelings and perception of the product. Below are some tips that can help you write them:&lt;/p&gt;
+  &lt;ol class="blogpost--ol-indent"&gt;
+    &lt;li&gt;&lt;strong&gt;Amp up the Good&lt;/strong&gt;&lt;/li&gt;
+    &lt;ul class="blogpost--ul-indent"&gt;
+      &lt;li&gt;HMW help &lt;strong&gt;[USER]&lt;/strong&gt; accomplish &lt;strong&gt;[GOAL or ACTION]&lt;/strong&gt;?&lt;/li&gt;
+      &lt;li&gt;HMW make &lt;strong&gt;[SOLUTION]&lt;/strong&gt; the best &lt;strong&gt;[TYPE OF EXPERIENCE]&lt;/strong&gt;?&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;li&gt;&lt;strong&gt;Focus on Emotions&lt;/strong&gt;&lt;/li&gt;
+    &lt;ul class="blogpost--ul-indent"&gt;
+      &lt;li&gt;HMW help &lt;strong&gt;[USER]&lt;/strong&gt; accomplish &lt;strong&gt;[GOAL or ACTION]&lt;/strong&gt;?&lt;/li&gt;
+      &lt;li&gt;HMW design &lt;strong&gt;[SOLUTION]&lt;/strong&gt; to help users with &lt;strong&gt;[NEED]&lt;/strong&gt;?&lt;/li&gt;
+      &lt;li&gt;HMW make the user experience?&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;li&gt;&lt;strong&gt;Take it to an Extreme&lt;/strong&gt;&lt;/li&gt;
+    &lt;ul class="blogpost--ul-indent"&gt;
+      &lt;li&gt;HMW make &lt;strong&gt;[IDEAL SOLUTION or EXPERIENCE]&lt;/strong&gt;?&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;li&gt;&lt;strong&gt;Explore the Opposite&lt;/strong&gt;&lt;/li&gt;
+    &lt;ul class="blogpost--ul-indent"&gt;
+      &lt;li&gt;HMW make &lt;strong&gt;[OPPOSITE OF SOLUTION]&lt;/strong&gt;?&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;li&gt;&lt;strong&gt;Question an Assumption&lt;/strong&gt;&lt;/li&gt;
+    &lt;ul class="blogpost--ul-indent"&gt;
+      &lt;li&gt;HMW &lt;strong&gt;[ACTION]&lt;/strong&gt; the &lt;strong&gt;[ASSUMPTION]&lt;/strong&gt;?&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;li&gt;&lt;strong&gt;Create an Analogy from Insight or Context&lt;/strong&gt;&lt;/li&gt;
+    &lt;ul class="blogpost--ul-indent"&gt;
+      &lt;li&gt;HMW make &lt;strong&gt;[SOLUTION]&lt;/strong&gt; like a/an &lt;strong&gt;[ANALOGY]&lt;/strong&gt;?&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;li&gt;&lt;strong&gt;Focus in on an Element&lt;/strong&gt;&lt;/li&gt;
+    &lt;ul class="blogpost--ul-indent"&gt;
+      &lt;li&gt;HMW amplify the &lt;strong&gt;[POSITIVE or NEGATIVE EXPERIENCE]&lt;/strong&gt; related to &lt;strong&gt;[USERS' NEED]&lt;/strong&gt;?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/ol&gt;
+
+
+
+  &lt;h5 class="helper-space-top"&gt;&lt;strong&gt;SOURCES&lt;/strong&gt;&lt;/h5&gt;
+  &lt;hr /&gt;
+  &lt;ul class="blogpost--ul-indent"&gt;
+    &lt;li&gt;&lt;a href="http://www.dorotaux.com/process/"&gt;Process — Dorota Kacejko&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="https://projects.iq.harvard.edu/files/harvarduxgroup/files/ux-research-guide-sample-questions-for-user-interviews.pdf"&gt;Harvard's
+        UX Research Guide Sample Questions for User Interviews&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="(https://medium.com/eightshapes-llc/how-to-build-a-problem-statement-d1f21713720b"&gt;How to Build a
+        Problem Statement – EightShapes – Medium&lt;/a&gt;&lt;/li&gt;
+
+    &lt;li&gt;&lt;a href="http://www.designkit.org/methods/3"&gt;IDEO's Design Kit&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="https://dschool.stanford.edu/resources/how-might-we-questions"&gt;Stanford Design School's Resource to
+        How Might We
+        Questions&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/main&gt;
+</content>
+  </entry>
   <entry>
     <title>UX Case Study&amp;#58; The Path to Mastery</title>
     <link rel="alternate" href="http://blog.url.com/gina-blog/2018/11/08/post10.html"/>
     <id>http://blog.url.com/gina-blog/2018/11/08/post10.html</id>
     <published>2018-11-07T18:00:00-06:00</published>
-    <updated>2018-11-08T18:07:47-06:00</updated>
+    <updated>2018-11-12T09:28:03-06:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -91,11 +335,6 @@
     &lt;hr /&gt;
     Our solution is an unlinked extension of the 8th Light website, similar to our style guide.
   &lt;/section&gt;
-
-
-
-
-
 &lt;/main&gt;
 </content>
   </entry>
@@ -852,223 +1091,6 @@
             browser resizes.
         &lt;/li&gt;
     &lt;/ol&gt;
-&lt;/main&gt;
-</content>
-  </entry>
-  <entry>
-    <title>An Overview of Typographic History</title>
-    <link rel="alternate" href="http://blog.url.com/gina-blog/2018/09/26/post5.html"/>
-    <id>http://blog.url.com/gina-blog/2018/09/26/post5.html</id>
-    <published>2018-09-25T19:00:00-05:00</published>
-    <updated>2018-11-06T15:56:29-06:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;main class="blogposts__container"&gt;
-  &lt;header&gt;
-    &lt;h1&gt;An Overview of Typographic History,&lt;br /&gt; Classifications, and Characteristics&lt;/h1&gt;
-    &lt;time datetime="2018-09-26"&gt;SEPTEMBER 26, 2018&lt;/time&gt;
-  &lt;/header&gt;
-  &lt;p class="typography-p"&gt;Typography is one of the most overlooked but essential forms for communication, readability,
-    legibility, and
-    accessibility. It is an especially useful tool for graphic designers, visual designers, UI/UX designers, and web
-    designers, all of whom create, design, and produce something that plays into a user"s experience or interaction
-    with a product. There are six possible categories that typefaces can fall into: blackletter, serif, sans serif,
-    modern, slab serif and display. Here’s the low-down:&lt;/p&gt;
-
-  &lt;section class="helper-space-top"&gt;
-    &lt;div class="column"&gt;
-      &lt;h2 class="typography-h2"&gt;Blackletter (1450)
-        &lt;hr /&gt;
-      &lt;/h2&gt;
-      &lt;p class="typography-p"&gt;Otherwise known as &lt;em&gt;Gothic&lt;/em&gt;, &lt;em&gt;Fraktur&lt;/em&gt;, or &lt;em&gt;Old English&lt;/em&gt; is the
-        script of the Middle
-        Ages. It was used in the Gutenburg Bible, one of the first books printed in Europe. These typefaces were used
-        in early manuscript writing and are characterized by their dramatic thin and thick strokes. Sometimes in other
-        forms they will include elaborate swirls in the serifs.&lt;/p&gt;
-
-      &lt;h3 class="helper-space-bottom"&gt;&lt;strong&gt;What makes me special:&lt;/strong&gt;&lt;/h3&gt;
-      &lt;ul class="blogpost--ul-indent"&gt;
-        &lt;li&gt;Primarily seen and used in early manuscript writing&lt;/li&gt;
-        &lt;li&gt;Characterized by dramatic thin and thick strokes&lt;/li&gt;
-        &lt;li&gt;Weight is very heavy and dark&lt;/li&gt;
-        &lt;li&gt;Almost illegible to the modern eyes&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-  &lt;/section&gt;
-
-  &lt;section class="helper-space-top"&gt;
-    &lt;div class="column"&gt;
-      &lt;h2 class="typography-h2"&gt;Serif
-        &lt;hr /&gt;
-      &lt;/h2&gt;
-      &lt;h3&gt;Humanist (1460s – 1470s)&lt;/h3&gt;
-      &lt;p class="typography-p"&gt;Sometimes people refer to &lt;em&gt; Humanist &lt;/em&gt; typefaces as &lt;em&gt;Venetian&lt;/em&gt; and have
-        strong roots in
-        calligraphy modeled on the lighter, more open forms of the Italian humanist writers. The Humanist types were at
-        the same time the first roman types. Often derived largely from Roman inscriptions and early serif typefaces,
-        Humanist typefaces usually feature the lowercase two-story “a” and “g,” both of which combined makes this
-        typeface more legible.&lt;/p&gt;
-      &lt;h3 class="helper-space-bottom"&gt;&lt;strong&gt;What makes me special:&lt;/strong&gt;&lt;/h3&gt;
-      &lt;ul class="blogpost--ul-indent"&gt;
-        &lt;li&gt;Notably calligraphic&lt;/li&gt;
-        &lt;li&gt;Sloping cross-bar on the lowercase “e”&lt;/li&gt;
-        &lt;li&gt;Usually feature lowercase two-story "a" and "g"&lt;/li&gt;
-        &lt;li&gt;Relatively small x-height&lt;/li&gt;
-        &lt;li&gt;Low contrast between “thick” and “thin” strokes; little variation in the stroke width&lt;/li&gt;
-        &lt;li&gt;Dark visual tone (view the page with half-closed eyes)&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-  &lt;/section&gt;
-
-  &lt;section class="helper-space-top"&gt;
-    &lt;hr /&gt;
-    &lt;div class="column"&gt;
-      &lt;h3&gt;Old-Style (Late 14th – Mid 18th Century)&lt;/h3&gt;
-      &lt;p class="typography-p"&gt;Old Style typefaces are sometimes referred to as &lt;em&gt;Garalde&lt;/em&gt; typefaces, as they were
-        developed in the
-        late 14th century by Renaissance typographers. In 1401, they birthed the first italic typeface. as they
-        demonstrate a greater refinement—to a large extent augmented by the steadily improving skills of punchcutters.&lt;/p&gt;
-      &lt;h3 class="helper-space-bottom"&gt;&lt;strong&gt;What makes me special:&lt;/strong&gt;&lt;/h3&gt;
-      &lt;ul class="blogpost--ul-indent"&gt;
-        &lt;li&gt; Greater contrast between thick and thin strokes&lt;/li&gt;
-        &lt;li&gt; Sharper in appearance, more refined&lt;/li&gt;
-        &lt;li&gt; Serifs on the ascenders are more wedge shaped&lt;/li&gt;
-        &lt;li&gt; Lowercase “e” has a horizontal cross bar&lt;/li&gt;
-        &lt;li&gt; More upright stress&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-  &lt;/section&gt;
-
-  &lt;section class="helper-space-top"&gt;
-    &lt;hr /&gt;
-    &lt;div class="column"&gt;
-      &lt;h3&gt;Transitional (1716 – 1728)&lt;/h3&gt;
-      &lt;p class="typography-p"&gt;Transitional typefaces are something referred to as &lt;em&gt;Neoclassical&lt;/em&gt; or &lt;em&gt;Realist&lt;/em&gt;.
-        This type was
-        introduced by John Baskerville and Pierre Fournier. Baskerville happened to take an interest in printing,
-        eventually designing his own type in order to improve upon Caslon’s work. Fournier is remembered today for
-        introducing the point system as a way to measure typefaces.&lt;/p&gt;
-
-      &lt;h3 class="helper-space-bottom"&gt;&lt;strong&gt;What makes me special:&lt;/strong&gt;&lt;/h3&gt;
-      &lt;ul class="blogpost--ul-indent"&gt;
-        &lt;li&gt;Vertical or almost vertical stress in the bowls of lowercase letters: &lt;em&gt; b, c, d, e, g, o, p, q&lt;/em&gt;&lt;/li&gt;
-        &lt;li&gt; Greater contrast between thick and thin (sub-) strokes&lt;/li&gt;
-        &lt;li&gt;Ascenders are generally more horizontal&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-  &lt;/section&gt;
-
-
-  &lt;section class="helper-space-top"&gt;
-    &lt;div class="column"&gt;
-      &lt;h2 class="typography-h2"&gt;Modern or Didone (Late 18th Century)
-        &lt;hr /&gt;
-      &lt;/h2&gt;
-
-      &lt;p class="typography-p"&gt;Modern typefaces were largely influenced by competitive rivals, Firmin Didot of the Didot
-        family’s small
-        printing dynasty in France and Giambamtista Bodoni, both of which pushed the limits of type design. Although
-        they are always a poor choice for large chunks of text, they are best choices for display type and large sizes
-        like titles, which emphasize the elegance of each individual character.&lt;/p&gt;
-
-      &lt;h3 class="helper-space-bottom"&gt;&lt;strong&gt;What makes me special:&lt;/strong&gt;&lt;/h3&gt;
-      &lt;ul class="blogpost--ul-indent"&gt;
-        &lt;li&gt;High and abrupt contrast between thick and thin strokes&lt;/li&gt;
-        &lt;li&gt;Abrupt (unbracketed) hairline (thin) serifs&lt;/li&gt;
-        &lt;li&gt;Vertical axis&lt;/li&gt;
-        &lt;li&gt;Horizontal stress&lt;/li&gt;
-        &lt;li&gt;Small aperture&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-  &lt;/section&gt;
-
-  &lt;section class="helper-space-top"&gt;
-    &lt;div class="column"&gt;
-      &lt;h2 class="typography-h2"&gt;Slab Serif or Egyptian (Early 18th Century)
-        &lt;hr /&gt;
-      &lt;/h2&gt;
-
-      &lt;p class="typography-p"&gt;Slab serifs, otherwise known as &lt;em&gt;Egyptians&lt;/em&gt; were originally created for
-        advertising, posters, and other
-        large media. They can alternatively be called &lt;em&gt;Mechanicals.&lt;/em&gt;These were the first types designed as
-        display type. Vincent Figgins is credited with the first slab serifs, as the earliest specimens were in 1815.
-        Slab serif typefaces typically feature abrupt serifs and are usually heavier weights.&lt;/p&gt;
-
-      &lt;h3 class="helper-space-bottom"&gt;&lt;strong&gt;What makes me special:&lt;/strong&gt;&lt;/h3&gt;
-      &lt;ul class="blogpost--ul-indent"&gt;
-        &lt;li&gt;Heavy weight&lt;/li&gt;
-        &lt;li&gt;Low stroke contrast between thin and thick&lt;/li&gt;
-        &lt;li&gt;Unbracketed, prominent serifs&lt;/li&gt;
-        &lt;li&gt;First typefaces created expressly for display purposes&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-  &lt;/section&gt;
-
-  &lt;section class="helper-space-top"&gt;
-    &lt;div class="column"&gt;
-      &lt;h2 class="typography-h2"&gt;Sans Serif
-        &lt;hr /&gt;
-      &lt;/h2&gt;
-      &lt;h3&gt;Geometric&lt;/h3&gt;
-      &lt;p class="typography-p"&gt;Geometric typefaces are the &lt;strong&gt;least legible/readable&lt;/strong&gt; of all the sans serif
-        typefaces,
-        especially for body copy. Geometric typefaces are recommended to be set in short, larger type as opposed to
-        longer content like body copy. This type is often described as cold and clinical, yet simple.&lt;/p&gt;
-
-      &lt;h3 class="helper-space-bottom"&gt;&lt;strong&gt;What makes me special:&lt;/strong&gt;&lt;/h3&gt;
-      &lt;ul class="blogpost--ul-indent"&gt;
-        &lt;li&gt; The least legible of all the typefaces, especially for body text&lt;/li&gt;
-        &lt;li&gt; Based on geometric shapes, near perfect circles and squares&lt;/li&gt;
-        &lt;li&gt; Modern look and feel&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-  &lt;/section&gt;
-
-  &lt;section class="helper-space-top"&gt;
-    &lt;hr /&gt;
-    &lt;div class="column"&gt;
-      &lt;h3&gt;Humanist (20th Century)&lt;/h3&gt;
-
-      &lt;p class="typography-p"&gt;Humanist typefaces are said to be the &lt;strong&gt;most legible/readable&lt;/strong&gt; of all the
-        sans serif typefaces.
-        Like it’s serif counterpart, the Humanist sans serif also shares the calligraphic influence, basing its strokes
-        and shapes on forms that originate from the pen or brush. Their proportions are often derived from Roman
-        inscriptions and early serif typefaces. The lowercase “a” and “g” are most often two-story, which makes them a
-        more legible choice than other sans faces.&lt;/p&gt;
-
-      &lt;h3 class="helper-space-bottom"&gt;&lt;strong&gt;What makes me special:&lt;/strong&gt;&lt;/h3&gt;
-      &lt;ul class="blogpost--ul-indent"&gt;
-        &lt;li&gt; The most calligraphic&lt;/li&gt;
-        &lt;li&gt; Legible/readable of the typefaces&lt;/li&gt;
-        &lt;li&gt; Some variation in line width&lt;/li&gt;
-        &lt;li&gt; Greater variation in stroke width&lt;/li&gt;
-        &lt;li&gt; Character by the presence of gentler, more natural curves&lt;/li&gt;
-      &lt;/ul&gt;
-
-    &lt;/div&gt;
-  &lt;/section&gt;
-
-  &lt;section class="helper-space-top"&gt;
-    &lt;hr /&gt;
-    &lt;div class="column"&gt;
-      &lt;h3&gt;Grotesque or Grotesk (19th – Early 20th Century)&lt;/h3&gt;
-
-      &lt;p class="typography-p"&gt;Grotesques have a tendency to feature awkward weigh distribution around bowls of
-        characters and irregular
-        curves. They usually feature an awkward “a” and “g” with squarish bowls, odd curves and angles sat the tips of
-        strokes in the “J” and “S” and overall irregularity.&lt;/p&gt;
-
-      &lt;h3 class="helper-space-bottom"&gt;&lt;strong&gt;What makes me special:&lt;/strong&gt;&lt;/h3&gt;
-      &lt;ul class="blogpost--ul-indent"&gt;
-        &lt;li&gt; Spurred “G”, as well as squarish bowls of lowercase “a” and “g”&lt;/li&gt;
-        &lt;li&gt; Obvious stoke contrast, tending to display some variation in thickness of strokes but no calligraphic
-          influence of logical pattern&lt;/li&gt;
-        &lt;li&gt; Proportional idiosyncrasies&lt;/li&gt;
-        &lt;li&gt; Tall x-height with a vertical axis&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-  &lt;/section&gt;
 &lt;/main&gt;
 </content>
   </entry>
