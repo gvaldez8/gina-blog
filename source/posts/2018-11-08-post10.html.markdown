@@ -1,0 +1,79 @@
+---
+title: UX Case Study&#58; The Path to Mastery
+time: November 8, 2018
+---
+
+<main class='blogposts__container'>
+  <header class='header-main'>
+    <h1>User Experience (UX) Case Study:<br> The Path to Mastery</h1>
+    <time datetime="2018-11-08">November 8, 2018</time>
+  </header>
+  <p>8th Light is a consulting firm specializing in custom software development. The company is most well-known for
+    delivering quality software development professionals and its Apprenticeship Program, where they teach and train
+    aspiring software development professionals from various technical backgrounds. Established back in 2006, the
+    apprenticeship curriculum has undergone numerous trial and errors, as well as constant revisions with little
+    documentation on how the overall quality of the learning experience and the program have improved.</p>
+
+  <p>Given its long history of evolution, my colleague and I were approached by a determined stakeholder who shared his
+    own understanding of the problem: the apprenticeship curriculum currently exists as tribal knowledge, which
+    resulting in inconsistent standards and anxiety amongst apprentices. Undergoing the user experience design process,
+    my colleague and I dedicated two weeks to assess our stakeholder's theory, define the problem, and come up with an
+    appropriate solution. Here's what the process:</p>
+
+  <section>
+    <h4><strong>MY ROLE</strong></h4>
+    <hr />
+    <p>On this team of two, I served a mixture of primary and supplementary roles:</p>
+    <ul class="blogpost--ul">
+      <li>Note-taker during user interviews and documented user interview answers in a spreadsheet</li>
+
+      <li>Contributed to strategy, affinity mapping, and synthesizing research.</li>
+
+      <li>Helped to develop problem statements and How Might We... Statements</li>
+
+      <li>Designed and pitched the final presentation to our stakeholder.</li>
+    </ul>
+  </section>
+
+  <section class="helper-space-top-small">
+    <div class="blogpost__number-circle">
+      <span class="blogpost__number-dot">1</span>
+      <h4 class="helper-space-left"><strong>THE RESEARCH PLAN</strong></h4>
+    </div>
+    <hr />
+
+    <h4>User Interviews</h4>
+
+    <h4>Problem Statements</h4>
+    <h4>Hypothesis</h4>
+
+
+    <h4>Method</h4>
+  </section>
+
+  <section class="helper-space-top-small">
+    <div class="blogpost__number-circle">
+      <span class="blogpost__number-dot">2</span>
+      <h4 class="helper-space-left"><strong>THE PROBLEM</strong></h4>
+    </div>
+    <hr />
+
+    <p><strong>[Apprentices]</strong> feel [frustration] about unclear expectations. They want to define those
+      expectations but face
+      [reluctance to speak up or reach out].</p>
+
+    <p><strong>[Mentors]</strong> feel [uncertainty] about understanding success metrics. They need [to document and
+      share how they use
+      the
+      curriculum] but lack the structure to do so.</p>
+  </section>
+
+  <section class="helper-space-top-small">
+    <div class="blogpost__number-circle">
+      <span class="blogpost__number-dot">3</span>
+      <h4 class="helper-space-left"><strong>THE SOLUTION</strong></h4>
+    </div>
+    <hr />
+    Our solution is an unlinked extension of the 8th Light website, similar to our style guide.
+  </section>
+</main>
