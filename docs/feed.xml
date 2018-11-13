@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://blog.url.com/gina-blog/2018/11/12/post11.html"/>
     <id>http://blog.url.com/gina-blog/2018/11/12/post11.html</id>
     <published>2018-11-11T18:00:00-06:00</published>
-    <updated>2018-11-12T17:30:19-06:00</updated>
+    <updated>2018-11-12T20:55:04-06:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -29,15 +29,16 @@
   &lt;img src="/images/Double_Diamond_Design_Process.png" height="95%" width="95%" /&gt;
 
   &lt;p&gt;Here’s some further explanation on how this works, some of which are from &lt;em&gt;The User Experience Team of One&lt;/em&gt;
-    by Leah Buley&lt;/p&gt;
+    by Leah Buley.&lt;/p&gt;
 
 
   &lt;h2&gt;Discover&lt;/h2&gt;
   &lt;hr /&gt;
   &lt;p&gt;This is the most important phase, as it’s the kick-off to any project that you start and will determine the tone
-    for the entire process from start to finish. This phase requires extensive planning and research. The Research
-    Process is determined into the following segments: The Research Plan,
-    Research Methods, Conducting the User Research, and Discovery.&lt;/p&gt;
+    for the entire process from start to finish. This phase requires extensive planning and research. This process can
+    be broken up into the following segments: The Research Plan, Methods for Research, Conducting the User
+    Research,Synthesizing your Findings, Defining the Problem, and Determining the Solution that will define your
+    next steps and deliverables.&lt;/p&gt;
 
 
   &lt;h5 class="helper-space-top"&gt;&lt;strong&gt;RESEARCH PLAN&lt;/strong&gt;&lt;/h5&gt;
@@ -93,36 +94,63 @@
     different types of research that you could conduct:&lt;/p&gt;
   &lt;ol class="blogpost--ol-indent"&gt;
     &lt;li&gt;&lt;strong&gt;Primary Research — &lt;/strong&gt;These are learnings from users firsthand, such as:&lt;/li&gt;
-    * Field research
-    * Diary studies
-    * Surveys— This isn’t always the most helpful just because some users take these as opportunities to rant.
-    * Guerrilla research
-    * User research, user interviews, and user flows
-
+    &lt;ul class="blogpost--ul-indent"&gt;
+      &lt;li&gt;Field research&lt;/li&gt;
+      &lt;li&gt;Guerrilla research&lt;/li&gt;
+      &lt;li&gt;Diary studies&lt;/li&gt;
+      &lt;li&gt;User research and user interviews&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Focus groups —&lt;/strong&gt; Moderated discussion with a group of users, allow you to learn about user
+        attitudes, ideas, and desires.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Task Analysis —&lt;/strong&gt; Involves learning about user goals, including what users want to do on your
+        website, and helps you understand the tasks
+        that users will perform on your site.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Card sorting —&lt;/strong&gt; Allows users to group your site’s information. This helps
+        ensure that the site structure matches the way users think.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Surveys —&lt;/strong&gt; This isn’t always the most helpful just because users have the tendency to use
+        surveys as
+        opportunities to rant. Consider this method as a last resort if there is absolutely little to no time to
+        conduct
+        proper, thorough research.&lt;/li&gt;
+    &lt;/ul&gt;
     &lt;li&gt;&lt;strong&gt;Secondary Research — &lt;/strong&gt; These are collected third-party research conducted into the
-      user
-      population, such as:&lt;/li&gt;
-    * Publicly available research
-    * Research conducted from other parts of the organization (i.e. marketing segmentation). Note that this will be
-    amongst the most useful to UX Professionals
+      user population, such as:&lt;/li&gt;
+    &lt;ul class="blogpost--ul-indent"&gt;
+      &lt;li&gt;Publicly available research&lt;/li&gt;
+      &lt;li&gt;Internal research conducted from other parts of the organization (i.e. marketing segmentation). Note that
+        this will be
+        amongst the most useful to UX Professionals, so this would be a great start.&lt;/li&gt;
+    &lt;/ul&gt;
 
     &lt;li&gt;&lt;strong&gt;Personas, Mental Models, and User Stories — &lt;/strong&gt; These are documents that synthesize what you’ve
-      learned about users through the aforementioned methods all distilled into key points, such as:&lt;/li&gt;
-
+      learned about users after going through the aforementioned methods all distilled into digestible key points, such
+      as:&lt;/li&gt;
     &lt;ul class="blogpost--ul-indent"&gt;
       &lt;li&gt;Supporting diagrams (i.e. contextual inquiry, competitor analysis, product assessment)&lt;/li&gt;
-      &lt;li&gt;Stories for how a product fits into users’ lives (i.e. proto-personas)&lt;/li&gt;
-      &lt;li&gt;Usability testing&lt;/li&gt;
-      &lt;li&gt;User flows&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Usability Testing —&lt;/strong&gt; Identifies user frustrations and problems with your site through
+        one-on-one sessions where a
+        "real-life" user performs tasks on your site.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;User flows —&lt;/strong&gt; The step-by-step path taken by a user on a website or app to successfully
+        complete a task or final action, such as purchasing an item.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Personas —&lt;/strong&gt; The creation of a representative user based on available data and user
+        interviews. Though the personal details of the persona may be fictional, the information used to create the
+        user type isn't because it uses actual information based on user interviews. Sometimes referred to
+        as a "proto-persona", these are intended to tell a story of how a
+        product fits into users' lives.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;User Scenarios —&lt;/strong&gt; Provide a description of how users use a particular feature of your
+        website. They provide a detailed look
+        at how users interact with the site, including the steps users take to accomplish each task.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Prototyping —&lt;/strong&gt; Allows the design team to explore ideas before implementing them by creating a
+        mock-up of the site. A
+        prototype can range from a paper mock-up to interactive html pages.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/ol&gt;
 
   &lt;h5 class="helper-space-top"&gt;&lt;strong&gt;THE ART OF CONDUCTING USER INTERVIEWS&lt;/strong&gt;&lt;/h5&gt;
   &lt;hr /&gt;
-  &lt;p&gt;Refer to your &lt;strong&gt;Research Plan&lt;/strong&gt; for the users that you will interview and tailor your questions
-    accordingly. Each
-    interview should take on average anywhere from 1–2hrs and no shorter than 30mins minimum. You can think of the type
-    of users you interview and how that will influence your questions in two groups:&lt;/p&gt;
+  &lt;p&gt;Refer to your &lt;strong&gt;Research Plan&lt;/strong&gt; for the groups of users that you will interview and tailor your
+    questions accordingly. Each interview should take on average anywhere from 1–2hrs and no shorter than 30mins
+    at minimum. You can generally think of the type of users that you will interview and how that will influence your
+    questions by classifying them into these two groups:&lt;/p&gt;
   &lt;ol class="blogpost--ol-indent"&gt;
     &lt;li&gt;Interviewing &lt;strong&gt;existing customers&lt;/strong&gt; to understand what’s good and bad about the product.&lt;/li&gt;
 
@@ -133,7 +161,7 @@
   &lt;p&gt;Before you actually conduct the interviews, you want to do some prep work to ensure that your interview runs
     smoothly. The first thing that you should do, is write things down.&lt;/p&gt;
 
-  &lt;h5 class="helper-space-top"&gt;&lt;strong&gt;PREP WORK&lt;/strong&gt;&lt;/h5&gt;
+  &lt;h5 class="helper-space-top"&gt;&lt;strong&gt;PREP WORK: USER INTERVIEW QUESTIONS&lt;/strong&gt;&lt;/h5&gt;
   &lt;hr /&gt;
   &lt;p&gt;Start with an introduction that defines who you are, what this project is for, assure the user’s honest, open
     feedback is valuable and make the user feel comfortable by making small talk before starting. You should also note
@@ -155,6 +183,10 @@
     &lt;li&gt;[If there’s a specific project underway that you’re involved in…] What are your goals for this project? What is
       your vision for how this project will improve our product? Do you see any risks or red flags?&lt;/li&gt;
   &lt;/ul&gt;
+  &lt;p&gt;Here are some additional examples using &lt;a href="https://projects.iq.harvard.edu/files/harvarduxgroup/files/ux-research-guide-sample-questions-for-user-interviews.pdf"&gt;Sarah
+      Doody's Starter Questions for User Research.&lt;/a&gt; What's nice about her guide is that she separates questions into
+    situational categories, so, for example: customer intro, topic specific, product opportunity, and
+    product reaction questions, all of which you should always follow with "why" and "why not" to dig deeper.&lt;/p&gt;
 
   &lt;h2&gt;Define&lt;/h2&gt;
   &lt;hr /&gt;
@@ -199,7 +231,9 @@
     users' problems according to the research you collected. Solution statements can also be referred to as &lt;strong&gt;How
       Might We… (HMW)&lt;/strong&gt; statements. HMW statements summarize how we could help solve our
     users’
-    problems or improve their feelings and perception of the product. Below are some tips that can help you write them:&lt;/p&gt;
+    problems, improve upon their experience with the product or service, or change their feelings and perception of the
+    product. Below are some tips that can help you generate successful HMW statements that stay within scope by
+    starting from a general place:&lt;/p&gt;
   &lt;ol class="blogpost--ol-indent"&gt;
     &lt;li&gt;&lt;strong&gt;Amp up the Good&lt;/strong&gt;&lt;/li&gt;
     &lt;ul class="blogpost--ul-indent"&gt;
@@ -234,14 +268,12 @@
     &lt;/ul&gt;
   &lt;/ol&gt;
 
-
-
   &lt;h5 class="helper-space-top"&gt;&lt;strong&gt;SOURCES&lt;/strong&gt;&lt;/h5&gt;
   &lt;hr /&gt;
   &lt;ul class="blogpost--ul-indent"&gt;
     &lt;li&gt;&lt;a href="http://www.dorotaux.com/process/"&gt;Process — Dorota Kacejko&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="https://projects.iq.harvard.edu/files/harvarduxgroup/files/ux-research-guide-sample-questions-for-user-interviews.pdf"&gt;Harvard's
-        UX Research Guide Sample Questions for User Interviews&lt;/a&gt;&lt;/li&gt;
+        UX Research Guide Sample Questions for User Interviews from Sarah Doody&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="(https://medium.com/eightshapes-llc/how-to-build-a-problem-statement-d1f21713720b"&gt;How to Build a
         Problem Statement – EightShapes – Medium&lt;/a&gt;&lt;/li&gt;
 
@@ -249,7 +281,22 @@
     &lt;li&gt;&lt;a href="https://dschool.stanford.edu/resources/how-might-we-questions"&gt;Stanford Design School's Resource to
         How Might We
         Questions&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="https://www.usability.gov/what-and-why/user-research.html"&gt;The Usability.gov Guide to User
+        Research
+        Basics&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
+
+  &lt;h2 class="helper-space-top"&gt;How to Create User Interview Questions&lt;/h2&gt;
+  &lt;hr /&gt;
+  &lt;p&gt;Let's start with a fictional but realistic scenario based off an existing problem in the world.
+
+    &lt;blockquote&gt;Finding the ideal roommate in a new city is not an easy feat. On top of the whole moving process and
+      the lifestyle adjustments that
+      come with moving to a new environment, there are so many things to consider from budget to living habits to
+      preferred transporation methods. How would you design an app that helps a newcomer from an entirely different
+      city
+      find the ideal roomate?&lt;/blockquote&gt;
+  &lt;/p&gt;
 &lt;/main&gt;
 </content>
   </entry>

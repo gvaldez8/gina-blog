@@ -204,6 +204,23 @@ time:after {
     time:after {
       width: 44%; } }
 
+blockquote {
+  display: block;
+  background: #fff;
+  padding: 5% 5%;
+  position: relative;
+  /*Font*/
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1em;
+  line-height: 2;
+  color: #333;
+  /*Box Shadow*/
+  box-shadow: 2px 2px 15px #b8860b;
+  /*Borders*/
+  border-color: #b8860b;
+  border-left-style: solid;
+  border-left-width: 15px; }
+
 nav {
   background: #ff6347;
   height: 100%;
@@ -567,6 +584,23 @@ time:after {
     time:before,
     time:after {
       width: 44%; } }
+
+blockquote {
+  display: block;
+  background: #fff;
+  padding: 5% 5%;
+  position: relative;
+  /*Font*/
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1em;
+  line-height: 2;
+  color: #333;
+  /*Box Shadow*/
+  box-shadow: 2px 2px 15px #b8860b;
+  /*Borders*/
+  border-color: #b8860b;
+  border-left-style: solid;
+  border-left-width: 15px; }
 
 body {
   color: #000;

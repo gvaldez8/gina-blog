@@ -97,3 +97,25 @@ time:after {
     padding-left: $padding-left;
   }
 }
+
+// Blockquote Styling
+blockquote {
+  display: block;
+  background: #fff;
+  padding: 5% 5%;
+  position: relative;
+
+  /*Font*/
+  font-family: $font-stack-secondary;
+  font-size: 1em;
+  line-height: 2;
+  color: $c-night-rider;
+
+  /*Box Shadow*/
+  box-shadow: 2px 2px 15px $c-dark-golden-rod;
+
+  /*Borders*/
+  border-color: $c-dark-golden-rod;
+  border-left-style: solid;
+  border-left-width: 15px;
+}
