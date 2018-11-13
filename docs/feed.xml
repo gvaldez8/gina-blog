@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://blog.url.com/gina-blog/2018/11/12/post11.html"/>
     <id>http://blog.url.com/gina-blog/2018/11/12/post11.html</id>
     <published>2018-11-11T18:00:00-06:00</published>
-    <updated>2018-11-12T20:55:04-06:00</updated>
+    <updated>2018-11-13T13:21:41-06:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -27,6 +27,11 @@
       Process&lt;/em&gt;. It looks like this:&lt;/p&gt;
 
   &lt;img src="/images/Double_Diamond_Design_Process.png" height="95%" width="95%" /&gt;
+
+  &lt;p&gt;or here's another great, very detailed diagram of the Double Diamond Process from &lt;a href="https://blog.marvelapp.com/apply-design-thinking-hcd-ux-creative-process-scratch/"&gt;Marvel
+      App&lt;/a&gt;:&lt;/p&gt;
+
+  &lt;img class="helper-space-top" src="/images/Double_Diamond.png" height="95%" width="95%" /&gt;
 
   &lt;p&gt;Here’s some further explanation on how this works, some of which are from &lt;em&gt;The User Experience Team of One&lt;/em&gt;
     by Leah Buley.&lt;/p&gt;
@@ -166,7 +171,8 @@
   &lt;p&gt;Start with an introduction that defines who you are, what this project is for, assure the user’s honest, open
     feedback is valuable and make the user feel comfortable by making small talk before starting. You should also note
     how everything that is said is confidential and is strictly being used for research purposes before recording your
-    interview.Then start writing down questions that you have. Of course, these questions will be tailored according to
+    interview. Then start writing down questions that you have. Of course, these questions will be tailored according
+    to
     your
     product and your users, but here are some great ones to start:&lt;/p&gt;
   &lt;ul class="blogpost--ul-indent"&gt;
@@ -232,7 +238,8 @@
       Might We… (HMW)&lt;/strong&gt; statements. HMW statements summarize how we could help solve our
     users’
     problems, improve upon their experience with the product or service, or change their feelings and perception of the
-    product. Below are some tips that can help you generate successful HMW statements that stay within scope by
+    product. This is the last step before moving onto the development and delivery of your solution. Below are some
+    tips that can help you generate successful HMW statements that stay within scope by
     starting from a general place:&lt;/p&gt;
   &lt;ol class="blogpost--ol-indent"&gt;
     &lt;li&gt;&lt;strong&gt;Amp up the Good&lt;/strong&gt;&lt;/li&gt;
@@ -284,11 +291,93 @@
     &lt;li&gt;&lt;a href="https://www.usability.gov/what-and-why/user-research.html"&gt;The Usability.gov Guide to User
         Research
         Basics&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="https://blog.marvelapp.com/apply-design-thinking-hcd-ux-creative-process-scratch/"&gt;How to Apply design
+        thinking HCD, UX, or any creative process from Scratch from Marvel App&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
 
   &lt;h2 class="helper-space-top"&gt;How to Create User Interview Questions&lt;/h2&gt;
   &lt;hr /&gt;
-  &lt;p&gt;Let's start with a fictional but realistic scenario based off an existing problem in the world.
+  &lt;p&gt;Now that you are more familiar with the early stages of the UX design process or have refreshed your memory of the
+    concepts, let's talk about some general guidelines that you should follow when creating your own user interview
+    questions:&lt;/p&gt;
+
+  &lt;h5 class="helper-space-top"&gt;&lt;strong&gt;QUICK TIPS TO KEEP IN MIND&lt;/strong&gt;&lt;/h5&gt;
+  &lt;hr /&gt;
+  &lt;ul class="blogpost--ul-indent"&gt;
+    &lt;li&gt;
+      &lt;strong&gt;Clear the air —&lt;/strong&gt; Treat this like a normal conversation and start with introductions. Speak upon
+      who you are, thank them for coming in and investing their time, and briefly explain the purpose of this research
+      and how their honest, open feedback will be extremely helpful to your research. Assure them that anything said
+      within the session is 100% confidential and is only recorded for research purposes. Ask them to briefly introduce
+      themselves to help them get comfortable and ease into the interviewing process.
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;strong&gt;"There's no such thing as wrong answers" —&lt;/strong&gt; At the beginning of every interview, you need to
+      ensure
+      that you have a pre-interview script that helps your users feel comfortable sharing. They need to
+      know that that this is not a test, there are no right/wrong answers, and that these questions aren't difficult to
+      answer.
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;strong&gt;Avoid leading questions —&lt;/strong&gt; These are questions that suggest or hint at the answer you want or the
+      answer that you want confirmed. These questions are framed from your personal biases or assumptions towards the
+      product and how you think that users feel about the product. An example would be, "Do you find this
+      feature frustrating to use?" A better question woule be to keep it more general and open-ended, like, "How did
+      you feel about this feature?"
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;strong&gt;Avoid asking yes/no questions —&lt;/strong&gt; Simply put, getting a "no" answer could feel like running into a
+      brick wall. Also, these type of questions don't allow users the opportunity to tell stories or details about
+      their
+      experience, which in turn, doesn't help you know how to fix or improve upon the product.
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;strong&gt;If you can keep your questions to 5 max, then do it. —&lt;/strong&gt; If you can get people to talk about
+      themselves the entire time using just 5 questions, then you’re successful. However, this varies. Read the next
+      point!
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;strong&gt;Come prepared —&lt;/strong&gt; Limiting yourself to only 5 questions can be hard, and sometimes
+      depending on how
+      complex the problem is or who you end up interviewing (they may or may not get comfortable enough to treat the
+      interview as a conversation rather than a formal interview), you may need to have more than five questions. In
+      that case, it's always a
+      great idea to start big with 15–20 questions, tailor where necessary, and try your best to ask roughly 12
+      questions &lt;em&gt;during the interview,&lt;/em&gt; so as not to overwhelm the user.
+    &lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Bring your objectives —&lt;/strong&gt; Have a mental list of the top questions that you want to come out with
+      answers to by the end of your interview.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Keep your questions simple —&lt;/strong&gt; Ask one question at a time. Try to separate or avoid using
+      compound
+      questions.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Focus on past events and experiences —&lt;/strong&gt; Don't ask questions that give you hypothetical
+      answers (i.e. "How would you go about..."). You can't prove that the actions they &lt;em&gt;would&lt;/em&gt; take are the
+      actions they
+      will &lt;em&gt;actually&lt;/em&gt; take. Get your users to talk about past experiences instead because it's more accurate.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Be comfortable, make them feel comfortable — &lt;/strong&gt; Make small talk, be friendly, really listen,
+      make them feel valued/important and
+      users will feel more inclined to tell
+      you everything that you will need to know.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Don’t get too locked into a script —&lt;/strong&gt; Chances are that you interviewee will more than likely
+      jump
+      around and answer questions out of order. This is natural. Be sure not to ask them the questions that they
+      already answered
+      because that's a clear sign to them that you're not really listening.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Start with the most general questions —&lt;/strong&gt; Give them more opportunities to talk about their
+      experiences. You can always ask more questions if you feel like they're off-topic or if you're not getting the
+      information that you need.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Count to 10 before moving onto the next question —&lt;/strong&gt; The natural awkward silence will compel
+      users to fill that space and tell you more.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Ask follow-up questions —&lt;/strong&gt; These would be questions like, "Can you tell me more about that?"
+      Sometimes people feel the need to get the "okay" to continue and share more.&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;h5 class="helper-space-top"&gt;&lt;strong&gt;AN EXAMPLE SCENARIO&lt;/strong&gt;&lt;/h5&gt;
+  &lt;hr /&gt;
+  &lt;p&gt;Now that we are more familiar with the do's and don'ts of the type of questions that we should ask and how to ask
+    them, here's a
+    fictional scenario of a problem that exists in the real world to help practice creating our own interview
+    questions:
 
     &lt;blockquote&gt;Finding the ideal roommate in a new city is not an easy feat. On top of the whole moving process and
       the lifestyle adjustments that
@@ -296,6 +385,65 @@
       preferred transporation methods. How would you design an app that helps a newcomer from an entirely different
       city
       find the ideal roomate?&lt;/blockquote&gt;
+
+    &lt;h5 class="helper-space-top"&gt;&lt;strong&gt;SAMPLE QUESTIONS&lt;/strong&gt;&lt;/h5&gt;
+    &lt;hr /&gt;
+    &lt;p&gt;Here are some questions that I developed for this scenario. A good way to start thinking about questions would
+      be to do a little bit of research and consider thinking of your questions in terms of categories that encompass
+      the experience:&lt;/p&gt;
+    &lt;h3 class="helper-space-top"&gt;Experience with Roommates&lt;/h3&gt;
+    &lt;hr /&gt;
+    &lt;p&gt;What prior experience do you have searching for a roommate?&lt;/p&gt;
+
+    &lt;div class="column"&gt;
+      &lt;h5 class="helper-space-top"&gt;&lt;strong&gt;IF EXPERIENCED:&lt;/strong&gt;&lt;/h5&gt;
+      &lt;hr /&gt;
+      &lt;ol class="blogpost--ol-columns"&gt;
+        &lt;li&gt;When was the last time that you had a roommate?&lt;/li&gt;
+        &lt;li&gt;How long was that lease for?&lt;/li&gt;
+        &lt;li&gt;How have you found roommates in the past?&lt;/li&gt;
+        &lt;li&gt;What methods or tools did you use?&lt;/li&gt;
+        &lt;li&gt;What worked well?&lt;/li&gt;
+        &lt;li&gt;What is the most amount of people that you’ve lived with?&lt;/li&gt;
+        &lt;li&gt;Tell me about a positive roommate experience.&lt;/li&gt;
+        &lt;li&gt;Tell me about a time when you had a terrible roommate experience.&lt;/li&gt;
+        &lt;li&gt;What would have made that situation better?&lt;/li&gt;
+        &lt;li&gt;How did you communicate issues with your past roommates?&lt;/li&gt;
+        &lt;li&gt;How did you handle problems with your roommate in the past?&lt;/li&gt;
+        &lt;li&gt;How did you split chores with your past roommates? Bills?&lt;/li&gt;
+      &lt;/ol&gt;
+
+      &lt;h5 class="helper-space-top"&gt;&lt;strong&gt;IF FIRST TIME:&lt;/strong&gt;&lt;/h5&gt;
+      &lt;hr /&gt;
+      &lt;ol class="blogpost--ol-columns"&gt;
+        &lt;li&gt;Where would you start to find roommates?&lt;/li&gt;
+        &lt;li&gt;What concerns do you have when searching for potential roommates?&lt;/li&gt;
+        &lt;li&gt;What criteria do these roommates have to meet to be considered an option?&lt;/li&gt;
+        &lt;li&gt;What expectations do you have of someone who decides to live with you?&lt;/li&gt;
+        &lt;li&gt;What major pet peeves do you have when it comes to living with someone?&lt;/li&gt;
+      &lt;/ol&gt;
+    &lt;/div&gt;
+
+    &lt;h3 class="helper-space-top"&gt;How to Find Roommates&lt;/h3&gt;
+    &lt;hr /&gt;
+    &lt;ol class="blogpost--ol-indent"&gt;
+      &lt;li&gt;What methods do you currently use to find roommates?&lt;/li&gt;
+      &lt;li&gt;How often do you use these methods during the roommate search?&lt;/li&gt;
+      &lt;li&gt;What does the ideal roommate look like to you?&lt;/li&gt;
+      &lt;li&gt;What thought process do you use to create a list of potential roommates?&lt;/li&gt;
+      &lt;li&gt;Is there anything specific that you look for when searching for roommates?&lt;/li&gt;
+      &lt;li&gt;What factors determine whether someone is a suitable roommate for you?&lt;/li&gt;
+      &lt;li&gt;What are the top fears that you have when it comes to rooming with someone?&lt;/li&gt;
+    &lt;/ol&gt;
+
+    &lt;h3 class="helper-space-top"&gt;Roommate Habits&lt;/h3&gt;
+    &lt;hr /&gt;
+    &lt;ol class="blogpost--ol-indent"&gt;
+      &lt;li&gt;What information would you share about yourself to help others determine if you’re a suitable roommate?&lt;/li&gt;
+      &lt;li&gt;How have you communicated issues with your roommate in the past?&lt;/li&gt;
+      &lt;li&gt;How did you split chores? Bills?&lt;/li&gt;
+      &lt;li&gt;How did you handle problems with your roommate in the past?&lt;/li&gt;
+    &lt;/ol&gt;
   &lt;/p&gt;
 &lt;/main&gt;
 </content>
