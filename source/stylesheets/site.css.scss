@@ -1,0 +1,58 @@
+@import "sass/base";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #333;
+  font-family: 'gill-sans-nova',
+    sans-serif;
+}
+
+a {
+  color: rgba(#000, 0.7);
+
+  &:focus,
+  &:hover {
+    color: rgba(#000, 0.6);
+  }
+}
+
+
+.header-image {
+  width: 100%;
+}
+
+.two-columns {
+  column-count: 2;
+  column-gap: 4em;
+  padding: 8% 8%;
+}
+
+.two-columns__column1 {
+  break-after: column;
+}
+
+p {
+  line-height: 2.5em;
+  padding-top: 20px;
+}
+
+.two-columns__column2 {
+  background-color: #F7F7F7;
+  padding: 50% 0 50% 0;
+
+  h3 {
+    font-family: $font-brand-blockquote;
+    font-size: $font-size-h4;
+  }
+
+  ul li {
+    font-family: $font-brand-body;
+    display: block;
+    padding-left: 0;
+  }
+}

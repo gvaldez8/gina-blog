@@ -1,0 +1,57 @@
+//Navigation
+
+nav {
+  padding-top: 20px;
+  width: 100%;
+}
+
+nav ul {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 0.9375rem;
+  list-style-type: none;
+  padding-left: 53px;
+  text-align: left;
+}
+
+nav li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 46px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.CSO-logo {
+  height: 25%;
+  padding: 25px 0px 5px 50px;
+  width: 25%;
+}
+
+hr {
+  border-top: 1px solid lightgray;
+  border-style: solid none none none;
+  display: block;
+  margin: 0;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 0 0 20px;
+}
+
+button {
+  background-color: white;
+  color: black;
+  border: 3px solid black;
+  padding: 10px 10px;
+  width: 100px;
+}
+
+.buttons__navigation--default {
+  clear: both;
+  position: absolute;
+  top: 40px;
+  right: 150px;
+}
