@@ -1,0 +1,34 @@
+// Footer
+
+@import "_typography.scss";
+@import "_color.scss";
+
+footer {
+  background-color: black;
+  color: white;
+  display: block;
+  padding: 5% 8%;
+  position: absolute;
+  column-count: 4;
+}
+
+footer>ul {
+  padding-top: 5%;
+}
+
+footer>li {
+  display: block;
+}
+
+h2 {
+  font-family: $font-brand-body;
+  font-weight: 400;
+}
+
+h3 {
+  break-before: column;
+}
+
+p {
+  font-size: $fs-h4;
+}

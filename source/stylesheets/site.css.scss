@@ -12,7 +12,6 @@ body {
 }
 
 header {
-
   img {
     width: 100%;
   }
@@ -22,7 +21,7 @@ header {
   color: white;
   padding-left: 8%;
   position: absolute;
-  top: 40%;
+  top: 35%;
 }
 
 .event--date {
@@ -43,7 +42,9 @@ header {
   width: 80%;
 
   h2 {
+    font-family: $font-brand-primary;
     font-size: 2em;
+    font-weight: 700;
     text-align: left;
   }
 
@@ -69,15 +70,4 @@ header {
 .colorblock--image {
   height: 576px;
   width: 50%;
-}
-
-.subscribe {
-  text-align: center;
-  padding: 10% 10%;
-
-  h2 {
-    font-family: $font-brand-subhead;
-    font-size: $fs-h3;
-    padding-top: 5%;
-  }
 }

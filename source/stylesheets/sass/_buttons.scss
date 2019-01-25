@@ -1,0 +1,27 @@
+// Buttons
+@import "_color.scss";
+@import "_typography.scss";
+
+button {
+  background-color: white;
+  border: 3px solid black;
+  color: black;
+  font-size: $fs-h5;
+  font-weight: 700;
+  padding: 10px 10px;
+  width: 100px;
+}
+
+button:hover {
+  border: 3px solid $color-alizarin;
+  background-color: $color-alizarin;
+  color: white;
+  font-weight: 700;
+}
+
+.buttons__navigation--default {
+  clear: both;
+  position: absolute;
+  top: 40px;
+  right: 110px;
+}

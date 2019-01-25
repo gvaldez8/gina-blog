@@ -1,0 +1,42 @@
+// Mixins
+@import "_typography.scss";
+@import "_color.scss";
+
+@mixin colorblock($background-color: $color-charlotte) {
+  clear: both;
+  background-color: $background-color;
+  float: left;
+  height: 576px;
+  padding: 0 8%;
+  padding-top: 7%;
+  width: 50%;
+
+  h2 {
+    font-family: $font-brand-subhead;
+    font-weight: 400;
+    line-height: 2em;
+    padding-top: 10%;
+  }
+}
+
+
+@mixin links {
+  color: $color-night-rider;
+  text-decoration: $text-decoration;
+
+  &:focus,
+  &:hover {
+    color: black;
+    font-weight: 700;
+    border-bottom: 3px solid $color-alizarin;
+    text-decoration: $text-decoration;
+  }
+
+  &:visited {
+    color: $color-night-rider;
+  }
+}
+
+.links__reversed {
+  padding: 10% 0;
+}

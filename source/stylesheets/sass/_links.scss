@@ -1,0 +1,49 @@
+// Links
+@import "_color.scss";
+@import "_typography.scss";
+@import "_mixins.scss";
+
+.navigation--links {
+  @mixin links($text-decoration: underline) {
+
+    &:focus,
+    &:hover {
+      color: black;
+      font-weight: 700;
+      border-top: 3px solid $color-alizarin;
+      text-decoration: $underline;
+    }
+  }
+}
+
+.link__adjacent {
+  padding-top: 3%;
+}
+
+.link__underline--reversed {
+  padding-right: 60px;
+
+  a {
+    color: white;
+    border-bottom: 3px solid $color-alizarin;
+    padding-top: 20%;
+    text-decoration: none;
+  }
+
+  float: left;
+  padding-top: 5%;
+}
+
+.link__default {
+  a {
+    color: black;
+    border-bottom: 3px solid $color-alizarin;
+    text-decoration: none;
+  }
+
+  &:visited {
+    color: black;
+    border-bottom: 3px solid $color-alizarin;
+    text-decoration: none;
+  }
+}

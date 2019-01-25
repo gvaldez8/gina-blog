@@ -1,0 +1,52 @@
+// Forms
+@import "_typography.scss";
+@import "_color.scss";
+
+.subscribe {
+  display: block;
+  text-align: center;
+  padding: 10% 10%;
+
+  h2 {
+    font-family: $font-brand-subhead;
+    font-size: $fs-h3;
+    padding-top: 5%;
+  }
+
+  button {
+    text-align: center;
+    width: 200px;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 5% 30%;
+}
+
+fieldset {
+  border: none;
+  font-family: $font-brand-body;
+  font-weight: 400;
+  display: block;
+  line-height: 30px;
+  margin: 0, auto;
+  padding-top: 50px;
+  text-align: left;
+
+  label {
+    align: center;
+  }
+}
+
+input[value="Name"],
+input[value="Email"] {
+  border-bottom: 2px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  display: block;
+  text-align: left;
+  width: 200px;
+}
