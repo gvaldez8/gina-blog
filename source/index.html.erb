@@ -10,7 +10,6 @@ title: CSO Project
     <meta name="viewport" content="initial-scale: 1.0" width="device-width" />
     <link rel="stylesheet" href="https://use.typekit.net/gsv4pnz.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
-
   </head>
 
   <nav>
@@ -21,7 +20,7 @@ title: CSO Project
       <button>SIGNUP</button>
     </div>
     <hr />
-    <ul>
+    <ul class="navigation--links">
       <li><a href="#">Plan Your Experience</a></li>
       <li><a href="#">Opportunities</a></li>
       <li><a href="#">Resources</a></li>
@@ -48,31 +47,93 @@ title: CSO Project
             <h4>Monday, 7:30pm</h4>
           </div>
 
-          <div class="links__reversed">
-            <h4><a class="links__reversed--action" href='#'>GET TICKETS</a>
+          <div class="link__underline--reversed">
+            <h4><a href='#'>GET TICKETS</a>
           </div>
           <h4>
 
-            <div class="links__reversed">
-              <h4><a class="links__reversed--events" href='#'>ALL EVENTS</a></h4>
+            <div class="link__underline--reversed">
+              <h4><a href='#'>ALL EVENTS</a></h4>
             </div>
         </section>
       </header>
 
       <body>
-        <section class="colorblock">
-          <div class="colorblock__opportunities">
-            <h1>OPPORTUNITIES</h1>
-            <h2>From employment to professional development to volunteering, the Chicago Symphony Orchestra has a
-              variety of events and activities to suit your musical tastes and interests.</h2>
+        <section class="colorblock__opportunities">
+          <h1>OPPORTUNITIES</h1>
+          <h2>From employment to professional development to volunteering, the Chicago Symphony Orchestra has a
+            variety of events and activities to suit your musical tastes and interests.</h2>
 
-            <div class="links__reversed">
-              <h4><a href='#'>VIEW MORE</a></h4>
-            </div>
+          <div class="link__default">
+            <div class="helper__space--top"></div>
+            <h4><a href='#'>VIEW MORE</a></h4>
           </div>
-          <img class="colorblock--image" src='./images/opportunities.png' />
-          <section class="colorblock">
+        </section>
+        <img class="colorblock--image" src='./images/opportunities.png' />
+
+        <section class="colorblock__education">
+          <h1>EDUCATION</h1>
+          <h2>Appreciate music with the family at our Family Matinees, practice and compete with the Young Musicians,
+            or fully develop your skills professionally with the Civic Orchestra. </h2>
+          <div class="link__default">
+            <div class="helper__space--top"></div>
+            <h4><a href='#'>VIEW MORE</a></h4>
+          </div>
+        </section>
+        <img class="colorblock--image" src='./images/education.png' />
+
+        <section class="colorblock__support">
+          <h1>SUPPORT</h1>
+          <h2>Give from the heart or help the CSO in other ways: partnerships, corporate sponsorship, programming, or
+            volunteering.</h2>
+          <div class="link__default"></div>
+          <div class="helper__space--top"></div>
+          <h4><a href='#'>VIEW MORE</a></h4>
+          </div>
+        </section>
+        <img class="colorblock--image" src='./images/support.png' />
+
+
+        <section class="subscribe">
+          <h1>SUBSCRIBE</h1>
+          <h2>Stay updated through our email list on all events and news related to the Chicago Symphony Orchestra!</h2>
+
+          <label class="active" for="name">Name</label>
+          <input value="Name" id="Name" type="text" class="validate">
+          </div>
+        </section>
+
       </body>
 
       <footer>
+          <h3>OPPORTUNITIES</h3>
+          <ul>
+            <li><a href="#">Volunteering</a></li>
+            <li><a href="#">Community Progams</a></li>
+            <li><a href="#">Employment</a></li>
+          </ul>
+        
+          <h3>EDUCATION</h3>
+          <ul>
+            <li><a href="#">Children & Families</a></li>
+            <li><a href="#">Young Musicians</a></li>
+            <li><a href="#">Civic Orchestra</a></li>
+          </ul>
+      
+        <h3>RESOURCES</h3>
+          <ul>
+            <li><a href="#">Music Advocacy</a></li>
+            <li><a href="#">CSO Auditions</a></li>
+            <li><a href="#">CSO Administration Association</a></li>
+            <li><a href="#">Facility Rentals</a></li>
+          </ul>
+        
+
+        <h3>CONTACT</h3>
+          <p><strong>Symphony Center Box Office</strong>
+          220 S. Michigan Ave.
+          Chicago, IL 60604
+
+          <p>312-294-3000</p>
+
       </footer>
