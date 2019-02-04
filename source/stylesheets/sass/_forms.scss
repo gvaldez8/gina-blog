@@ -22,7 +22,7 @@
 form {
   display: flex;
   flex-direction: column;
-  padding: 5% 30%;
+  align-items: center;
 }
 
 fieldset {
@@ -37,15 +37,19 @@ fieldset {
 
   label {
     align: center;
+    font-family: $font-brand-subhead;
+    font-size: $fs-h3;
   }
 }
 
-input[value="Name"],
-input[value="Email"] {
+input[id="Name"],
+input[id="Email"] {
   border-bottom: 2px solid black;
   border-top: none;
   border-left: none;
   border-right: none;
+  font-family: $font-brand-body;
+  font-size: $fs-h4;
   display: block;
   text-align: left;
   width: 200px;

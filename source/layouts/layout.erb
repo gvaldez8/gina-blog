@@ -10,7 +10,12 @@
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "site" %>
   </head>
+  
+  <%= partial "layouts/navigation" =%>
+  
   <body>
     <%= yield %>
   </body>
+  
+  <%= partial "layouts/footer" =%>
 </html>

@@ -6,23 +6,35 @@ nav {
   padding-top: 20px;
   width: 100%;
 
-  ul {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 0.9375rem;
-    list-style-type: none;
-    padding-left: 50px;
-    text-align: left;
+  a:link {
+    color: black;
+    font-weight: 400;
+    text-decoration: none;
   }
+
+  a:focus,
+  a:hover,
+  a:visited {
+    color: black;
+    font-weight: 700;
+    border-top: 3px solid $color-alizarin;
+    text-decoration: none;
+  }
+}
+
+nav ul {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 0.9375rem;
+  list-style-type: none;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  text-align: left;
 
   li {
     display: inline-block;
     list-style-type: none;
     margin: 0;
     padding: 10px 50px;
-  }
-
-  a {
-    text-decoration: none;
   }
 }
 

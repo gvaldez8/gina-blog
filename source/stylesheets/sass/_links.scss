@@ -3,19 +3,6 @@
 @import "_typography.scss";
 @import "_mixins.scss";
 
-.navigation--links {
-  @mixin links($text-decoration: underline) {
-
-    &:focus,
-    &:hover {
-      color: black;
-      font-weight: 700;
-      border-top: 3px solid $color-alizarin;
-      text-decoration: $underline;
-    }
-  }
-}
-
 .link__adjacent {
   padding-top: 3%;
 }
@@ -37,6 +24,9 @@
 .link__default {
   a {
     color: black;
+    font-family: $font-brand-subhead;
+    font-size: $fs-h3;
+    font-weight: 700;
     border-bottom: 3px solid $color-alizarin;
     text-decoration: none;
   }
@@ -46,4 +36,8 @@
     border-bottom: 3px solid $color-alizarin;
     text-decoration: none;
   }
+}
+
+.links__reversed {
+  padding: 10% 0;
 }

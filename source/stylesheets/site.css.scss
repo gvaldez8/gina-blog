@@ -71,3 +71,93 @@ header {
   height: 576px;
   width: 50%;
 }
+
+.opportunities__involved--image,
+.opportunities__education--image,
+.opportunities__employment--image {
+  clear: both;
+  float: left;
+  width: 60%;
+}
+
+.opportunities__involved--colorblock {
+  @include colorblock($color-charlotte, $float: right);
+  clear: none;
+  font-weight: 700;
+  height: 800px;
+  padding-top: 40px;
+  position: relative;
+  width: 40%;
+
+  ul li {
+    list-style-type: none;
+    text-decoration: none;
+  }
+
+  li {
+    font-size: $fs-h5;
+    padding-top: 30px;
+  }
+}
+
+.opportunities__involved--description,
+.opportunities__education--description {
+  height: 458px;
+  width: 60%;
+  padding: 30% 10% 5% 8%;
+
+  p {
+    font-family: $font-brand-body;
+    font-size: $fs-h3;
+  }
+}
+
+.opportunities__education--colorblock {
+  @include colorblock($color-supernova, $float: right);
+  font-weight: 700;
+  height: 1087px;
+  width: 40%;
+
+  h2 {
+    font-family: $font-brand-subhead;
+    font-weight: 700;
+  }
+
+  ul li {
+    list-style-type: none;
+    text-decoration: none;
+  }
+
+  li {
+    font-size: $fs-h5;
+    padding-top: 30px;
+  }
+}
+
+.opportunities__education--description {
+  padding: 65% 10% 35% 8%;
+}
+
+
+.opportunities__employment--colorblock {
+  @include colorblock($color-cherub, $float: right);
+  float: right;
+  font-weight: 700;
+  height: 1087px;
+  width: 40%;
+
+  h2 {
+    font-family: $font-brand-subhead;
+    font-weight: 700;
+  }
+
+  ul li {
+    list-style-type: none;
+    text-decoration: none;
+  }
+
+  li {
+    font-size: $fs-h5;
+    padding-top: 30px;
+  }
+}

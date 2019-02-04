@@ -2,10 +2,10 @@
 @import "_typography.scss";
 @import "_color.scss";
 
-@mixin colorblock($background-color: $color-charlotte) {
+@mixin colorblock($background-color: $color-charlotte, $float: left) {
   clear: both;
   background-color: $background-color;
-  float: left;
+  float: $float;
   height: 576px;
   padding: 0 8%;
   padding-top: 7%;
@@ -19,24 +19,31 @@
   }
 }
 
+@mixin footer-links {
 
-@mixin links {
-  color: $color-night-rider;
-  text-decoration: $text-decoration;
-
-  &:focus,
-  &:hover {
-    color: black;
-    font-weight: 700;
-    border-bottom: 3px solid $color-alizarin;
-    text-decoration: $text-decoration;
-  }
-
-  &:visited {
-    color: $color-night-rider;
+  a:link,
+  a:hover,
+  a:focus,
+  a:visited {
+    color: white;
+    text-decoration: none;
   }
 }
 
-.links__reversed {
-  padding: 10% 0;
+
+.link__default {
+  a {
+    color: black;
+    font-family: $font-brand-subhead;
+    font-size: $fs-h4;
+    font-weight: 700;
+    border-bottom: 3px solid $color-alizarin;
+    text-decoration: none;
+  }
+
+  &:visited {
+    color: black;
+    border-bottom: 3px solid $color-alizarin;
+    text-decoration: none;
+  }
 }

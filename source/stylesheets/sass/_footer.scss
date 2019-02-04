@@ -1,23 +1,30 @@
 // Footer
-
 @import "_typography.scss";
 @import "_color.scss";
+@import "_links.scss";
 
 footer {
   background-color: black;
   color: white;
-  display: block;
-  padding: 5% 8%;
-  position: absolute;
   column-count: 4;
-}
-
-footer>ul {
-  padding-top: 5%;
-}
-
-footer>li {
+  column-gap: 1em;
   display: block;
+  font-family: $font-brand-primary;
+  padding: 5% 5% 7% 12%;
+  width: 100%;
+
+  ul {
+    font-family: $font-brand-subhead;
+    padding-top: 2%;
+  }
+
+  li {
+    display: block;
+    line-height: 2em;
+    padding-top: 5%;
+  }
+
+  @include footer-links
 }
 
 h2 {
@@ -31,4 +38,13 @@ h3 {
 
 p {
   font-size: $fs-h4;
+}
+
+hr {
+  column-span: all;
+}
+
+.copyright {
+  column-span: all;
+  padding-top: 100px;
 }
