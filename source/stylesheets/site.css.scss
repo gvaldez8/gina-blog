@@ -101,7 +101,8 @@ header {
 }
 
 .opportunities__involved--description,
-.opportunities__education--description {
+.opportunities__education--description,
+.opportunities__employment--description {
   height: 458px;
   width: 60%;
   padding: 30% 10% 5% 8%;
@@ -114,6 +115,7 @@ header {
 
 .opportunities__education--colorblock {
   @include colorblock($color-supernova, $float: right);
+  clear: none;
   font-weight: 700;
   height: 1087px;
   width: 40%;
@@ -141,9 +143,10 @@ header {
 
 .opportunities__employment--colorblock {
   @include colorblock($color-cherub, $float: right);
+  clear: none;
   float: right;
   font-weight: 700;
-  height: 1087px;
+  height: 900px;
   width: 40%;
 
   h2 {
@@ -160,4 +163,8 @@ header {
     font-size: $fs-h5;
     padding-top: 30px;
   }
+}
+
+.opportunities__employment--description {
+  padding: 40% 10% 10% 8%;
 }
