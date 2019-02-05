@@ -11,20 +11,19 @@ body {
   font-family: $font-brand-primary;
 }
 
-header {
-  img {
-    width: 100%;
-  }
+.header__image {
+  float: left;
+  width: 100%;
 }
 
-.header--text {
+.header__event {
   color: white;
   padding-left: 8%;
   position: absolute;
   top: 35%;
 }
 
-.event--date {
+.header__event--date {
   float: left;
   padding-right: 5%;
   padding-top: 40px;
@@ -33,25 +32,51 @@ header {
 
   h1,
   h3 {
-    font-family: $font-brand-subhead;
+    font-family: $font-brand-secondary;
   }
 }
 
-.event--details {
+.header__event--details {
+  display: block;
+  float: left;
   padding-top: 35px;
-  width: 80%;
+  width: 500px;
 
   h2 {
     font-family: $font-brand-primary;
-    font-size: 2em;
-    font-weight: 700;
+    font-size: $fs-h1-small;
+    font-weight: $fw-semibold;
     text-align: left;
   }
 
   h4 {
-    font-family: $font-brand-body;
-    padding-left: 11.5%;
+    font-family: $font-brand-tertiary;
     padding-top: 3%;
+  }
+}
+
+
+.image__right {
+  float: right;
+  height: 576px;
+  width: 50%;
+}
+
+.image__left {
+  clear: both;
+  float: left;
+  width: 60%;
+}
+
+.image__left--description {
+  float: left;
+  height: 458px;
+  width: 60%;
+  padding: 8% 10% 5% 8%;
+
+  p {
+    font-family: $font-brand-tertiary;
+    font-size: $fs-h3;
   }
 }
 
@@ -67,26 +92,11 @@ header {
   @include colorblock($color-cherub);
 }
 
-.colorblock--image {
-  height: 576px;
-  width: 50%;
-}
 
-.opportunities__involved--image,
-.opportunities__education--image,
-.opportunities__employment--image {
-  clear: both;
-  float: left;
-  width: 60%;
-}
-
-.opportunities__involved--colorblock {
+.colorblock__opportunities--involved {
   @include colorblock($color-charlotte, $float: right);
-  clear: none;
-  font-weight: 700;
   height: 800px;
   padding-top: 40px;
-  position: relative;
   width: 40%;
 
   ul li {
@@ -100,20 +110,7 @@ header {
   }
 }
 
-.opportunities__involved--description,
-.opportunities__education--description,
-.opportunities__employment--description {
-  height: 458px;
-  width: 60%;
-  padding: 30% 10% 5% 8%;
-
-  p {
-    font-family: $font-brand-body;
-    font-size: $fs-h3;
-  }
-}
-
-.opportunities__education--colorblock {
+.colorblock__opportunities--education {
   @include colorblock($color-supernova, $float: right);
   clear: none;
   font-weight: 700;
@@ -121,7 +118,7 @@ header {
   width: 40%;
 
   h2 {
-    font-family: $font-brand-subhead;
+    font-family: $font-brand-secondary;
     font-weight: 700;
   }
 
@@ -140,17 +137,13 @@ header {
   padding: 65% 10% 35% 8%;
 }
 
-
-.opportunities__employment--colorblock {
+.colorblock__opportunities--employment {
   @include colorblock($color-cherub, $float: right);
-  clear: none;
-  float: right;
-  font-weight: 700;
-  height: 900px;
+  height: 908px;
   width: 40%;
 
   h2 {
-    font-family: $font-brand-subhead;
+    font-family: $font-brand-secondary;
     font-weight: 700;
   }
 
@@ -167,4 +160,51 @@ header {
 
 .opportunities__employment--description {
   padding: 40% 10% 10% 8%;
+}
+
+
+.colorblock__plan--tickets {
+  @include colorblock($color-alabaster, $float: right);
+  clear: none;
+  font-weight: 700;
+  height: 598px;
+  width: 40%;
+
+  h2 {
+    font-family: $font-brand-secondary;
+    font-weight: 700;
+  }
+
+  ul li {
+    list-style-type: none;
+    text-decoration: none;
+  }
+
+  li {
+    font-size: $fs-h5;
+    padding-top: 30px;
+  }
+}
+
+.colorblock__plan--accomodations {
+  @include colorblock($color-charlotte, $float: right);
+  clear: none;
+  font-weight: 700;
+  height: 949px;
+  width: 40%;
+
+  h2 {
+    font-family: $font-brand-secondary;
+    font-weight: 700;
+  }
+
+  ul li {
+    list-style-type: none;
+    text-decoration: none;
+  }
+
+  li {
+    font-size: $fs-h5;
+    padding-top: 30px;
+  }
 }

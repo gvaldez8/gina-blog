@@ -3,21 +3,23 @@
 @import "_color.scss";
 
 @mixin colorblock($background-color: $color-charlotte, $float: left) {
-  clear: both;
   background-color: $background-color;
+  clear: none;
   float: $float;
+  font-weight: $fw-semibold;
   height: 576px;
   padding: 0 8%;
   padding-top: 7%;
   width: 50%;
 
   h2 {
-    font-family: $font-brand-subhead;
-    font-weight: 400;
+    font-family: $font-brand-secondary;
+    font-weight: $fw-regular;
     line-height: 2em;
     padding-top: 10%;
   }
 }
+
 
 @mixin footer-links {
 
@@ -26,24 +28,6 @@
   a:focus,
   a:visited {
     color: white;
-    text-decoration: none;
-  }
-}
-
-
-.link__default {
-  a {
-    color: black;
-    font-family: $font-brand-subhead;
-    font-size: $fs-h4;
-    font-weight: 700;
-    border-bottom: 3px solid $color-alizarin;
-    text-decoration: none;
-  }
-
-  &:visited {
-    color: black;
-    border-bottom: 3px solid $color-alizarin;
     text-decoration: none;
   }
 }

@@ -2,13 +2,15 @@
 @import "_typography.scss";
 @import "_color.scss";
 
-.subscribe {
+.form__subscribe {
+  clear: both;
   display: block;
+  height: 700px;
   text-align: center;
   padding: 10% 10%;
 
   h2 {
-    font-family: $font-brand-subhead;
+    font-family: $font-brand-secondary;
     font-size: $fs-h3;
     padding-top: 5%;
   }
@@ -27,7 +29,7 @@ form {
 
 fieldset {
   border: none;
-  font-family: $font-brand-body;
+  font-family: $font-brand-tertiary;
   font-weight: 400;
   display: block;
   line-height: 30px;
@@ -37,7 +39,7 @@ fieldset {
 
   label {
     align: center;
-    font-family: $font-brand-subhead;
+    font-family: $font-brand-secondary;
     font-size: $fs-h3;
   }
 }
@@ -48,7 +50,7 @@ input[id="Email"] {
   border-top: none;
   border-left: none;
   border-right: none;
-  font-family: $font-brand-body;
+  font-family: $font-brand-tertiary;
   font-size: $fs-h4;
   display: block;
   text-align: left;

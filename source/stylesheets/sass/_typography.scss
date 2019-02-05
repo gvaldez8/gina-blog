@@ -1,17 +1,24 @@
-// Typography
+// Typefaces
 $font-brand-primary: 'gill-sans-nova',
 sans-serif;
-$font-brand-subhead: 'Roboto Condensed',
+$font-brand-secondary: 'Roboto Condensed',
 sans-serif;
-$font-brand-body: 'Roboto',
+$font-brand-tertiary: 'Roboto',
 sans-serif;
-// Type Sizes
+
+//  Type Sizes
 $fs-h1: 2.5em;
+$fs-h1-small: 2em;
 $fs-h2: 1.75em;
 $fs-h3: 1.25em;
 $fs-h4: 1em;
 $fs-h5: .75em;
 $fs-h6: .5em;
+
+//Type Weights
+$fw-regular: 400;
+$fw-semibold: 700;
+$fw-bold: 900;
 
 h1 {
   font-family: $font-brand-primary;
@@ -19,7 +26,7 @@ h1 {
 }
 
 blockquote {
-  font-family: $font-brand-subhead;
+  font-family: $font-brand-secondary;
   font-size: $fs-h2;
   font-weight: 400;
   line-height: 2.25em;
@@ -27,7 +34,7 @@ blockquote {
 }
 
 p {
-  font-family: $font-brand-body;
+  font-family: $font-brand-tertiary;
   font-size: $fs-h4;
   font-weight: 400;
   line-height: 2.5em;
