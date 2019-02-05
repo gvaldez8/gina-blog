@@ -41,7 +41,8 @@ p {
   font-size: $fs-h4;
 }
 
-hr {
+.footer__hr {
+  border-style: solid none none;
   column-span: all;
 }
 

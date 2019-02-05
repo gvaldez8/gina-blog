@@ -8,7 +8,7 @@ nav {
 
   a:link {
     color: #000;
-    font-weight: 400;
+    font-weight: $fw-regular;
     text-decoration: none;
   }
 
@@ -17,7 +17,7 @@ nav {
   a:visited {
     border-top: 3px solid $color-alizarin;
     color: #000;
-    font-weight: 700;
+    font-weight: $fw-semibold;
     text-decoration: none;
   }
 }
@@ -44,9 +44,9 @@ nav ul {
   width: 25%;
 }
 
-hr {
-  border-style: solid 0 0 0;
-  border-top: 1px solid #FFF;
+.navigation__hr {
+  border-style: solid none none;
+  border-top: 1px solid $color-alabaster;
   display: block;
   margin: 0;
   margin-left: auto;
