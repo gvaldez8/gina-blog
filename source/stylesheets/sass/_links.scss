@@ -1,12 +1,12 @@
 // Links
-@import "_color.scss";
-@import "_typography.scss";
-@import "_mixins.scss";
+@import 'color';
+@import 'mixins';
+@import 'typography';
 
 
 .logo__link {
-  color: black;
-  border-bottom: none;
+  border-bottom: 0;
+  color: #000;
   text-decoration: none;
 }
 
@@ -19,8 +19,8 @@
   padding-right: 60px;
 
   a {
-    color: white;
     border-bottom: 3px solid $color-alizarin;
+    color: #FFF;
     font-family: $font-brand-primary;
     padding-top: 20%;
     text-decoration: none;
@@ -32,14 +32,14 @@
 
 .link__highlight--bottom {
   a {
-    color: black;
     border-bottom: 3px solid $color-alizarin;
+    color: #000;
     text-decoration: none;
   }
 
   &:visited {
-    color: black;
     border-bottom: 3px solid $color-alizarin;
+    color: #000;
     text-decoration: none;
   }
 }
@@ -47,19 +47,19 @@
 
 .link__highlight--condensed {
   a {
-    color: black;
+    border-bottom: 3px solid $color-alizarin;
+    color: #000;
     font-family: $font-brand-secondary;
     font-size: $fs-h2;
     font-weight: $fw-bold;
-    border-bottom: 3px solid $color-alizarin;
     text-decoration: none;
   }
 
   &:visited {
-    color: black;
+    border-bottom: 3px solid $color-alizarin;
+    color: #000;
     font-family: $font-brand-secondary;
     font-weight: $fw-bold;
-    border-bottom: 3px solid $color-alizarin;
     text-decoration: none;
   }
 }

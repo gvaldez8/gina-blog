@@ -1,13 +1,13 @@
 // Navigation
-@import "_typography.scss";
-@import "_color.scss";
+@import 'color';
+@import 'typography';
 
 nav {
   padding-top: 20px;
   width: 100%;
 
   a:link {
-    color: black;
+    color: #000;
     font-weight: 400;
     text-decoration: none;
   }
@@ -15,9 +15,9 @@ nav {
   a:focus,
   a:hover,
   a:visited {
-    color: black;
-    font-weight: 700;
     border-top: 3px solid $color-alizarin;
+    color: #000;
+    font-weight: 700;
     text-decoration: none;
   }
 }
@@ -45,12 +45,12 @@ nav ul {
 }
 
 hr {
-  border-top: 1px solid lightgray;
-  border-style: solid none none none;
+  border-style: solid 0 0 0;
+  border-top: 1px solid #FFF;
   display: block;
   margin: 0;
-  margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 30px;
   padding: 20px 0 0 20px;
 }

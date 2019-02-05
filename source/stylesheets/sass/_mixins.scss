@@ -1,6 +1,7 @@
 // Mixins
-@import "_typography.scss";
-@import "_color.scss";
+@import 'color';
+@import 'typography';
+
 
 @mixin colorblock($background-color: $color-charlotte, $float: left) {
   background-color: $background-color;
@@ -8,8 +9,8 @@
   float: $float;
   font-weight: $fw-semibold;
   height: 576px;
-  padding: 0 8%;
   padding-top: 7%;
+  padding: 0 8%;
   width: 50%;
 
   h2 {
@@ -27,7 +28,7 @@
   a:hover,
   a:focus,
   a:visited {
-    color: white;
+    color: #FFF;
     text-decoration: none;
   }
 }

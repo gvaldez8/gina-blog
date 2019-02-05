@@ -1,16 +1,17 @@
 // Footer
-@import "_typography.scss";
-@import "_color.scss";
-@import "_links.scss";
+@import 'typography';
+@import 'color';
+@import 'links';
+
 
 footer {
-  background-color: black;
-  color: white;
+  background-color: #000;
+  color: #FFF;
   column-count: 4;
   column-gap: 1em;
   display: block;
   font-family: $font-brand-primary;
-  padding: 5% 5% 7% 12%;
+  padding: 5% 12% 7%;
   width: 100%;
 
   ul {

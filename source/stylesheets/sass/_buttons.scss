@@ -1,6 +1,6 @@
 // Buttons
-@import "_color.scss";
-@import "_typography.scss";
+@import 'color';
+@import 'typography';
 
 button {
   background-color: white;
@@ -13,8 +13,8 @@ button {
 }
 
 button:hover {
-  border: 3px solid $color-alizarin;
   background-color: $color-alizarin;
+  border: 3px solid $color-alizarin;
   color: white;
   font-weight: 700;
 }
@@ -22,6 +22,6 @@ button:hover {
 .buttons__navigation--default {
   clear: both;
   position: absolute;
-  top: 40px;
   right: 110px;
+  top: 40px;
 }

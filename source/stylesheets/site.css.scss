@@ -1,4 +1,4 @@
-@import "sass/base";
+@import 'sass/base';
 
 * {
   box-sizing: border-box;
@@ -71,8 +71,8 @@ body {
 .image__left--description {
   float: left;
   height: 458px;
-  width: 60%;
   padding: 8% 10% 5% 8%;
+  width: 60%;
 
   p {
     font-family: $font-brand-tertiary;
