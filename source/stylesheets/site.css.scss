@@ -55,7 +55,6 @@ body {
   }
 }
 
-
 .image__right {
   float: right;
   height: 576px;
@@ -71,7 +70,7 @@ body {
 .image__left--description {
   float: left;
   height: 458px;
-  padding: 8% 10% 5% 8%;
+  padding: 6% 10% 5% 8%;
   width: 60%;
 
   p {
@@ -80,20 +79,26 @@ body {
   }
 }
 
-.colorblock__opportunities {
+.colorblock__left--opportunities {
   @include colorblock($color-charlotte);
 }
 
-.colorblock__education {
+.colorblock__left--education {
   @include colorblock($color-supernova);
 }
 
-.colorblock__support {
+.colorblock__left--support {
   @include colorblock($color-cherub);
 }
 
+.colorblock__left--opportunities,
+.colorblock__left--education,
+.colorblock__left--support {
+  padding: 6% 8%;
+}
 
-.colorblock__opportunities--involved {
+
+.colorblock__right--involved {
   @include colorblock($color-charlotte, $float: right);
   height: 800px;
   padding-top: 40px;
@@ -110,16 +115,16 @@ body {
   }
 }
 
-.colorblock__opportunities--education {
+.colorblock__right--education {
   @include colorblock($color-supernova, $float: right);
   clear: none;
-  font-weight: 700;
+  font-weight: $fw-semibold;
   height: 1087px;
   width: 40%;
 
   h2 {
     font-family: $font-brand-secondary;
-    font-weight: 700;
+    font-weight: $fw-semibold;
   }
 
   ul li {
@@ -133,18 +138,14 @@ body {
   }
 }
 
-.opportunities__education--description {
-  padding: 65% 10% 35% 8%;
-}
-
-.colorblock__opportunities--employment {
+.colorblock__right--employment {
   @include colorblock($color-cherub, $float: right);
   height: 908px;
   width: 40%;
 
   h2 {
     font-family: $font-brand-secondary;
-    font-weight: 700;
+    font-weight: $fw-semibold;
   }
 
   ul li {
@@ -158,21 +159,17 @@ body {
   }
 }
 
-.opportunities__employment--description {
-  padding: 40% 10% 10% 8%;
-}
 
-
-.colorblock__plan--tickets {
+.colorblock__right--tickets {
   @include colorblock($color-alabaster, $float: right);
   clear: none;
-  font-weight: 700;
+  font-weight: $fw-semibold;
   height: 598px;
   width: 40%;
 
   h2 {
     font-family: $font-brand-secondary;
-    font-weight: 700;
+    font-weight: $fw-semibold;
   }
 
   ul li {
@@ -186,16 +183,16 @@ body {
   }
 }
 
-.colorblock__plan--accomodations {
+.colorblock__right--accomodations {
   @include colorblock($color-charlotte, $float: right);
   clear: none;
-  font-weight: 700;
+  font-weight: $fw-semibold;
   height: 949px;
   width: 40%;
 
   h2 {
     font-family: $font-brand-secondary;
-    font-weight: 700;
+    font-weight: $fw-semibold;
   }
 
   ul li {
