@@ -5,32 +5,32 @@
 
 
 footer {
-  background-color: #000;
-  color: #FFF;
+  background-color: $color-black;
+  color: $color-white;
   column-count: 4;
   column-gap: 1em;
-  display: block;
   font-family: $font-brand-primary;
-  padding: 5% 12% 7%;
+  height: auto;
+  padding: 5% 0 3% 7%;
   width: 100%;
 
   ul {
     font-family: $font-brand-secondary;
-    padding-top: 2%;
   }
 
   li {
-    display: block;
+    list-style-type: none;
     line-height: 2em;
-    padding-top: 5%;
+    padding-top: 3%;
+    bottom: 10%;
   }
 
-  @include footer-links
+  @include footer-links;
 }
 
 h2 {
-  font-family: $font-brand-tertiary;
-  font-weight: $fw-regular;
+  font-family: $font-brand-secondary;
+  font-weight: $fw-semibold;
 }
 
 h3 {
@@ -43,7 +43,11 @@ p {
 
 .footer__hr {
   border-style: solid none none;
+  -webkit-column-span: all;
   column-span: all;
+  width: 90%;
+  position: relative;
+  top: 50px;
 }
 
 .copyright {

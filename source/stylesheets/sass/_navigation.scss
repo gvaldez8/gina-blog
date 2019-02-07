@@ -1,13 +1,50 @@
 // Navigation
+@import 'breakpoints';
 @import 'color';
 @import 'typography';
+
+.CSO-logo {
+  max-width: 100%;
+  padding: 25px 0 5px 50px;
+
+  @include desktop-lg {
+    height: auto;
+    width: 30%;
+  }
+
+  @include desktop {
+    width: 40%;
+  }
+
+  @include tablet {
+    padding-bottom: 40px;
+    width: 50%;
+  }
+
+  @include mobile {
+    padding-bottom: 24px;
+    width: 70%;
+  }
+}
 
 nav {
   padding-top: 20px;
   width: 100%;
 
+  @include desktop {
+    padding-bottom: 40px;
+  }
+
+  @include tablet {
+    padding-bottom: 3px;
+  }
+
+  @include mobile {
+    padding-bottom: 10px;
+  }
+
   a:link {
-    color: #000;
+    color: $color-black;
     font-weight: $fw-regular;
     text-decoration: none;
   }
@@ -16,32 +53,80 @@ nav {
   a:hover,
   a:visited {
     border-top: 3px solid $color-alizarin;
-    color: #000;
+    color: $color-black;
     font-weight: $fw-semibold;
     text-decoration: none;
   }
 }
 
 nav ul {
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 0.9375rem;
+  display: inline-block;
+  font-family: $font-brand-secondary;
+  font-size: 1em;
   list-style-type: none;
-  padding-bottom: 20px;
-  padding-left: 50px;
+  margin-left: 110px;
+  padding-bottom: 27px;
   text-align: left;
+  width: 84%;
+
+  @media (min-width: #{$desktop-lg}) {
+    display: inline-block;
+  }
+
+  @include desktop {
+    display: none;
+  }
+
+  @include tablet {
+    display: none;
+  }
+
+  @include mobile {
+    display: none;
+  }
 
   li {
     display: inline-block;
     list-style-type: none;
-    margin: 0;
-    padding: 10px 50px;
   }
 }
 
-.CSO-logo {
-  height: 25%;
-  padding: 25px 0px 5px 50px;
-  width: 25%;
+nav ul>li:nth-child(n+2) {
+  padding-left: 93px;
+}
+
+.navigation__menu {
+
+  @media (min-width: #{$desktop-lg}) {
+    display: none;
+  }
+
+  @include desktop {
+    left: 94%;
+    top: 6%;
+    position: absolute;
+  }
+
+  @include tablet {
+    left: 90%;
+    top: 6%;
+    position: absolute;
+  }
+
+  @media (min-width: #{$mobile + 200px}) {
+    top: 7%;
+  }
+
+
+  @media (min-width: #{$mobile + 100px}) {
+    top: 6%;
+  }
+
+  @include mobile {
+    left: 81%;
+    position: absolute;
+    top: 5.5%;
+  }
 }
 
 .navigation__hr {
@@ -53,4 +138,21 @@ nav ul {
   margin-right: auto;
   margin-top: 30px;
   padding: 20px 0 0 20px;
+
+  @media (min-width: #{$desktop-lg}) {
+    display: block;
+  }
+
+  @include desktop {
+    display: none;
+  }
+
+  @include tablet {
+    display: none;
+  }
+
+  @include mobile {
+    display: none;
+    padding-bottom: 24px;
+  }
 }

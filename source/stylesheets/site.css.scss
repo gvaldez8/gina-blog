@@ -11,9 +11,29 @@ body {
   font-family: $font-brand-primary;
 }
 
+header {
+  align-items: center;
+  display: flex;
+  height: auto;
+  justify-content: center;
+  overflow: hidden;
+
+  @include mobile {
+    height: 275px;
+  }
+}
+
 .header__image {
   float: left;
+  height: auto;
   width: 100%;
+
+  @include mobile {
+    height: auto;
+    flex-shrink: 0;
+    min-width: 50%;
+    min-height: 50%;
+  }
 }
 
 .header__event {
@@ -21,7 +41,19 @@ body {
   padding-left: 8%;
   position: absolute;
   top: 35%;
+  left: 0;
+
+  @include mobile {
+    top: 17%;
+  }
+
+  h1 {
+    @include mobile {
+      font-size: $fs-h3;
+    }
+  }
 }
+
 
 .header__event--date {
   float: left;
@@ -42,11 +74,25 @@ body {
   padding-top: 35px;
   width: 500px;
 
+  @include mobile {
+    width: 200px;
+  }
+
+  h1 {
+    @include mobile {
+      font-size: $fs-h4;
+    }
+  }
+
   h2 {
     font-family: $font-brand-primary;
-    font-size: $fs-h1-small;
+    font-size: $fs-h1;
     font-weight: $fw-semibold;
     text-align: left;
+
+    @include mobile {
+      font-size: $fs-h4;
+    }
   }
 
   h4 {
@@ -55,48 +101,35 @@ body {
   }
 }
 
-.image__right {
-  float: right;
-  height: 576px;
-  width: 50%;
-}
-
-.image__left {
-  clear: both;
-  float: left;
-  width: 60%;
-}
-
-.image__left--description {
-  float: left;
-  height: 458px;
-  padding: 6% 10% 5% 8%;
-  width: 60%;
-
-  p {
-    font-family: $font-brand-tertiary;
-    font-size: $fs-h3;
-  }
-}
-
 .colorblock__left--opportunities {
-  @include colorblock($color-charlotte);
+  @include colorblock($color-charlotte, $float: left);
 }
 
 .colorblock__left--education {
-  @include colorblock($color-supernova);
+  @include colorblock($color-supernova, $float: left);
 }
 
 .colorblock__left--support {
-  @include colorblock($color-cherub);
+  @include colorblock($color-cherub, $float: left);
 }
 
 .colorblock__left--opportunities,
 .colorblock__left--education,
 .colorblock__left--support {
   padding: 6% 8%;
+
+  @include tablet {
+    padding: 3.05% 8%;
+  }
+
+  @include mobile {
+    padding: 24% 8%;
+  }
 }
 
+.colorblock__text {
+  padding: 20% 0;
+}
 
 .colorblock__right--involved {
   @include colorblock($color-charlotte, $float: right);
@@ -104,26 +137,7 @@ body {
   padding-top: 40px;
   width: 40%;
 
-  ul li {
-    list-style-type: none;
-    text-decoration: none;
-  }
-
-  li {
-    font-size: $fs-h5;
-    padding-top: 30px;
-  }
-}
-
-.colorblock__right--education {
-  @include colorblock($color-supernova, $float: right);
-  clear: none;
-  font-weight: $fw-semibold;
-  height: 1087px;
-  width: 40%;
-
   h2 {
-    font-family: $font-brand-secondary;
     font-weight: $fw-semibold;
   }
 
@@ -136,6 +150,37 @@ body {
     font-size: $fs-h5;
     padding-top: 30px;
   }
+}
+
+.colorblock__right--involved>.colorblock__text {
+  padding: 7% 0;
+}
+
+.colorblock__right--education {
+  @include colorblock($color-supernova, $float: right);
+  font-weight: $fw-semibold;
+  height: 1700px;
+  width: 40%;
+
+  h2 {
+    font-family: $font-brand-secondary;
+    font-weight: $fw-semibold;
+    padding-top: 20%;
+  }
+
+  ul li {
+    list-style-type: none;
+    text-decoration: none;
+  }
+
+  li {
+    font-size: $fs-h5;
+    padding-top: 30px;
+  }
+}
+
+.colorblock__right--education>.colorblock__text {
+  padding: 30% 0;
 }
 
 .colorblock__right--employment {
@@ -159,17 +204,19 @@ body {
   }
 }
 
-
 .colorblock__right--tickets {
   @include colorblock($color-alabaster, $float: right);
-  clear: none;
   font-weight: $fw-semibold;
-  height: 598px;
-  width: 40%;
+  height: 599px;
+  width: 40%; // @media (min-width: $bp-xs-mobile) {
 
+  //   text-align: center;
+  //   width: 100%;
+  // }
   h2 {
     font-family: $font-brand-secondary;
     font-weight: $fw-semibold;
+    padding-top: 0;
   }
 
   ul li {
@@ -188,11 +235,15 @@ body {
   clear: none;
   font-weight: $fw-semibold;
   height: 949px;
-  width: 40%;
+  width: 40%; // @media (min-width: $bp-xs-mobile) {
 
+  //   text-align: center;
+  //   width: 100%;
+  // }
   h2 {
     font-family: $font-brand-secondary;
     font-weight: $fw-semibold;
+    padding-top: 0;
   }
 
   ul li {
@@ -203,5 +254,105 @@ body {
   li {
     font-size: $fs-h5;
     padding-top: 30px;
+  }
+}
+
+.colorblock__right--accomodations>.colorblock__text {
+  padding-bottom: 29.75%;
+}
+
+.accomodations__hotels {
+  h3 {
+    font-family: $font-brand-secondary;
+    font-weight: $fw-semibold;
+    line-height: 1.5em;
+    padding-top: 10%;
+  }
+
+  p {
+    line-height: 2.25em;
+    padding: 1px;
+  }
+}
+
+.accomodations__hotels>.link__highlight--condensed {
+  font-size: $fs-h5;
+  padding: 10% 0;
+}
+
+.colorblock__right--parking {
+  @include colorblock($color-supernova, $float: right);
+  clear: none;
+  font-weight: $fw-semibold;
+  height: 1004px;
+  width: 40%; // @media (min-width: $bp-xs-mobile) {
+
+  //   text-align: center;
+  //   width: 100%;
+  // }
+  h3 {
+    font-family: $font-brand-secondary;
+    font-weight: $fw-semibold;
+    line-height: 1.5em;
+    padding-top: 10%;
+  }
+
+  p {
+    line-height: 2em;
+    padding: 1px;
+  }
+}
+
+.colorblock__right--parking>.colorblock__text {
+  padding-bottom: 234px;
+}
+
+.colorblock__right--sightseeing {
+  @include colorblock($color-cherub, $float: right);
+  clear: none;
+  font-weight: $fw-semibold;
+  height: 660px;
+  width: 40%; // @media (min-width: $bp-xs-mobile) {
+
+  //   text-align: center;
+  //   width: 100%;
+  // }
+  h3 {
+    font-family: $font-brand-secondary;
+    font-weight: $fw-semibold;
+    line-height: 1.5em;
+    padding-top: 10%;
+  }
+
+  p {
+    line-height: 2em;
+    padding: 1px;
+  }
+}
+
+.colorblock__right--sightseeing>.colorblock__text {
+  padding-bottom: 61.5%;
+}
+
+.colorblock__right--directions {
+  @include colorblock($color-white, $float: right);
+  clear: none;
+  font-weight: $fw-semibold;
+  height: auto;
+  width: 40%; // @media (min-width: $bp-xs-mobile) {
+
+  //   text-align: center;
+  //   width: 100%;
+  // }
+  h3 {
+    font-family: $font-brand-secondary;
+    font-weight: $fw-semibold;
+    line-height: 1.5em;
+    padding-top: 10%;
+  }
+
+  p {
+    line-height: 2em;
+    padding: 1px;
   }
 }

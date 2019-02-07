@@ -6,22 +6,50 @@ button {
   background-color: white;
   border: 3px solid black;
   color: black;
-  font-size: $fs-h5;
+  font-size: $fs-h6;
   font-weight: $fw-semibold;
   padding: 10px;
   width: 100px;
+
+  @media (min-width: 400px) {
+    display: none;
+  }
+
+  // @media (min-width: 768px) @media (min-width: 1000px) {
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  @media (min-width: 1024px) {
+    display: none;
+  }
+
+  @media (min-width: 1365px) {
+    display: inline-block;
+  }
 }
 
 button:hover {
   background-color: $color-alizarin;
   border: 3px solid $color-alizarin;
-  color: #FFF;
+  color: $color-white;
   font-weight: $fw-semibold;
 }
 
 .buttons__navigation--default {
   clear: both;
   position: absolute;
-  right: 110px;
+  right: 90px;
   top: 40px;
+
+  // @media (min-width: $bp-tablet) {
+  //   right: 50px;
+  // }
+}
+
+.buttons__navigation--default>.button__signup {
+
+  // @media (min-width: $bp-xs-mobile) {
+  //   top: 70px;
+  // }
 }

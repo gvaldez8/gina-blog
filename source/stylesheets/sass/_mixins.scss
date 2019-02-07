@@ -2,7 +2,6 @@
 @import 'color';
 @import 'typography';
 
-
 @mixin colorblock($background-color: $color-charlotte, $float: left) {
   background-color: $background-color;
   clear: none;
@@ -13,14 +12,44 @@
   padding: 0 8%;
   width: 50%;
 
-  h2 {
+  @include tablet {
+    height: auto;
+    float: left;
+    padding: 3% 8%;
+    width: 50%;
+  }
+
+  @include mobile {
+    width: 100%;
+  }
+
+  h1 {
+
+    @include tablet {
+      font-size: $fs-h3;
+    }
+
+    @include mobile {
+      font-size: $fs-h3;
+    }
+  }
+
+  h3 {
     font-family: $font-brand-secondary;
     font-weight: $fw-regular;
+    font-size: $fs-h3;
     line-height: 2em;
     padding-top: 10%;
+
+    @include tablet {
+      font-size: $fs-h5;
+    }
+
+    @include mobile {
+      font-size: $fs-h4;
+    }
   }
 }
-
 
 @mixin footer-links {
 
@@ -28,7 +57,7 @@
   a:hover,
   a:focus,
   a:visited {
-    color: #FFF;
+    color: $color-white;
     text-decoration: none;
   }
 }

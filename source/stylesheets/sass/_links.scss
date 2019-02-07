@@ -6,7 +6,7 @@
 
 .logo__link {
   border-bottom: 0;
-  color: #000;
+  color: $color-black;
   text-decoration: none;
 }
 
@@ -17,49 +17,48 @@
 
 .link__highlight--reversed {
   padding-right: 60px;
+  float: left;
+  padding-top: 5%;
 
-  a {
+  a:link {
     border-bottom: 3px solid $color-alizarin;
-    color: #FFF;
+    color: $color-white;
     font-family: $font-brand-primary;
     padding-top: 20%;
     text-decoration: none;
   }
-
-  float: left;
-  padding-top: 5%;
 }
 
 .link__highlight--bottom {
-  a {
+  a:link {
     border-bottom: 3px solid $color-alizarin;
-    color: #000;
+    color: $color-black;
     text-decoration: none;
   }
 
   &:visited {
     border-bottom: 3px solid $color-alizarin;
-    color: #000;
+    color: $color-black;
     text-decoration: none;
   }
 }
 
 
 .link__highlight--condensed {
-  a {
+  a:link {
     border-bottom: 3px solid $color-alizarin;
-    color: #000;
+    color: $color-black;
     font-family: $font-brand-secondary;
-    font-size: $fs-h2;
-    font-weight: $fw-bold;
+    font-size: $fs-h4;
+    font-weight: $fw-semibold;
     text-decoration: none;
   }
 
   &:visited {
     border-bottom: 3px solid $color-alizarin;
-    color: #000;
+    color: $color-black;
     font-family: $font-brand-secondary;
-    font-weight: $fw-bold;
+    font-weight: $fw-semibold;
     text-decoration: none;
   }
 }

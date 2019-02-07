@@ -1,5 +1,6 @@
-// Typefaces
+@import 'breakpoints';
 
+// Typefaces
 $font-brand-primary: 'gill-sans-nova',
 sans-serif;
 $font-brand-secondary: 'Roboto Condensed',
@@ -8,22 +9,50 @@ $font-brand-tertiary: 'Roboto',
 sans-serif;
 
 //  Type Sizes
-$fs-h1: 2.5em;
-$fs-h1-small: 2em;
-$fs-h2: 1.75em;
-$fs-h3: 1.25em;
-$fs-h4: 1em;
-$fs-h5: .75em;
-$fs-h6: .5em;
+$fs-h1: 2.441em;
+$fs-h2: 1.953em;
+$fs-h3: 1.563em;
+$fs-h4: 1.25em;
+$fs-h5: 1em;
+$fs-h6: 0.8em;
 
 //Type Weights
 $fw-regular: 400;
 $fw-semibold: 700;
-$fw-bold: 900;
 
 h1 {
   font-family: $font-brand-primary;
   font-size: $fs-h1;
+}
+
+h2 {
+  font-family: $font-brand-secondary;
+  font-size: $fs-h2;
+  //   // @media (min-width: 400px) {
+  //   //   display: block;
+  //   //   font-family: $font-brand-secondary;
+  //   //   font-size: $fs-h3;
+  //   //   text-align: center;
+  //   // }
+}
+
+h3 {
+  font-family: $font-brand-secondary;
+  font-size: $fs-h3;
+  //   // @media (min-width: 400px) {
+  //   //   font-size: $fs-h4;
+  //   //   text-align: center;
+  //   // }
+}
+
+
+h4 {
+  font-family: $font-brand-secondary;
+  font-size: $fs-h4;
+  //   // @media (min-width: 400px) {
+  //   //   font-size: $fs-h4;
+  //   //   text-align: center;
+  //   // }
 }
 
 blockquote {
@@ -36,8 +65,14 @@ blockquote {
 
 p {
   font-family: $font-brand-tertiary;
-  font-size: $fs-h4;
+  font-size: $fs-h5;
   font-weight: $fw-regular;
   line-height: 2.5em;
   padding-top: 20px;
+
+  // @media (min-width: 400px) {
+  //   display: block;
+  //   font-size: $fs-h3;
+  //   text-align: center;
+  // }
 }
