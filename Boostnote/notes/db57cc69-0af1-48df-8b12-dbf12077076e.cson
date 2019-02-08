@@ -1,0 +1,44 @@
+createdAt: "2019-01-31T15:37:26.513Z"
+updatedAt: "2019-01-31T16:02:55.901Z"
+type: "MARKDOWN_NOTE"
+folder: "6045f291a27dc712048f"
+title: "Git Remotes"
+tags: [
+  "github"
+  "git_remotes"
+]
+content: '''
+  # Git Remotes
+  
+  ## Remote vs. Local Repositories
+  Git works offline by default, meaning that you don’t have to access a server or need to set up an account somewhere in order to do solo projects
+  
+  *Remote repository:* A copy of your Git project that lives somewhere else: another computer on your network, someone else’s computer somewhere else, an online service like GitHub, anywhere other than the directory you’re looking at now
+  
+  *Local repository:* Referring only to the one you happen to be working with right now (usually your desktop)
+  
+  
+  ## Push and Pull
+  #### The Hub Model: 
+  	1. You and your team keep a copy of your project on your remote server (the hub), where it’s accessible to everyone on the team. This is usually called the `origin`
+  	2. Each member who joins the project copies (or *clones*) the project repository to their own computer, makes and commits changes there
+  	3. Then uses `git push` and `git pull` commands to synchronize their repo with the one stored on the server
+  
+  #### Purposes of the Hub
+  	* Changes aren’t truly checked in until they’re both committed /and/ pushed to the server for others to access
+  	* Serves as a backup of the code in the event that a contributor’s own copy of the project gets corrupted or lost somehow, or if someone gets a new computer and needs to pull down a copy of his or her work
+  	* It’s faster than trying to transfer files from one laptop to another because you can re-clone your project to your local repository instead
+  	* In the event that the hub becomes compromised, any local repo can be used to spawn a new remote
+  
+  
+  ## What Lives on the Server?
+  `.git`: signifies a “bare” repo, consisting only of the actual repository data (old versions, branches) and no working copy.
+  	* Inside of this repo, are virtually identical to what you’d find in the hidden .git directory in your local working directory
+  
+  
+  
+  
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false

@@ -1,0 +1,50 @@
+createdAt: "2019-01-31T16:00:58.200Z"
+updatedAt: "2019-01-31T16:05:33.507Z"
+type: "MARKDOWN_NOTE"
+folder: "924c47607edf1782d81b"
+title: "Flexible Grids"
+tags: [
+  "CSS3"
+  "front-end"
+  "coding"
+  "responsive"
+  "media-queries"
+  "grids"
+]
+content: '''
+  # Flexible Grids
+  
+  ## CSS Reset
+  	* CSS reset overrides a browser’s default styles for HTML elements
+  	* It gets all browsers working from the same baseline
+  	* Ethan Marcotte suggests using Eric Meyer’s reset at
+   	`https://meyerweb.com/eric/tools/css/reset/` but be aware that 
+  	there are dozens of alternatives out there as well 
+  	* This reset sets type at 16px according to the browser’s default type size   when `font-size: 100%` 
+  
+  
+  ## Converting Pixels to Ems/Rems (Using CSS reset)
+  	`target   ÷   context = results /* 24px / 16px*/`
+  
+  	* `target` will be in pixels. This is the final size that you want the type or image/media to be.
+  	
+  	* `context` will be in pixels as well. This will /always/ be the width of the element’s container
+  	
+  	* `results` will be converted to ems/rems
+  	
+  	* `/* 24px / 16px */` is a form of documentation in your CSS for future reference, should you ever need to change your responsive type sizes
+  
+  
+  # Flexible Images/Media
+  #8thlight/coding/responsive
+  
+  `max-width: 100%`: Forces the image’s width to match the width of its container, as well as resizes the images proportionally as the browser is resized. Also applies to other fixed elements, such as video and other rich media. 
+  
+  `overflow: hidden`: places the image in a container and “clips” or crops it when the browser is resized. The image is /still/ there, just inside a container that is resizing.
+  
+  
+  
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false

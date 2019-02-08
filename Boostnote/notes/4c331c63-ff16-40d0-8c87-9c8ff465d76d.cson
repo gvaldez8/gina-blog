@@ -1,0 +1,74 @@
+createdAt: "2019-01-31T15:56:55.321Z"
+updatedAt: "2019-01-31T16:04:22.807Z"
+type: "MARKDOWN_NOTE"
+folder: "924c47607edf1782d81b"
+title: "CSS3 Transitions"
+tags: [
+  "CSS3"
+  "front-end"
+  "coding"
+  "transitions"
+]
+content: '''
+  # CSS3 Transitions
+  #8thlight/coding/css
+  
+  CSS transitions smooth transitions triggered by interactions (i.e. hovering, clicking, focusing)
+  Some common interactions: mouse clicks, focus or active states, and any changes to the element (including even a change on the element’s class attribute)
+  * [CSS Transitions](https://www.w3.org/TR/css-transitions-1/)
+  
+  `transition-property`: the property to be transitioned (in this case, the `background` property
+  
+  `transition-duration`: how long the transition should last (`0.3s;`)
+  
+  `transition-timing-function`: how fast the transition happens over time `ease;`
+  
+  `transition: background 0.3s ease 0.5s`: This can be delayed by just using the transition shorthand property: `transition`. The last number is the transition-delay
+  
+  ## Timing Functions
+  The timing function value allows the speed of the transition to change over time through six possibilities:
+  
+  	1. `ease`: this is the default value.
+  	2. `linear`: for short transitions.
+  	3. `ease-in`
+  	4. `ease-out`
+  	5. `ease-in-out`
+  	6. `cubic-bezier`
+  
+  The timing function you choose becomes more important, as it affects the time it takes to notice the speed changes over the length of the animation
+  
+  ## Delaying Transitions
+  `transition-delay`: can delay a transition from the moment the trigger happens on screen
+  
+  ## Building the Full Transition Stack
+  Add `-moz-` and `-o-` prefixes to the actual CSS3 `transition` property like so:
+  
+  `a.foo {`
+  		`padding: 5px 10px;`
+  		`background: #9c3;`
+  		`-webkit-transition: background 0.3s ease;`
+  		`-moz-transition: background 0.3s ease;`
+  		`-o-transition: background 0.3s ease;`
+  		`transition: background 0.3s ease;`
+  `}`
+  
+  
+  ## Transitioning States
+  In the case of wanting the transition to happen on the other states as well, you would add them in like so, similarly to how you do it for other css selectors:
+  
+  `a.hover,`
+  `a.focus {`
+  
+  
+  ## Transitioning Multiple Properties
+  You can do a string of multiple transitions together separated by a `,` and each can have a varying duration and timing function
+  
+  ## Transitioning All Possible Properties
+  `transition: all;`: transitions all available properties
+  
+  * List of all the CSS Properties that can be transitioned: [CSS Transitions](https://www.w3.org/TR/css-transitions-1/#properties-from-css-)
+  * Appropriate speeds for CSS transitions and animations by Trent Walton: [CSS3 In Transition | Trent Walton](https://trentwalton.com/2010/03/22/css3-in-transition/)
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false

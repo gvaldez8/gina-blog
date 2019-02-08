@@ -1,0 +1,267 @@
+createdAt: "2019-01-31T16:08:34.413Z"
+updatedAt: "2019-01-31T16:09:06.244Z"
+type: "MARKDOWN_NOTE"
+folder: "877895b795e037d74fc7"
+title: "Using Sass"
+tags: [
+  "Sass"
+  "front-end"
+  "coding"
+  "basics"
+  "worfklow"
+]
+content: '''
+  # Using Sass
+  
+  ## Sass Capabilities
+  1. Nesting
+  2. Referencing Parent Selectors with &
+  3. Commenting
+  4. Variables
+  5. Mixins (and Mixin Arguments)
+  6. Import
+  7. Extend
+  
+  # Nesting
+  * *Nesting*—You can nest CSS rules inside of each other instead of repeating selectors in separate declarations 
+  * Means less typing, using indentation to reflect the selector (and property) formation
+  * *Nesting Namespaced Properties*: you can nest properties that share a namespace in Sass (i.e. `font-size`, `font-family`, and `font-weight`)
+  
+  `header[role="banner"] h1 {`
+  	`padding: 15px;`
+  	`font: {`
+  	`size: 54px;`
+  	`family: Jubilat, Georgia, Serif;`
+  	`weight: bold;`
+  		`}`
+  	`line-height: 1;`
+  `}`
+  
+  
+  # Referencing Parent Selectors with &
+  `a {`
+  	`font-weight: bold;`
+  	`text-decoration: none;`
+  	`color: red;`
+  	`border-bottom: 2px solid red;`
+  
+  `&:hover {`
+  	`color: maroon;`
+  	`border-color: maroon;`
+  	`}`
+  `}`
+  
+  Aside from referencing parent selectors, the ampersand is also useful for inserting overrides that happen in the presence of a specific class. For example, let’s say that we style paragraphs in the main section of the site, but want a different style on a specific page. We can add a class to the body and then use the ampersand to slip this overriding declaration into the main one:
+  
+  `section.main p {` 
+  	`margin: 0 0 20px 0;`
+  	`font-size: 18px;`
+  	`line-height: 1.5;`
+  
+  	`body.store & {`
+  		`font-size: 16px;`
+  		`line-height: 1.4;`
+  	`}`
+  `}`
+  
+  
+  # Commenting in Sass
+  For comments within the stylesheet, Sass supports single-line comments in addition tot he standard, multi-line comments in CSS:
+  
+  `//This is a single-line comment, so whatever is written here will be removed from the .css file`
+  
+  
+  # Variables
+  *Variables:* Allow you to define and reuse values throughout (i.e. colors, fonts, background images, widths, etc.)
+  
+  `$color-main: #333`
+  `$color-light: #999`
+  `$color-accent: #ae4c89`
+  
+  Once defined, they can be invoked with declarations:
+  
+  `body {`
+  	`font-family: $font-sans;`
+  	`color: $color-main;`
+  `}`
+  
+  With Sass variables, wholesale changes to a stylesheet’s repeated patterns are updated in seconds, meaning you don’t need to hunt through the entire file.
+  
+  ## Using Variables for Style Guides
+  [Front-end Maintainability with Sass and Style Guides](https://www.engineyard.com/blog/front-end-maintainability-with-sass-and-style-guides)
+  
+  You can create different shades based on the brand palette by using `darken` and `lighten` color functions in Sass:
+  
+  `section.secondary {`
+  	`background: darken($color-accent, 30%);`
+  `}`
+  
+  
+  # Mixins
+  *Mixins:* Allow you to define and reuse /blocks/ of styles. You can use mixins to define a group of styles just once and refer to it anytime those styles are needed
+  
+  1. Define your Mixin in Sass like so:
+  `@mixin title-style {`
+  	`margin: 0 0 20px 0;`
+  	`font-family: $font-serif;`
+  	`font-size: 20px;`
+  	`font-weight: bold;`
+  	`text-transform: uppercase;`
+  `}`
+  
+  2. Once it’s defined, refer to it anywhere in your styles using the `@include` directive like so
+  
+  `section.main h2 {`
+  	`@include title-style;`
+  `}`
+  
+  3. Mixins can also be included with additional rules, meaning you can still have the ability to override or augment those styles like so:
+  
+  `section.main h2 {`
+  	`@include title-style;`
+  	`color: #999;`
+  `}`
+  
+  
+  ## Mixin Arguments
+  Sass mixins can also take on arguments when we call them. For example, let’s add an argument for specifying a color. You specify arguments with `$variables` inside parentheses when defining the mixing:
+  
+  In the Sass file:
+  `@mixin title-style($color) {`
+  	`margin: 0 0 20px 0;`
+  	`font-family: $font-serif;`
+  	`color: $color;`
+  `}`
+  
+  In the CSS file:
+  `section.main h2 {`
+  	`@include title-style(#c63);`
+  `}`
+  
+  ## Multiple Mixin Arguments
+  You can make multiple arguments for a block simply by separating the values with commas in the mixin definition
+  
+  In your Sass file:
+  `@mixin title-style($color, $background) {`
+  `}`
+  
+  In the CSS file:
+  `section.main h2 {`
+  	`@include title-style(#c63, #eee);`
+  `}`
+  
+  
+  ## Defining defaults for arguments
+  `@mixin title-style($color, $background: #eee) {``
+  `}`
+  
+  In the CSS file:
+  `section.secondary h3 {`
+  	`@include title-style(#39c, #333);`
+  `}`
+  
+  In addition to having multiple, default arguments defined for a mixing, you can override those selectively without having to redefine them all. For example, et’s say our mixing defined values for both $color and $background. You only need to define the thing that you’d like to change/override like so:
+  
+  `@mixin title-color($color: blue, $background: green) {`
+  `}`
+  
+  In the CSS file:
+  `section.main h2 {`
+  	`@include title-style ($background: pink);`
+  `}`
+  
+  
+  ## Creating a Mixin Library
+  `@import` rule: Sass extends to allow the importing of multiple SCSS files, merging them into a single CSS file when compiled. This is handy for a variety of reasons:
+  	* A single CSS means fewer HTTP connections.
+  	* Variables can be defined in their own file, then imported whenever needed, regardless of layout and other page-specific styles
+  	* Imported SCSS files can contain project-agnostic mixins that can be shared and reused
+  
+  `// Import other files`
+  `@import "reset.scss"`
+  `@import "variables.scss"`
+  `@import "mixins.scss"`
+  
+  
+  ## The Compass Framework
+  [Compass Home | Compass Documentation](http://compass-style.org/)
+  
+  * Compass offers many pre-written CSS patterns that update as the properties evolve and vendor prefixes can be stripped away
+  * Makes image sprites and typographic systems easier to handle
+  
+  ## The Bourbon Library
+  https://www.bourbon.io/
+  
+  * An extensive mixin library
+  
+  
+  # Extend
+  `@extend`: Chains together Sass’s styles that are shared amongst multiple selectors. Additionally, we can then add extra overriding rules to make a new unique style without duplicating the shared styles
+   
+  In your html:
+  `<h2 class=“alert-positive”>This is a positive alert!</h2>`
+  
+  In your css file 
+  `.alert-positive {`
+  	`@extend .alert;`
+  	`background: #9c3;`
+  `}`
+  
+  
+  ## Multiple @extends
+  You can also `@extend` multiple classes within a declaration, which chains together all styles from each class.
+  
+  `.alert {`
+  	`padding: 15px;`
+  	`font-size: 1.2em;`
+  `}`
+  
+  `.important {`
+  	`font-size: 4em;`
+  `}`
+  
+  `.alert-positive {`
+  	`@extend .alert;`
+  	`@extend .important;`
+  	`background: #9c3;`
+  `}`
+  
+  Sass efficiently organized things, grouping the shared styles together using comma-separated selectors and then creating single declarations for any exceptions
+  
+  ## Using placeholder selectors with @extend
+  You can enter placeholder selectors and create “phantom” classes that won’t appear in the outputted CSS on their own. You can create a placeholder selector using `%` instead of a period. For example:
+  
+  `%button {`
+  	`padding: 10px;`
+  	`font-weight: bold;`
+  	`background: blue;`
+  	`border-radius: 6px;`
+  `}`
+  
+  We can call this rule set in other classes as we did previously using @extend
+  
+  `.buy {`
+  	`@extend %button;`
+  `}`
+  
+  `.submit {`
+  	`@extend %button;`
+  	`background: green;`
+  `}`
+  
+  The `%button` placeholder rule set won’t appear in the output. Placeholder selectors are especially helpful in creating blocks of styles for design patterns that may or may not be used (in frameworks, style guides, or starter templates, for example) since unused placeholder classes won’t litter the compiled stylesheet.
+  
+  
+  ## @extend vs. @mixin
+  `mixin`: will write the same rules in each declaration it’s called from
+  	* Overuse of a mixin can result in a bloated CSS file in which the contents of the mixing are present in the compiled CSS every time it’s called in Sass
+  
+  `extend`: will create multiple, comma-separated selectors for shared styles
+  	* If a mixin is used over and over throughout the stylesheet, consider using this to turn those repeated styles into a class that gets reused in the markup instead
+  	* Extending the same class repeatedly throughout the stylesheet, can result in a monster declaration. 
+  
+  
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false

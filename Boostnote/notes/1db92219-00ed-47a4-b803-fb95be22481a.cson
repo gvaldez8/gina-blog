@@ -1,0 +1,21 @@
+createdAt: "2019-01-31T15:49:52.992Z"
+updatedAt: "2019-01-31T16:03:00.284Z"
+type: "MARKDOWN_NOTE"
+folder: "6045f291a27dc712048f"
+title: "Cloning an Existing Project"
+tags: [
+  "github"
+  "git_clone"
+]
+content: '''
+  # Cloning an Existing Project
+  
+  **Clone**: pulling down a copy of the repository, meaning what gets saved to your computer is a replica of everything that was stored on the server
+  
+  `git clone`: creates a new working directory (named after the repository on the server by default); initializes a new Git repo; adds a remote called `origin`; and pulls changes from the remote.
+  
+  `git clone [SSH key or https: that GitHub repo gives you] [name_if_you_want_to_name_it]`
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false

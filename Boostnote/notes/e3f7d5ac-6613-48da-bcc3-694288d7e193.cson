@@ -1,0 +1,51 @@
+createdAt: "2019-01-31T15:54:35.788Z"
+updatedAt: "2019-01-31T16:04:30.299Z"
+type: "MARKDOWN_NOTE"
+folder: "924c47607edf1782d81b"
+title: "CORE: CSS3 Properties Today"
+tags: [
+  "CSS3"
+  "front-end"
+  "coding"
+  "properties"
+]
+content: '''
+  # CORE: CSS3 Properties Today
+  
+  `border-radius`: rounds the corners of an element with a specified radius value
+  
+  `text-shadow`: adds a shadow to hypertext, with options for the direction, amount of blur, and color of the shadow
+  
+  `box-shadow`: adds a shadow to an element. It’s identical to the syntax `text-shadow`. /However/, it does require vendor prefixes in order to work in older versions of the browser
+  
+  `box-sizing`: Normally, padding and borders are added to an element’s width, which gets tricky when assigning percentage-based widths
+  `border-box`: Reverses the above and the element’s width will always be what you declare
+  
+  CSS adds the ability to apply multiple background images on an element, as opposed to just one
+  
+  `opacity {` defines how opaque an element is. A value of `1` means completely opaque, whereas a value of `0` means fully transparent. Also note that this does not require vendor prefixes.
+  
+  `Rgba` is a new color model in CSS3, not so much a property. It allows the ability to specific a level of opacity along with an RGB color value
+  
+  ## Other portions of CSS3 
+  * Media Queries http://www.w3.org/TR/CSS3-mediaqueries/
+  * Grid Layout http://www.w3.org/TR/CSS3-grid-layout/
+  * CSS3 Selectors http://www.w3.org/TR/CSS3-selectors/
+  * Regions http://www.w3.org/TR/CSS3-regions/
+  * Web Fonts http://www.w3.org/TR/CSS3-webfonts/
+  
+  ## Vendor Specific Prefixes
+  `-webkit-border-radius`: the dashed-prefix keyword attached to the beginning of the property name flags it as a work-in-progress, specific to the browser’s implementation and interpretation of the evolving spec. Each browser vendor has their own prefix.
+  
+  ## How Vendor Prefixes Work
+  `.foo {-webkit-border-radius: 10px;`
+  	`-moz-border-radius: 10px;}`
+  
+  _*Note:* When ordering, you want to ensure that the vendor prefix properties come before the non-vendor prefix properties. The last ‘real’ property overrides the experimental ones before it_
+  
+  * [Prefix or Posthack · An A List Apart Article](https://alistapart.com/article/prefix-or-posthack)
+  * http://www.chromium.org/blink#vendor-prefixes
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false

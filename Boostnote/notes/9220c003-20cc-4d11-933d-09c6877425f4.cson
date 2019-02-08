@@ -1,0 +1,49 @@
+createdAt: "2019-01-31T15:49:06.829Z"
+updatedAt: "2019-01-31T16:03:25.997Z"
+type: "MARKDOWN_NOTE"
+folder: "6045f291a27dc712048f"
+title: "Merging Branches"
+tags: [
+  "github"
+  "git_merge"
+]
+content: '''
+  # Merging Branches
+  
+  
+  ## Steps to Merging Branches
+  	1. You need to be on your master branch in your local copy  `git checkout master`
+  	2. You need to pull in changes from the other branch into your copy of master
+  	 `git checkout [name_of_branch]`
+  
+  The outcome of a merge is a new commit.
+  
+  ## Fast-Forwards
+  `fast-forward`: the simplest and easiest kind of merge. Following a fast-forward, two branches simply point to the same commit, making them identical with the exception of their names. They are /only/ possible when *one* of the two branches has new commits
+  
+  
+  ## Merge Commits
+  `git merge`: figures out what the combined star of the project should look like, creates a snapshot representing that new, merged version, and finally adds a special kind of commit—merge commit—to tie everything together
+  
+  *Note:* Merge commits, unlike regular commits, have two or more parent commits. Topic Branches should not drift too far away from master, as they are short-lived and your ultimate goal is to merge them into master. By keeping them relatively up to date with master, the final merge will go more smoothly and reduce the risk of merge conflicts.
+  
+  
+  ## Merge Conflicts
+  Merge conflicts happen when two lines in a merge happen to overlap; two different versions are trying to change the same line of the same file
+  
+  ## How to Solve a Merge Conflict
+  	1. Reinforce an earlier point in your merge commits
+  	2. Stage the changes you want to include
+  	3. Commit those changes
+  
+  When git can’t automatically merge two copies of the same file, it’ll mark up your working copy using *conflict markers* (these are in the form of angle brackets), so that you can go in individually to choose/change conflicts manually
+  
+  
+  ## Maintaining Consistency
+  Keeping master and topic branches up to date isn’t to prevent conflicts, but rather, make conflicts easier to manage by keeping the differences between two branches small
+  
+  
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false

@@ -1,0 +1,32 @@
+createdAt: "2019-01-31T16:09:49.467Z"
+updatedAt: "2019-01-31T16:10:08.583Z"
+type: "MARKDOWN_NOTE"
+folder: "6045f291a27dc712048f"
+title: "Basic Commands"
+tags: [
+  "github"
+  "terminal"
+  "commands"
+]
+content: '''
+  # Basic Commands
+  
+  `pwd` stands for print work directory. It tells you the current directory or “folder” you’re in, which is where you’re working in
+  
+  `cd` means change directory. This is case sensitive, so it matters if you type something lowercase vs. capital
+  
+  `ls` allows you to look inside a folder to show you ALL of the existing files within that folder
+  
+  `/` is a shortcut. It can also be a way of entering a new folder, kind of like opening a door to a new room (i.e. `/User/ginavaldez/Sites/gina-blog`)
+  
+  `../` means to go two folders up
+  
+  `./` means to go one folder up
+  
+  `ctrl + c` shuts down whatever is running in Terminal
+  
+  `clear` literally clears your Terminal screen to start a clean slate.
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false

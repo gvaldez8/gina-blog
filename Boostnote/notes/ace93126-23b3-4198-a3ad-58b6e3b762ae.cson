@@ -1,0 +1,28 @@
+createdAt: "2019-01-31T15:50:14.777Z"
+updatedAt: "2019-02-01T20:57:02.323Z"
+type: "MARKDOWN_NOTE"
+folder: "6045f291a27dc712048f"
+title: "Configuring Git"
+tags: [
+  "github"
+]
+content: '''
+  # Configuring Git
+  
+  **Note:** Git absolutely requires your name and email address to function.
+  
+  Git adds an `Author` attribute to every commit you make that includes both your name and email address, so that collaborators on a project can know who made a given change and can also contact you. It also tells GitHub who you are on their service
+  
+  `git config`: Tells Git who you are and can be run from every directory. An example of it in action:
+  
+  `$: git config —global user.name “Gina Valdez”`
+  `$: git config —global user.email “gvaldez@8thlight.com”`
+  
+  `--global`: tells Git to set these values as default for all projects on this computer
+  
+  `git init`: creates a new Git database. Before this though, you **need** a project folder. So you have to run `mkdir [name_of_your_directory]` (no brackets). Then you need to switch to it using `cd`
+  
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false

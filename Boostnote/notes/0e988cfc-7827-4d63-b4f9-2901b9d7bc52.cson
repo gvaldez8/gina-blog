@@ -1,0 +1,43 @@
+createdAt: "2019-01-31T15:56:35.608Z"
+updatedAt: "2019-01-31T16:04:30.299Z"
+type: "MARKDOWN_NOTE"
+folder: "924c47607edf1782d81b"
+title: "CSS Transformations"
+tags: [
+  "CSS3"
+  "front-end"
+  "coding"
+  "transformations"
+]
+content: '''
+  # CSS Transformations
+  
+  CSS Transformations
+  W3C’s Working Draft for 2D and 3D Transformations: 
+  [CSS Transforms Module Level 1](https://www.w3.org/TR/css-transforms-1/)
+  
+  _*Note:* Although 3D transformations are wonderful, 2D transformations have the most browser support like transitions_
+  
+  
+  ## Scale Transform
+  `transform: scale(1.5);`: makes the object change scale when hovered. If working with an image, keep in mind scalability with image quality. 
+  
+  The `(1.5)` specifies how much larger times their initial size. `transform` does not disturb the rest of the elements in the document or affect the layout around it
+  
+  `transform-origin`: dictates where the scaling will expand from: top, bottom, center or a percentage. Reference [CSS Transforms Module Level 1](https://www.w3.org/TR/css-transforms-1/#transform-origin)
+  
+  ## Rotate, Skew, and Translate
+  `translate`: moves position of an element via x and y coordinates
+  
+  `skew`: transforms x and y coordinates. Similar to `rotate`, also accepts negative and positive degree values
+  
+  `rotate`: 
+  rotate counter-clockwise with `-1deg` to `-360deg`
+  rotate clockwise `1deg` to `360deg`
+  
+  * Example of rotate: http://www.panic.com/blog
+  * http://outsideapp.com
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false

@@ -1,0 +1,80 @@
+createdAt: "2019-01-31T15:53:32.935Z"
+updatedAt: "2019-01-31T16:04:06.247Z"
+type: "MARKDOWN_NOTE"
+folder: "c7058f29be0581b8d077"
+title: "Intro to HTML5"
+tags: [
+  "HTML5"
+  "front-end"
+  "coding"
+]
+content: '''
+  # Intro to HTML5
+  
+  *Linters:* programs that flag up suspect coding practices
+  
+  ## Basic Web Page
+  
+  `<!DOCTYPE html>`
+  `<html lang=‘en’>`
+  
+  `<meta charset=‘UTF-8’>`
+  
+  `<head>`
+  	`<title></title>`
+  	`<link rel=“stylesheet” href=“style.css”>`
+  	`<meta name=“viewport” content=“initial-scale: 1.0” `
+  	`width=“device-width” />`
+  `</head>`
+  
+  `</html>`
+  
+  ## You’re Obsolete
+  `frame`
+  `frameset`
+  `noframes`
+  
+  `acronym`: use the `abbr` tag instead. Acronyms are abbreviations, but not all abbreviations are acronyms
+  `font`
+  
+  `big`: obsolete but for some reason `small` is not obsolete. Now, `small` does not refer to type size, but instead small print in terms of legalities, terms of conditions
+  
+  `center`
+  `strike`
+  `bgcolor`
+  `cellspacing`
+  `cellpadding`
+  `valign`
+  
+  
+  ## Other Weird Changes
+  `b`: does not mean bold text. It means anything that is stylistically different than the normal prose
+  
+  `i`: does not mean italicize. It means that the text is an alternative voice or mood
+  
+  `cite`: no longer a reference to other sources. Now refers to the title of a work.
+  
+  
+  ## New Tings: Javascript APIs
+  If you want to publish audio or video, you would need to use a plug-in like Silverlight or Flash
+  
+  `<canvas id="my-first-canvas" width="360" height="240"> </canvas>`
+  
+  More about the `canvas` element:[HTML Standard](https://html.spec.whatwg.org/multipage/canvas.html#the-canvas-element)
+  
+  `DOM`: Document Object Model with three building blocks to put just about any document together:
+  	1. Element nodes
+  	2. Text nodes
+  	3. Attributes
+  
+  *Unobtrusive JavaScript:* When you use JS as an enhancement, but visitors who don’t have JS will also still be able to access the content but the experience won’t be as dynamic
+  
+  
+  `<audio src=“witchitalineman.mp3” autoplay loop> </audio>`: options are `autoplay, loop, or preload`
+  
+  `controls`: prompts the browser to provide native controls for playing/pausing the audio and adjusting the volume
+   
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false

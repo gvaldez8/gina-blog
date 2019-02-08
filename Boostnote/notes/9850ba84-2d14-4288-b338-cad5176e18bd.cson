@@ -1,0 +1,58 @@
+createdAt: "2019-01-31T15:55:18.793Z"
+updatedAt: "2019-01-31T16:04:30.299Z"
+type: "MARKDOWN_NOTE"
+folder: "924c47607edf1782d81b"
+title: "CSS3 Forms"
+tags: [
+  "CSS3"
+  "front-end"
+  "coding"
+  "forms"
+]
+content: '''
+  # CSS3 Forms
+  #8thlight/coding/css
+  
+  Things we can cover to enrich the experience:
+  	1. Powerful New Selections
+  	2. CSS Gradients
+  	3. CSS Animations
+  
+  ## Creating a Basic Form
+  `<form action=“/“ id=“thing-alerts”>`
+  	`<fieldset>`
+  		`<label for=“alerts-name”>Your Name</label>`
+  		`<input type=“text” id=“alerts-name” />`
+  	`</fieldset>`
+  
+  	`<fieldset>`
+  		`<label for=“alerts-email”>Your Email</label>`
+  		`<input type=“text” id=“alerts-email” />`
+  	`</fieldset>`
+  
+  	`<fieldset>`
+  		`<input type=“submit” value="Subscribe" />`
+  	`</fieldset>`
+  `</form>`
+  
+  ## Styling Text Inputs
+  `#id-if-you-used-one` `input[type="text"]{`
+  
+  By specifying a `type`, you are specifying what to specifically edit within that form.
+  
+  ## Pseudo-Classes
+  `#things-alert fieldset:last-child`
+  
+  `:last-child`: Matches any E element that is the last child of its parent
+  
+  You can view more CSS pseudo-class selectors here:
+  [CSS 3 selectors explained | 456 Berea Street](https://www.456bereastreet.com/archive/200601/css_3_selectors_explained/)
+  
+  _*Note:* Keep in mind that not all pseudo classes are supported in all browsers. View Peter Paul Koch’s_ [CSS - Contents and compatibility](https://www.quirksmode.org/css/contents.html) _and Microsoft’s_ [CSS Compatibility and Internet Explorer] (https://msdn.microsoft.com/en-us/library/cc351024(VS.85).aspx)
+  
+  
+  
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false

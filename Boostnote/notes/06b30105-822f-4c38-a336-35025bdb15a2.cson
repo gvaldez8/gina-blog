@@ -1,0 +1,77 @@
+createdAt: "2019-01-31T15:53:15.910Z"
+updatedAt: "2019-01-31T16:04:00.703Z"
+type: "MARKDOWN_NOTE"
+folder: "c7058f29be0581b8d077"
+title: "Semantics in HTML5"
+tags: [
+  "HTML5"
+  "front-end"
+  "coding"
+]
+content: '''
+  # Semantics in HTML5
+  
+  `class` attribute: allows us to label specific instances of an element as being a special class or type of that element
+  
+  ## Microformats
+  *microformats:* a set of conventions which are agreed upon by a community
+  
+  Extensibility in HTML5 can be seen in John Allsopp’s 
+  [Semantics in HTML 5 · An A List Apart Article](https://alistapart.com/article/semanticsinHTML5)
+  
+  
+  # New Elements
+  `<mark>`: denotes a run of text in one document marked or highlighted for reference purposes, due to its relevance in another context
+  
+  `<time>`: can be used for dates, times, or combinations of both
+  
+  `<meter>`: can be used to mark up measurements provided that those measurements are part of a scale within min and max values. You can specify `max` `min` `high` `low` or `optimum` attributes. If you wanted to hide the value, you can do so using the `value` attribute
+  
+  `<progress>`: allows you to mark up a value that is the process of changing. You can use `min`, `max`, and `value` attributes if you choose. This is most useful hen used with DOM Scripting or JS
+  
+  # Structure
+  `<section>`: used for grouping together thematically related content, *typically with a heading.* Remember to ask yourself if all the content is related before using this. It differs from `<div>` because a div has no semantic meaning whatsoever; it doesn’t tell you anything about the content within
+  
+  `<header>`: a group of introductory or navigational aids. Synonym for masthead. You can use a `<header>` element within a `<section>` element.
+  
+  `<footer>`: should contain information about its containing element: who wrote it, copyright info, links to related content, etc. _*Note:* You can also have footers in sections._
+  
+  `<aside>`: matches the concept of a sidebar. However, this should be used for tangentially related content; an example would be pull quotes, as they are related to the content but you can remove them without affecting the comprehension of the main content.
+  
+  `<nav>`: contains *major* navigation information, usually a list of links. Site-wide navigation goes here. More often than not, you will find this tag within the `<header>` tag.
+  
+  `<article>`: It’s for self-contained related content. It’s specifically designed for syndication. This is useful for blogposts, news stories, comments, reviews, and forum posts. You can also add a publishing date with the attribute… `pubdate>`. It should also be used for self-contained widgets: stock tickers, calculators, clocks, weather widgets and the like.
+  
+  # Content Models
+  `inline` elements: text-level semantics
+  `block` level elements: fall under the banner of grouping content (i.e. paragraphs, list items, divs, and so on)
+  `embedded` content: images, audio, video, and canvas
+  
+  ### Sectioning Content
+  Allows you to start with `<h1>` each time, meaning that each piece of sectioning content has its own self-contained outline
+  
+  `<section>`
+  	`<header>`
+  	`</header>`
+  `</section>`
+  
+  ### Outline Algorithm
+  
+  `hgroup`: when you might want to use a heading element but you don’t want its contents to appear in the document outline
+  
+  ### Sectioning Roots
+  `block quote`, `fieldset`, and `td` elements are all immune to the outline algorithm, meaning that it doesn’t matter how many headings you use within these elements, they won’t appear in the document’s outline
+  
+  ### Portability
+  Refer to page 76 of this book
+  
+  ### Scoped Styles
+  `scoped` attribute: can be applied to a `style` element. Any styles declared within that `style` element will only be applied to the containing sectioning content. Currently, no browsers support this attribute yet.
+  
+  
+  
+  
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false

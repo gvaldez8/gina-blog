@@ -1,0 +1,45 @@
+createdAt: "2019-01-31T16:08:01.561Z"
+updatedAt: "2019-01-31T16:08:19.372Z"
+type: "MARKDOWN_NOTE"
+folder: "877895b795e037d74fc7"
+title: "Sass Workflow"
+tags: [
+  "Sass"
+  "front-end"
+  "coding"
+  "basics"
+  "workflow"
+]
+content: '''
+  # Sass Workflow
+  
+  ## Installing Sass on a Mac
+  `gem install sass`
+  
+  `gem install sass --pre`: Totally safe for getting latest alpha version and can enable you to take advantage of the latest functionality
+  
+  ## Telling Sass which files to Watch
+  * *watch:* while we’re editing a stylesheet, we want Sass to monitor that file and convert the `.scss` file with all our nifty Sass syntax to the browser read `.css` file every time we make changes
+  * You can opt for a number of different ways:
+  	1. Command line
+  	2. Desktop app
+  
+  ## Command Line
+  `sass --watch screen.scss:screen.css`
+  
+  This means that Sass will start monitoring any changes to `screen.scss`
+  
+  *Note:* The filenames don’t have to match. 
+  
+  `sass --watch werewolf.css:vampire.css`
+  
+  
+  ## Sass File Organization
+  *Note:* The files don’t have to be in the same directory either. Note that you want to be `cd` to the directory that contains your stylesheets for the command below to work
+  
+  `sass --watch stylesheets/sass:stylesheets`
+  
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false

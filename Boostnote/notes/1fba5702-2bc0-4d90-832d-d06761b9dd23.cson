@@ -1,0 +1,34 @@
+createdAt: "2019-01-31T15:55:32.843Z"
+updatedAt: "2019-01-31T16:04:30.299Z"
+type: "MARKDOWN_NOTE"
+folder: "924c47607edf1782d81b"
+title: "CSS Gradients"
+tags: [
+  "CSS3"
+  "front-end"
+  "coding"
+  "gradients"
+]
+content: '''
+  # CSS Gradients
+  
+  Can be assigned anywhere that animate can be declared in the stylesheet in any generated content. So.. in other words:
+  
+  `background-image`
+  `list-style-image`
+  `border-image`
+  
+  _*Note:* Vendor prefixes come in handy here, since gradients differ slightly between different browsers_
+  
+  
+  View John Allsopp’s wonderful WYSIWYG editor at [Linear Gradients](http://www.westciv.com/tools/gradients/index-moz.html)
+  	* This tool can be used to visually create the gradients you want, then grab the appropriate syntax for both Safari and Firefox
+  
+  There’s also John Snook’s [Multiple Backgrounds and CSS Gradients - Snook.ca](https://snook.ca/archives/html_and_css/multiple-bg-css-gradients)
+  
+  
+  
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false

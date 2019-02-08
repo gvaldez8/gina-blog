@@ -1,0 +1,36 @@
+createdAt: "2019-01-31T15:57:27.155Z"
+updatedAt: "2019-01-31T16:04:44.931Z"
+type: "MARKDOWN_NOTE"
+folder: "924c47607edf1782d81b"
+title: "BEM Naming Convention"
+tags: [
+  "CSS3"
+  "front-end"
+  "coding"
+  "BEM"
+]
+content: '''
+  # BEM Naming Convention
+  
+  ## Sources
+  	• [Introducing BEM: The popular CSS naming convention | Assortment - For the practical developer](https://assortment.io/posts/introducing-bem-css-naming-convention)
+  	• [BEM Simple Naming Convention For CSS Classes – tajawal – Medium](https://medium.com/tech-tajawal/bem-simple-naming-convention-for-css-classes-9660438d04a2)
+  	• [block]__[element]--[modifier]
+  
+  Thinking in terms of components on a page, here’s how I break things down. **BEM** stands for *Block, Element, Modifier*:
+  
+  **Block:** This 'block' class is used to signify a component, or a standalone object on the page. Block classes are usually short nouns which define the component.
+  
+  **Element:** An element always lives within a block, it's a single part of a component that together with others, make up the block's features. Element classes are prefixed by the block's class, followed by double underscores. For example *.block__element*.
+  
+  **Modifier:** You may often find yourself repeating multiple components, or blocks that do very similar things but with slight alterations. Maybe Box 1 has a blue background whereas Box 2 has a red background. This is where modifiers come into play, adding an extra hook in our CSS to give that one specific block some extra bits of styling. 
+  
+  ## Block Modifiers
+  Modifier classes are prefixed once again by the block's class, but followed this time by double hyphens, for example *.block--modifier*. 
+  
+  ## Block Elements
+  They can also be prefixed by the element class if the modifier is specifically modifying that, rather than the entire block, for example *.block__element--modifier.* I like to reference this as "Block Modifiers vs Element Modifiers".
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false

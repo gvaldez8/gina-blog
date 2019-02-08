@@ -1,0 +1,34 @@
+createdAt: "2019-01-31T15:55:54.330Z"
+updatedAt: "2019-01-31T16:04:30.299Z"
+type: "MARKDOWN_NOTE"
+folder: "924c47607edf1782d81b"
+title: "Multiple Backgrounds (via CSS)"
+tags: [
+  "CSS3"
+  "front-end"
+  "coding"
+  "backgrounds"
+]
+content: '''
+  # Multiple Backgrounds (via CSS)
+  
+  * [CSS Backgrounds and Borders Module Level 3](https://www.w3.org/TR/css-backgrounds-3/)
+  
+  ## Creating a Parallax Scroll (Using CSS/Less Code)
+  Example: Silverback http://silverbackapp.com
+  
+  ### How to do it in CSS: 
+  Stacking semi-transparent pngs on top of each other to create the sense of dimension when the user resizes the browser window
+  
+  `body {`
+  	`background:`
+  		`url(../img/stars-1.png) repeat-x fixed -130% 0,`
+  		`url(../img/stars-2.png) repeat-x fixed 40% 0;`
+  	`background-color: #1a1a1a;`
+  `}`
+  
+  
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false

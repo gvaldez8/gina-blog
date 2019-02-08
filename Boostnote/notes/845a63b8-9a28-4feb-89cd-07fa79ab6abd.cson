@@ -1,0 +1,94 @@
+createdAt: "2019-01-31T15:53:24.506Z"
+updatedAt: "2019-01-31T16:04:03.532Z"
+type: "MARKDOWN_NOTE"
+folder: "c7058f29be0581b8d077"
+title: "Forms in HTML5"
+tags: [
+  "HTML5"
+  "front-end"
+  "coding"
+]
+content: '''
+  # Forms in HTML5
+  
+  ## Placeholder
+  `<label for="hobbies"> Your Hobbies </label>`
+  `<input id="hobbies" name="hobbies" type="text" placeholder="Owl stretching">`
+  
+  ## Autofocus
+  `<label for=“status”>What’s happening?</label>`
+  `<input id="status" name="status" type="text" autofocus>`
+  
+  `autofocus`: automatically focuses on one particular form field when the document loads (this can get annoying). It can also be used on the `textarea` and `select`  tags, but only *once* per document
+  
+  ## Required
+  `required`: you can use this attribute instead of keeping a list of all the  required fields in your script or adding it as a class to your markup like so:
+  
+  `<label for=“pass”>Your password</label>`
+  `<input id="pass" name="pass" type="password" required>`
+  
+  ## Autocomplete
+  `<form action="/selfdestruct" autocomplete="on" or "off">`: allows you to disable auto-completion on a per-form or per-field basis
+  
+  `autocomplete="on"` is the browser’s default
+  
+  ## Datalist
+  `<datalist>`: allows you to crossbreed a regular `input` element with a `select` element. Using the `list` attribute, you can associate a list of options with an input field
+  
+  ## Input Types
+  ### Searching
+  An `input` element with a `type` value of `search` will function the same way as “text.”
+  
+  `<label for=“query”>Search</label>`
+  `<input id="query" name="query" type="search">`
+  
+  The difference between “text” and “search” is that a browser might display a search input differently to be more consistent with the styling of search fields in the operating system
+  
+  ### Contact Details
+  There are three new `type` values for specific kinds of contact details:
+  	1. Email addresses
+  	2. Websites
+  	3. Telephone numbers
+  	
+  These fields will behave the same way as “text” inputs, but browsers have more info on the kind of data expected in the field
+  
+  ### Sliders
+  `type="range"`: allows browsers to offer a native control for sliders. The input will accept a range of `0` to `100`, but you can set your own minimum and maximum attributes using `min=“1”` or `max=“5"`
+  
+  ### Testing
+  Reference page 49 of this book
+  
+  ### Spinners
+  `type="range"`: doesn’t expose the underlying value to the user, but instead, the number is translated into the graphical representation of a slider widget
+   `type="number"`: allows the user to see a numerical value on the slider
+  
+  ### Dates and Times
+  `date`: is for a year, month, and day
+  `datetime`: a year, month, and day in combination with hours, minutes, and seconds and time zone info
+  `datetime-local`: the same but without the time zone information
+  `time`: hours, minutes, and seconds
+  `month`: a year and a month but without a day
+  
+  All these input types will record timestamps with some subset of the standardized YYYY-MM-DDThh:mm:ss.Z
+  Y: year
+  M: month
+  D: day
+  h: hour
+  m: minute
+  s: second
+  Z: timezone
+  
+  ### Color Pickers
+  `<label for=“bgcolor”>Background color</label>`
+  `<input id="bgcolor" name="bgcolor" type="color">`
+  
+  For now, use JS solution, as browsers haven’t implemented native color pickers just yet
+  
+  ### Rolling your own
+  `pattern` attribute: species exactly what kind of value is expected. The use of this attribute is rare.
+  
+  
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false

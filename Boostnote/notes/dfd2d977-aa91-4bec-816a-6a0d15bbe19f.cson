@@ -1,0 +1,50 @@
+createdAt: "2019-01-31T15:59:39.400Z"
+updatedAt: "2019-01-31T16:05:33.507Z"
+type: "MARKDOWN_NOTE"
+folder: "924c47607edf1782d81b"
+title: "Responsive Web Design"
+tags: [
+  "CSS3"
+  "front-end"
+  "coding"
+  "media-queries"
+  "responsive"
+]
+content: '''
+  # Responsive Web Design
+  
+  ## What three components make a website responsive?
+  	1. Flexible grid based layout
+  	2. Flexible images and media
+  	3. Media queries — a module from the CSS3 specification
+  	
+  ## Links
+  	• http://clagnut.com/sandbox/imagetest/
+  	• http://www.cameronmoll.com/archives/000892.html
+  	• https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms532969(v=vs.85)
+  	• [DD_belatedPNG: Medicine for your IE6/PNG headache!](http://www.dillerdesign.com/experiment/DD_belatedPNG/)
+  	• https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms532920(v=vs.85)
+  	• [Fluid Images — Unstoppable Robot Ninja](http://unstoppablerobotninja.com/entry/fluid-images)
+  	• [Image Optimization, Part 5: AlphaImageLoader](https://yuiblog.com/blog/2008/12/08/imageopt-5/)
+  	• [Faux Columns · An A List Apart Article](https://alistapart.com/article/fauxcolumns)
+  	• [Liquid Bleach | Stopdesign](https://stopdesign.com/archive/2004/09/03/liquid-bleach.html)
+  	• https://www.w3.org/TR/css-backgrounds-3/#the-background-size
+  	• [Modernizr: the feature detection library for HTML5/CSS3](https://modernizr.com/)
+  	• http://www.jquery-backstretch.com/
+  	• http://scottjehl.github.io/picturefill/
+  	• Responsible RWD by Scott jehl 
+  	• [Media types](https://www.w3.org/TR/CSS2/media.html)
+  	• https://alistapart.com/article/goingtoprint
+  	• [Media Queries](https://www.w3.org/TR/css3-mediaqueries/)
+  	• [Media Queries](https://www.w3.org/TR/css3-mediaqueries/#media1)
+  	• [Using the viewport meta tag to control layout on mobile browsers - Mozilla | MDN](https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag#Viewport_basics)
+  	• [League Gothic | The League of Moveable Type](https://www.theleagueofmoveabletype.com/league-gothic)
+  	• [Adactio: Journal—Context](https://adactio.com/journal/4443/)
+  
+  
+  
+  
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false

@@ -1,0 +1,136 @@
+createdAt: "2019-01-31T16:09:12.910Z"
+updatedAt: "2019-01-31T16:09:32.700Z"
+type: "MARKDOWN_NOTE"
+folder: "877895b795e037d74fc7"
+title: "Sass and Media Queries"
+tags: [
+  "Sass"
+  "front-end"
+  "coding"
+  "responsive"
+  "media-queries"
+]
+content: '''
+  # Sass and Media Queries
+  
+  1. Nested Media Queries
+  2. Using Variables to define Breakpoints
+  
+  # Using variables to define breakpoints
+  Name your breakpoints something flexible and not tied down to a specific device or finite value:
+  
+  `$width-small: 500px;`
+  `$width-medium: 800px;`
+  `$width-large: 1200px;`
+  
+  In your CSS file:
+  
+  `section.main {`
+  	`font-size: 16px;`
+  	`line-height: 1.4;`
+  
+  	`@media screen and (max-width: $width-large) {`
+  		`float: left;`
+  		`width: 65%;`
+  	`}`
+  
+  	`@media screen and (max-width: $width-medium) {`
+  		`float: none;`
+  		`width: auto;`
+  	`}`
+  
+  	`@media screen and (max-width: $width-small) {`
+  		`font-size: 12px;`
+  		`line-height: 1.4;`
+  	`}`
+  `}`
+  
+  With Sass variables, you need only to define your media queries once, and Sass will take care of them every time you update wherever we used them. And yes, math is possible!!!:
+  
+  `@media screen and (max-width: $width + 1) {`
+  	`font-size: 12px;`
+  	`line-height: 1.4;`
+  `}`
+  
+  ## A Step Further
+  You can also define an entire media query as a variable (not just the numeric value):
+  
+  `$mobile-first: "screen and (min-width: 300px)";`
+  
+  In your CSS file:
+  
+  `@media #{$mobile-first} {`
+  	`#content {`
+  		`font-size: 14px;`
+  		`line-height: 1.5;`
+  	`}`
+  `}`
+  
+  
+  *Interpolation brackets:* 
+   `#{}` surrounding the `$mobile-first` variable. It’s a special way to alert Sass to compile something within a sector or property name
+  
+  
+  # Combining @content blocks and mixins
+  `@content`: directive can pass entire blocks of styles to a mixin, and Sass will place those blocks back into the declaration that calls the mixin.
+  
+  `$width-small: 400px;`
+  `$width-medium: 760px;`
+  `$width-large: 1200px;`
+  
+  In your CSS file:
+  
+  `@mixin responsive ($width) {`
+  	`@if $width == wide-screens {`
+  		`@media only screen and (max-width: $width-large) {`
+  			`@content; }`
+  `}`
+  	
+  `@else if $width == medium-screens {`
+  	`@media only screen and (max-width: $width-medium)`
+  		`{ @content; }`
+  `}`
+  
+  Sass supports `@if`  and `@else` statements, which we’re using to evaluate the `$width` variable we’ll pass when including the mixin. 
+  
+  The `@content`  placeholder allows us to further pass blocks of styles to the mixin that get inserted inside the media query.  Now with this single directive, we can call any declaration using a compact pattern that reflects the way w think about things:
+  
+  `#content {`
+  	`float: left;`
+  	`width: 70%;`
+  	`@include repsonsive(wide-screens) {`
+  		`width: 80%;`
+  	`}`
+  
+  	`@include responsive(medium-screens) {`
+  		`width: 50%;`
+  		`font-size: 14px;`
+  	`}`
+  
+  	`@include responsive(small-screens) {`
+  		`float: none;`
+  		`width: 100%;`
+  		`font-size: 12px;`
+  	`}`
+  `}`
+  
+  Sass feeds any styles to the appropriate media query and reconstructs the declaration with everything in its right place. Using `@content`  blocks for writing contextually-placed media queries makes responsive design simpler with less repetition.
+  
+  
+  # Keep in mind the output
+  It’s important to point out that this method results in a lot of repeated media queries for each selector in the compiled CSS. Ideally, Sass would let us nest the queries to keep the contextual connection of rules collected in one space, but then group shared media query rules when compiled.
+  
+  For a large stylesheet that uses responsive design with frequent media queries for multiple viewports, this would reduce the compiled CSS file quite a bit. Unfortunately, Sass doesn’t yet support this media query bubbling, but for most projects, the trade-off of a slightly larger compiled stylesheet is worth the ease and sensibility of nesting media queries inline.
+  
+  
+  # “Retinizing” HIDPI Background Images
+  *High Dots Per Inch (HiDPI):* High dots per inch
+  
+  [GitHub - scottjehl/picturefill: A responsive image polyfill for <picture>, srcset, sizes, and more](https://github.com/scottjehl/picturefill)
+  
+  For background images, we simply use CSS media queries to determine whether the display is HiDPI and render the appropriately sized image.
+  
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false

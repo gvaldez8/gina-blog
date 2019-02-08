@@ -1,0 +1,39 @@
+createdAt: "2019-01-31T16:02:03.276Z"
+updatedAt: "2019-01-31T16:05:33.507Z"
+type: "MARKDOWN_NOTE"
+folder: "924c47607edf1782d81b"
+title: "Media Queries"
+tags: [
+  "CSS3"
+  "front-end"
+  "coding"
+  "media-queries"
+  "responsive"
+]
+content: '''
+  # Media Queries
+  
+  ## Understanding Viewport
+  `<head>`
+  `<meta name="viewport" content="initial-scale:1.0" width="device-width" />`
+  `</head>`
+  
+  * `viewport`: allows us to override the default browser behavior and control the size of that canvas
+  
+  * `initial-scale` : sets the zoom level of the page to 100% or `1.0` and helps ensure consistency across small-screen, viewport-aware browsers
+  
+  * `width=device-width`: makes the width of the browser’s viewport equal to the width of the device’s screen
+  
+  * Understanding how viewport-aware browsers work:  [Using the viewport meta tag to control layout on mobile browsers - Mozilla | MDN](https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag#Viewport_basics)
+  
+  
+  ## Understanding Media Queries
+  `@media screen (max-width:value){`: anything *below* this pixel width
+  `@media screen (min-width:value){`: anything *above* this pixel width
+  
+  * Looks for resolution ranges below or above certain resolution thresholds
+  * Allows all query-aware browsers to take advantage of our media queries, making the design responsive for all users
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false

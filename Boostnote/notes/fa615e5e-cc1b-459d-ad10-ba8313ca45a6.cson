@@ -1,0 +1,94 @@
+createdAt: "2019-01-31T15:54:52.307Z"
+updatedAt: "2019-01-31T16:04:30.299Z"
+type: "MARKDOWN_NOTE"
+folder: "924c47607edf1782d81b"
+title: "CSS Modules: Micro-Layouts"
+tags: [
+  "CSS3"
+  "front-end"
+  "coding"
+  "layouts"
+]
+content: '''
+  # CSS Modules: Micro-Layouts
+  #8thlight/coding/CSS
+  
+  *Micro-layouts:* Positioning individual components as opposed to columns and grids that makeup entire pages. Intended for small chunks of design
+  
+  	1. Multi-Column Layout
+  	2. Flexible Box Layout (or flex box)
+  
+  # Multi-Column Layout
+  	* Allows flowing content into columns, ensuring smooth fallback into a single column as opposed to using `float:`
+  	* Benefits of using CSS-based columns: flexibility, content can flow from one column to another, and the number of columns can vary depending on the size of the viewport
+  	* Also offers a border separator between columns through
+  	 `column-rule` property, which adopts values like the `border` 
+  	property
+  
+  W3C’s explanation of multi-column layout module: [CSS Multi-column Layout Module Level 1](https://www.w3.org/TR/css-multicol-1/)
+  
+  `div.multi {`
+  	`-webkit-column-count: 3;`
+  	`-webkit-column-gap: 30px;`
+  	`-webkit-column-rule: 1px solid #ddd;`
+  	`-moz-column-count: 3;`
+  	`-moz-column-gap: 30px;`
+  	`-moz-column-rule: 1px solid #ddd;`
+  	`column-count: 3;`
+  	`column-gap: 30px;`
+  	`column-rule: 1px solid #ddd;`
+  `}`
+  
+  `column-count`: specifies how many columns
+  
+  `column-gap`: specifies the gap in pixels between columns
+  
+  `column-rule`: places a rule between columns that follows similar values like the `border` property
+  
+  
+  ## Spanning Multiple Columns
+  `-webkit-column-span: all;`
+  `-moz-column-span: all;`
+  `column-span: all;`
+  
+  By specifying `all`, the header text, for example, will span across all paragraphs regardless of where it appears in the markup, even if in the middle of the paragraph groupings
+  
+  
+  ## Columnizing Form Elements
+  To columnize form elements, such as options with checkboxes and short selections, you can also use `column-count` and  `column-gap`
+  
+  
+  # Flex Box
+  `display: flex;`: tells the browser the contents of this element will be flexible; enables flexbox on that particular container
+  
+  `align-items: flex-end, stretch, or baseline;` tells the browser how to align the contents of the container vertically
+  
+  `justify-content: center;`: ensures the items in the container are centered horizontally
+  
+  `flex-grow: 1;`: tells the object to fill out any remaining space within a box. Value of `1` tells it to take up as much space that’s available within the flex container
+  
+  `flex: 1;` : the `flex` property is shorthand for the `flex-grow, flex-shrink, and flex-basis` properties.
+  
+  _*Note:* Flex Box is recommended for micro-layouts (small modules within that page), as it can lead to shaky initial loading of that page if used for larger page layouts. *Also, they require vendor prefixes*_
+  
+  The Grid Layout is better recommended for entire page layouts:
+  [CSS Grid Layout Module Level 1](https://drafts.csswg.org/css-grid/)
+  
+  Chris Coyier’s [A Complete Guide to Flexbox | CSS-Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+  
+  For more on Flex Box’s specific Vendor Prefixes:
+  [Flexbox Is As Easy As Pie: Designing CSS Layouts — Smashing Magazine](https://www.smashingmagazine.com/2013/05/centering-elements-with-flexbox/)
+  
+  
+  ## Flexing with Slats (a.k.a. Media Objects or Modules)
+  *Slats:* a common pattern of an avatar, image, or icon on the left and text on the right, where each take up a column
+  
+  ## Other Flex Box Resources
+  Zoe Gillenwater’s [Leveling Up With Flexbox presentation at Smashing Conference](http://zomigi.com/blog/leveling-up-with-flexbox/)
+  
+  Phillip Walton’s [Solved by Flexbox — Cleaner, hack-free CSS](https://philipwalton.github.io/solved-by-flexbox/), documenting flexbox solutions to common design patterns
+  
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false

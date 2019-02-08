@@ -1,0 +1,66 @@
+createdAt: "2019-01-31T15:53:03.267Z"
+updatedAt: "2019-01-31T16:03:57.222Z"
+type: "MARKDOWN_NOTE"
+folder: "c7058f29be0581b8d077"
+title: "Using HTML 5 Today"
+tags: [
+  "HTML5"
+  "front-end"
+  "coding"
+]
+content: '''
+  # Using HTML 5 Today
+  
+  Browsers won’t apply any default styling to the new elements. So you will want to declare that the new structural elements should force a line break:
+  
+  `section, article, header, footer, nav, aside, group {`
+  	`display: block`
+  `}`
+  
+  ### Headings
+  Refer to page 79–80 of this book about the outline algorithm
+  
+  
+  # Aria
+  *Aria*: Accessible Rich Internet Applications
+  	* Allows assistive technology to participate fully in all-singing, all-dancing Ajax interactions.
+  	* Allows us to specify even more semantic richness in our documents
+  
+  `role` attribute: the most basic ARIA unit. 
+  
+  To view a full list of values in the ARIA specification:
+  https://www.w3.org/TR/wai-aria/roles#role_definitions
+  
+  
+  # Validation
+  *validator:* a powerful tool to point out markup
+  
+  Henri Sivoven’s full-featured HTML5 validator:[Validator.nu](https://validator.nu/)
+  
+  
+  # Feature Detection
+  *Modernizr:* a useful JS file that will detect support for input types as well as `audio`, `video`, and `canvas` at http://modernizr.com/
+  
+  
+  The script creates an object in JS called Modernizr. By querying the properties of this object, you can determine whether the browser supports a particular input type or not. It also allows you to style the new structural elements in Internet Explorer
+  
+  ### Additional Resources
+  The Author’s personal site at http://adactio.com/journal/tag/html5
+  
+  Bruce Lawson’s site at http://brucelawson.co.uk/category/html5
+  
+  Bruce is just one of the contributors to HTML5 Doctor, an excellent community resource packed with great articles at http://html5doctor.com
+  
+  Rems Sharp if you’re pushing boundaries: http://html5demos.com
+  
+  Mark Pilgrim wrote an exhaustive book called /Dive into HTML5/ at http://diveintohtml5.org/
+  
+  http://whatwg.org/html5
+  
+  W3C’s up-to-date version of the specification specifically for authors (browser makers): http://www.w3.org/TR/html-markup
+  
+  
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false

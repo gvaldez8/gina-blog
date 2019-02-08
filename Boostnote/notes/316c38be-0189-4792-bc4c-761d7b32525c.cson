@@ -1,0 +1,67 @@
+createdAt: "2019-01-31T16:01:37.435Z"
+updatedAt: "2019-01-31T16:05:33.507Z"
+type: "MARKDOWN_NOTE"
+folder: "924c47607edf1782d81b"
+title: "Mobile First & Design/Development Process"
+tags: [
+  "CSS3"
+  "front-end"
+  "coding"
+  "responsive"
+  "media-queries"
+  "mobile-first"
+]
+content: '''
+  # Mobile First & Design/Development Process
+  #8thlight/coding/responsive
+  
+  * [Mobile shopping is popular when watching TV, says Orange UK research](https://thefonecast.com/Home/ArticleID/3602/ArtMID/538)
+  * [LukeW | When & Where Are People Using Mobile Devices?](https://www.lukew.com/ff/entry.asp?1263)
+  * [The Rise of Digital Omnivores - comScore, Inc](https://www.comscore.com/Insights/Blog/The-Rise-of-Digital-Omnivores?cs_edgescape_cc=US)
+  
+  ## Mobile First
+  * [LukeW | Mobile First](https://www.lukew.com/ff/entry.asp?933)
+  * Rationale and Site Planning from Luke Wrebowski [LukeW | Mobile First Helps with Big Issues](https://www.lukew.com/ff/entry.asp?1117)
+  
+  ## Iterative, Collaborative Design Process
+  1. Planning Phase
+  	* Site Map and Wireframes
+  	* Client approves this phase prior to moving on
+  
+  2. Design Phase
+  	* Design team mocks up some screens to hand over to development
+  	* Design each alternative view for desktop, iPad, and phone
+  	* Present those comps to client, gather feedback, and revise
+  	* It would be impractical to produce every one of those mockups and their alternative views
+  
+  3. Design and Development Phase
+  	* Design team presents a page mockup to developers (usually a desktop mockup)
+  	* Goal: To kick off discussion about how the design will accomodate different resolution and input types
+  	* Either revise or pass over to Development
+  
+  4. Development Phase
+  	* Developers inherit comps to prototype
+  	* Developers start whipping up some responsive design
+  	* [Web Developer](https://chrispederick.com/work/web-developer/)
+  	* http://davatron5000.github.io/fitWeird/
+  	* [Responsive Roulette - A demonstration of the need for resolution independence in responsive web design | Experiment #6](http://jordanm.co.uk/lab/responsiveroulette/)
+  	* During this phase, developers function as designers too, but in a different medium by offering recommendations for responsive screens
+  
+  Author highly recommends:
+  		* Paul Koch’s [Smartphone Browser Landscape · An A List Apart Article](https://alistapart.com/article/smartphone-browser-landscape)
+  		* Tips from Brad Frost: http://bradfrost.com/blog/post/test-on-real-mobile-devices-without-breaking-the-bank/
+  		* [OpenDeviceLab.com - Locate, Contribute to and Sponsor an Open Device Lab (ODL)](https://opendevicelab.com/)
+  
+  5. The Interactive Design Review
+  	* The Phase where the design is tested on different screens
+  	* Development should come with a list of questions as they were testing the responsive design
+  	* By calling out areas of interest, 
+  
+  [Media Query & Asset Downloading Results - TimKadlec.com](https://timkadlec.com/2012/04/media-query-asset-downloading-results/)
+  [Responsive News — Cutting the mustard](http://responsivenews.co.uk/post/18948466399/cutting-the-mustard)
+  https://github.com/filamentgroup/responsive-carousel
+  [GitHub - scottjehl/picturefill: A responsive image polyfill for <picture>, srcset, sizes, and more](https://github.com/scottjehl/picturefill)
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false

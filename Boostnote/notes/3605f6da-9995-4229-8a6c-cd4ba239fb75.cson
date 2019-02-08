@@ -1,0 +1,78 @@
+createdAt: "2019-01-31T15:47:10.382Z"
+updatedAt: "2019-01-31T16:03:08.711Z"
+type: "MARKDOWN_NOTE"
+folder: "6045f291a27dc712048f"
+title: "Git Committed"
+tags: [
+  "github"
+  "git_commit"
+]
+content: '''
+  # Git Committed
+  
+  `git commit`: a type of Git data called an object. Each commit represents a complete a snapshot of the state of your project at a given moment in a time
+  
+  `git status`: Asking Git what it knows about the state of our project.
+  
+  
+  ## Commit vs. Adding a File
+  	* *Commit:* records changes to files in Git’s database; it’s a shorthand to represent specific versions of files and folders. Commits themselves are just references, similar to the way a street address references a home
+  
+  `git add [filename]`: makes a snapshot of the given file and saves it to the repository so that it can be referred to later in a commit. This means that Git saves snapshots that will never be committed
+  
+  `git commit -m "Initial commit"`: The “m” stands for message.
+  
+  
+  ## The Staging Area
+  *Staging Area:* This is where these new versions live between when you update your working files and when you commit then
+  
+  Two things that happen during this stage:
+  	1. Git saves a snapshot of that file to its database, so it can be referred to in your next commit. Git can’t refer to it in order to commit if it’s not already in the repository.
+  	2. Starts a local draft of your next commit with references to files and directories contained therein.
+  
+  _*Note:* The staging area is not synced or shared with anyone else on your team—it lives only on your computer_
+  
+  ## Commit Process
+  1. `git status`
+  2. `git add`
+  3. `git commit`
+  
+  `mkdir`: creates a new directory/subdirectory
+  
+  `git log`: creates a timeline of your commits/history
+  
+  
+  ## Removing Files from Git
+  `git rm`: deletes files from *both* the /local/ and /remote/ repositories. In addition to deleting the file, it also stages a new commit where the file has been deleted. This means, in order to remove a file, we have to /add/ a commit
+  
+  `rm path/to/my/file`: deletes the file at that path. Note that if a file is already deleted the old-fashioned way (drag and drop to trashcan), then `rm` will do nothing
+  
+  `git rm [name_of_file]`
+  `rm ['name of file.txt']`
+  
+  
+  ## Renaming Files
+  `git mv`: Git’s typical renaming function. It will only rename a file if it is also allowed to move or rename the files in the working copy. 
+  
+  If you use `git mv` as opposed to renaming your files in Finder, then renaming it like so: 
+  `git mv [file name to be changed] [new filename]`, then it would work flawlessly.
+  
+  To help Git understand the two commits: “deleting” a file and “adding” a new one (even though we know it’s the same file but just renamed) we need to:
+  
+  	1. Use `git rm [filename to be changed]` to stop tracking that file
+  	2. Use `git add [new filename]` to tell it to start tracking the file under its new name
+  
+  
+  ## Add All
+  `git add --all`: Quickly stages anything and everything that has changed in your local copy. It’s great for moments when you need to commit several changes at once
+  
+  ## Uploading to GitHub Repo
+  `git push --set-upstream origin branchname`
+  
+  
+  
+  
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false

@@ -1,0 +1,73 @@
+createdAt: "2019-01-31T15:48:23.900Z"
+updatedAt: "2019-01-31T16:03:22.617Z"
+type: "MARKDOWN_NOTE"
+folder: "6045f291a27dc712048f"
+title: "Basics of Branches"
+tags: [
+  "github"
+  "git_branches"
+]
+content: '''
+  # Basics of Branches
+  
+  ## Versions
+  	* Every commit includes a reference to its immediate predecessor, or /parent commit/
+  	* *Commit:* represents both your work in a particular form and its change into that form from a previous one
+  	* *Branch:* A virtual copy of your project—a project within your project–where you can make commits freely in isolation from whatever else may be happening in your repository
+  
+  
+  ## Branching Basics
+  Every git repository starts out with a master branch. By default the name is assigned as `master`. Think of branches like folders. They help you find certain commits and bring you back to a particular version of your work. They’re not so much destinations as they are labels for certain commits
+  
+  `git branch`: it will show you all the branches available under your GitHub Repository. The one labeled with an `*` and in green means that it’s the current one you’re inside.
+  
+  *Topic Branch*: Also known as the working branch. Topic branches are distinguished from the master branch in that they have a topic: the work that happens in them has a particular focus or goal, which is typically described by the branch name. 
+  
+  *Note:* Topic Branches should not drift too far away from master, as they are short-lived and your ultimate goal is to merge them into master. By keeping them relatively up to date with master, the final merge will go more smoothly and reduce the risk of merge conflicts.
+  
+  `git branch [name of new branch]`: Creates a new branch using whatever commit you’re currently working on as a starting point. *Note:* Git does not automatically switch you into the new branch when running this command.
+  
+  `git branch -b [name of new branch]`: will create *AND* switch to your new branch
+  
+  `-am`: This is a combination of two commands:
+  		 * `-a` which automatically adds any changed files to this commit
+  		 * `-m` which specifies the commit message
+  
+  _*Note:* Command line tools allow you to combine multiple options into a single one using a single dash, /however/, `m` always has to come last to avoid an argument_
+  
+  
+  
+  ## Naming Branches
+  Ensure that the naming of your branches is logical. It’s important to choose a level of specificity to distinguish between different branches within your project. Example:
+  
+  If you wanted to fix a problem with Chrome 32, possible branch names would be: `fix-chrome32-bug`, `fix-chrome32-webfont-bug`, or `bugfix`
+  
+  
+  
+  ## Viewing and Switching Branches
+  `git branch`: it will show you all the branches available under your GitHub Repository
+  
+  `git checkout branchname`: this will show what branch you have entered into
+  
+  
+  
+  ## Creating Branches
+  `git checkout -b name_of_new_branch`
+  
+  _*NOTE:* When you run this command and create a new branch, you will /automatically/ be switched over to this branch._
+  
+  
+  
+  ## Deleting Branches
+  ### Deleting Local Branches (local = your desktop)
+  `$ git branch -d branchname`
+  
+  ### Deleting Remote Branches (remote=GitHub Repo)
+  `$ git push origin --delete branchname`
+  
+  
+  
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false

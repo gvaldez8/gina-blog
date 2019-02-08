@@ -1,0 +1,28 @@
+createdAt: "2019-01-31T15:56:13.616Z"
+updatedAt: "2019-01-31T16:04:30.299Z"
+type: "MARKDOWN_NOTE"
+folder: "924c47607edf1782d81b"
+title: "Hover Crafting with CSS"
+tags: [
+  "CSS3"
+  "front-end"
+  "coding"
+  "hover-crafting"
+]
+content: '''
+  # Hover Crafting with CSS
+  
+  Hover Crafting with CSS
+  [CSS3 For Web Designers - Code](http://css3exp.com/code/)
+  [CSS3 For Web Designers - Code](http://css3exp.com/code/)
+  
+  ## Do websites need to be experienced exactly the same in every browser?
+  * Dan Cederholm’s perpective: [Do websites need to be experienced exactly the same in every browser?](http://dowebsitesneedtobeexperiencedexactlythesameineverybrowser.com/)
+  
+  ## Opacity and Image Efficiency
+  _*Note:* To save yourself time, save our your .pngs of icons as fully opaque to be edited later with opacity, as it will allow us to vary the opacity level on_ `:hover` `:focus` and `:active` _states without needing to create multiple sets of images_
+  
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false

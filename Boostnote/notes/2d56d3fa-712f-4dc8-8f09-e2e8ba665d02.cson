@@ -1,0 +1,55 @@
+createdAt: "2019-01-31T16:06:33.519Z"
+updatedAt: "2019-01-31T16:06:54.162Z"
+type: "MARKDOWN_NOTE"
+folder: "877895b795e037d74fc7"
+title: "Sass Basics"
+tags: [
+  "Sass"
+  "front-end"
+  "coding"
+  "basics"
+]
+content: '''
+  # Sass Basics
+  #8thlight/coding/sass
+  
+  ## Features
+  Can change the value of something like color in one place and the entire stylesheet reflected that change:
+  
+  	`$brand-color: #fc3`
+  
+  	`a {`
+  		`color: $brand-color;`
+  	`}`
+  
+  	`nav {`
+  	`background-color: $brand-color;`
+  	`}`
+  
+  
+  Can define once any blocks of styles that are used in various locations throughout the stylesheet:
+  
+  	`@mixin defaul-type {`
+  		`margin-bottom: 20px;`
+  		`font-size: 14px;`
+  		`line-height: 1.5;`
+  	`}`
+  
+  	`p {`
+  		`@include default-type;`
+  	`}`
+  
+  	`footer {`
+  		`@include default-type;`
+  	`}`
+  
+  ## The DRY Principle
+  * “Don’t Repeat Yourself” Principle
+  * Duplicating code can cause failure and confusion for developers
+  * 
+  
+  
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false

@@ -1,0 +1,42 @@
+createdAt: "2019-01-31T15:32:21.945Z"
+updatedAt: "2019-02-01T21:01:54.160Z"
+type: "MARKDOWN_NOTE"
+folder: "6045f291a27dc712048f"
+title: "Terminal Basics"
+tags: [
+  "github"
+  "terminal"
+]
+content: '''
+  # Terminal Basics
+  
+  `$:_`
+  
+  `$`: the prompt itself, signals that the shell is waiting for you to ask it something
+  
+  `mkdir`: creates a new directory; a directory won’t be created if it already exists
+  
+  `pwd`: print working directory command. It shows you what directory you’re in (Remember that Terminal is *always* in a directory like a single Finder window on a Mac
+  
+  `cd`: change directory command.  It sets a given path as our new working directory. Think of this like double clicking into a folder.
+  
+  `home directory`: Default starting point `/Users/yourname`
+  
+  `~`: can stand in for your home directory. Think of it as if you already typed `/Users/yourname`
+  
+  `ls`: “List” command. This allows you to see a list of all the files and directories within the current directory
+  
+  `-f`: will show trailing slashes to help distinguish directories from regular files
+  
+  # Git Commands
+  `git checkout [branchname]`: Don’t add brackets. This means to checkout a branch.
+  
+  `—-global` or `g`: Special parameters denoted by at least one leading dash character. They’re rarely required and usually change something about the default way Git handles a particular task. The latter is shortcut form
+  
+  
+  
+  
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false

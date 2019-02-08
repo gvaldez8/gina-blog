@@ -1,0 +1,30 @@
+{
+  "folders": [
+    {
+      "key": "def3c3e84cbe59f825a1",
+      "color": "#1278BD",
+      "name": "Default"
+    },
+    {
+      "key": "6045f291a27dc712048f",
+      "color": "#3FD941",
+      "name": "GitHub"
+    },
+    {
+      "key": "c7058f29be0581b8d077",
+      "color": "#FF8E00",
+      "name": "HTML5"
+    },
+    {
+      "key": "924c47607edf1782d81b",
+      "color": "#E8D252",
+      "name": "CSS3"
+    },
+    {
+      "key": "877895b795e037d74fc7",
+      "color": "#30D5C8",
+      "name": "Sass"
+    }
+  ],
+  "version": "1.0"
+}
