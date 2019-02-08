@@ -31,8 +31,8 @@ header {
   @include mobile {
     height: auto;
     flex-shrink: 0;
-    min-width: 50%;
-    min-height: 50%;
+    min-width: 158%;
+    min-height: 100%;
   }
 }
 
@@ -43,17 +43,33 @@ header {
   top: 35%;
   left: 0;
 
+  @include desktop {
+    top: 24%
+  }
+
+  @include tablet {
+    top: 21%;
+  }
+
   @include mobile {
     top: 17%;
   }
 
   h1 {
+
+    @include desktop {
+      font-size: $fs-h2;
+    }
+
+    @include tablet {
+      font-size: $fs-h2;
+    }
+
     @include mobile {
       font-size: $fs-h3;
     }
   }
 }
-
 
 .header__event--date {
   float: left;
@@ -66,6 +82,14 @@ header {
   h3 {
     font-family: $font-brand-secondary;
   }
+
+  @include desktop {
+    padding-top: 43px;
+  }
+
+  @include tablet {
+    padding-top: 30px;
+  }
 }
 
 .header__event--details {
@@ -74,13 +98,17 @@ header {
   padding-top: 35px;
   width: 500px;
 
+  @include tablet {
+    padding-top: 20px;
+  }
+
   @include mobile {
     width: 200px;
   }
 
   h1 {
     @include mobile {
-      font-size: $fs-h4;
+      font-size: $fs-h3;
     }
   }
 
@@ -90,6 +118,15 @@ header {
     font-weight: $fw-semibold;
     text-align: left;
 
+    @include desktop {
+      font-size: $fs-h2;
+    }
+
+    @include tablet {
+      font-size: $fs-h3;
+      width: 80%;
+    }
+
     @include mobile {
       font-size: $fs-h4;
     }
@@ -98,25 +135,65 @@ header {
   h4 {
     font-family: $font-brand-tertiary;
     padding-top: 3%;
+
+    @include tablet {
+      font-size: $fs-h5;
+    }
   }
+}
+
+.colorblock__left {
+  float: left;
 }
 
 .colorblock__left--opportunities {
   @include colorblock($color-charlotte, $float: left);
+
+  @include desktop {
+    height: 425px;
+  }
+
+  @include tablet {
+    height: 325.89px;
+  }
 }
 
 .colorblock__left--education {
   @include colorblock($color-supernova, $float: left);
+
+  @include desktop {
+    height: 426px;
+  }
+
+  @include tablet {
+    height: 327.05px;
+  }
 }
 
 .colorblock__left--support {
   @include colorblock($color-cherub, $float: left);
+
+  @include desktop {
+    height: 427px;
+  }
+
+  @include tablet {
+    height: 283px;
+  }
+
+  h1 {
+    padding-top: 2px;
+  }
 }
 
 .colorblock__left--opportunities,
 .colorblock__left--education,
 .colorblock__left--support {
   padding: 6% 8%;
+
+  @include desktop {
+    padding: 4% 8%;
+  }
 
   @include tablet {
     padding: 3.05% 8%;
@@ -208,11 +285,8 @@ header {
   @include colorblock($color-alabaster, $float: right);
   font-weight: $fw-semibold;
   height: 599px;
-  width: 40%; // @media (min-width: $bp-xs-mobile) {
+  width: 40%;
 
-  //   text-align: center;
-  //   width: 100%;
-  // }
   h2 {
     font-family: $font-brand-secondary;
     font-weight: $fw-semibold;
@@ -235,11 +309,8 @@ header {
   clear: none;
   font-weight: $fw-semibold;
   height: 949px;
-  width: 40%; // @media (min-width: $bp-xs-mobile) {
+  width: 40%;
 
-  //   text-align: center;
-  //   width: 100%;
-  // }
   h2 {
     font-family: $font-brand-secondary;
     font-weight: $fw-semibold;
@@ -275,21 +346,13 @@ header {
   }
 }
 
-.accomodations__hotels>.link__highlight--condensed {
-  font-size: $fs-h5;
-  padding: 10% 0;
-}
-
 .colorblock__right--parking {
   @include colorblock($color-supernova, $float: right);
   clear: none;
   font-weight: $fw-semibold;
   height: 1004px;
-  width: 40%; // @media (min-width: $bp-xs-mobile) {
+  width: 40%;
 
-  //   text-align: center;
-  //   width: 100%;
-  // }
   h3 {
     font-family: $font-brand-secondary;
     font-weight: $fw-semibold;
@@ -312,11 +375,8 @@ header {
   clear: none;
   font-weight: $fw-semibold;
   height: 660px;
-  width: 40%; // @media (min-width: $bp-xs-mobile) {
+  width: 40%;
 
-  //   text-align: center;
-  //   width: 100%;
-  // }
   h3 {
     font-family: $font-brand-secondary;
     font-weight: $fw-semibold;
@@ -339,11 +399,8 @@ header {
   clear: none;
   font-weight: $fw-semibold;
   height: auto;
-  width: 40%; // @media (min-width: $bp-xs-mobile) {
+  width: 40%;
 
-  //   text-align: center;
-  //   width: 100%;
-  // }
   h3 {
     font-family: $font-brand-secondary;
     font-weight: $fw-semibold;

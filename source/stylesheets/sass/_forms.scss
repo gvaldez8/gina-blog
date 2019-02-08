@@ -10,6 +10,14 @@
   padding: 10% 10%;
   text-align: center;
 
+  @include desktop {
+    height: auto;
+  }
+
+  @include tablet {
+    height: auto;
+  }
+
   @include mobile {
     height: auto;
     text-align: center;

@@ -13,6 +13,15 @@
 .header__event--links {
   display: inline-block;
   padding-top: 50px;
+
+  @include desktop {
+    font-size: $fs-h6;
+    padding-top: 25px;
+  }
+
+  @include tablet {
+    padding-top: 22px;
+  }
 }
 
 .link__highlight--reversed {
@@ -31,6 +40,7 @@
 
 .link__highlight--bottom {
   a:link {
+    font-family: $font-brand-primary;
     border-bottom: 3px solid $color-alizarin;
     color: $color-black;
     text-decoration: none;
@@ -41,6 +51,20 @@
     color: $color-black;
     text-decoration: none;
   }
+
+  h4 {
+    $font-family: $font-brand-primary;
+
+    @include desktop {
+      font-size: $fs-h5;
+    }
+
+    @include tablet {
+      font-size: $fs-h5;
+      padding-bottom: 6px;
+    }
+  }
+
 }
 
 
@@ -61,4 +85,23 @@
     font-weight: $fw-semibold;
     text-decoration: none;
   }
+}
+
+//Default Links in Colorblock sections on Homepage
+
+.colorblock__left--support>.link__highlight--bottom {
+
+  @include desktop {
+    padding-top: 20%;
+  }
+
+  @include tablet {
+    padding-bottom: 1px;
+  }
+}
+
+//Under Plan Your Experience
+.accomodations__hotels>.link__highlight--condensed {
+  font-size: $fs-h5;
+  padding: 10% 0;
 }

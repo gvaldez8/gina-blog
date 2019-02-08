@@ -15,7 +15,6 @@ button {
     display: none;
   }
 
-  // @media (min-width: 768px) @media (min-width: 1000px) {
   @media (min-width: 768px) {
     display: none;
   }
@@ -42,14 +41,4 @@ button:hover {
   right: 90px;
   top: 40px;
 
-  // @media (min-width: $bp-tablet) {
-  //   right: 50px;
-  // }
-}
-
-.buttons__navigation--default>.button__signup {
-
-  // @media (min-width: $bp-xs-mobile) {
-  //   top: 70px;
-  // }
 }

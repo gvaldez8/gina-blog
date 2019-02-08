@@ -12,6 +12,10 @@
   padding: 0 8%;
   width: 50%;
 
+  @include desktop {
+    height: auto;
+  }
+
   @include tablet {
     height: auto;
     float: left;
@@ -27,6 +31,7 @@
 
     @include tablet {
       font-size: $fs-h3;
+      padding-top: 9px;
     }
 
     @include mobile {
@@ -41,8 +46,14 @@
     line-height: 2em;
     padding-top: 10%;
 
+    @include desktop {
+      font-size: $fs-h4;
+      padding-top: 5%;
+    }
+
     @include tablet {
       font-size: $fs-h5;
+      padding-top: 6%;
     }
 
     @include mobile {
