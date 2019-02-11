@@ -24,7 +24,7 @@
 .image__right--support {
   @include tablet {
     float: right;
-    height: 576px;
+    height: auto;
     width: 50%;
   }
 }
@@ -37,7 +37,7 @@
 
 .image__description--left {
   float: left;
-  height: 458px;
+  height: auto;
   padding: 6% 10% 5% 8%;
   width: 60%;
 
