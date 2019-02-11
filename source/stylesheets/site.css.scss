@@ -139,6 +139,11 @@ header {
     @include tablet {
       font-size: $fs-h5;
     }
+
+    @include mobile {
+      float: left;
+      font-size: $fs-h5;
+    }
   }
 }
 
@@ -147,7 +152,11 @@ header {
 }
 
 .colorblock__left--opportunities {
-  @include colorblock($color-charlotte, $float: left);
+  @include colorblock($background-color: $color-charlotte, $float: left, $height: 576px);
+
+  @include desktop-lg {
+    height: 580px;
+  }
 
   @include desktop {
     height: 425px;
@@ -161,6 +170,10 @@ header {
 .colorblock__left--education {
   @include colorblock($color-supernova, $float: left);
 
+  @include desktop-lg {
+    height: 582px;
+  }
+
   @include desktop {
     height: 426px;
   }
@@ -173,8 +186,12 @@ header {
 .colorblock__left--support {
   @include colorblock($color-cherub, $float: left);
 
+  @include desktop-lg {
+    height: 578px;
+  }
+
   @include desktop {
-    height: 427px;
+    height: 423px;
   }
 
   @include tablet {

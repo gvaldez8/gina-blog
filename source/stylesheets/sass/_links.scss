@@ -22,6 +22,12 @@
   @include tablet {
     padding-top: 22px;
   }
+
+  @include mobile {
+    display: inline-block;
+    float: left;
+    padding-top: 0;
+  }
 }
 
 .link__highlight--reversed {

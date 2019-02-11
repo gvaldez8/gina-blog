@@ -2,12 +2,12 @@
 @import 'color';
 @import 'typography';
 
-@mixin colorblock($background-color: $color-charlotte, $float: left) {
+@mixin colorblock($background-color: $color-charlotte, $float: left, $height: 576px) {
   background-color: $background-color;
   clear: none;
   float: $float;
   font-weight: $fw-semibold;
-  height: 576px;
+  height: $height;
   padding-top: 7%;
   padding: 0 8%;
   width: 50%;

@@ -11,13 +11,13 @@ $desktop-lg: 1368px;
 }
 
 @mixin tablet {
-  @media (min-width: #{$tablet}) and (max-width: #{$desktop - 1px}) {
+  @media (min-width: #{$tablet}) and (max-width: #{$tablet + 201px}) {
     @content;
   }
 }
 
 @mixin desktop {
-  @media (min-width: #{$desktop}) and (max-width: #{$desktop-lg}) {
+  @media (min-width: #{$desktop}) and (max-width: #{$desktop-lg - 1px}) {
     @content;
   }
 }
