@@ -71,17 +71,33 @@ header {
   }
 }
 
+// .header__event--date {
+//   float: left;
+//   padding-right: 5%;
+//   padding-top: 40px;
+//   position: left;
+//   text-align: right;
+
+//   h1,
+//   h3 {
+//     font-family: $font-brand-secondary;
+//   }
+
+//   @include desktop {
+//     padding-top: 43px;
+//   }
+
+//   @include tablet {
+//     padding-top: 30px;
+//   }
+// }
+
 .header__event--date {
   float: left;
   padding-right: 5%;
   padding-top: 40px;
   position: left;
   text-align: right;
-
-  h1,
-  h3 {
-    font-family: $font-brand-secondary;
-  }
 
   @include desktop {
     padding-top: 43px;
@@ -90,6 +106,11 @@ header {
   @include tablet {
     padding-top: 30px;
   }
+}
+
+.header__event--date h1, 
+.header__event--date h3 {
+  font-family: $font-brand-secondary;
 }
 
 .header__event--details {
@@ -147,99 +168,47 @@ header {
   }
 }
 
-.colorblock__left {
-  float: left;
-  height: auto;
-  padding: 10% 10%;
-  width: 50%;
+.colorblock__left--opportunities {
+  @include colorblock($background-color: $color-charlotte);
 }
 
-// .colorblock__left--opportunities {
-//   @include colorblock($background-color: $color-charlotte, $float: left, $height: 576px);
+.colorblock__left--education {
+  @include colorblock($color-supernova);
+}
 
-//   @include desktop-lg {
-//     height: 580px;
-//   }
+.colorblock__left--support {
+  @include colorblock($color-cherub);
 
-//   @include desktop-md {
-//     height: 526px;
-//   }
+  h1 {
+    padding-top: 2px;
+  }
+}
 
-//   @include desktop {
-//     height: 526px;
-//   }
+.colorblock__left {
+  width: 100%;
 
+  @media (min-with: $tablet) {
+    overflow: hidden;
+    max-height: 556px;
+  }
+}
 
-//   @include tablet {
-//     height: 325.89px;
-//   }
-// }
+.colorblock__left--opportunities,
+.colorblock__left--education,
+.colorblock__left--support {
+  height: 100%;
+  max-height: 556px;
+  padding: 4% 8% 9% 8%;
+  width: 100%;
 
-// .colorblock__left--education {
-//   @include colorblock($color-supernova, $float: left);
+  @media(min-width: $tablet) {
+    width: 50%;
+  }
+}
 
-//   @include desktop-lg {
-//     height: 582px;
-//   }
-
-//   @include desktop-md {
-//     height: 528px;
-//   }
-
-//   @include desktop {
-//     height: 426px;
-//   }
-
-//   @include tablet {
-//     height: 327.05px;
-//   }
-// }
-
-// .colorblock__left--support {
-//   @include colorblock($color-cherub, $float: left);
-
-//   @include desktop-lg {
-//     height: 578px;
-//   }
-
-//   @include desktop-md {
-//     height: 524px;
-//   }
-
-//   @include desktop {
-//     height: 423px;
-//   }
-
-//   @include tablet {
-//     height: 283px;
-//   }
-
-//   h1 {
-//     padding-top: 2px;
-//   }
-// }
-
-// .colorblock__left--opportunities,
-// .colorblock__left--education,
-// .colorblock__left--support {
-//   padding: 6% 8%;
-
-//   @include desktop {
-//     padding: 4% 8%;
-//   }
-
-//   @include tablet {
-//     padding: 3.05% 8%;
-//   }
-
-//   @include mobile {
-//     padding: 24% 8%;
-//   }
-// }
-
-// .colorblock__text {
-//   padding: 20% 0;
-// }
+.colorblock__text {
+  padding: 20% 0;
+}
 
 .colorblock__right--involved {
   @include colorblock($color-charlotte, $float: right);
