@@ -3,28 +3,21 @@
 @import 'mixins';
 @import 'typography';
 
-.image__right {
-  float: right;
-  height: auto;
-  width: 50%;
+.image__right--support {
+  background: url(../../images/support.png);
 
   @include tablet {
     float: right;
     height: auto;
     width: 50%;
   }
-
-  @include mobile {
-    float: right;
-    height: auto;
-    width: 100%;
-  }
 }
 
-.image__right--support {
-  @include tablet {
-    float: right;
-    height: auto;
+.image__right {
+  float: right;
+  width: 100%;
+
+  @media(min-width: $tablet) {
     width: 50%;
   }
 }
