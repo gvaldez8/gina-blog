@@ -54,20 +54,19 @@ header {
   @include mobile {
     top: 17%;
   }
+}
 
-  h1 {
+.header__event h1 {
+  @include desktop {
+    font-size: $fs-h2;
+  }
 
-    @include desktop {
-      font-size: $fs-h2;
-    }
+  @include tablet {
+    font-size: $fs-h2;
+  }
 
-    @include tablet {
-      font-size: $fs-h2;
-    }
-
-    @include mobile {
-      font-size: $fs-h3;
-    }
+  @include mobile {
+    font-size: $fs-h3;
   }
 }
 
@@ -77,11 +76,11 @@ header {
   padding-top: 40px;
   position: left;
   text-align: right;
+}
 
-  h1,
-  h3 {
-    font-family: $font-brand-secondary;
-  }
+.header__event--date h1,
+.header__event--date h3 {
+  font-family: $font-brand-secondary;
 
   @include desktop {
     padding-top: 43px;
