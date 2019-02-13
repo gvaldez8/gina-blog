@@ -20,7 +20,7 @@ $fs-h6: 0.8em;
 $fw-regular: 400;
 $fw-semibold: 700;
 
-//Type Styles
+//  Type Styles
 
 h1 {
   font-family: $font-brand-primary;
@@ -58,4 +58,173 @@ p {
   font-weight: $fw-regular;
   line-height: 2.5em;
   padding-top: 20px;
+}
+
+//  Typography Media Query
+
+@include mobile {
+  h1 {
+    font-size: $fs-h2;
+  }
+
+  h2 {
+    font-size: $fs-h3;
+  }
+
+  h3 {
+    font-size: $fs-h4;
+  }
+
+  p {
+    font-size: $fs-h5;
+  }
+}
+
+@include tablet {
+  h1 {
+    font-size: $fs-h3;
+  }
+
+  h2 {
+    font-size: $fs-h3;
+  }
+
+  h3 {
+    font-size: $fs-h4;
+  }
+
+  p {
+    font-size: $fs-h5;
+  }
+}
+
+@include desktop {
+  h1 {
+    font-size: $fs-h1;
+  }
+
+  h2 {
+    font-size: $fs-h2;
+  }
+
+  h3 {
+    font-size: $fs-h3;
+  }
+}
+
+
+// Typography for Header on Homepage
+
+.header__event h1 {
+  @include desktop {
+    font-size: $fs-h2;
+  }
+
+  @include tablet {
+    font-size: $fs-h2;
+  }
+
+  @include mobile {
+    font-size: $fs-h3;
+  }
+}
+
+.header__event--date h1,
+.header__event--date h3 {
+  font-family: $font-brand-secondary;
+
+  @include desktop {
+    padding-top: 43px;
+  }
+
+  @include tablet {
+    padding-top: 30px;
+  }
+}
+
+.header__event--details h1 {
+  @include mobile {
+    font-size: $fs-h3;
+  }
+}
+
+.header__event--details h2 {
+  font-family: $font-brand-primary;
+  font-size: $fs-h1;
+  font-weight: $fw-semibold;
+  text-align: left;
+
+  @include desktop {
+    font-size: $fs-h2;
+  }
+
+  @include tablet {
+    font-size: $fs-h3;
+    width: 80%;
+  }
+
+  @include mobile {
+    font-size: $fs-h4;
+  }
+}
+
+.header__event--details h4 {
+  font-family: $font-brand-tertiary;
+  padding-top: 3%;
+
+  @include tablet {
+    font-size: $fs-h5;
+  }
+
+  @include mobile {
+    float: left;
+    font-size: $fs-h5;
+  }
+}
+
+//  Typography Media Queries for Colorblock on Homepage
+.colorblock__left--opportunities>p,
+.colorblock__left--education>p,
+.colorblock__left--support>p {
+  font-family: $font-brand-secondary;
+  font-size: $fs-h3;
+
+  @include desktop-lg {
+    font-size: $fs-h3;
+  }
+
+  @include desktop {
+    font-size: $fs-h5;
+  }
+
+  @include tablet {
+    font-size: $fs-h5;
+  }
+
+  @include mobile {
+    font-size: $fs-h5;
+  }
+}
+
+.colorblock__left--opportunities>h1,
+.colorblock__left--education>h1,
+.colorblock__left--support>h1 {
+  font-family: $font-brand-primary;
+  font-size: $fs-h1;
+
+  @include desktop-lg {
+    font-size: $fs-h1;
+  }
+
+  @include desktop {
+    font-size: $fs-h2;
+  }
+
+  @include tablet {
+    font-size: $fs-h3;
+  }
+
+  @include mobile {
+    font-size: $fs-h3;
+  }
 }
