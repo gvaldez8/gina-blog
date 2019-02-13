@@ -10,28 +10,6 @@
   float: right;
   height: auto;
   width: 50%;
-}
-
-.image__right--opportunities {
-  background-image: url("../../images/opportunities.png") center no-repeat;
-
-  @include mobile {
-    width: 100%;
-  }
-}
-
-.image__right--education {
-  background-image: url("../../images/education.png") center no-repeat;
-
-  @include mobile {
-    width: 100%;
-  }
-}
-
-
-
-.image__right--support {
-  background-image: url("../../images/support.png") center no-repeat;
 
   @include mobile {
     width: 100%;

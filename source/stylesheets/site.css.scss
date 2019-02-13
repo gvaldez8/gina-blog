@@ -11,498 +11,274 @@ body {
   font-family: $font-brand-primary;
 }
 
-header {
-  align-items: center;
-  display: flex;
-  height: auto;
-  justify-content: center;
-  overflow: hidden;
-
-  @include mobile {
-    height: 275px;
-  }
-}
-
-.header__image {
-  float: left;
-  height: auto;
-  width: 100%;
-
-  @include mobile {
-    height: auto;
-    flex-shrink: 0;
-    min-width: 158%;
-    min-height: 100%;
-  }
-}
-
-.header__event {
-  color: white;
-  padding-left: 8%;
-  position: absolute;
-  top: 35%;
-  left: 0;
-
-  @include desktop {
-    top: 24%;
-  }
-
-  @include tablet {
-    top: 21%;
-  }
-
-  @include mobile {
-    top: 17%;
-  }
-}
-
-.header__event h1 {
-  @include desktop {
-    font-size: $fs-h2;
-  }
-
-  @include tablet {
-    font-size: $fs-h2;
-  }
-
-  @include mobile {
-    font-size: $fs-h3;
-  }
-}
-
-.header__event--date {
-  float: left;
-  padding-right: 5%;
-  padding-top: 40px;
-  position: left;
-  text-align: right;
-}
-
-.header__event--date h1,
-.header__event--date h3 {
-  font-family: $font-brand-secondary;
-
-  @include desktop {
-    padding-top: 43px;
-  }
-
-  @include tablet {
-    padding-top: 30px;
-  }
-}
-
-.header__event--date h1,
-.header__event--date h3 {
-  font-family: $font-brand-secondary;
-}
-
-.header__event--details {
-  display: block;
-  float: left;
-  padding-top: 35px;
-  width: 500px;
-
-  @include tablet {
-    padding-top: 20px;
-  }
-
-  @include mobile {
-    width: 200px;
-  }
-}
-
-.header__event--details h1 {
-  @include mobile {
-    font-size: $fs-h3;
-  }
-}
-
-.header__event--details h2 {
-  font-family: $font-brand-primary;
-  font-size: $fs-h1;
-  font-weight: $fw-semibold;
-  text-align: left;
-
-  @include desktop {
-    font-size: $fs-h2;
-  }
-
-  @include tablet {
-    font-size: $fs-h3;
-    width: 80%;
-  }
-
-  @include mobile {
-    font-size: $fs-h4;
-  }
-}
-
-.header__event--details h4 {
-  font-family: $font-brand-tertiary;
-  padding-top: 3%;
-
-  @include tablet {
-    font-size: $fs-h5;
-  }
-
-  @include mobile {
-    float: left;
-    font-size: $fs-h5;
-  }
-}
-
-.homepage__landing--opportunities,
-.homepage__landing--education,
-.homepage__landing--support {
-  width: 100%;
+.homepage__section {
   border: 2px blueviolet solid;
   overflow: hidden;
+  width: 100%;
 
-  @include desktop-lg {
-    height: 569px;
+  @include tablet {
+    height: 318px;
   }
 
   @include desktop {
     height: 425px;
   }
 
-  @include tablet {
-    height: 318px;
+  @include desktop-lg {
+    height: 569px;
   }
 }
 
-.colorblock__left--opportunities {
+.homepage__section-primary {
   background-color: $color-charlotte;
-  clear: both;
-  float: left;
-  font-weight: $fw-semibold;
-  height: 100%;
-  width: 50%;
-  padding: 6% 8%;
-
-
-  @include desktop-lg {
-    height: 100%;
-  }
-
-  @include desktop {
-    height: 100%;
-  }
-
-  @include tablet {
-    height: 100%;
-  }
-
-  @include mobile {
-    width: 100%;
-  }
 }
 
-.colorblock__left--education {
+.homepage__section-secondary {
   background-color: $color-supernova;
-  clear: both;
-  float: left;
-  font-weight: $fw-semibold;
-  height: 100%;
-  width: 50%;
-  padding: 6% 8%;
-
-
-  @include desktop-lg {
-    height: 100%;
-  }
-
-  @include desktop {
-    height: 100%;
-  }
-
-  @include tablet {
-    height: 100%;
-  }
-
-  @include mobile {
-    width: 100%;
-  }
 }
 
-.colorblock__left--support {
+.homepage__section-tertiary {
   background-color: $color-cherub;
-  clear: both;
-  float: left;
-  font-weight: $fw-semibold;
-  height: 100%;
-  width: 50%;
-  padding: 6% 8%;
-
-
-  @include desktop-lg {
-    height: 100%;
-    width: 50%;
-  }
-
-  @include desktop {
-    height: 100%;
-    width: 50%;
-  }
-
-  @include tablet {
-    height: 100%;
-    width: 50%;
-  }
-
-  @include mobile {
-    width: 100%;
-  }
 }
 
 .colorblock__left--support h1 {
   padding-top: 2px;
 }
 
-.colorblock__left--opportunities,
-.colorblock__left--education,
-.colorblock__left--support {
+.homepage__section-primary,
+.homepage__section-secondary,
+.homepage__section-tertiary {
+  clear: both;
+  float: left;
+  font-weight: $fw-semibold;
+  height: 100%;
+  padding: 6% 8%;
+  width: 100%;
+
+  @media (min-width: $tablet) {
+    padding: 3.05% 8%;
+    width: 50%;
+  }
 
   @include desktop {
     padding: 4% 8%;
   }
+}
 
-  @include tablet {
-    padding: 3.05% 8%;
-  }
 
-  @include mobile {
-    padding: 24% 8%;
-    font-weight: $fw-semibold;
-    width: 100%;
-  }
+//Opportunities page
+.colorblock__right--involved {
+  @include colorblock($color-charlotte, $float: right);
+  height: 800px;
+  padding-top: 40px;
+  width: 40%;
+}
 
-  // .colorblock__left--education {
-  //   @include colorblock($color-supernova);
-  // }
+.colorblock__right--involved h2 {
+  font-weight: $fw-semibold;
+}
 
-  // .colorblock__left--support {
-  //   @include colorblock($color-cherub);
-  // }
+.colorblock__right--involved>ul li {
+  list-style-type: none;
+  text-decoration: none;
+}
 
-  .colorblock__left--support h1 {
-    padding-top: 2px;
-  }
+.colorblock__right--involved li {
+  font-size: $fs-h5;
+  padding-top: 30px;
+}
 
-  .colorblock__left {
-    width: 100%;
+.colorblock__right--involved>.colorblock__text {
+  padding: 7% 0;
+}
 
-    @media (min-with: $tablet) {
-      overflow: hidden;
-      // max-height: 556px;
-    }
-  }
+.colorblock__right--education {
+  @include colorblock($color-supernova, $float: right);
+  font-weight: $fw-semibold;
+  height: 1700px;
+  width: 40%;
+}
 
-  .colorblock__text {
-    padding: 20% 0;
-  }
+.colorblock__right--education h2 {
+  font-family: $font-brand-secondary;
+  font-weight: $fw-semibold;
+  padding-top: 20%;
+}
 
-  .colorblock__right--involved {
-    @include colorblock($color-charlotte, $float: right);
-    height: 800px;
-    padding-top: 40px;
-    width: 40%;
-  }
+.colorblock__right--education>ul li {
+  list-style-type: none;
+  text-decoration: none;
+}
 
-  .colorblock__right--involved h2 {
-    font-weight: $fw-semibold;
-  }
+.colorblock__right--education li {
+  font-size: $fs-h5;
+  padding-top: 30px;
+}
 
-  .colorblock__right--involved>ul li {
-    list-style-type: none;
-    text-decoration: none;
-  }
+.colorblock__right--education>.colorblock__text {
+  padding: 30% 0;
+}
 
-  .colorblock__right--involved li {
-    font-size: $fs-h5;
-    padding-top: 30px;
-  }
+.colorblock__right--employment {
+  @include colorblock($color-cherub, $float: right);
+  height: 908px;
+  width: 40%;
+}
 
-  .colorblock__right--involved>.colorblock__text {
-    padding: 7% 0;
-  }
+.colorblock__right--employment h2 {
+  font-family: $font-brand-secondary;
+  font-weight: $fw-semibold;
+}
 
-  .colorblock__right--education {
-    @include colorblock($color-supernova, $float: right);
-    font-weight: $fw-semibold;
-    height: 1700px;
-    width: 40%;
-  }
+.colorblock__right--employment>ul li {
+  list-style-type: none;
+  text-decoration: none;
+}
 
-  .colorblock__right--education h2 {
-    font-family: $font-brand-secondary;
-    font-weight: $fw-semibold;
-    padding-top: 20%;
-  }
+.colorblock__right--employment li {
+  font-size: $fs-h5;
+  padding-top: 30px;
+}
 
-  .colorblock__right--education>ul li {
-    list-style-type: none;
-    text-decoration: none;
-  }
 
-  .colorblock__right--education li {
-    font-size: $fs-h5;
-    padding-top: 30px;
-  }
 
-  .colorblock__right--education>.colorblock__text {
-    padding: 30% 0;
-  }
 
-  .colorblock__right--employment {
-    @include colorblock($color-cherub, $float: right);
-    height: 908px;
-    width: 40%;
-  }
 
-  .colorblock__right--employment h2 {
-    font-family: $font-brand-secondary;
-    font-weight: $fw-semibold;
-  }
 
-  .colorblock__right--employment>ul li {
-    list-style-type: none;
-    text-decoration: none;
-  }
 
-  .colorblock__right--employment li {
-    font-size: $fs-h5;
-    padding-top: 30px;
-  }
+//Opportunities and Plan pages
+.colorblock__text {
+  padding: 20% 0;
+}
 
-  .colorblock__right--tickets {
-    @include colorblock($color-alabaster, $float: right);
-    font-weight: $fw-semibold;
-    height: 599px;
-    width: 40%;
-  }
+.colorblock__right--directions {
+  @include colorblock($color-white, $float: right);
+  clear: none;
+  font-weight: $fw-semibold;
+  height: auto;
+  width: 40%;
+}
 
-  .colorblock__right--tickets h2 {
-    font-family: $font-brand-secondary;
-    font-weight: $fw-semibold;
-    padding-top: 0;
-  }
+.colorblock__right--directions h3 {
+  font-family: $font-brand-secondary;
+  font-weight: $fw-semibold;
+  line-height: 1.5em;
+  padding-top: 10%;
+}
 
-  .colorblock__right--tickets>ul li {
-    list-style-type: none;
-    text-decoration: none;
-  }
+.colorblock__right--directions p {
+  line-height: 2em;
+  padding: 1px;
+}
 
-  .colorblock__right--tickets li {
-    font-size: $fs-h5;
-    padding-top: 30px;
-  }
+.colorblock__right--parking {
+  @include colorblock($color-supernova, $float: right);
+  clear: none;
+  font-weight: $fw-semibold;
+  height: 1004px;
+  width: 40%;
+}
 
-  .colorblock__right--accomodations {
-    @include colorblock($color-charlotte, $float: right);
-    clear: none;
-    font-weight: $fw-semibold;
-    height: 949px;
-    width: 40%;
-  }
+.colorblock__right--parking h3 {
+  font-family: $font-brand-secondary;
+  font-weight: $fw-semibold;
+  line-height: 1.5em;
+  padding-top: 10%;
+}
 
-  .colorblock__right--accomodations h2 {
-    font-family: $font-brand-secondary;
-    font-weight: $fw-semibold;
-    padding-top: 0;
-  }
+.colorblock__right--parking p {
+  line-height: 2em;
+  padding: 1px;
+}
 
-  .colorblock__right--accomodations>ul li {
-    list-style-type: none;
-    text-decoration: none;
-  }
+.colorblock__right--parking>.colorblock__text {
+  padding-bottom: 234px;
+}
 
-  .colorblock__right--accomodations li {
-    font-size: $fs-h5;
-    padding-top: 30px;
-  }
+.colorblock__right--sightseeing {
+  @include colorblock($color-cherub, $float: right);
+  clear: none;
+  font-weight: $fw-semibold;
+  height: 660px;
+  width: 40%;
+}
 
-  .colorblock__right--accomodations>.colorblock__text {
-    padding-bottom: 29.75%;
-  }
+.colorblock__right--sightseeing h3 {
+  font-family: $font-brand-secondary;
+  font-weight: $fw-semibold;
+  line-height: 1.5em;
+  padding-top: 10%;
+}
 
-  .accomodations__hotels h3 {
-    font-family: $font-brand-secondary;
-    font-weight: $fw-semibold;
-    line-height: 1.5em;
-    padding-top: 10%;
-  }
+.colorblock__right--sightseeing p {
+  line-height: 2em;
+  padding: 1px;
+}
 
-  .accomodations__hotels p {
-    line-height: 2.25em;
-    padding: 1px;
-  }
+.colorblock__right--sightseeing>.colorblock__text {
+  padding-bottom: 61.5%;
+}
 
-  .colorblock__right--parking {
-    @include colorblock($color-supernova, $float: right);
-    clear: none;
-    font-weight: $fw-semibold;
-    height: 1004px;
-    width: 40%;
-  }
 
-  .colorblock__right--parking h3 {
-    font-family: $font-brand-secondary;
-    font-weight: $fw-semibold;
-    line-height: 1.5em;
-    padding-top: 10%;
-  }
+.colorblock__right--tickets {
+  @include colorblock($color-alabaster, $float: right);
+  font-weight: $fw-semibold;
+  height: 599px;
+  width: 40%;
+}
 
-  .colorblock__right--parking p {
-    line-height: 2em;
-    padding: 1px;
-  }
+.colorblock__right--tickets h2 {
+  font-family: $font-brand-secondary;
+  font-weight: $fw-semibold;
+  padding-top: 0;
+}
 
-  .colorblock__right--parking>.colorblock__text {
-    padding-bottom: 234px;
-  }
+.colorblock__right--tickets>ul li {
+  list-style-type: none;
+  text-decoration: none;
+}
 
-  .colorblock__right--sightseeing {
-    @include colorblock($color-cherub, $float: right);
-    clear: none;
-    font-weight: $fw-semibold;
-    height: 660px;
-    width: 40%;
-  }
+.colorblock__right--tickets li {
+  font-size: $fs-h5;
+  padding-top: 30px;
+}
 
-  .colorblock__right--sightseeing h3 {
-    font-family: $font-brand-secondary;
-    font-weight: $fw-semibold;
-    line-height: 1.5em;
-    padding-top: 10%;
-  }
+.colorblock__right--accomodations {
+  @include colorblock($color-charlotte, $float: right);
+  clear: none;
+  font-weight: $fw-semibold;
+  height: 949px;
+  width: 40%;
+}
 
-  .colorblock__right--sightseeing p {
-    line-height: 2em;
-    padding: 1px;
-  }
+.colorblock__right--accomodations h2 {
+  font-family: $font-brand-secondary;
+  font-weight: $fw-semibold;
+  padding-top: 0;
+}
 
-  .colorblock__right--sightseeing>.colorblock__text {
-    padding-bottom: 61.5%;
-  }
+.colorblock__right--accomodations>ul li {
+  list-style-type: none;
+  text-decoration: none;
+}
 
-  .colorblock__right--directions {
-    @include colorblock($color-white, $float: right);
-    clear: none;
-    font-weight: $fw-semibold;
-    height: auto;
-    width: 40%;
-  }
+.colorblock__right--accomodations li {
+  font-size: $fs-h5;
+  padding-top: 30px;
+}
 
-  .colorblock__right--directions h3 {
-    font-family: $font-brand-secondary;
-    font-weight: $fw-semibold;
-    line-height: 1.5em;
-    padding-top: 10%;
-  }
+.colorblock__right--accomodations>.colorblock__text {
+  padding-bottom: 29.75%;
+}
 
-  .colorblock__right--directions p {
-    line-height: 2em;
-    padding: 1px;
-  }
+.accomodations__hotels h3 {
+  font-family: $font-brand-secondary;
+  font-weight: $fw-semibold;
+  line-height: 1.5em;
+  padding-top: 10%;
+}
+
+.accomodations__hotels p {
+  line-height: 2.25em;
+  padding: 1px;
 }
