@@ -154,7 +154,6 @@ header {
 .homepage__landing--opportunities,
 .homepage__landing--education,
 .homepage__landing--support {
-  height: 580px;
   width: 100%;
   border: 2px blueviolet solid;
   overflow: hidden;
@@ -170,7 +169,6 @@ header {
   @include tablet {
     height: 318px;
   }
-
 }
 
 .colorblock__left--opportunities {
@@ -194,6 +192,10 @@ header {
   @include tablet {
     height: 100%;
   }
+
+  @include mobile {
+    width: 100%;
+  }
 }
 
 .colorblock__left--education {
@@ -216,6 +218,10 @@ header {
 
   @include tablet {
     height: 100%;
+  }
+
+  @include mobile {
+    width: 100%;
   }
 }
 
@@ -243,6 +249,10 @@ header {
     height: 100%;
     width: 50%;
   }
+
+  @include mobile {
+    width: 100%;
+  }
 }
 
 .colorblock__left--support h1 {
@@ -264,8 +274,7 @@ header {
   @include mobile {
     padding: 24% 8%;
     font-weight: $fw-semibold;
-    padding: 7% 0 8% 0;
-    width: 50%;
+    width: 100%;
   }
 
   // .colorblock__left--education {

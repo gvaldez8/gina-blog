@@ -3,36 +3,38 @@
 @import 'mixins';
 @import 'typography';
 
-
-.image__right--opportunities {
-  background-image: url("../../images/opportunities.png") center no-repeat;
+.image__right--opportunities,
+.image__right--education,
+.image__right--support {
   clear: none;
   float: right;
   height: auto;
   width: 50%;
 }
 
+.image__right--opportunities {
+  background-image: url("../../images/opportunities.png") center no-repeat;
+
+  @include mobile {
+    width: 100%;
+  }
+}
+
 .image__right--education {
   background-image: url("../../images/education.png") center no-repeat;
-  clear: none;
-  float: right;
-  height: auto;
-  width: 50%;
+
+  @include mobile {
+    width: 100%;
+  }
 }
 
 
 
 .image__right--support {
   background-image: url("../../images/support.png") center no-repeat;
-  clear: none;
-  float: right;
-  height: auto;
-  width: 50%;
 
-  @include tablet {
-    float: right;
-    height: 100%;
-    width: 50%;
+  @include mobile {
+    width: 100%;
   }
 }
 
