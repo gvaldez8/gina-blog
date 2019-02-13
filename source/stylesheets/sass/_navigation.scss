@@ -7,23 +7,23 @@
   max-width: 100%;
   padding: 25px 0 5px 50px;
 
-  @include desktop-lg {
-    height: auto;
-    width: 30%;
+  @media (min-width: #{$mobile}) {
+    padding-bottom: 24px;
+    width: 70%;
   }
 
-  @include desktop {
-    width: 40%;
-  }
-
-  @include tablet {
+  @media (min-width: #{$tablet}) {
     padding-bottom: 40px;
     width: 50%;
   }
 
-  @include mobile {
-    padding-bottom: 24px;
-    width: 70%;
+  @media (min-width: #{$desktop}) {
+    width: 40%;
+  }
+
+  @media (min-width: #{$desktop-lg}) {
+    height: auto;
+    width: 30%;
   }
 }
 
@@ -31,16 +31,18 @@ nav {
   padding-top: 20px;
   width: 100%;
 
-  @include desktop {
-    padding-bottom: 40px;
+
+
+  @media (min-width: #{$mobile}) {
+    padding-bottom: 10px;
   }
 
-  @include tablet {
+  @media (min-width: #{$tablet}) {
     padding-bottom: 3px;
   }
 
-  @include mobile {
-    padding-bottom: 10px;
+  @media (min-width: #{$desktop}) {
+    padding-bottom: 3px;
   }
 
   a:link {
@@ -69,21 +71,23 @@ nav ul {
   text-align: left;
   width: 84%;
 
+
+  @media (min-width: #{$mobile}) {
+    display: none;
+  }
+
+  @media (min-width: #{$tablet}) {
+    display: none;
+  }
+
+  @media (min-width: #{$desktop}) {
+    display: none;
+  }
+
   @media (min-width: #{$desktop-lg}) {
     display: inline-block;
   }
 
-  @include desktop {
-    display: none;
-  }
-
-  @include tablet {
-    display: none;
-  }
-
-  @include mobile {
-    display: none;
-  }
 
   li {
     display: inline-block;
@@ -97,35 +101,26 @@ nav ul>li:nth-child(n+2) {
 
 .navigation__menu {
 
-  @media (min-width: #{$desktop-lg}) {
-    display: none;
-  }
-
-  @include desktop {
-    left: 94%;
-    top: 6%;
+  @media (min-width: #{$mobile}) {
+    left: 81%;
     position: absolute;
+    top: 5.5%;
   }
 
-  @include tablet {
+  @media (min-width: #{$tablet}) {
     left: 90%;
     top: 6%;
     position: absolute;
   }
 
-  @media (min-width: #{$mobile + 200px}) {
-    top: 7%;
-  }
-
-
-  @media (min-width: #{$mobile + 100px}) {
+  @media (min-width: #{$desktop}) {
+    left: 94%;
     top: 6%;
+    position: absolute;
   }
 
-  @include mobile {
-    left: 81%;
-    position: absolute;
-    top: 5.5%;
+  @media (min-width: #{$desktop-lg}) {
+    display: none;
   }
 }
 
@@ -139,20 +134,20 @@ nav ul>li:nth-child(n+2) {
   margin-top: 30px;
   padding: 20px 0 0 20px;
 
-  @media (min-width: #{$desktop-lg}) {
-    display: block;
-  }
-
-  @include desktop {
-    display: none;
-  }
-
-  @include tablet {
-    display: none;
-  }
-
-  @include mobile {
+  @media (min-width: #{$mobile}) {
     display: none;
     padding-bottom: 24px;
+  }
+
+  @media (min-width: #{$tablet}) {
+    display: none;
+  }
+
+  @media (min-width: #{$desktop}) {
+    display: none;
+  }
+
+  @media (min-width: #{$desktop-lg}) {
+    display: block;
   }
 }

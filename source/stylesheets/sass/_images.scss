@@ -10,39 +10,12 @@
   float: right;
   height: auto;
   width: 50%;
-}
 
-.image__right--opportunities {
-  background-image: url("../../images/opportunities.png") center no-repeat;
-
-  @include mobile {
+  @media (min-width: #{$mobile}) {
     width: 100%;
   }
-}
 
-.image__right--education {
-  background-image: url("../../images/education.png") center no-repeat;
-
-  @include mobile {
-    width: 100%;
-  }
-}
-
-
-
-.image__right--support {
-  background-image: url("../../images/support.png") center no-repeat;
-
-  @include mobile {
-    width: 100%;
-  }
-}
-
-.image__right {
-  float: right;
-  width: 100%;
-
-  @media(min-width: $tablet) {
+  @media (min-width: #{$tablet}) {
     width: 50%;
   }
 }
@@ -51,16 +24,4 @@
   clear: both;
   float: left;
   width: 60%;
-}
-
-.image__description--left {
-  float: left;
-  height: auto;
-  padding: 6% 10% 5% 8%;
-  width: 60%;
-
-  p {
-    font-family: $font-brand-tertiary;
-    font-size: $fs-h4;
-  }
 }

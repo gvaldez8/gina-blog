@@ -1,37 +1,5 @@
 // Breakpoints
 $mobile: 400px;
 $tablet: 767px;
-$tablet-lg: 969px;
 $desktop: 1024px;
-$desktop-md: 1268px;
 $desktop-lg: 1368px;
-
-@mixin mobile {
-  @media (min-width: #{$mobile}) and (max-width: #{$tablet - 1px}) {
-    @content;
-  }
-}
-
-@mixin tablet {
-  @media (min-width: #{$tablet}) and (max-width: #{$tablet + 201px}) {
-    @content;
-  }
-}
-
-@mixin desktop {
-  @media (min-width: #{$desktop}) and (max-width: #{$desktop-md - 1px}) {
-    @content;
-  }
-}
-
-@mixin desktop-md {
-  @media (min-width: #{$desktop-md}) and (max-width: #{$desktop-lg - 1px}) {
-    @content;
-  }
-}
-
-@mixin desktop-lg {
-  @media (min-width: #{$desktop-lg}) {
-    @content;
-  }
-}

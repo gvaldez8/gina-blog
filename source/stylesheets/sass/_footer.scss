@@ -7,25 +7,47 @@
 footer {
   background-color: $color-black;
   color: $color-white;
-  column-count: 4;
-  column-gap: 1em;
   font-family: $font-brand-primary;
   height: auto;
   padding: 5% 0 3% 7%;
   width: 100%;
 
-  ul {
-    font-family: $font-brand-secondary;
+  @media (min-width: #{$mobile}) {
+    -webkit-column-count: 0;
+    column-count: 0;
+    column-gap: 0;
+    text-align: center;
+    padding: 0;
   }
 
-  li {
-    list-style-type: none;
-    line-height: 2em;
-    padding-top: 3%;
-    bottom: 10%;
+  @media (min-width: #{$tablet}) {
+    -webkit-column-count: 4;
+    column-count: 4;
+    column-gap: 1em;
   }
 
-  @include footer-links;
+  @media (min-width: #{$desktop}) {
+    -webkit-column-count: 4;
+    column-count: 4;
+    column-gap: 1em;
+  }
+}
+
+ul {
+  font-family: $font-brand-secondary;
+  list-style-type: none;
+
+  @media (min-width: #{$mobile}) {
+    line-height: 2.5em;
+    padding: 4% 0 8%;
+  }
+}
+
+footer>li {
+  list-style-type: none;
+  line-height: 2em;
+  padding-top: 3%;
+  bottom: 10%;
 }
 
 h2 {
@@ -34,7 +56,12 @@ h2 {
 }
 
 h3 {
+  font-family: $font-brand-primary;
   break-before: column;
+
+  @media (min-width: #{$mobile}) {
+    break-before: none;
+  }
 }
 
 p {
@@ -48,9 +75,20 @@ p {
   width: 90%;
   position: relative;
   top: 50px;
+
+  @media (min-width: #{$mobile}) {
+    border-style: none;
+  }
 }
 
-.copyright {
+
+.copyright>p {
   column-span: all;
   padding-top: 100px;
+
+  @media (min-width: #{$mobile}) {
+    font-size: $fs-h6;
+    text-align: center;
+    padding-top: 10px;
+  }
 }

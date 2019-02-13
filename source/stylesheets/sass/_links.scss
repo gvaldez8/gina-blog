@@ -10,27 +10,8 @@
   text-decoration: none;
 }
 
-.header__event--links {
-  display: inline-block;
-  padding-top: 50px;
-
-  @include desktop {
-    font-size: $fs-h6;
-    padding-top: 25px;
-  }
-
-  @include tablet {
-    padding-top: 22px;
-  }
-
-  @include mobile {
-    display: inline-block;
-    float: left;
-    padding-top: 0;
-  }
-}
-
 .link__highlight--reversed {
+  font-family: $font-brand-primary;
   padding-right: 60px;
   float: left;
   padding-top: 5%;
@@ -57,24 +38,24 @@
     color: $color-black;
     text-decoration: none;
   }
+}
 
-  h4 {
-    $font-family: $font-brand-primary;
+.link__highlight--bottom>h4 {
+  $font-family: $font-brand-primary;
 
-    @include desktop {
-      font-size: $fs-h5;
-    }
-
-    @include tablet {
-      font-size: $fs-h5;
-      padding-bottom: 6px;
-    }
-
-    @include mobile {
-      font-size: $fs-h5;
-    }
+  @media (min-width: #{$mobile}) {
+    font-size: $fs-h5;
+    padding-bottom: 35px;
   }
 
+  @media (min-width: #{$tablet}) {
+    font-size: $fs-h6;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: #{$desktop}) {
+    font-size: $fs-h6;
+  }
 }
 
 
@@ -97,23 +78,8 @@
   }
 }
 
-//Default Links in Colorblock sections on Homepage
 
-.colorblock__left--support>.link__highlight--bottom {
 
-  @include desktop {
-    padding-top: 6%;
-    font-size: $fs-h4;
-  }
-
-  @include tablet {
-    padding-bottom: 1px;
-  }
-
-  @include mobile {
-    padding-bottom: 1px;
-  }
-}
 
 //Under Plan Your Experience
 .accomodations__hotels>.link__highlight--condensed {
