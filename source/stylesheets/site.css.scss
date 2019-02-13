@@ -22,6 +22,34 @@ body {
 
   @include desktop {
     height: 425px;
+    font-size: $fs-h2;
+  }
+
+  @include tablet {
+    font-size: $fs-h2;
+  }
+
+  @include mobile {
+    font-size: $fs-h3;
+  }
+}
+
+.header__event--date {
+  float: left;
+  padding-right: 5%;
+  padding-top: 40px;
+  position: left;
+  text-align: right;
+}
+
+.header__event--details {
+  display: block;
+  float: left;
+  padding-top: 35px;
+  width: 500px;
+
+  @include tablet {
+    padding-top: 20px;
   }
 
   @include desktop-lg {
@@ -271,6 +299,199 @@ body {
   padding-bottom: 29.75%;
 }
 
+
+.homepage__section {
+  border: 2px blueviolet solid;
+  overflow: hidden;
+  width: 100%;
+
+  @include desktop-lg {
+    height: 569px;
+  }
+
+  @include desktop {
+    height: 425px;
+  }
+
+  @include tablet {
+    height: 318px;
+  }
+}
+
+.colorblock__left--opportunities {
+  background-color: $color-charlotte;
+}
+
+.colorblock__left--education {
+  background-color: $color-supernova;
+}
+
+.colorblock__left--support {
+  background-color: $color-cherub;
+}
+
+.colorblock__left--opportunities,
+.colorblock__left--education,
+.colorblock__left--support {
+  clear: both;
+  float: left;
+  font-weight: $fw-semibold;
+  height: 100%;
+  padding: 6% 8%;
+  width: 50%;
+
+  @include desktop-lg {
+    padding: 6% 8%;
+    height: 100%;
+    width: 50%;
+  }
+
+  @include desktop {
+    padding: 6% 8%;
+    height: 100%;
+    width: 50%;
+  }
+
+  @include tablet {
+    padding: 3% 5%;
+    height: 100%;
+    width: 50%;
+  }
+
+  @include mobile {
+    font-weight: $fw-semibold;
+    padding: 15% 8%;
+    width: 100%;
+  }
+}
+
+
+//  Colorblock Right on Opportunities Page
+
+.colorblock__right--involved {
+  @include colorblock($color-charlotte, $float: right);
+  height: 800px;
+  padding-top: 40px;
+  width: 40%;
+}
+
+.colorblock__right--involved h2 {
+  font-weight: $fw-semibold;
+}
+
+.colorblock__right--involved>ul li {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.colorblock__right--involved li {
+  font-size: $fs-h5;
+  padding-top: 30px;
+}
+
+.colorblock__right--involved>.colorblock__text {
+  padding: 7% 0;
+}
+
+.colorblock__right--education {
+  @include colorblock($color-supernova, $float: right);
+  font-weight: $fw-semibold;
+  height: 1700px;
+  width: 40%;
+}
+
+.colorblock__right--education h2 {
+  font-family: $font-brand-secondary;
+  font-weight: $fw-semibold;
+  padding-top: 20%;
+}
+
+.colorblock__right--education>ul li {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.colorblock__right--education li {
+  font-size: $fs-h5;
+  padding-top: 30px;
+}
+
+.colorblock__right--education>.colorblock__text {
+  padding: 30% 0;
+}
+
+.colorblock__right--employment {
+  @include colorblock($color-cherub, $float: right);
+  height: 908px;
+  width: 40%;
+}
+
+.colorblock__right--employment h2 {
+  font-family: $font-brand-secondary;
+  font-weight: $fw-semibold;
+}
+
+.colorblock__right--employment>ul li {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.colorblock__right--employment li {
+  font-size: $fs-h5;
+  padding-top: 30px;
+}
+
+.colorblock__right--tickets {
+  @include colorblock($color-alabaster, $float: right);
+  font-weight: $fw-semibold;
+  height: 599px;
+  width: 40%;
+}
+
+.colorblock__right--tickets h2 {
+  font-family: $font-brand-secondary;
+  font-weight: $fw-semibold;
+  padding-top: 0;
+}
+
+.colorblock__right--tickets>ul li {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.colorblock__right--tickets li {
+  font-size: $fs-h5;
+  padding-top: 30px;
+}
+
+.colorblock__right--accomodations {
+  @include colorblock($color-charlotte, $float: right);
+  clear: none;
+  font-weight: $fw-semibold;
+  height: 949px;
+  width: 40%;
+}
+
+.colorblock__right--accomodations h2 {
+  font-family: $font-brand-secondary;
+  font-weight: $fw-semibold;
+  padding-top: 0;
+}
+
+.colorblock__right--accomodations>ul li {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.colorblock__right--accomodations li {
+  font-size: $fs-h5;
+  padding-top: 30px;
+}
+
+.colorblock__right--accomodations>.colorblock__text {
+  padding-bottom: 29.75%;
+}
+
 .accomodations__hotels h3 {
   font-family: $font-brand-secondary;
   font-weight: $fw-semibold;
@@ -280,5 +501,76 @@ body {
 
 .accomodations__hotels p {
   line-height: 2.25em;
+  padding: 1px;
+}
+
+.colorblock__right--parking {
+  @include colorblock($color-supernova, $float: right);
+  clear: none;
+  font-weight: $fw-semibold;
+  height: 1004px;
+  width: 40%;
+}
+
+.colorblock__right--parking h3 {
+  font-family: $font-brand-secondary;
+  font-weight: $fw-semibold;
+  line-height: 1.5em;
+  padding-top: 10%;
+}
+
+.colorblock__right--parking p {
+  line-height: 2em;
+  padding: 1px;
+}
+
+.colorblock__right--parking>.colorblock__text {
+  padding-bottom: 234px;
+}
+
+.colorblock__right--sightseeing {
+  @include colorblock($color-cherub, $float: right);
+  clear: none;
+  font-weight: $fw-semibold;
+  height: 660px;
+  width: 40%;
+}
+
+.colorblock__right--sightseeing h3 {
+  font-family: $font-brand-secondary;
+  font-weight: $fw-semibold;
+  line-height: 1.5em;
+  padding-top: 10%;
+}
+
+.colorblock__right--sightseeing p {
+  line-height: 2em;
+  padding: 1px;
+}
+
+.colorblock__right--sightseeing>.colorblock__text {
+  padding-bottom: 61.5%;
+}
+
+.colorblock__right--directions {
+  @include colorblock($color-white, $float: right);
+  clear: none;
+  font-weight: $fw-semibold;
+  height: auto;
+  width: 40%;
+}
+
+.colorblock__right--directions h3 {
+  font-family: $font-brand-secondary;
+  font-weight: $fw-semibold;
+  line-height: 1.5em;
+  padding-top: 10%;
+}
+
+.accomodations__hotels p {
+  line-height: 2.25em;
+  
+.colorblock__right--directions p {
+  line-height: 2em;
   padding: 1px;
 }
