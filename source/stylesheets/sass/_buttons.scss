@@ -11,19 +11,19 @@ button {
   padding: 10px;
   width: 100px;
 
-  @media (min-width: 400px) {
+  @media (min-width: #{$mobile}) {
     display: none;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: #{$tablet}) {
     display: none;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: #{$desktop}) {
     display: none;
   }
 
-  @media (min-width: 1365px) {
+  @media (min-width: #{$desktop-lg}) {
     display: inline-block;
   }
 }
@@ -37,8 +37,9 @@ button:hover {
 
 .buttons__navigation--default {
   clear: both;
+  font-family: $font-brand-tertiary;
+  font-size: $fs-h5;
   position: absolute;
   right: 90px;
   top: 40px;
-
 }

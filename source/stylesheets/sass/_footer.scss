@@ -7,38 +7,32 @@
 footer {
   background-color: $color-black;
   color: $color-white;
-  column-count: 4;
-  column-gap: 1em;
   font-family: $font-brand-primary;
   height: auto;
   padding: 5% 0 3% 7%;
   width: 100%;
 
-  ul {
-    font-family: $font-brand-secondary;
+  @media (min-width: #{$mobile}) {
+    -webkit-column-count: 0;
+    column-count: 0;
+    column-gap: 0;
+    text-align: center;
+    padding: 0;
   }
 
-  li {
-    list-style-type: none;
-    line-height: 2em;
-    padding-top: 3%;
-    bottom: 10%;
+  @media (min-width: #{$tablet}) {
+    -webkit-column-count: 4;
+    column-count: 4;
+    column-gap: 0;
+    text-align: left;
+    padding: 5% 9%;
   }
 
-  @include footer-links;
-}
-
-h2 {
-  font-family: $font-brand-secondary;
-  font-weight: $fw-semibold;
-}
-
-h3 {
-  break-before: column;
-}
-
-p {
-  font-size: $fs-h4;
+  @media (min-width: #{$desktop}) {
+    -webkit-column-count: 4;
+    column-count: 4;
+    column-gap: 1em;
+  }
 }
 
 .footer__hr {
@@ -48,9 +42,98 @@ p {
   width: 90%;
   position: relative;
   top: 50px;
+
+  @media (min-width: #{$mobile}) {
+    border-style: none;
+  }
+
+  @media (min-width: #{$tablet}) {
+    border-style: solid none none;
+    top: 40px;
+    width: 100%;
+  }
 }
 
-.copyright {
+
+
+
+//  FOOTER LIST ITEMS
+
+ul {
+  font-family: $font-brand-secondary;
+  list-style-type: none;
+
+  @media (min-width: #{$mobile}) {
+    line-height: 2.5em;
+    padding: 4% 0 8%;
+  }
+
+  @media (min-width: #{$tablet}) {
+    display: inline;
+    line-height: 2.5em;
+    padding: 4% 0 8%;
+  }
+}
+
+footer>li {
+  list-style-type: none;
+  line-height: 2em;
+  padding-top: 3%;
+  bottom: 10%;
+}
+
+.footer__contact>li {
+  @media (min-width: #{$tablet}) {
+    font-size: $fs-h5;
+  }
+}
+
+
+
+
+//  FOOTER TYPOGRAPHY
+h2 {
+  font-family: $font-brand-secondary;
+  font-weight: $fw-semibold;
+}
+
+h3 {
+  font-family: $font-brand-primary;
+  break-before: column;
+
+  @media (min-width: #{$mobile}) {
+    break-before: none;
+  }
+
+  @media (min-width: #{$tablet}) {
+    break-before: column;
+    font-size: $fs-h5;
+  }
+}
+
+p {
+  font-size: $fs-h4;
+}
+
+
+//  COPYRIGHT
+
+.copyright>p {
   column-span: all;
-  padding-top: 100px;
+  text-align: center;
+  padding: 5% 0;
+
+  @media (min-width: #{$mobile}) {
+    font-size: $fs-h5;
+    text-align: center;
+  }
+
+  @media (min-width: #{$tablet}) {
+    text-align: left;
+    padding: 10% 0 3%;
+  }
+
+  @media (min-width: #{$desktop}) {
+    padding: 8% 0 3%;
+  }
 }

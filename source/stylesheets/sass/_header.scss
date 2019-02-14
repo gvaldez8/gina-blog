@@ -1,0 +1,243 @@
+//  CSO Header
+@import 'breakpoints';
+
+header {
+  align-items: center;
+  display: flex;
+  height: auto;
+  justify-content: center;
+  overflow: hidden;
+
+  @media (min-width: #{$mobile}) {
+    height: 275px;
+  }
+
+  @media (min-width: #{$tablet}) {
+    height: 350px;
+  }
+
+  @media (min-width: #{$desktop}) {
+    height: 400px;
+  }
+
+  @media (min-width: #{$desktop-lg}) {
+    height: 450px;
+  }
+}
+
+.header__image {
+  float: left;
+  height: auto;
+  width: 100%;
+
+  @media (min-width: #{$mobile}) {
+    height: auto;
+    flex-shrink: 0;
+    min-width: 158%;
+    min-height: 100%;
+  }
+}
+
+.header__event {
+  color: white;
+  padding-left: 8%;
+  position: absolute;
+  top: 35%;
+  left: 0;
+
+  @media (min-width: #{$mobile}) {
+    top: 15%;
+  }
+
+  @media (min-width: #{$tablet}) {
+    top: 22%;
+  }
+
+  @media (min-width: #{$desktop-lg}) {
+    top: 33%;
+  }
+}
+
+.header__event>h1 {
+
+  @media (min-width: #{$mobile}) {
+    font-size: $fs-h3;
+  }
+
+  @media (min-width: #{$tablet}) {
+    font-size: $fs-h2;
+  }
+
+  @media (min-width: #{$desktop}) {
+    font-size: $fs-h1;
+  }
+}
+
+
+
+
+//  HEADER EVENT DATE
+
+.header__event--date {
+  float: left;
+  padding-right: 5%;
+  padding-top: 40px;
+  position: left;
+  text-align: right;
+
+  @media (min-width: #{$mobile}) {
+    padding-right: 8%;
+    padding-top: 0;
+  }
+
+  @media (min-width: #{$tablet}) {
+    padding-right: 4%;
+  }
+
+  @media (min-width: #{$desktop-lg}) {
+    padding-top: 16px;
+  }
+}
+
+.header__event--date>h1,
+.header__event--date>h3 {
+  font-family: $font-brand-secondary;
+  margin: 0;
+}
+
+.header__event--date>h1 {
+  @media (min-width: #{$tablet}) {
+    font-size: $fs-h1;
+    padding-top: 0;
+  }
+
+  @media (min-width: #{$desktop}) {
+    font-size: $fs-h1;
+    padding-top: 10px;
+  }
+}
+
+.header__event--date>h3 {
+  @media (min-width: #{$tablet}) {
+    padding-top: 0;
+  }
+
+  @media (min-width: #{$desktop-lg}) {
+    font-size: $fs-h2;
+  }
+}
+
+
+
+
+//  HEADER EVENT DETAIL
+
+.header__event--details {
+  display: block;
+  float: left;
+  margin: 0;
+  padding-top: 35px;
+  width: 500px;
+
+  @media (min-width: #{$mobile}) {
+    padding-top: 14px;
+    width: 250px;
+  }
+
+  @media (min-width: #{$tablet}) {
+    padding-top: 6px;
+    width: 500px;
+  }
+
+  @media (min-width: #{$desktop-lg}) {
+    padding-top: 17px;
+    padding-bottom: 5%;
+  }
+}
+
+.header__event--details>h1 {
+  @media (min-width: #{$mobile}) {
+    font-size: $fs-h3;
+  }
+}
+
+.header__event--details>h2 {
+  font-family: $font-brand-primary;
+  font-size: $fs-h1;
+  font-weight: $fw-semibold;
+  text-align: left;
+  margin: 0;
+
+  @media (min-width: #{$mobile}) {
+    font-size: $fs-h4;
+  }
+
+  @media (min-width: #{$tablet}) {
+    font-size: $fs-h3;
+    width: 80%;
+  }
+
+  @media (min-width: #{$desktop}) {
+    font-size: $fs-h2;
+  }
+
+  @media (min-width: #{$desktop-lg}) {
+    line-height: 1.5em;
+    width: 92%;
+  }
+}
+
+.header__event--details>h4 {
+  font-family: $font-brand-tertiary;
+  padding-top: 3%;
+
+  @media (min-width: #{$mobile}) {
+    float: left;
+    font-size: $fs-h5;
+  }
+
+  @media (min-width: #{$tablet}) {
+    font-size: $fs-h5;
+  }
+}
+
+
+
+
+//  HEADER EVENT LINK
+
+.header__event--links {
+  display: inline-block;
+  padding-top: 50px;
+
+  @media (min-width: #{$mobile}) {
+    line-height: 1em;
+    padding-left: 62px;
+    padding-top: 0;
+  }
+
+  @media (min-width: #{$tablet}) {
+    padding-left: 94px;
+    padding-top: 3%;
+  }
+
+  @media (min-width: #{$desktop}) {
+    font-size: $fs-h4;
+    display: block;
+    padding-left: 112px;
+    padding-top: 25px;
+  }
+
+  @media (min-width: #{$desktop-lg}) {
+    padding-left: 73px;
+  }
+}
+
+.header__event--links>.link__highlight--reversed {
+
+  @media (min-width: #{$mobile}) {
+    font-family: $font-brand-primary;
+    font-size: $fs-h5;
+    font-weight: $fw-semibold;
+  }
+}

@@ -10,32 +10,51 @@
   padding: 10% 10%;
   text-align: center;
 
-  @include desktop {
+  @media (min-width: #{$mobile}) {
     height: auto;
-  }
-
-  @include tablet {
-    height: auto;
-  }
-
-  @include mobile {
-    height: auto;
-    text-align: center;
     padding: 10% 10%;
   }
 
-  h4 {
-    font-weight: $fw-regular;
-    padding-top: 40px;
-
-    @include mobile {
-      font-size: $fs-h5;
-      max-width: 300px;
-    }
+  @media (min-width: #{$tablet}) {
+    height: auto;
+    padding: 10% 31%;
   }
 
-  button {
-    text-align: center;
+  @media (min-width: #{$desktop}) {
+    padding: 5% 31%;
+  }
+}
+
+.form__subscribe>h1 {
+  @media (min-width: #{$tablet}) {
+    font-size: $fs-h1;
+  }
+}
+
+.form__subscribe>p {
+  font-family: $font-brand-secondary;
+  font-weight: $fw-regular;
+  padding-top: 40px;
+
+  @media (min-width: #{$mobile}) {
+    font-size: $fs-h5;
+    padding-top: 15px;
+    line-height: 1.75em;
+    max-width: 300px;
+  }
+
+  @media (min-width: #{$desktop}) {
+    max-width: 500px;
+  }
+}
+
+.form__subscribe>button {
+  display: inline-block;
+  font-family: $font-brand-secondary;
+  text-align: center;
+  width: 200px;
+
+  @media (min-width: #{$desktop}) {
     width: 200px;
   }
 }
@@ -44,6 +63,10 @@ form {
   align-items: center;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: #{$mobile}) {
+    padding-top: 30px;
+  }
 }
 
 fieldset {
@@ -55,12 +78,12 @@ fieldset {
   margin: 0, auto;
   padding-top: 50px;
   text-align: left;
+}
 
-  label {
-    align: center;
-    font-family: $font-brand-secondary;
-    font-size: $fs-h4;
-  }
+fieldset>label {
+  align: center;
+  font-family: $font-brand-secondary;
+  font-size: $fs-h5;
 }
 
 input[id="Name"],
@@ -73,5 +96,5 @@ input[id="Email"] {
   font-family: $font-brand-tertiary;
   font-size: $fs-h4;
   text-align: left;
-  width: 200px;
+  width: 250px;
 }

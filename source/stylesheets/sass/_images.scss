@@ -3,21 +3,19 @@
 @import 'mixins';
 @import 'typography';
 
+.image__right--opportunities,
+.image__right--education,
 .image__right--support {
-  background: url(../../images/support.png);
-
-  @include tablet {
-    float: right;
-    height: auto;
-    width: 50%;
-  }
-}
-
-.image__right {
+  clear: none;
   float: right;
-  width: 100%;
+  height: auto;
+  width: 50%;
 
-  @media(min-width: $tablet) {
+  @media (min-width: #{$mobile}) {
+    width: 100%;
+  }
+
+  @media (min-width: #{$tablet}) {
     width: 50%;
   }
 }
@@ -26,16 +24,12 @@
   clear: both;
   float: left;
   width: 60%;
-}
 
-.image__description--left {
-  float: left;
-  height: auto;
-  padding: 6% 10% 5% 8%;
-  width: 60%;
+  @media (min-width: #{$mobile}) {
+    width: 100%;
+  }
 
-  p {
-    font-family: $font-brand-tertiary;
-    font-size: $fs-h4;
+  @media (min-width: #{$desktop}) {
+    width: 60%;
   }
 }

@@ -1,6 +1,6 @@
 @import 'breakpoints';
 
-// Typefaces
+//  Typefaces
 $font-brand-primary: 'gill-sans-nova',
 sans-serif;
 $font-brand-secondary: 'Roboto Condensed',
@@ -14,11 +14,13 @@ $fs-h2: 1.953em;
 $fs-h3: 1.563em;
 $fs-h4: 1.25em;
 $fs-h5: 1em;
-$fs-h6: 0.8em;
+$fs-h6: 0.5em;
 
-//Type Weights
+//  Type Weights
 $fw-regular: 400;
 $fw-semibold: 700;
+
+//  Type Styles
 
 h1 {
   font-family: $font-brand-primary;
@@ -28,32 +30,19 @@ h1 {
 h2 {
   font-family: $font-brand-secondary;
   font-size: $fs-h2;
-  //   // @media (min-width: 400px) {
-  //   //   display: block;
-  //   //   font-family: $font-brand-secondary;
-  //   //   font-size: $fs-h3;
-  //   //   text-align: center;
-  //   // }
 }
 
 h3 {
   font-family: $font-brand-secondary;
   font-size: $fs-h3;
-  //   // @media (min-width: 400px) {
-  //   //   font-size: $fs-h4;
-  //   //   text-align: center;
-  //   // }
-}
 
+}
 
 h4 {
   font-family: $font-brand-secondary;
   font-size: $fs-h4;
-  //   // @media (min-width: 400px) {
-  //   //   font-size: $fs-h4;
-  //   //   text-align: center;
-  //   // }
 }
+
 
 blockquote {
   font-family: $font-brand-secondary;
@@ -70,9 +59,104 @@ p {
   line-height: 2.5em;
   padding-top: 20px;
 
-  // @media (min-width: 400px) {
-  //   display: block;
-  //   font-size: $fs-h3;
-  //   text-align: center;
-  // }
+  @media (min-width: #{$mobile}) {
+    padding-top: 0;
+  }
+}
+
+
+//  Typography Media Queries
+
+h1 {
+  font-size: $fs-h2;
+}
+
+h2 {
+  font-size: $fs-h3;
+}
+
+h3 {
+  font-size: $fs-h4;
+}
+
+p {
+  font-size: $fs-h5;
+}
+
+@media (min-width: #{$tablet}) {
+  h1 {
+    font-size: $fs-h5;
+  }
+
+  h2 {
+    font-size: $fs-h3;
+  }
+
+  h3 {
+    font-size: $fs-h4;
+  }
+
+  p {
+    font-size: $fs-h5;
+  }
+}
+
+@media (min-width: #{$desktop}) {
+  h1 {
+    font-size: $fs-h4;
+  }
+
+  h2 {
+    font-size: $fs-h3;
+  }
+
+  h3 {
+    font-size: $fs-h4;
+  }
+}
+
+//  Typography Media Queries for Colorblock on Homepage
+
+.homepage__section {
+  font-family: $font-brand-primary;
+  font-size: $fs-h1;
+
+  @media (min-width: #{$mobile}) {
+    font-size: $fs-h3;
+  }
+
+  @media (min-width: #{$tablet}) {
+    font-size: $fs-h5;
+  }
+
+  @media (min-width: #{$desktop}) {
+    font-size: $fs-h3;
+  }
+
+  @media (min-width: #{$desktop-lg}) {
+    font-size: $fs-h1;
+  }
+}
+
+.homepage__section--primary>p,
+.homepage__section--secondary>p,
+.homepage__section--tertiary>p {
+  font-family: $font-brand-secondary;
+  font-size: $fs-h2;
+
+  @media (min-width: #{$mobile}) {
+    font-size: $fs-h5;
+  }
+
+  @media (min-width: #{$tablet}) {
+    font-size: $fs-h6;
+  }
+
+  @media (min-width: #{$desktop}) {
+    font-size: $fs-h6;
+  }
+
+  @media (min-width: #{$desktop-lg}) {
+    font-size: 0.75em;
+  }
 }
