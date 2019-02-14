@@ -7,21 +7,21 @@
   max-width: 100%;
   padding: 25px 0 5px 50px;
 
-  @media (min-width: #{$mobile}) {
+  @media (min-width: #{$small}) {
     padding-bottom: 24px;
     width: 70%;
   }
 
-  @media (min-width: #{$tablet}) {
+  @media (min-width: #{$medium}) {
     padding-bottom: 40px;
     width: 50%;
   }
 
-  @media (min-width: #{$desktop}) {
+  @media (min-width: #{$large}) {
     width: 40%;
   }
 
-  @media (min-width: #{$desktop-lg}) {
+  @media (min-width: #{$x-large}) {
     height: auto;
     width: 30%;
   }
@@ -31,19 +31,19 @@ nav {
   padding-top: 20px;
   width: 100%;
 
-  @media (min-width: #{$mobile}) {
+  @media (min-width: #{$small}) {
     padding-bottom: 10px;
   }
 
-  @media (min-width: #{$tablet}) {
+  @media (min-width: #{$medium}) {
     padding-bottom: 3px;
   }
 
-  @media (min-width: #{$desktop}) {
+  @media (min-width: #{$large}) {
     padding-bottom: 6px;
   }
 
-  @media (min-width: #{$desktop-lg}) {
+  @media (min-width: #{$x-large}) {
     padding-bottom: 22px;
   }
 
@@ -74,19 +74,19 @@ nav ul {
   width: 84%;
 
 
-  @media (min-width: #{$mobile}) {
+  @media (min-width: #{$small}) {
     display: none;
   }
 
-  @media (min-width: #{$tablet}) {
+  @media (min-width: #{$medium}) {
     display: none;
   }
 
-  @media (min-width: #{$desktop}) {
+  @media (min-width: #{$large}) {
     display: none;
   }
 
-  @media (min-width: #{$desktop-lg}) {
+  @media (min-width: #{$x-large}) {
     display: inline;
     margin-left: 120px;
     padding-bottom: 27px;
@@ -106,25 +106,25 @@ nav ul>li:nth-child(n+2) {
 
 .navigation__menu {
 
-  @media (min-width: #{$mobile}) {
+  @media (min-width: #{$small}) {
     left: 81%;
     position: absolute;
     top: 5.5%;
   }
 
-  @media (min-width: #{$tablet}) {
+  @media (min-width: #{$medium}) {
     left: 90%;
     top: 6%;
     position: absolute;
   }
 
-  @media (min-width: #{$desktop}) {
+  @media (min-width: #{$large}) {
     left: 94%;
     top: 6%;
     position: absolute;
   }
 
-  @media (min-width: #{$desktop-lg}) {
+  @media (min-width: #{$x-large}) {
     display: none;
   }
 }
@@ -139,20 +139,20 @@ nav ul>li:nth-child(n+2) {
   margin-top: 30px;
   padding: 20px 0 0 20px;
 
-  @media (min-width: #{$mobile}) {
+  @media (min-width: #{$small}) {
     display: none;
     padding-bottom: 24px;
   }
 
-  @media (min-width: #{$tablet}) {
+  @media (min-width: #{$medium}) {
     display: none;
   }
 
-  @media (min-width: #{$desktop}) {
+  @media (min-width: #{$large}) {
     display: none;
   }
 
-  @media (min-width: #{$desktop-lg}) {
+  @media (min-width: #{$x-large}) {
     display: block;
     margin-top: 3px;
     padding-bottom: 0;

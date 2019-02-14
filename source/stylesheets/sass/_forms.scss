@@ -10,23 +10,23 @@
   padding: 10% 10%;
   text-align: center;
 
-  @media (min-width: #{$mobile}) {
+  @media (min-width: #{$small}) {
     height: auto;
     padding: 10% 10%;
   }
 
-  @media (min-width: #{$tablet}) {
+  @media (min-width: #{$medium}) {
     height: auto;
     padding: 10% 31%;
   }
 
-  @media (min-width: #{$desktop}) {
+  @media (min-width: #{$large}) {
     padding: 5% 31%;
   }
 }
 
 .form__subscribe>h1 {
-  @media (min-width: #{$tablet}) {
+  @media (min-width: #{$medium}) {
     font-size: $fs-h1;
   }
 }
@@ -36,14 +36,14 @@
   font-weight: $fw-regular;
   padding-top: 40px;
 
-  @media (min-width: #{$mobile}) {
+  @media (min-width: #{$small}) {
     font-size: $fs-h5;
     padding-top: 15px;
     line-height: 1.75em;
     max-width: 300px;
   }
 
-  @media (min-width: #{$desktop}) {
+  @media (min-width: #{$large}) {
     max-width: 500px;
   }
 }
@@ -54,7 +54,7 @@
   text-align: center;
   width: 200px;
 
-  @media (min-width: #{$desktop}) {
+  @media (min-width: #{$large}) {
     width: 200px;
   }
 }
@@ -64,7 +64,7 @@ form {
   display: flex;
   flex-direction: column;
 
-  @media (min-width: #{$mobile}) {
+  @media (min-width: #{$small}) {
     padding-top: 30px;
   }
 }

@@ -11,19 +11,19 @@ button {
   padding: 10px;
   width: 100px;
 
-  @media (min-width: #{$mobile}) {
+  @media (min-width: #{$small}) {
     display: none;
   }
 
-  @media (min-width: #{$tablet}) {
+  @media (min-width: #{$medium}) {
     display: none;
   }
 
-  @media (min-width: #{$desktop}) {
+  @media (min-width: #{$large}) {
     display: none;
   }
 
-  @media (min-width: #{$desktop-lg}) {
+  @media (min-width: #{$x-large}) {
     display: inline-block;
   }
 }

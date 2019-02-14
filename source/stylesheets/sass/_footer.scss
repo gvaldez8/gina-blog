@@ -12,7 +12,7 @@ footer {
   padding: 5% 0 3% 7%;
   width: 100%;
 
-  @media (min-width: #{$mobile}) {
+  @media (min-width: #{$small}) {
     -webkit-column-count: 0;
     column-count: 0;
     column-gap: 0;
@@ -20,7 +20,7 @@ footer {
     padding: 0;
   }
 
-  @media (min-width: #{$tablet}) {
+  @media (min-width: #{$medium}) {
     -webkit-column-count: 4;
     column-count: 4;
     column-gap: 0;
@@ -28,7 +28,7 @@ footer {
     padding: 5% 9%;
   }
 
-  @media (min-width: #{$desktop}) {
+  @media (min-width: #{$large}) {
     -webkit-column-count: 4;
     column-count: 4;
     column-gap: 1em;
@@ -43,11 +43,12 @@ footer {
   position: relative;
   top: 50px;
 
-  @media (min-width: #{$mobile}) {
+  @media (min-width: #{$small}) {
+
     border-style: none;
   }
 
-  @media (min-width: #{$tablet}) {
+  @media (min-width: #{$medium}) {
     border-style: solid none none;
     top: 40px;
     width: 100%;
@@ -63,12 +64,13 @@ ul {
   font-family: $font-brand-secondary;
   list-style-type: none;
 
-  @media (min-width: #{$mobile}) {
+  @media (min-width: #{$small}) {
+
     line-height: 2.5em;
     padding: 4% 0 8%;
   }
 
-  @media (min-width: #{$tablet}) {
+  @media (min-width: #{$medium}) {
     display: inline;
     line-height: 2.5em;
     padding: 4% 0 8%;
@@ -83,7 +85,7 @@ footer>li {
 }
 
 .footer__contact>li {
-  @media (min-width: #{$tablet}) {
+  @media (min-width: #{$medium}) {
     font-size: $fs-h5;
   }
 }
@@ -101,11 +103,12 @@ h3 {
   font-family: $font-brand-primary;
   break-before: column;
 
-  @media (min-width: #{$mobile}) {
+  @media (min-width: #{$small}) {
+
     break-before: none;
   }
 
-  @media (min-width: #{$tablet}) {
+  @media (min-width: #{$medium}) {
     break-before: column;
     font-size: $fs-h5;
   }
@@ -123,17 +126,18 @@ p {
   text-align: center;
   padding: 5% 0;
 
-  @media (min-width: #{$mobile}) {
+  @media (min-width: #{$small}) {
+
     font-size: $fs-h5;
     text-align: center;
   }
 
-  @media (min-width: #{$tablet}) {
+  @media (min-width: #{$medium}) {
     text-align: left;
     padding: 10% 0 3%;
   }
 
-  @media (min-width: #{$desktop}) {
+  @media (min-width: #{$large}) {
     padding: 8% 0 3%;
   }
 }

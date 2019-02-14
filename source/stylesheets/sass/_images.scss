@@ -11,25 +11,35 @@
   height: auto;
   width: 50%;
 
-  @media (min-width: #{$mobile}) {
+  @media (min-width: #{$small}) {
     width: 100%;
   }
 
-  @media (min-width: #{$tablet}) {
+  @media (min-width: #{$medium}) {
     width: 50%;
   }
 }
 
 .image__left {
-  clear: both;
+  clear: none;
   float: left;
   width: 60%;
 
-  @media (min-width: #{$mobile}) {
+  @media (min-width: #{$small}) {
     width: 100%;
   }
 
-  @media (min-width: #{$desktop}) {
+  @media (min-width: #{$large}) {
     width: 60%;
   }
+
+  @media (min-width: #{$x-large}) {
+    width: 60%;
+  }
+}
+
+.image__description {
+  width: 60%;
+  background: blue;
+  padding: 10% 5%;
 }
