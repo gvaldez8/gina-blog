@@ -28,8 +28,14 @@
   }
 }
 
+.form__subscribe>h1 {
+  @media (min-width: #{$tablet}) {
+    font-size: $fs-h1;
+  }
+}
 
-.form__subscribe>h4 {
+.form__subscribe>p {
+  font-family: $font-brand-secondary;
   font-weight: $fw-regular;
   padding-top: 40px;
 
@@ -41,13 +47,19 @@
   }
 
   @media (min-width: #{$desktop}) {
-    max-width: 400px;
+    max-width: 500px;
   }
 }
 
 .form__subscribe>button {
+  display: inline-block;
+  font-family: $font-brand-secondary;
   text-align: center;
   width: 200px;
+
+  @media (min-width: #{$desktop}) {
+    width: 200px;
+  }
 }
 
 form {

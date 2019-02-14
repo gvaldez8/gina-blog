@@ -31,8 +31,6 @@ nav {
   padding-top: 20px;
   width: 100%;
 
-
-
   @media (min-width: #{$mobile}) {
     padding-bottom: 10px;
   }
@@ -42,7 +40,7 @@ nav {
   }
 
   @media (min-width: #{$desktop}) {
-    padding-bottom: 3px;
+    padding-bottom: 24px;
   }
 
   a:link {
@@ -64,7 +62,7 @@ nav {
 nav ul {
   display: inline-block;
   font-family: $font-brand-secondary;
-  font-size: 1em;
+  font-size: $fs-h5;
   list-style-type: none;
   margin-left: 110px;
   padding-bottom: 27px;
@@ -85,7 +83,10 @@ nav ul {
   }
 
   @media (min-width: #{$desktop-lg}) {
-    display: inline-block;
+    display: inline;
+    margin-left: 120px;
+    padding-bottom: 27px;
+    width: 86%;
   }
 
 
@@ -149,5 +150,7 @@ nav ul>li:nth-child(n+2) {
 
   @media (min-width: #{$desktop-lg}) {
     display: block;
+    margin-top: 3px;
+    padding-bottom: 0;
   }
 }

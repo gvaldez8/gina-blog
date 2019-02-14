@@ -103,7 +103,7 @@ p {
 
 @media (min-width: #{$desktop}) {
   h1 {
-    font-size: $fs-h2;
+    font-size: $fs-h4;
   }
 
   h2 {
@@ -138,14 +138,6 @@ p {
   }
 }
 
-.homepage__section--primary>h1,
-.homepage__section--secondary>h1,
-.homepage__section--tertiary>h1 {
-  @media (min-width: #{$desktop}) {
-    font-size: $fs-h4;
-  }
-}
-
 .homepage__section--primary>p,
 .homepage__section--secondary>p,
 .homepage__section--tertiary>p {
@@ -165,6 +157,6 @@ p {
   }
 
   @media (min-width: #{$desktop-lg}) {
-    font-size: $fs-h2;
+    font-size: 0.75em;
   }
 }

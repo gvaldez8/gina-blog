@@ -12,7 +12,7 @@
 
   @media (min-width: #{$tablet}) {
     font-size: $fs-h2;
-    height: 318px;
+    height: 328px;
   }
 
   @media (min-width: #{$desktop}) {
@@ -66,7 +66,7 @@
   }
 
   @media (min-width: #{$desktop-lg}) {
-    padding: 6% 8%;
+    padding: 5% 8%;
     height: 100%;
     width: 50%;
   }

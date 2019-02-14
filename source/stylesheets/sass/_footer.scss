@@ -23,7 +23,9 @@ footer {
   @media (min-width: #{$tablet}) {
     -webkit-column-count: 4;
     column-count: 4;
-    column-gap: 1em;
+    column-gap: 0;
+    text-align: left;
+    padding: 5% 9%;
   }
 
   @media (min-width: #{$desktop}) {
@@ -38,6 +40,12 @@ ul {
   list-style-type: none;
 
   @media (min-width: #{$mobile}) {
+    line-height: 2.5em;
+    padding: 4% 0 8%;
+  }
+
+  @media (min-width: #{$tablet}) {
+    display: inline;
     line-height: 2.5em;
     padding: 4% 0 8%;
   }
@@ -62,6 +70,11 @@ h3 {
   @media (min-width: #{$mobile}) {
     break-before: none;
   }
+
+  @media (min-width: #{$tablet}) {
+    break-before: column;
+    font-size: $fs-h5;
+  }
 }
 
 p {
@@ -79,16 +92,35 @@ p {
   @media (min-width: #{$mobile}) {
     border-style: none;
   }
-}
 
+  @media (min-width: #{$tablet}) {
+    border-style: solid none none;
+    top: 40px;
+    width: 100%;
+  }
+}
 
 .copyright>p {
   column-span: all;
-  padding-top: 100px;
+  text-align: center;
+  padding: 5% 0;
 
   @media (min-width: #{$mobile}) {
     font-size: $fs-h6;
     text-align: center;
-    padding-top: 10px;
+  }
+
+  @media (min-width: #{$tablet}) {
+    padding: 10% 0;
+  }
+
+  @media (min-width: #{$desktop}) {
+    padding: 5% 0;
+  }
+}
+
+.footer__contact>li {
+  @media (min-width: #{$tablet}) {
+    font-size: $fs-h5;
   }
 }
