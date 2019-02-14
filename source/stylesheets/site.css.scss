@@ -91,12 +91,38 @@
   height: 100%;
   padding: 5% 8%;
   width: 40%;
+
+  @media (min-width: #{$mobile}) {
+    padding: 15% 8%;
+    width: 100%;
+  }
+
+  @media (min-width: #{$tablet}) {
+    padding: 5% 8%;
+  }
+
+  @media (min-width: #{$desktop}) {
+    width: 40%;
+  }
 }
 
 .plan__section--primary {
   background: $color-alabaster;
   border: 2px solid violet;
   height: 597px;
+  overflow: hidden;
+
+  @media (min-width: #{$tablet}) {
+    height: 327px;
+  }
+
+  @media (min-width: #{$desktop}) {
+    height: 437px;
+  }
+
+  @media (min-width: #{$desktop-lg}) {
+    height: 596px;
+  }
 }
 
 .plan__section--primary>ul {
@@ -106,24 +132,94 @@
 .plan__section--secondary {
   background: $color-charlotte;
   height: 945px;
+  overflow: hidden;
+
+  @media (min-width: #{$mobile}) {
+    height: 865px;
+  }
+
+  @media (min-width: #{$tablet}) {
+    height: 518px;
+  }
+
+  @media (min-width: #{$desktop}) {
+    height: 693px
+  }
+
+  @media (min-width: #{$desktop-lg}) {
+    height: 944px;
+  }
 }
 
 .plan__section--tertiary {
   background: $color-supernova;
   height: 997px;
+  overflow: hidden;
+
+  @media (min-width: #{$mobile}) {
+    height: 950px;
+  }
+
+  @media (min-width: #{$tablet}) {
+    height: 545px;
+  }
+
+  @media (min-width: #{$desktop}) {
+    height: 730px;
+  }
+
+  @media (min-width: #{$desktop-lg}) {
+    height: 995px;
+  }
 }
 
 .plan__section--quaternary {
   background: $color-cherub;
   height: 656px;
+  overflow: hidden;
+
+  @media (min-width: #{$mobile}) {
+    height: 550px;
+  }
+
+  @media (min-width: #{$tablet}) {
+    height: 358px;
+  }
+
+  @media (min-width: #{$desktop}) {
+    height: 480px;
+  }
+
+  @media (min-width: #{$desktop-lg}) {
+    height: 655px;
+  }
 }
 
 .plan__section--quinary {
   background: $color-alabaster;
   height: 690px;
+  overflow: hidden;
+
+  @media (min-width: #{$tablet}) {
+    height: 379px;
+  }
+
+  @media (min-width: #{$desktop}) {
+    height: 505px;
+  }
+
+  @media (min-width: #{$desktop-lg}) {
+    height: 689px;
+  }
 }
 
+.plan__section>ul {
+  line-height: 1.85em;
+}
 
+.plan__section>h4 {
+  padding-top: 2%;
+}
 
 
 //  Colorblock Right on Opportunities Page

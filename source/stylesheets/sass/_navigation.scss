@@ -40,7 +40,11 @@ nav {
   }
 
   @media (min-width: #{$desktop}) {
-    padding-bottom: 24px;
+    padding-bottom: 6px;
+  }
+
+  @media (min-width: #{$desktop-lg}) {
+    padding-bottom: 22px;
   }
 
   a:link {

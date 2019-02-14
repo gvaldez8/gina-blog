@@ -24,4 +24,12 @@
   clear: both;
   float: left;
   width: 60%;
+
+  @media (min-width: #{$mobile}) {
+    width: 100%;
+  }
+
+  @media (min-width: #{$desktop}) {
+    width: 60%;
+  }
 }
