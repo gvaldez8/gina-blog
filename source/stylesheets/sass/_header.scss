@@ -19,6 +19,10 @@ header {
   @media (min-width: #{$desktop}) {
     height: 400px;
   }
+
+  @media (min-width: #{$desktop-lg}) {
+    height: 450px;
+  }
 }
 
 .header__image {
@@ -51,6 +55,10 @@ header {
 
   @media (min-width: #{$desktop}) {
     top: 30%;
+  }
+
+  @media (min-width: #{$desktop-lg}) {
+    top: 33%;
   }
 }
 
@@ -88,6 +96,10 @@ header {
 
   @media (min-width: #{$tablet}) {
     padding-right: 4%;
+  }
+
+  @media (min-width: #{$desktop-lg}) {
+    padding-top: 16px;
   }
 }
 
@@ -142,7 +154,8 @@ header {
   }
 
   @media (min-width: #{$desktop-lg}) {
-    padding-top: 0px;
+    padding-top: 17px;
+    padding-bottom: 5%;
   }
 }
 
@@ -214,8 +227,13 @@ header {
 
   @media (min-width: #{$desktop}) {
     font-size: $fs-h4;
+    display: block;
     padding-left: 112px;
     padding-top: 25px;
+  }
+
+  @media (min-width: #{$desktop-lg}) {
+    padding-left: 73px;
   }
 }
 
