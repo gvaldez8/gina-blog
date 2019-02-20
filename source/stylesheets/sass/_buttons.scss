@@ -10,22 +10,6 @@ button {
   font-weight: $fw-semibold;
   padding: 10px;
   width: 100px;
-
-  @media (min-width: #{$small}) {
-    display: none;
-  }
-
-  @media (min-width: #{$medium}) {
-    display: none;
-  }
-
-  @media (min-width: #{$large}) {
-    display: none;
-  }
-
-  @media (min-width: #{$x-large}) {
-    display: inline-block;
-  }
 }
 
 button:hover {

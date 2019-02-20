@@ -1,0 +1,283 @@
+// CSO Website Stylesheet
+@import 'sass/base';
+
+.homepage__section {
+  border: 2px blueviolet solid;
+  overflow: hidden;
+  width: 100%;
+
+  @media (min-width: #{$small}) {
+    font-size: $fs-h5;
+  }
+
+  @media (min-width: #{$medium}) {
+    font-size: $fs-h2;
+    height: 328px;
+  }
+
+  @media (min-width: #{$large}) {
+    height: 425px;
+    font-size: $fs-h2;
+  }
+
+  @media (min-width: #{$x-large}) {
+    height: 569px;
+  }
+}
+
+.homepage__section--primary {
+  background-color: $color-charlotte;
+}
+
+.homepage__section--secondary {
+  background-color: $color-supernova;
+}
+
+.homepage__section--tertiary {
+  background-color: $color-cherub;
+}
+
+.homepage__section--primary,
+.homepage__section--secondary,
+.homepage__section--tertiary {
+  clear: both;
+  float: left;
+  font-weight: $fw-semibold;
+  height: 100%;
+  padding: 6% 8%;
+  width: 50%;
+
+  @media (min-width: #{$small}) {
+    font-weight: $fw-semibold;
+    padding: 10% 8%;
+    width: 100%;
+  }
+
+  @media (min-width: #{$medium}) {
+    padding: 1% 5%;
+    height: 100%;
+    width: 50%;
+  }
+
+  @media (min-width: #{$large}) {
+    padding: 4% 8%;
+    height: 100%;
+    width: 50%;
+  }
+
+  @media (min-width: #{$x-large}) {
+    padding: 5% 8%;
+    height: 100%;
+    width: 50%;
+  }
+}
+
+//  Plan Your Experience Landing
+.plan__section {
+  overflow: hidden;
+  width: 100%;
+}
+
+.plan__section--primary,
+.plan__section--secondary,
+.plan__section--tertiary,
+.plan__section--quaternary,
+.plan__section--quinary {
+  float: right;
+  height: 100%;
+  padding: 5% 8%;
+  width: 40%;
+
+  @media (min-width: #{$small}) {
+    padding: 15% 8%;
+    width: 100%;
+  }
+
+  @media (min-width: #{$medium}) {
+    padding: 5% 8%;
+  }
+
+  @media (min-width: #{$large}) {
+    width: 40%;
+  }
+}
+
+.plan__section--primary {
+  background: $color-alabaster;
+  height: 597px;
+  overflow: hidden;
+
+  @media (min-width: #{$small}) {
+    height: 100%;
+  }
+
+  @media (min-width: #{$large}) {
+    height: 439px;
+  }
+
+  @media (min-width: #{$x-large}) {
+    height: 598px;
+  }
+}
+
+.plan__section--primary>ul {
+  line-height: 3.15em;
+}
+
+.plan__section--secondary {
+  background: $color-charlotte;
+  height: 945px;
+  overflow: hidden;
+
+  @media (min-width: #{$small}) {
+    height: 100%;
+  }
+
+  @media (min-width: #{$large}) {
+    height: 696px;
+  }
+
+  @media (min-width: #{$x-large}) {
+    height: 947px;
+  }
+}
+
+.plan__section--tertiary {
+  background: $color-supernova;
+  height: 997px;
+  overflow: hidden;
+
+  @media (min-width: #{$small}) {
+    height: 100%;
+  }
+
+  @media (min-width: #{$large}) {
+    height: 735px;
+  }
+
+  @media (min-width: #{$x-large}) {
+    height: 1001px;
+  }
+}
+
+.plan__section--quaternary {
+  background: $color-cherub;
+  height: 656px;
+  overflow: hidden;
+
+  @media (min-width: #{$small}) {
+    height: 100%;
+  }
+
+  @media (min-width: #{$large}) {
+    height: 484px;
+  }
+
+  @media (min-width: #{$x-large}) {
+    height: 659px;
+  }
+}
+
+.plan__section--quinary {
+  background: $color-alabaster;
+  height: 690px;
+  overflow: hidden;
+
+  @media (min-width: #{$small}) {
+    height: 100%;
+  }
+
+  @media (min-width: #{$large}) {
+    height: 510px;
+  }
+
+  @media (min-width: #{$x-large}) {
+    height: 693px;
+  }
+}
+
+
+
+
+
+//  TYPOGRAPHY FOR PLAN YOUR EXPERIENCE
+.plan__section ul {
+  line-height: 1.75em;
+}
+
+.plan__section h2 {
+  font-size: $fs-h2;
+  padding-bottom: 10%;
+
+  @media (min-width: #{$small}) {
+    font-size: $fs-h3;
+    padding-bottom: 2%;
+  }
+
+  @media (min-width: #{$large}) {
+    font-size: $fs-h3;
+    padding-bottom: 10%;
+  }
+
+  @media (min-width: #{$x-large}) {
+    font-size: $fs-h2;
+  }
+}
+
+.plan__section h4 {
+  line-height: 1.5em;
+  padding-top: 10%;
+
+  @media (min-width: #{$small}) {
+    font-size: $fs-h4;
+    padding-top: 2%;
+  }
+
+  @media (min-width: #{$large}) {
+    font-size: $fs-h4;
+    padding-top: 2%;
+  }
+
+  @media (min-width: #{$x-large}) {
+    font-size: $fs-h4;
+    padding-top: 8%;
+  }
+}
+
+.plan__section .link__highlight--condensed {
+  font-size: $fs-h5;
+  padding: 5% 0 10%;
+
+  @media (min-width: #{$small}) {
+    font-size: .85em;
+    padding: 2% 0 4%;
+    line-height: 3em;
+  }
+
+  @media (min-width: #{$large}) {
+    font-size: 0.85em;
+  }
+}
+
+
+
+
+//  OPPORTUNITIES LANDING PAGE
+
+.opportunities__section {
+  width: 100%;
+}
+
+.opportunities__section--primary,
+.opportunities__section--secondary,
+.opportunities__section--tertiary {
+  width: 40%;
+}
+
+.opportunities__section--primary {
+  background: $color-charlotte;
+}
+
+.opportunities__section--secondary {
+  background: $color-supernova;
+}
