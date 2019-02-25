@@ -1,0 +1,24 @@
+---
+title: Pairing Tour — Day 03
+
+time: February 20, 2019
+---
+
+<main class='blogposts__container'>
+  <header class='header-main'>
+    <h1>Pairing Tour — Day 03</h1>
+    <time datetime="2019-02-20">February 20, 2019</time>
+  </header>
+
+<p>Today I paired with Chris Peak, a senior designer and developer at 8th Light, who is also a talented photographer on the side (even though he thinks of himself as more of an “enthusiast”). I started the day with a code review of a pull request that I made using the basis of my wireframes from my last project for the Chicago Symphony Orchestra for code.</p>
+
+<p>We started tinkering with the navigation to see what it would look like in responsive web design. One of the first nuggets of advice that Chris gave me was basically “less is more.” He explained how I should have started my code with mobile first. Another interesting approach that Chris uses in his working process is making components responsive as you go, tackling one by one as opposed to fully designing for one screen type throughout, then going back to make it all responsive on the other sizes, and so forth. Working with Chris was extremely helpful. He also made sure to ask what editor I was comfortable working in, which I really appreciated. He normally uses Vim, which is harder from what I’ve been told.</p>
+
+<p>Chris also taught me something new, which was a little javascript and jquery to do something very simple: toggle the navigation button between the icon and the dropdown. After reviewing my code, we transitioned into a recent request that came in from our CEO, which did not have too much context.</p>
+
+<p>It was some kind of virtual reality platform or desktop app that could be used to track their inventory over the course of days, weeks, and months on the shelves. The team that Chris was working on said that the request was for UI design but only for a smaller component: a play/reverse feature for the virtual video model with some dropdown menus to look at intervals or timelines over the course of different periods. The app was lacking context and had a few UX problems, such as incorporating controls in a menu dropdown or repeating elements that are related but could mean/lead to something entirely different. Instead of actually designing anything, we wrote a list of some of these questions/concerns. I also had a bit of an opportunity to show Chris how to use Sketch.</p>
+
+<p>We then paired on another one of his projects, which is an internal one for advertising future company tech related conferences. He showed me some of his logo development process, as well as the logo that he finally got approved. He began brainstorming a list of adjectives, where we had a discussion about past conferences that Chris has attended and what he enjoyed about them to help generate words.</p>
+
+<p>Lastly, following this pairing we had a meeting that overlapped with other members of the design team, Kelly Rauwerdink and Julia Murray, because Chris would be working on coding the site for their pro bono client project.</p>
+</main>
