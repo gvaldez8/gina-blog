@@ -9,12 +9,12 @@ $font-brand-tertiary: 'Roboto',
 sans-serif;
 
 //  Type Sizes
-$fs-h1: 2.441em;
-$fs-h2: 1.953em;
-$fs-h3: 1.563em;
-$fs-h4: 1.25em;
-$fs-h5: 1em;
-$fs-h6: 0.5em;
+$fs-h1: 2.441em; //fs-header
+$fs-h2: 1.953em; //fs-small-header
+$fs-h3: 1.563em; //fs-subhead
+$fs-h4: 1.25em; //fs-small-subhead
+$fs-h5: 1em; //fs-body
+$fs-h6: .5em; //fs-small-body
 
 //  Type Weights
 $fw-regular: 400;
@@ -115,6 +115,22 @@ p {
   }
 }
 
+@media (min-width: #{$x-large}) {
+  h1 {
+    font-size: $fs-h1;
+  }
+
+  h2 {
+    font-size: $fs-h2;
+  }
+
+  h3 {
+    font-size: $fs-h3;
+  }
+}
+
+
+
 //  Typography Media Queries for Colorblock on Homepage
 
 .homepage__section {
@@ -157,6 +173,139 @@ p {
   }
 
   @media (min-width: #{$x-large}) {
-    font-size: 0.75em;
+    font-size: .75em;
+  }
+}
+
+
+
+//  TYPOGRAPHY FOR PLAN YOUR EXPERIENCE
+.plan__section ul {
+  line-height: 1.75em;
+}
+
+.plan__section h2 {
+  font-size: $fs-h2;
+  padding-bottom: 10%;
+
+  @media (min-width: #{$small}) {
+    font-size: $fs-h3;
+    padding-bottom: 2%;
+  }
+
+  @media (min-width: #{$large}) {
+    font-size: $fs-h3;
+    padding-bottom: 10%;
+  }
+
+  @media (min-width: #{$x-large}) {
+    font-size: $fs-h2;
+  }
+}
+
+.plan__section h4 {
+  line-height: 1.5em;
+  padding-top: 10%;
+
+  @media (min-width: #{$small}) {
+    font-size: $fs-h4;
+    padding-top: 2%;
+  }
+
+  @media (min-width: #{$large}) {
+    font-size: $fs-h4;
+    padding-top: 2%;
+  }
+
+  @media (min-width: #{$x-large}) {
+    font-size: $fs-h4;
+    padding-top: 8%;
+  }
+}
+
+.plan__section .link__highlight--condensed {
+  font-size: $fs-h5;
+  padding: 5% 0 10%;
+
+  @media (min-width: #{$small}) {
+    font-size: .85em;
+    line-height: 3em;
+    padding: 2% 0 4%;
+  }
+
+  @media (min-width: #{$large}) {
+    font-size: .85em;
+  }
+}
+
+
+
+
+//  Typography Media Queries for Opportunities Landing Page
+
+.opportunities__section--primary h2,
+.opportunities__section--secondary h2,
+.opportunities__section--tertiary h2 {
+  font-size: $fs-h2;
+  line-height: 1.5em;
+
+  @media (min-width: #{$small}) {
+    font-size: $fs-h3;
+    padding-top: 10%;
+  }
+
+  @media (min-width: #{$medium}) {
+    font-size: $fs-h3;
+  }
+
+  @media (min-width: #{$large}) {
+    font-size: $fs-h3;
+  }
+
+  @media (min-width: #{$x-large}) {
+    font-size: $fs-h2;
+  }
+}
+
+.opportunities__section--ul {
+  line-height: 3.5em;
+}
+
+.link__highlight--condensed>a {
+  font-size: $fs-h5;
+  padding: 5% 0 10%;
+
+  @media (min-width: #{$small}) {
+    font-size: .85em;
+    line-height: 3em;
+    padding: 2% 0 4%;
+  }
+
+  @media (min-width: #{$large}) {
+    font-size: .85em;
+  }
+}
+
+.image__description h1 {
+
+  @media (min-width: #{$small}) {
+    font-size: $fs-h3;
+  }
+
+  @media (min-width: #{$medium}) {
+    font-size: $fs-h2;
+  }
+
+  @media (min-width: #{$large}) {
+    font-size: $fs-h1;
+  }
+}
+
+.image__description p {
+  font-family: $font-brand-secondary;
+  font-size: $fs-h4;
+
+  @media (min-width: #{$small}) {
+    font-size: $fs-h4;
   }
 }

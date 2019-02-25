@@ -72,7 +72,11 @@
   }
 }
 
-//  Plan Your Experience Landing
+//  LANDING PAGE — PLAN YOUR EXPERIENCE
+.section__hidden {
+  overflow: hidden;
+}
+
 .plan__section {
   overflow: hidden;
   width: 100%;
@@ -104,7 +108,7 @@
 
 .plan__section--primary {
   background: $color-alabaster;
-  height: 597px;
+  height: 100%;
   overflow: hidden;
 
   @media (min-width: #{$small}) {
@@ -126,7 +130,7 @@
 
 .plan__section--secondary {
   background: $color-charlotte;
-  height: 945px;
+  height: 100%;
   overflow: hidden;
 
   @media (min-width: #{$small}) {
@@ -197,81 +201,46 @@
 }
 
 
-
-
-
-//  TYPOGRAPHY FOR PLAN YOUR EXPERIENCE
-.plan__section ul {
-  line-height: 1.75em;
-}
-
-.plan__section h2 {
-  font-size: $fs-h2;
-  padding-bottom: 10%;
-
-  @media (min-width: #{$small}) {
-    font-size: $fs-h3;
-    padding-bottom: 2%;
-  }
-
-  @media (min-width: #{$large}) {
-    font-size: $fs-h3;
-    padding-bottom: 10%;
-  }
-
-  @media (min-width: #{$x-large}) {
-    font-size: $fs-h2;
-  }
-}
-
-.plan__section h4 {
-  line-height: 1.5em;
-  padding-top: 10%;
-
-  @media (min-width: #{$small}) {
-    font-size: $fs-h4;
-    padding-top: 2%;
-  }
-
-  @media (min-width: #{$large}) {
-    font-size: $fs-h4;
-    padding-top: 2%;
-  }
-
-  @media (min-width: #{$x-large}) {
-    font-size: $fs-h4;
-    padding-top: 8%;
-  }
-}
-
-.plan__section .link__highlight--condensed {
-  font-size: $fs-h5;
-  padding: 5% 0 10%;
-
-  @media (min-width: #{$small}) {
-    font-size: .85em;
-    padding: 2% 0 4%;
-    line-height: 3em;
-  }
-
-  @media (min-width: #{$large}) {
-    font-size: 0.85em;
-  }
-}
-
-
-
-
 //  OPPORTUNITIES LANDING PAGE
 
 .opportunities__section {
-  width: 100%;
+  float: left;
+  width: 60%;
+
+  @media (min-width: #{$small}) {
+    width: 100%;
+  }
+
+  @media (min-width: #{$medium}) {
+    width: 60%;
+  }
 }
 
 .opportunities__section--primary,
 .opportunities__section--secondary,
 .opportunities__section--tertiary {
+  float: right;
+  padding: 5% 8%;
   width: 40%;
+  height: 100%;
+
+  @media (min-width: #{$small}) {
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (min-width: #{$medium}) {
+    width: 40%;
+    height: 100%;
+  }
+
+  @media (min-width: #{$large}) {
+    height: 100%;
+  }
+
+  @media (min-width: #{$x-large}) {
+    height: 100%;
+  }
 }
 
 .opportunities__section--primary {
@@ -280,4 +249,25 @@
 
 .opportunities__section--secondary {
   background: $color-supernova;
+}
+
+.opportunities__section--tertiary {
+  background: $color-cherub;
+  height: 773px;
+
+  @media (min-width: #{$small}) {
+    height: 425px;
+  }
+
+  @media (min-width: #{$medium}) {
+    height: 595px;
+  }
+
+  @media (min-width: #{$large}) {
+    height: 670px;
+  }
+
+  @media (min-width: #{$x-large}) {
+    height: 773px;
+  }
 }

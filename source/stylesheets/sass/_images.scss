@@ -38,8 +38,12 @@
   }
 }
 
+.opportunities__section--image {
+  width: 100%;
+}
+
 .image__description {
-  width: 60%;
-  background: blue;
-  padding: 10% 5%;
+  width: 100%;
+  padding: 5% 15% 10%;
+  float: left;
 }
