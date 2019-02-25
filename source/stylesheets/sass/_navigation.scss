@@ -2,10 +2,8 @@
 @import '_color.scss';
 @import '_typography.scss';
 @import '_mixins.scss';
-
 nav {
   @include nav($c-tomato);
-
   ul {
     color: $c-primary-black;
     list-style-type: none;
@@ -46,14 +44,12 @@ a {
   color: $c-primary-black;
   font-family: $font-stack-secondary;
   text-decoration: none;
-
   &:focus,
   &:hover {
     font-family: $font-stack-secondary;
     color: $c-primary-black;
     font-weight: $fw-bold;
   }
-
   &:visited {
     opacity: 50%
   }
