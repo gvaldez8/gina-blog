@@ -1,13 +1,13 @@
 ---
 title: Pairing Tour — Day 06
 
-time: February 23, 2019
+time: February 25, 2019
 ---
 
 <main class='blogposts__container'>
   <header class='header-main'>
     <h1>Pairing Tour — Day 06</h1>
-    <time datetime="2019-02-22">February 23, 2019</time>
+    <time datetime="2019-02-25">February 25, 2019</time>
   </header>
 
 <p>Today I paired with Kevin Zolkiewicz, a designer at 8th Light who also happens to be a talented front-end developer. Kevin began our pairing day by introducing me to a merge conflict (thanks, Kevin). He and Alexa Albanese, another designer here at 8th Light, had been working on the same client for a few months now. With this client, they were working with contractors.</p>
