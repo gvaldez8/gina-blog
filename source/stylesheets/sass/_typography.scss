@@ -1,6 +1,5 @@
 // Typography
 @import 'color';
-
 $font-stack-primary: 'Suez One',
 serif;
 $font-stack-secondary: 'Source Sans Pro',
@@ -16,8 +15,8 @@ $fs-subhead-medium: 1.5em;
 $fs-subhead: 1.25em;
 $fs-body-medium: 1.15em;
 $fs-body: 1em;
-$fs-caption-medium: 0.85em;
-$fs-caption: 0.75em;
+$fs-caption-medium: .85em;
+$fs-caption: .75em;
 // Type Weight
 $fw-light: 100;
 $fw-regular: 400;
@@ -43,8 +42,8 @@ h1 {
   text-align: center;
 
   @media(min-width: 300px) {
-    padding-top: 2em;
     font-size: $fs-subhead-medium;
+    padding-top: 2em;
   }
 
   @media(min-width: 767px) {
@@ -62,14 +61,6 @@ h2 {
   }
 
   @media(min-width: 600px) {
-    font-size: $fs-subhead-medium;
-  }
-
-  @media (min-width: $bp-768) {
-    font-size: $fs-subhead-large;
-  }
-
-  @media(min-width: 800px) {
     font-size: $fs-subhead-medium;
   }
 }
@@ -106,8 +97,8 @@ p {
 
 p {
   line-height: 1.8;
-  padding-top: 20px;
   padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 // Blogpost about SCSS and Sass
@@ -117,9 +108,13 @@ p {
 
   @media(min-width: 300px) and (min-width: 768px) {
     font-size: $fs-body;
+    padding: 0 5%;
     text-align: left;
-    padding-left: 5%;
-    padding-right: 5%;
+  }
+
+  @media (min-width: 768px) {
+    font-size: $fs-subhead-large;
+    text-align: center;
   }
 
   @media (min-width: 900px) {

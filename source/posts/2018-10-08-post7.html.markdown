@@ -5,7 +5,7 @@ time: October 8, 2018
 
 <main>
     <header class="header-main">
-        <h1>CSS Architecture,<br> Naming Conventions, & File Directory Structures
+        <h1>CSS Architecture,<br> Naming Conventions, &<br> File Directory Structures
         </h1>
         <time datetime="2018-10-08">OCTOBER 8, 2018</time>
     </header>
@@ -52,10 +52,19 @@ time: October 8, 2018
 
     <h2>What is BEM?</h2>
     <hr />
-    <p>The BEM naming convention stands for <strong>Block Element Modifier</strong> (currently, 8th Light’s standard
-        approach). This naming convention is popular because its name declares its purpose, thereby making it easier to
+    <p>TThe BEM naming convention stands for <strong>Block Element Modifier</strong> (currently, 8th Light’s standard
+        approach). This naming
+        convention was created by an IT company called Yandex, specializing in web search and web-related services. As
+        the
+        company’s services grew, so did their ecosystem. The team of front-end developers at Yandex worked tirelessly
+        to
+        discover a better working process to manage their codebase, where they then shared it with the community.</p>
+
+    <p>This naming convention is popular today because its name declares its purpose, thereby making it easier to
         skim markup and immediately understand how elements are styled or how they are related to one another. The goal
-        is to keep the names simple, clear, and precise.</p>
+        is to keep
+        the names simple, clear, and precise.
+    </p>
 
     <h5 class="helper-space-top"><strong>THE GUIDELINES</strong></h5>
     <hr />
@@ -145,10 +154,13 @@ time: October 8, 2018
     <section>
         <h2 class="helper-space-top">What is SMACSS?</h2>
         <hr />
-        <p>SMACSS stands for <em>Scalable and Modular Architecture for CSS</em> and is more of a
-            style guide than it is a rigid framework. The purpose of this category is to codify patterns, things
-            that
-            repeat themselves within our design, and avoid mixing code of several categories into a single file.</p>
+        <p>SMACSS stands for <strong>Scalable and Modular Architecture for CSS</strong> and is more of a style guide
+            than it is a rigid framework.
+            SMACSS was created by web developer and designer Jonathan Snook. The purpose of this CSS architecture is to
+            codify
+            patterns, things that repeat themselves within our design, and avoid mixing code of several categories into
+            a single
+            file.</p>
 
         <h5 class="helper-space-top"><strong>THE GUIDELINES IN FIVE CATEGORIES</strong></h5>
         <hr />
@@ -192,9 +204,14 @@ time: October 8, 2018
     <section>
         <h2 class="helper-space-top">What is ITCSS?</h2>
         <hr />
-        <p>ITCSS stands for Inverted Triangle CSS and is a way to help organize your project CSS files by separating
-            them into sections called layers that make up an inverted triangle. The inverted triangle starts broad, and
-            as you go further down the triangle, it increases in specificity. Let’s take a look:</p>
+        <p>ITCSS stands for <strong>Inverted Triangle CSS</strong> and was introduced by Harry Roberts, a Consultant
+            Performance
+            Engineer. ITCSS is
+            a way to help organize your project CSS files by separating them into sections called layers that make up
+            an inverted
+            triangle. The inverted triangle starts broad, and as you go further down the triangle, it increases in
+            specificity.
+            Let’s take a look::</p>
         <script src="https://gist.github.com/gvaldez8/b266cc5156000d0898582b57a27be1a4.js"></script>
     </section>
 
@@ -207,7 +224,11 @@ time: October 8, 2018
 
         <h5 class="helper-space-top"><strong>THE SASS WAY</strong></h5>
         <hr />
-        <p>Unlike ITCSS, which has 7 layers (“folders”), the Sass Way is divided into three folders:
+        <p>Sass is a program written in Ruby—the technology or programming language that Sass is built on— that
+            assembles CSS style sheets. Sass was initially designed by Henry Thornton and Natalie
+            Weizenbaum. Since then, Weizenbaum and Chris Eppstein have continued to extend Sass with SassScript, a
+            simple scripting language used in Sass files. Unlike ITCSS, which has 7 layers (“folders”), the Sass Way is
+            divided into three:
         </p>
 
         <script src="https://gist.github.com/gvaldez8/671fa9c63d63633a68aaded3b310ee84.js"></script>
