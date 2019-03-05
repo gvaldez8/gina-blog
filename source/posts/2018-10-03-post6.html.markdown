@@ -1,6 +1,6 @@
 ---
 title: Getting Responsive with Media Queries
-time: October 3, 2018
+time: October 3, 2018 
 ---
 
 <main class='blogposts__container'>
