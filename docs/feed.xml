@@ -5,23 +5,84 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2019-02-22T18:00:00-06:00</updated>
+  <updated>2019-02-26T18:00:00-06:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
   <entry>
+    <title>Pairing Tour — Day 08</title>
+    <link rel="alternate" href="http://blog.url.com/gina-blog/2019/02/27/post22.html"/>
+    <id>http://blog.url.com/gina-blog/2019/02/27/post22.html</id>
+    <published>2019-02-26T18:00:00-06:00</published>
+    <updated>2019-03-01T10:02:27-06:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;main class="blogposts__container"&gt;
+  &lt;header class="header-main"&gt;
+    &lt;h1&gt;Pairing Tour — Day 08&lt;/h1&gt;
+    &lt;time datetime="2019-02-27"&gt;February 27, 2019&lt;/time&gt;
+  &lt;/header&gt;
+
+&lt;p&gt;Today I continued pairing with Kelly Rauwerdink and Julia Murray to help on their client. The first half of the day was dedicated to our morning standup and tackling a new page with Kelly. This time, I was &lt;strong&gt;the driver&lt;/strong&gt; and Kelly was &lt;strong&gt;the navigator.&lt;/strong&gt; These terms refer to pair programming, which is common amongst software development teams. It’s when you have two team members working together on one screen or one coding program that allows for live code collaboration, such as Visual Studio Code.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The driver&lt;/strong&gt; refers to the person working directly on the laptop, typing and using keyboard shortcuts, while &lt;strong&gt;the navigator&lt;/strong&gt; acts as guidance doing anything from directing with live feedback to quickly find answers via web search or sketch out possible solutions to experiment with that might be difficult to explain through words.&lt;/p&gt;
+
+&lt;p&gt;We worked on a &lt;strong&gt;Ways to Give&lt;/strong&gt; page with a new approach: now that we had a more established visual style, we needed to identify reusable UI components. Kelly and I threw ideas at each other as far as what we could reuse or change slightly and from which pages. At first, what we were thinking did not completely work because we were still thinking of ways to break up the hierarchy of the page based off Julia’s low-fidelity wireframes. One of the problems that we were facing was that there were so many ways to give ranging from different topics: ways to donate, gift giving, and external giving through your workplace, financial institution, or even stock. Another issue that we faced was that generally speaking, there was a lot of content on the page that Julia had been working closely with the stakeholder to compromise and cut down.&lt;/p&gt;
+
+&lt;p&gt;Kelly and I talked through these problems, trying to figure out logical ways to break up these sections and reconsider where we grouped seemingly disparate pieces of sections, like tax forms or the client’s audit information. Some questions we asked ourselves: &lt;em&gt;Shouldn’t tax forms and the client audit information go with the different ways to donate because they were inherently related to donating? Are things like a gift acceptance policy or the donor bill of rights related to the act of donating, or are they closer related to the section where the organization provides legal proof that they are eligible and trustworthy in receiving donations?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;We worked through the problem about halfway, reaching a point of headache, and a little frustration from fixating over smaller details. We decided it was a good stopping point to grab lunch, regroup, and then tackle that wireframe again. After regrouping and pairing with fresh eyes, we talked it through some more and made some progress before completely splitting up to cover more ground for the rest of the day.&lt;/p&gt;
+
+&lt;p&gt;We had a meeting with the ad agency team, which actually ended up running smoother because they had a project manager who was more accountable with note-taking and critical with her feedback. They gave Kelly edits to make, but fortunately, not as many as they did in the beginning when we were still trying to set the visual tone.&lt;/p&gt;
+
+&lt;p&gt;Following that meeting, I managed to finish the layout and create some iterations for Kelly’s review, but just as I was about to send them over, Julia came with new feedback—and with apologies because it was just bad luck that the edits happened to be for the page that Kelly and I had been slaving over for most of the day—from the client.&lt;/p&gt;
+
+&lt;p&gt;Julia explained the feedback and shared the client’s rationale for the changes, all of which made perfect sense. Fortunately, the edits actually made the page better because the content was simplified, thereby allowing sections to arrange more harmoniously and intentionally. My day ended with making those edits from the client, creating possible iterations, and sending Kelly screenshots via Slack for feedback.&lt;/p&gt;
+
+&lt;/main&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Pairing Tour — Day 07</title>
+    <link rel="alternate" href="http://blog.url.com/gina-blog/2019/02/26/post21.html"/>
+    <id>http://blog.url.com/gina-blog/2019/02/26/post21.html</id>
+    <published>2019-02-25T18:00:00-06:00</published>
+    <updated>2019-03-01T10:02:38-06:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;main class="blogposts__container"&gt;
+  &lt;header class="header-main"&gt;
+    &lt;h1&gt;Pairing Tour — Day 07&lt;/h1&gt;
+    &lt;time datetime="2019-02-26"&gt;February 26, 2019&lt;/time&gt;
+  &lt;/header&gt;
+
+&lt;p&gt;Unfortunately, we had a change of plans today. My assigned mentor, Eva Penzeymoog, was feeling under the weather. In addition to being my mentor, Eva is a UX designer at 8th Light, an instructor who teaches UX at General Assembly, a proud feminist, and a career-driven woman in technology seeking to level up in her career through a new direction: giving conference talks on inclusive safety. Basically, she’s an all-around amazing human being both on and off the clock.&lt;/p&gt;
+
+&lt;p&gt;Once again I paired with Kyle Sparks, Kelly Rauwerdink, and Julia Murray. For my pairing with Kyle, we tackled together the codebase for 8th Light’s homepage, trying to take a wireframe that I created and convert a component into code. I started out flying solo in the morning because Kyle had a meeting. When we regrouped to discuss what I had done thus far, he came with a better new idea for our header image: what if we kept the video on our homepage but have that playing in the background with a faded color overlay and text on top?&lt;/p&gt;
+
+&lt;p&gt;In my professional opinion, the video speaks more to what our company does, as well as brings a sense of humanity and warmth back to the cold, calculated perception of “custom software development” or “technology.” Navigating through stylesheets, code, and identifying pieces of code to repurpose and reuse took a little longer than expected, but together we managed to get it done in a reasonable timeframe. To finish it off, we made a pull request and opened it up for feedback from the design team, where Julia suggested to adjust the type weight for contrast, bump up the overlay, and consider type size for responsive design on desktop because it matched the rest of the site.&lt;/p&gt;
+
+&lt;p&gt;Following my pairing with Kyle, I continued my work with Kelly and Julia, taking a new swing at laying out a high-fidelity UI wireframe based of Julia’s research and low-fidelity ones. I explored a possible layout for an &lt;strong&gt;About Us&lt;/strong&gt; page of this client’s website. As expected, my first swing was not the best. The difficulties posed by the color palette, the legibility of the text, and some of the pre-established styles supported a “boxy” layout, so I created other iterations and asked Kelly for feedback.&lt;/p&gt;
+
+&lt;p&gt;By this point, we had a meeting with the ad agency team and had received more feedback and revisions, but this time, received a lot more positively because they seemed more engaged with the work. To finish off today, I received Kelly’s feedback, made her edits, and placed two versions of my high-fidelity wireframes up on our Trello workflow board.&lt;/p&gt;
+&lt;/main&gt;
+</content>
+  </entry>
+  <entry>
     <title>Pairing Tour — Day 06</title>
-    <link rel="alternate" href="http://blog.url.com/gina-blog/2019/02/23/post20.html"/>
-    <id>http://blog.url.com/gina-blog/2019/02/23/post20.html</id>
-    <published>2019-02-22T18:00:00-06:00</published>
-    <updated>2019-02-25T16:45:40-06:00</updated>
+    <link rel="alternate" href="http://blog.url.com/gina-blog/2019/02/25/post20.html"/>
+    <id>http://blog.url.com/gina-blog/2019/02/25/post20.html</id>
+    <published>2019-02-24T18:00:00-06:00</published>
+    <updated>2019-03-01T10:02:32-06:00</updated>
     <author>
       <name>Article Author</name>
     </author>
     <content type="html">&lt;main class="blogposts__container"&gt;
   &lt;header class="header-main"&gt;
     &lt;h1&gt;Pairing Tour — Day 06&lt;/h1&gt;
-    &lt;time datetime="2019-02-22"&gt;February 23, 2019&lt;/time&gt;
+    &lt;time datetime="2019-02-25"&gt;February 25, 2019&lt;/time&gt;
   &lt;/header&gt;
 
 &lt;p&gt;Today I paired with Kevin Zolkiewicz, a designer at 8th Light who also happens to be a talented front-end developer. Kevin began our pairing day by introducing me to a merge conflict (thanks, Kevin). He and Alexa Albanese, another designer here at 8th Light, had been working on the same client for a few months now. With this client, they were working with contractors.&lt;/p&gt;
@@ -41,7 +102,7 @@
     <link rel="alternate" href="http://blog.url.com/gina-blog/2019/02/22/post19.html"/>
     <id>http://blog.url.com/gina-blog/2019/02/22/post19.html</id>
     <published>2019-02-21T18:00:00-06:00</published>
-    <updated>2019-02-25T16:45:42-06:00</updated>
+    <updated>2019-03-01T10:02:36-06:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -140,102 +201,6 @@
 &lt;p&gt;We then paired on another one of his projects, which is an internal one for advertising future company tech related conferences. He showed me some of his logo development process, as well as the logo that he finally got approved. He began brainstorming a list of adjectives, where we had a discussion about past conferences that Chris has attended and what he enjoyed about them to help generate words.&lt;/p&gt;
 
 &lt;p&gt;Lastly, following this pairing we had a meeting that overlapped with other members of the design team, Kelly Rauwerdink and Julia Murray, because Chris would be working on coding the site for their pro bono client project.&lt;/p&gt;
-&lt;/main&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Pairing Tour — Day 02</title>
-    <link rel="alternate" href="http://blog.url.com/gina-blog/2019/02/19/post16.html"/>
-    <id>http://blog.url.com/gina-blog/2019/02/19/post16.html</id>
-    <published>2019-02-18T18:00:00-06:00</published>
-    <updated>2019-02-25T16:31:30-06:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;main class="blogposts__container"&gt;
-  &lt;header class="header-main"&gt;
-    &lt;h1&gt;Pairing Tour — Day 02&lt;/h1&gt;
-    &lt;time datetime="2019-02-19"&gt;February 19, 2019&lt;/time&gt;
-  &lt;/header&gt;
-
-&lt;p&gt;Today I paired with Julia Murray, another member of the design team at 8th Light that focuses on UX design and research. Julia had been working on a client account that was pro bono for a women-focused organization with other members of our design team, Kelly Rauwerdink &lt;a href="/2019/02/18/post15.html"&gt;(check out Kelly's bio here)&lt;/a&gt; and Nadia Doutcheva, a college graduate student who is currently interning at 8th Light and doing UX research. On this project, Nadia focused on making a research report on some usability testing that she and Julia had conducted the week prior. Unfortunately, Nadia was not present for my pairing tour with Julia due to attending to her coursework.&lt;/p&gt;
-
-&lt;p&gt;Our pairing began with a morning standup between me, Julia, and Kelly discussing the current status of the client account that they are on. In addition to working with the organization itself, Julia and Kelly had struggled with collaborating with a team from a major ad agency and an illustrator in trying to encourage the organization’s target audience to take action for women’s advocacy.&lt;/p&gt;
-
-&lt;p&gt;From my understanding, the illustrator had been working with the organization’s branding and tone for awhile. However, due to not having a strong design background, there were no standardized brand guidelines for logo usage, typography, color usage, etc. The illustrator is still on the account creating content but eventually plans to leave to pursue projects or work elsewhere.&lt;/p&gt;
-
-&lt;p&gt;Although working with the ad agency team sounded promising, it turned out that their team of creatives were not actually designers. They were project managers and copywriters, individuals who focused more on strategy than on visual and UI/UX design. One of the members was a previous employee at Julia and Kelly’s current client, had pursued a job at this ad agency, and was still continuing to work with this client to show support.&lt;/p&gt;
-
-&lt;p&gt;Immediately following standup, Julia debriefed me on the user research and usability testing that she and Nadia collaborated on. After her explanation, I worked on designing a presentation to better visualize the findings that she and Nadia had collected to help make it feel more branded. After completing this task, getting some feedback and iterating, I attended a design review meeting with the ad agency team. And let me just say, it did not go well..&lt;/p&gt;
-
-&lt;p&gt;We learned that the ad agency team misunderstood how branding translates into UI design. They were under the impression that a brand style guide, which is normally used for print, is equivalent to a UI design system. Although branding is where visual design and UI design meet, they are still extremely different in terms of the audiences and the medium itself with which the consumer interacts: the tangible vs. the digital.&lt;/p&gt;
-
-&lt;p&gt;Although branding can go into aspects of the digital space, it only scratches the surface in terms of accessibility and the standardization of components, modules, and patterns in UI experienced across the web. The ad agency team criticized Kelly’s work, claiming that it was equivalent to “government websites” and that it should incorporate all 6 colors from the illustrations that were made—mind you, that didn’t even account for 8 colors in total because a brand always includes black and white for text.&lt;/p&gt;
-
-&lt;p&gt;Additionally, the ad agency team didn’t seem too willing to work with our internal team, despite this being only their second meeting ever with Julia and Kelly. They were not only late to the meeting but joined the meeting more than 10 minutes late all via phone with the exception of one knowing that it was a design review to see the work Kelly had done. They also had the nerve to ask her to email the wireframe mockups over instead.&lt;/p&gt;
-
-&lt;p&gt;After this difficult meeting, I began working on a page with deeply nested information that Julia had been attempting to organize in a more digestible manner. However, since the page was a timeline of the organization’s accomplishments and the client was still working on changing copy, there was still too much information to work with. The timeline was organized by decade.&lt;/p&gt;
-
-&lt;p&gt;Aside from the information overload, the thought of incorporating 6 visually radiating colors that do not pair well together, worrying about responsive design especially for mobile development, and telling a story as requested from the stakeholder herself was a daunting process.&lt;/p&gt;
-
-&lt;p&gt;Thankfully, I managed to figure out a way to make it work while using the colors as subtler accent colors and focusing on the great historical photos that the organization had to aid in telling their story. I shared it with Julia for feedback, along with Kelly for her reference and to help inspire some elements for UI design, which made me really happy to know that I contributed something that was actually useful for my teammates!&lt;/p&gt;
-&lt;/main&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Pairing Tour — Day 01</title>
-    <link rel="alternate" href="http://blog.url.com/gina-blog/2019/02/18/post15.html"/>
-    <id>http://blog.url.com/gina-blog/2019/02/18/post15.html</id>
-    <published>2019-02-17T18:00:00-06:00</published>
-    <updated>2019-02-25T16:29:09-06:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;main class="blogposts__container"&gt;
-  &lt;header class="header-main"&gt;
-    &lt;h1&gt;Pairing Tour — Day 01&lt;/h1&gt;
-    &lt;time datetime="2019-02-18"&gt;February 18, 2019&lt;/time&gt;
-  &lt;/header&gt;
-
-&lt;p&gt;Today officially marks the start of my pairing tours! This week is primarily dedicated to pairing with members of the design team at 8th Light. Since the design team works together—more often than not—on certain projects according to client need, there will be an overlap of working with other design team members simultaneously.&lt;/p&gt;
-
-&lt;p&gt;Today I paired with Alexa Albanese, who has been at 8th Light for the past two years now specializing in UX design and research. Additionally, I worked with two other members of the design team: Kevin Zolk and Kelly Rauwerdink. For context, here’s a quick background on each member:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Kevin Zolk&lt;/strong&gt; is a Chicago based senior designer and developer, who likes to focus primarily on interaction design but also happens to be a talented visual designer and front-end developer.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Kelly Rauwerdink&lt;/strong&gt; is a Madison based illustrator, art director, and designer specializing in branding. She is originally from a different company called Adorable. When 8th Light acquired Adorable, Kelly became a part of the team.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;Alexa and I paired on a client account that she, Kevin, and Kelly have been on for some time now (translation: months) tackling visual design (branding), UI design, and soon, implementation into code. The account has two stakeholders who are seeking to create a desktop app for issuers, investors, and advisors to help ease the stress and confusion of the overall investing process. However, the ride’s been rocky due to the complexity of the project.&lt;/p&gt;
-
-&lt;p&gt;The investing app involves various third parties that communicate between each other: banks, tax documents, and entities that update the stakeholders on where their investors are in the process, all the while communicating directly with the investors accessing the app. Unfortunately, I knew long before pairing with them that Kevin, Alexa, and Kelly had faced difficulties with their internal working dynamics as a team and the clients themselves. Earlier in the process, our team learned quickly that one of the stakeholders was particular about the visual design and UI design. It sounded as though he struggled to focus on the bigger picture and became fixated on smaller details whenever given the opportunity to give feedback. Witnessing our team in distress, made me wonder just how much I could actually contribute or help with their working processes.&lt;/p&gt;
-
-&lt;p&gt;Briefly before our pairing session, Alexa reviewed her work with Kevin, where he provided some constructive feedback and a list of things that he felt she and I could tackle together. Amongst the items on that list that we tackled were: typography spacing, three folder elements, progress bar, invitations bar, and color.&lt;/p&gt;
-
-&lt;h4&gt;&lt;strong&gt;TYPOGRAPHY SPACING&lt;/strong&gt;&lt;/h4&gt; 
-&lt;hr /&gt;
-&lt;p&gt;This was just to make the spacing consistent between different elements.&lt;/p&gt;
-
-&lt;h4&gt;&lt;strong&gt;THREE FOLDER ELEMENTS&lt;/strong&gt;&lt;/h4&gt;
-&lt;hr /&gt;
-&lt;p&gt;These components were similar to icons except they contained text that defined which documents needed action or how many people were using the desktop app.&lt;/p&gt;
-
-&lt;h4&gt;&lt;strong&gt;PROGRESS BAR&lt;/strong&gt;&lt;/h4&gt;
-&lt;hr /&gt;
-&lt;p&gt;This component showed where the investors are in the overall process of investing. It showed the different steps, along with subtasks to accomplish those steps.&lt;/p&gt;
-
-&lt;h4&gt;&lt;strong&gt;INVITATIONS BAR&lt;/strong&gt;&lt;/h4&gt;
-&lt;hr /&gt;
-&lt;p&gt;This bar was basically a visual graph of the database. The graph would show how many invitations were pending, how many are in each step of the process, and which ones were already completed. This bar would constantly change according to what is in the database.&lt;/p&gt;
-
-&lt;h4&gt;&lt;strong&gt;COLOR PALETTE&lt;/strong&gt;&lt;/h4&gt;
-&lt;hr /&gt;
-&lt;p&gt;Kevin proposed incorporating a gold color because there was not enough contrast between the different shades of blue.
-Although this client did not happen to like the addition of gold amongst the other shades of blue, they really liked our solution for the Invitations Bar, as it would successfully account for the constantly changing information on their database. For example, what happens when there’s 1 deal in process vs. having 100 deals in process?&lt;/p&gt;
-
-&lt;p&gt;In addition to this client, I attended a development demo with Alexa’s other client, a company selling a phone app for grocery deliveries. This one was not as exciting but definitely important and useful in getting familiarized with the development team working processes at 8th Light. I learned that they use Jira, a point system for time estimation, and that they separate their work into stories. From my understanding, stories refer to breaking the work up into more manageable chunks to divide it between the development team.&lt;/p&gt;
 &lt;/main&gt;
 </content>
   </entry>

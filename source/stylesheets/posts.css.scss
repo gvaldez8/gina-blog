@@ -1,4 +1,4 @@
-@import "sass/base";
+@import 'sass/base';
 
 nav {
   @include nav($c-mandys-pink);
@@ -32,6 +32,18 @@ main {
   background: $c-mandys-pink;
   padding: 0 30% 20%; // clockwise
   width: 100%;
+
+  @media (min-width: $bp-300) {
+    padding: 0 20% 20%;
+  }
+
+  @media (min-width: $bp-500) {
+    padding: 0 25% 20%;
+  }
+
+  @media (min-width: $bp-768) {
+    padding: 0 20% 20%;
+  }
 
   h2 {
     column-span: all;

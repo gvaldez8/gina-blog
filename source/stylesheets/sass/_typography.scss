@@ -1,4 +1,6 @@
 // Typography
+@import 'color';
+
 $font-stack-primary: 'Suez One',
 serif;
 $font-stack-secondary: 'Source Sans Pro',
@@ -61,6 +63,10 @@ h2 {
 
   @media(min-width: 600px) {
     font-size: $fs-subhead-medium;
+  }
+
+  @media (min-width: $bp-768) {
+    font-size: $fs-subhead-large;
   }
 
   @media(min-width: 800px) {

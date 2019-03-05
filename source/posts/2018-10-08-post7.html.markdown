@@ -1,89 +1,86 @@
 ---
-title: Naming Conventions related to CSS Architecture
+title: CSS Architecture, Naming Conventions, & File Directory Structures
 time: October 8, 2018
 ---
 
 <main>
     <header class="header-main">
-        <h1>Naming Conventions<br> related to CSS Architecture</h1>
+        <h1>CSS Architecture,<br> Naming Conventions, & File Directory Structures
+        </h1>
         <time datetime="2018-10-08">OCTOBER 8, 2018</time>
     </header>
 
-    <p>Think of CSS Architecture like the equivalent of brand style guides but with code. It functions as a set of
-        guidelines and best practices that developers can use to write code. Here are some important principles to
-        follow
-        when using CSS Architecture to create a solid design system:</p>
+    <p>Think of CSS Architecture like the equivalent of brand style guides—the designer’s “bible” that dictates usage
+        and treatments for the logo and its variations, typographic hierarchy, colors, design elements, and photography
+        styles—except with code.</p>
+
+    <p>CSS Architecture is a set of guidelines and best practices that developers can use to write and maintain
+        code following these principles:</p>
+
     <ol class="blogpost--ol-columns">
         <li><strong>Modularity — </strong>This is a core principle, which basically means that your code is written in
-            a way that anyone
-            can
-            open that file, edit that code, and understand the structure without encountering a huge learning curve. It
-            means
-            that it can be easily managed and edited by an individual or by a large engineering team.</li>
+            a way that anyone can open that file, edit that code, and understand the structure without encountering a
+            huge learning curve. It means that it can be easily managed and edited by an individual or by a large
+            engineering team.</li>
 
-        <li><strong>MMaintainable — </strong>This principle is exactly as it sounds. It means that if you add, update,
-            or
-            rearrange new
-            components and features, integration shouldn't completely break your page or require extensive refactoring.</li>
+        <li><strong>Maintainable — </strong>This principle is exactly as it sounds. It means that if you add, update,
+            or rearrange new components and features, integration shouldn't completely break your page or require
+            extensive refactoring.</li>
 
         <li><strong>Predictable/Flexible — </strong>This means that your code behaves as you'd expect. It means that
-            when you
-            add or
-            update a
-            rule, it shouldn't affect other parts of your site. Although this might not be as detrimental to a smaller
-            site, it
-            could definitely be problematic on a larger site with anywhere from tens to hundreds of pages.</li>
+            when you add or update a rule, it shouldn't affect other parts of your site. Although this might not be as
+            detrimental to a smaller site, it could definitely be problematic on a larger site with anywhere from tens
+            to hundreds of pages.</li>
 
         <li><strong>Reusable — </strong>This principle dictates that you should not have to recode patterns or
-            problems that
-            you've
-            already
-            solved by enforcing the DRY (Don't Repeat Yourself) principle. It means that while you're coding, you
-            should
-            consider the other possible situations that you might use that code and be mindful of not assigning names
-            to
-            selectors, classes, or id's that are too specific (i.e. "blue box").</li>
+            problems that you've already solved by enforcing the DRY (Don't Repeat Yourself) principle. It means that
+            while you're coding, you should consider the other possible situations that you might use that code and be
+            mindful of not assigning names to selectors, classes, or id's that are too specific (i.e. "blue box").</li>
     </ol>
 
 
-    <p>Now that we understand the principles that compose good CSS Architecture, there are three types of naming
-        conventions that will help us build a solid foundation for our CSS architecture that
-        we'll cover in this post: BEM,
-        OOCSS, and SMACSS.</p>
+    <p>Just as a house built with a poor foundation is more likely to deteriorate sooner than later, inheriting a
+        poorly maintained codebase is more likely to break and pose errors because there’s an added layer of
+        complexity. Being too specific or descriptive with your naming conventions can create more reason to navigate
+        between multiple files just to make a simple edit. Worst of all, once that edit is applied, it could break
+        something else or only apply to one thing. It’s chaotic, especially when you find yourself under a strict time
+        constraint.</p>
+
+    <p>Now that we understand the principles that compose good CSS Architecture, there are different naming conventions
+        that will help us build a solid foundation for our CSS that we'll cover in this post: BEM, OOCSS, SMACSS, and
+        ITCSS.</p>
+
     <h2>What is BEM?</h2>
     <hr />
-    <p>The BEM naming convention stands for <em>Block Element Modifier</em> and is currently the naming convention
-        that
-        8th Light sticks to. Reasons that people like this naming convention are because its name declares its
-        purpose,
-        thereby making it easier to skim markup and immediately understand how elements are styled or related to
-        one
-        another. The point is to keep the names simple, clear, and precise.</p>
-    <div class="column">
-        <h5 class="helper-space-top"><strong>THE GUIDELINES</strong></h5>
-        <hr />
-        <ol class="blogpost--ol-columns">
-            <li>Names are written in lowercase</li>
-            <li>Words are separated by a hyphen</li>
-            <li>Block name defines the namespace for its elements and modifiers</li>
-            <li>The element is separated from the block name by a double underscore</li>
-            <li>The modifier name is separated from the block or element name by a single underscore</li>
-            <li>The modifier value is separated from the modifier name by a single underscore, double hyphen, or
-                period</li>
-            <li>For boolean modifiers, the value is not included in the name</li>
-        </ol>
-        <h5 class="helper-space-top"><strong>BENEFITS</strong></h5>
-        <hr />
-        <ul class="blogpost--ul-columns">
-            <li>Works nicely with React</li>
-            <li>Naming things is easy</li>
-            <li>No more classname conflicts</li>
-            <li>Reusability out of the box</li>
-            <li>No specificity races</li>
-            <li>No unexpected side-effects</li>
-            <li>Confidence in changing old css code</li>
-        </ul>
-    </div>
+    <p>The BEM naming convention stands for <strong>Block Element Modifier</strong> (currently, 8th Light’s standard
+        approach). This naming convention is popular because its name declares its purpose, thereby making it easier to
+        skim markup and immediately understand how elements are styled or how they are related to one another. The goal
+        is to keep the names simple, clear, and precise.</p>
+
+    <h5 class="helper-space-top"><strong>THE GUIDELINES</strong></h5>
+    <hr />
+    <ol class="blogpost--ol-indent">
+        <li>Names are written in lowercase</li>
+        <li>Words are separated by a hyphen</li>
+        <li>Block name defines the namespace for its elements and modifiers</li>
+        <li>The element is separated from the block name by a double underscore</li>
+        <li>The modifier name is separated from the block or element name by a single underscore</li>
+        <li>The modifier value is separated from the modifier name by a single underscore, double hyphen, or
+            period</li>
+        <li>For boolean modifiers, the value is not included in the name</li>
+    </ol>
+
+    <h5 class="helper-space-top"><strong>BENEFITS</strong></h5>
+    <hr />
+    <ul class="blogpost--ol-indent">
+        <li>Works nicely with React</li>
+        <li>Naming things is easy</li>
+        <li>No more classname conflicts</li>
+        <li>Reusability out of the box</li>
+        <li>No specificity races</li>
+        <li>No unexpected side-effects</li>
+        <li>Confidence in changing old css code</li>
+    </ul>
 
     <section>
         <h5 class="helper-space-top"><strong>HOW IT WORKS</strong></h5>
@@ -93,19 +90,20 @@ time: October 8, 2018
         <p>Each element is written after the block connected by two underscores.</p>
         <code>.block__element</code>
         <p>Modifiers are used to style a specific element and are usually separated by a double hyphen after the
-            element
-            like so:</p>
+            element like so:</p>
         <code>.block__elem--mod</code>
     </section>
 
-    <section>
+    <section class="helper-space-top">
         <h2 class="helper-space-top">What is OOCSS?</h2>
         <hr />
-        <p>OSCSS stands for <em>Object oriented CSS</em>. The object refers to any repeating visual pattern than
-            can be
-            specified in snippets of code. The goal of OOCSS is to produce components that are flexible, modular,
-            and
-            interchangeable.</p>
+        <p>OOCSS, which stands for Object oriented CSS, was first proposed by web developer Nicole Sullivan in 2008.
+            Her goal was to make CSS more manageable by using principles of object oriented design from programming
+            languages, such as Java and Ruby. Generally speaking, it adopts many of the concepts in object oriented
+            programming.</p>
+
+        <p>The object refers to any repeating visual pattern then can be specified in snippets of code. The goal of
+            OOCSS is to produce components that are flexible, modular, and interchangeable.</p>
 
         <h5 class="helper-space-top"><strong>THE GUIDELINES</strong></h5>
         <hr />
@@ -145,49 +143,92 @@ time: October 8, 2018
     </section>
 
     <section>
-        <h2 class="helper-space">What is SMACSS?</h2>
+        <h2 class="helper-space-top">What is SMACSS?</h2>
         <hr />
         <p>SMACSS stands for <em>Scalable and Modular Architecture for CSS</em> and is more of a
             style guide than it is a rigid framework. The purpose of this category is to codify patterns, things
             that
             repeat themselves within our design, and avoid mixing code of several categories into a single file.</p>
-        <div class="column">
-            <h5 class="helper-space-top"><strong>THE GUIDELINES IN FIVE CATEGORIES</strong></h5>
-            <hr />
-            <ol class="blogpost--ol-columns">
-                <li><strong>Base:</strong> These are default values, so things like padding, margin border, font
-                    and
-                    other
-                    properties that are used on the entire website and all elements.</li>
-                <li><strong>Layout:</strong> Divides a page into sections with elements like header, footer, and
-                    article.
-                    Often developers show layout elements by prefixing the class with l, i.e.`l-header` or
-                    `l-footer`</li>
-                <li><strong>Modules:</strong> The reusable, modular elements in the design like the navbar,
-                    sidebar,
-                    and
-                    elements that are repeated on the site.</li>
-                <li><strong>State:</strong> Describes how our modules or layouts will look when they are in a
-                    particular
-                    state (i.e. active, inactive, expanded, hidden). These are usually prefixed with `is-`.
-                    Examples
-                    would
-                    be: `is-active`, `is-inactive`, `is-expanded`, and `is-hidden`</li>
-                <li><strong>Theme:</strong> Similar to state rules in that they describe how modules or layouts
-                    might
-                    look.
-                    However, it is more applicable for larger sites with shared elements that look different
-                    throughout,
-                    such as color scheme or type treatment.</li>
-            </ol>
 
-            <h5 class="helper-space-top"><strong>THE GOALS</strong></h5>
+        <h5 class="helper-space-top"><strong>THE GUIDELINES IN FIVE CATEGORIES</strong></h5>
+        <hr />
+        <ol class="blogpost--ol-indent">
+            <li><strong>Base:</strong> These are default values, so things like padding, margin border, font
+                and
+                other
+                properties that are used on the entire website and all elements.</li>
+            <li><strong>Layout:</strong> Divides a page into sections with elements like header, footer, and
+                article.
+                Often developers show layout elements by prefixing the class with l, i.e.`l-header` or
+                `l-footer`</li>
+            <li><strong>Modules:</strong> The reusable, modular elements in the design like the navbar,
+                sidebar,
+                and
+                elements that are repeated on the site.</li>
+            <li><strong>State:</strong> Describes how our modules or layouts will look when they are in a
+                particular
+                state (i.e. active, inactive, expanded, hidden). These are usually prefixed with `is-`.
+                Examples
+                would
+                be: `is-active`, `is-inactive`, `is-expanded`, and `is-hidden`</li>
+            <li><strong>Theme:</strong> Similar to state rules in that they describe how modules or layouts
+                might
+                look.
+                However, it is more applicable for larger sites with shared elements that look different
+                throughout,
+                such as color scheme or type treatment.</li>
+        </ol>
+
+        <h5 class="helper-space-top"><strong>THE GOALS</strong></h5>
+        <hr />
+        <ol class="blogpost--ol-indent">
+            <li>Repetition results in less code</li>
+            <li>Easier maintenance</li>
+            <li>Greater consistency in the user experience</li>
+        </ol>
+    </section>
+
+
+    <section>
+        <h2 class="helper-space-top">What is ITCSS?</h2>
+        <hr />
+        <p>ITCSS stands for Inverted Triangle CSS and is a way to help organize your project CSS files by separating
+            them into sections called layers that make up an inverted triangle. The inverted triangle starts broad, and
+            as you go further down the triangle, it increases in specificity. Let’s take a look:</p>
+        <script src="https://gist.github.com/gvaldez8/b266cc5156000d0898582b57a27be1a4.js"></script>
+    </section>
+
+    <section>
+        <h2 class="helper-space-top"> File Directory Structures</h2>
+        <hr />
+        <p>ITCSS is one way to organize your CSS files and promote scalable, modular CSS architecture. There are also
+            other methods, such as <strong>The Sass Way</strong>, and very similar to ITCSS, <strong>The 7-1 Pattern</strong>
+            developed by Hugo Giraudel.</p>
+
+        <h5 class="helper-space-top"><strong>THE SASS WAY</strong></h5>
+        <hr />
+        <p>Unlike ITCSS, which has 7 layers (“folders”), the Sass Way is divided into three folders:
+        </p>
+
+        <script src="https://gist.github.com/gvaldez8/671fa9c63d63633a68aaded3b310ee84.js"></script>
+
+        <h5 class="helper-space-top"><strong>THE 7-1 PATTERN</strong></h5>
+        <hr />
+        <p>As mentioned earlier, The 7-1 Pattern was developed by Hugo Giraudel. The numbers mean that there are seven
+            folders and one <code>main.scss</code> file. Something to note is that within each specific folder, there
+            is one <code>.scss</code>
+            partial file that collects the other files in the same directory. Here’s what the 7-1 Pattern structure
+            looks like:
+        </p>
+
+        <script src="https://gist.github.com/gvaldez8/f118dd8c4c831c9b8408813953222795.js"></script>
+        <section>
+            <h2 class="helper-space">Closing Thoughts</h2>
             <hr />
-            <ol class="blogpost--ol-columns">
-                <li>Repetition results in less code</li>
-                <li>Easier maintenance</li>
-                <li>Greater consistency in the user experience</li>
-            </ol>
-        </div>
+            <p>As you can see, there are a variety of different ways to organize your CSS Architecture, each with their
+                own pros, cons, and customization according to project needs. Ultimately, it’s a matter of preference
+                in terms of what you and your team are most comfortable using. The most important thing is to choose
+                one methodology and stick with it.</p>
+        </section>
     </section>
 </main>
