@@ -690,6 +690,7 @@ main h2 {
 
 form fieldset {
   border: none; }
+
 form hr {
   padding-bottom: 10px;
   padding-top: 20px; }
@@ -975,9 +976,11 @@ button {
 @media (min-width: 300px) {
   .column {
     column-count: 0; } }
+
 @media (min-width: 768px) {
   .column {
     column-count: 0; } }
+
 @media (min-width: 900px) {
   .column {
     column-count: 2;

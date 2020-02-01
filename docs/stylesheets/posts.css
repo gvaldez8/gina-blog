@@ -690,6 +690,7 @@ main h2 {
 
 form fieldset {
   border: none; }
+
 form hr {
   padding-bottom: 10px;
   padding-top: 20px; }
@@ -975,9 +976,11 @@ button {
 @media (min-width: 300px) {
   .column {
     column-count: 0; } }
+
 @media (min-width: 768px) {
   .column {
     column-count: 0; } }
+
 @media (min-width: 900px) {
   .column {
     column-count: 2;
@@ -1098,11 +1101,13 @@ main {
     font-size: 1.25em;
     padding-left: 5%;
     text-align: left; } }
+
 @media (min-width: 768px) {
   .blogpost__text--space h3 {
     font-size: 1.25em;
     padding-left: 0;
     text-align: left; } }
+
 @media (min-width: 900px) {
   .blogpost__text--space h3 {
     font-size: 1.75em;
