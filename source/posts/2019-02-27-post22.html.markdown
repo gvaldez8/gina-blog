@@ -1,6 +1,5 @@
 ---
 title: Pairing Tour — Day 08
-
 time: February 27, 2019
 ---
 

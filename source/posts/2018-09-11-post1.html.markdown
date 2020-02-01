@@ -3,8 +3,8 @@ title: How technical should designers be?
 time: September 11, 2018
 ---
 
-<main>
-  <header>
+<main class='blogposts__container'>
+  <header class='header-main'>
     <h1>How technical should designers be?</h1>
     <time datetime="2018-09-11">SEPTEMBER 11, 2018</time>
   </header>

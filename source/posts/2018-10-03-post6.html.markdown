@@ -4,7 +4,7 @@ time: October 3, 2018
 ---
 
 <main class='blogposts__container'>
-    <header>
+  <header class='header-main'>
         <h1>Getting Responsive with Media Queries</h1>
         <time datetime="2018-10-03">OCTOBER 3, 2018</time>
     </header>

@@ -1,6 +1,5 @@
 ---
 title: Pairing Tour — Day 05
-
 time: February 22, 2019
 ---
 
