@@ -70,3 +70,5 @@ configure :build do
   set :build_dir, 'docs'
   set :http_prefix, '/gina-blog'
 end
+
+activate :livereload
